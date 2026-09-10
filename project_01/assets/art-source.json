@@ -1,0 +1,52 @@
+{
+  "assets": [
+    {
+      "id": "V01-night",
+      "path": "assets/scenes/V01-night.png",
+      "prompt": "Edit this original game scene ONLY to change time of day to night after 20:00. Preserve the empty printing bed, all machinery, all three people's faces, hair, costumes, poses, folded cloth, the left doorway and rear circular service aperture exactly. Through the left doorway and small windows show deep navy night over the harbor, tiny distant harbor lights. Warm overhead electric workshop lighting illuminates the people and press; outside moonlight faint. Maintain fine ink-wash editorial illustration style and all scene composition. No added objects, no text, no hidden plate. Output full wide scene.",
+      "source": "C:\\Users\\SDS\\.codex\\generated_images\\01a08a21-8b40-7b10-8314-1a9e790fb76f\\exec-d557a17e-46ff-4ca0-ba09-e3904cca11a3.png",
+      "method": "imagegen built-in",
+      "review": "夜間修正済み。左扉が外部に見えるため室内回廊へ追加修正が必要。"
+    },
+    {
+      "id": "V02",
+      "path": "assets/scenes/V02.png",
+      "prompt": "Original Korean mystery game, 2008 fictional coastal civic printing museum at NIGHT after 20:00. Detailed editorial graphic-novel illustration, engraved linework and soft ink-wash, warm ivory lamp glow, charcoal navy shadows, restrained oxidized teal and copper. Consistent natural Korean faces, expressive restrained emotion. No readable text, no numbers, no logos, no watermark, no UI. Wide 1536x1024 scene. Never show a copper plate until explicitly requested. Scene asset: reproducing an optical mistake in the west corridor. A middle-aged Korean male technician with short square haircut wearing navy coveralls and a folding ruler on his belt turns an adjustable work lamp toward a tall wheeled charcoal fabric screen. Screen has a decorative irregular gold-leaf patch, visibly reflecting copper-colored light onto the wall. Show actual screen, lamp direction, and light patch together, but no floating abstract arrows. Beside him a Korean woman late20s with short wavy bob, mustard utility vest and round pencil tube watches with notebook. Composition three-quarter close view, screen's two small wheels visible, the corridor door remains unblocked physically but its line of sight is obscured by screen. This is reflection verification, not theft.",
+      "source": "C:\\Users\\SDS\\.codex\\generated_images\\01a08a21-8b40-7b10-8314-1a9e790fb76f\\exec-6a82616a-0605-44e8-a2d4-d949a4243799.png",
+      "method": "imagegen built-in",
+      "review": "generated; rendered asset review pending"
+    },
+    {
+      "id": "P01",
+      "path": "assets/portraits/P01.png",
+      "prompt": "Original Korean mystery game character portrait, square 1024x1024. Beautiful finely engraved ink-wash graphic novel illustration, ivory paper background, charcoal navy and muted warm colors, bust closeup centered with head and shoulders entirely inside frame, softly lit at night indoors. Natural Korean face, distinctive silhouette and subtle expression, no text, no badge, no letters, no watermark, no scenery, no extra people. Subject: Yu Seo-an, Korean woman age38, independent civic records investigator. Straight black hair tucked behind ears, slightly long angular face, attentive narrow brows, dark indigo structured jacket over muted ivory shirt, rectangular worn pocket notebook held low at chest. Quiet precise expression with a tiny dry smile, not glamorous, no police insignia. She is thoughtful and practical.",
+      "source": "C:\\Users\\SDS\\.codex\\generated_images\\01a08a21-8b40-7b10-8314-1a9e790fb76f\\exec-6bff78c6-2074-440b-91c7-1e1986024509.png",
+      "method": "imagegen built-in",
+      "review": "generated; rendered asset review pending"
+    },
+    {
+      "id": "P02",
+      "path": "assets/portraits/P02.png",
+      "prompt": "Original Korean mystery game character portrait, square 1024x1024. Beautiful finely engraved ink-wash graphic novel illustration, ivory paper background, charcoal navy and muted warm colors, bust closeup centered with head and shoulders entirely inside frame, softly lit at night indoors. Natural Korean face, distinctive silhouette and subtle expression, no text, no badge, no letters, no watermark, no scenery, no extra people. Subject Cha Mo-eun, Korean woman late20s. Short softly wavy black bob ending at jaw, round lively observant face, mustard utility vest over ivory collared shirt, small circular pencil tube on strap visible. Warm curious half-smile, holding pencil, not childish.",
+      "source": "C:\\Users\\SDS\\.codex\\generated_images\\01a08a21-8b40-7b10-8314-1a9e790fb76f\\exec-518e5d1a-c764-49a2-ac44-4687793ceb54.png",
+      "method": "imagegen built-in",
+      "review": "generated; rendered asset review pending"
+    },
+    {
+      "id": "P03",
+      "path": "assets/portraits/P03.png",
+      "prompt": "Original Korean mystery game character portrait, square 1024x1024. Beautiful finely engraved ink-wash graphic novel illustration, ivory paper background, charcoal navy and muted warm colors, bust closeup centered with head and shoulders entirely inside frame, softly lit at night indoors. Natural Korean face, distinctive silhouette and subtle expression, no text, no badge, no letters, no watermark, no scenery, no extra people. Subject Bae Do-yun, Korean male technician age48. Short square black haircut with slightly graying sides, broad weathered face, navy coveralls over plain work shirt, small folding wooden ruler in chest pocket. Serious careful gaze with understated deadpan warmth. No cap, no glasses.",
+      "source": "C:\\Users\\SDS\\.codex\\generated_images\\01a08a21-8b40-7b10-8314-1a9e790fb76f\\exec-f716e7f0-0bfb-4bc7-8f98-f5c104e1e340.png",
+      "method": "imagegen built-in",
+      "review": "generated; rendered asset review pending"
+    },
+    {
+      "id": "P04",
+      "path": "assets/portraits/P04.png",
+      "prompt": "Original Korean mystery game character portrait, square 1024x1024. Beautiful finely engraved ink-wash graphic novel illustration, ivory paper background, charcoal navy and muted warm colors, bust closeup centered with head and shoulders entirely inside frame, softly lit at night indoors. Natural Korean face, distinctive silhouette and subtle expression, no text, no badge, no letters, no watermark, no scenery, no extra people. Subject Yun Hae-jun, Korean male bookbinder age27. Tousled black hair slightly parted, slim oval face, tired gentle eyes, faded moss green apron over gray work shirt with rolled sleeves, thread bracelet at wrist and holding a small paper folio low. Anxious but tender expression.",
+      "source": "C:\\Users\\SDS\\.codex\\generated_images\\01a08a21-8b40-7b10-8314-1a9e790fb76f\\exec-13da4905-e5e7-4d1e-9701-7240be90e88c.png",
+      "method": "imagegen built-in",
+      "review": "generated; rendered asset review pending"
+    }
+  ]
+}

@@ -1,0 +1,3 @@
+node_modules/
+*.log
+validation/browser-final-save.json
