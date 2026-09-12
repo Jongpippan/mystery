@@ -1,35 +1,42 @@
-# 작품별 작업 지침 — 복사 원본
+# Project instructions — copy template
 
-이 파일은 `mystery/project_XX/AGENTS.md`에 복사해서 사용한다. 이 원본 파일의 경로를 기준으로 아래 상대 경로를 해석하지 않는다. 다음 문단부터의 경로는 **복사된 작품 폴더 기준**이다. 복사 후 제목을 작품명으로 바꾸고 작업 현황을 채운다.
+Copy this file to the new project's `AGENTS.md` only when actual project planning begins. The paths below are relative to the **copied project directory**, not this template's current directory. Replace the project metadata with actual information; do not invent a build command before implementation exists.
 
-## 작품 정보
+## Project metadata
 
-- 작품 ID·제목: 제작 시작 시 결정.
-- 현재 단계: 기획 / 대표 구간 / 본편 구현 / 검증 / 인계 중 기록.
-- 사용자 요청과 구현 범위: 실제 요청으로 채움.
-- 시리즈 상태: 첫 작품이면 새 설정부터 작성. 실제 후속작이면 해당 시리즈의 관련 기록 및 선택 연계 방식 기입.
-- 실제 실행·검증 명령: 프로젝트에 존재하는 명령 확인 후 기입.
+- ID/title: to be designed.
+- Stage: concept / full case design / structural walkthrough / full script and revision / adaptation / implementation / verification / handoff.
+- User-authorized scope and current deliverables: fill with the actual request.
+- Series membership: new first work or an actual registered sequel, with relevant source records.
+- Real runtime and check commands: add when those files exist.
 
-## 시작할 때 읽을 문서
+## Read first
 
-1. `../AGENTS.md`
-2. `../design-guide/README.md`, `../design-guide/00-production-principles.md`
-3. 전체 제작이면 `../design-guide/01-case-logic.md`부터 `09-project-templates.md`까지 전부. 부분 작업이면 담당 문서, 의존 문서, `08-quality-gates.md`.
-4. `../series/README.md`, `../series/series-bible-SPOILERS.md`, `../series/next-installment.md`와 관련 `cases/` 기록.
-5. 이 작품의 `game-plan/`, 실제 데이터·코드·기존 검증 결과.
+1. `../AGENTS.md`.
+2. `../design-guide/README.md`, `../design-guide/00-production-principles.md`, and `../design-guide/current-direction.md`.
+3. For full production, every guide 01–09. For scoped work, the topic/dependency guides and `../design-guide/08-quality-gates.md`.
+4. `../series/README.md`, `../series/series-bible-SPOILERS.md`, and `../series/next-installment.md`; only relevant registered case records for a real sequel.
+5. This project's actual `game-plan/`, data/code when present, accepted Korean scripts, and verification evidence.
 
-## 작업 방식
+## Working rules
 
-- 사용자의 지시와 범위를 우선한다. 승인된 게임 제작은 기획→구현→검증→인계까지 이어서 수행한다. 문서 작성만 요청되면 구현 범위로 확대하지 않는다.
-- 첫 작품의 제목·주제·세계관·주인공·조수·사건은 처음부터 설계한다. 폐기한 게임의 내용·인물·설계안을 복원하거나 변주하지 않는다. 재사용 에셋은 새 기획에 적합할 때만 사용한다.
-- `../design-guide/09-project-templates.md`에 맞춰 작품 고유 진상·가설·단서·공간·상태를 구체화한다. 빈 템플릿을 기획 완료로 보고하지 않는다.
-- 단일 접근자·서명·자백 하나로 끝나는 사건, 클릭 수만 채우는 챕터를 피한다. 복수 가설, 복합 추론, 추궁 해금, 인과적인 재방문을 실제로 설계한다.
-- 오답 포인트·회복·퍼즐별 힌트, 답안 작성 중 모든 조사 탭 열람·상태 유지, 자료별 고유 썸네일을 구현한다.
-- 주인공·조수의 관계와 NPC끼리의 행동·대화를 작성한다. 조수는 의도적으로 범죄에 가담하지 않는다. 회상과 속편 반전에도 동일하다.
-- 임의의 최소 분량·쉬운 정답 구조로 사용자 목표를 축소하지 않는다. 권장값을 바꾸면 작품 기획에 이유·대안·검증을 남긴다. 범위 안의 통상적 설계 결정에 별도 허가 절차를 추가하지 않는다.
-- 공통 규칙은 `../design-guide/`, 작품의 사실과 구현 결과는 이 폴더, 시리즈 공유 사실은 `../series/`에 기록한다. 다른 작품의 게임 파일을 근거 없이 수정하지 않는다.
-- 예시·제안·미정·분기와 확인된 사실을 구분한다. 기존 인물 재등장은 앞선 사건의 관계·지식·선택 결과를 반영한다.
+- Follow the user and accumulated scope. Do not implement a game when only planning/documents were requested.
+- Reply in Korean. Author-facing MD is English; actual dialogue, directions, choices, hints, evidence originals, and game UI are Korean. Preserve exact Korean wording when logic depends on it.
+- Create new case/world/people rather than restoring the discarded project, even when reusing its folder name. Current writing fixtures are proposals, not automatic canon. Select assets after design.
+- Apply the 5–7 substantial chapter scope in guide 00. The entire movable-wall investigation is one chapter-scale reference. Give other chapters comparable depth, their own major problems, multiple inferences, and causal connections.
+- Design truth, motives, space, evidence, alternatives, and player proof together. Run non-code structural walkthroughs and complete/revise the full Korean script before implementation. A representative technical slice comes afterward.
+- Continue authorized full production without intermediate user approvals. Codex owns planning, editorial acceptance, revision requests, integration, implementation, and checks. The user only relays ready ChatGPT packets and returned files; user feedback follows completed-game delivery. Record pending external files and resume upon receipt.
+- Use ChatGPT for drafting/revision and maintain one accepted script source here. Export versioned actual facts and knowledge boundaries; reconcile proposed changes before integration.
+- Introduce characters and unfamiliar situations clearly, space new cast introductions, retain strong eccentricity, and trim redundant exchanges without shrinking total dialogue or game scope.
+- Never make the child companion knowingly assist crime, including memories or sequel twists.
+- Preserve interrogation-exclusive knowledge, visible wrong-claim costs, zero-point recovery with drafts/records retained, and per-task H0–H4 hints.
+- Implement scene-default/modal investigation UI, right companion notes/settings, immediate evidence detail, directional travel, progressive access, and all-tool access with draft/focus/save restoration for every answer type.
+- Prefer intent-revealing components, local state, and small coherent changes. Shared writable state has one source of truth and one public API. Preserve Radix accessibility with Tailwind/shadcn/ui.
+- Keep common rules in the parent guide, project facts/results here, and real continuity in the series records. Use IDs and references instead of duplicating source text.
+- Document concrete design exceptions with reason, alternative, and validation; do not invent extra approval steps for routine authorized work or shrink requirements to pass tests.
 
-## 완료 보고
+## Verification and delivery
 
-`../design-guide/08-quality-gates.md`의 R01~R17 및 관련 검수 항목에 실제 결과를 연결한다. 검증 범위를 넘는 작동·난이도·재미를 주장하지 않는다. 변경한 내용, 실행한 검증, 남은 미검증 범위, 시리즈 인계 위치를 간결하게 보고한다.
+Restate goal/acceptance criteria, inspect relevant sources, plan steps/risks/rollback/checks, implement, and verify the actual changed scope. Map R01–R17, U01–U09, C01–C06, I01–I07, and N01–N08 to concrete sources and G0–G5 evidence.
+
+Report authored, reviewed, implemented, mechanical, visual, and independent first-play results separately. No document or automated walkthrough proves humor, fun, or difficulty. Use real commands and record missing evidence. Update series records only to the extent supported by actual work.

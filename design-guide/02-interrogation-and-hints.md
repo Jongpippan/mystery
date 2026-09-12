@@ -1,78 +1,68 @@
-# 02. 추궁, 대화 선택, 오답 포인트, 힌트
+# 02. Interrogation, choices, points, recovery, and hints
 
-## 대화가 증거 상태를 바꾸게 한다
+## Evidence-based conversation
 
-일반 질문, 자세히 묻기, 주장을 확정하는 추궁, 자료 제시를 구분해 UI에 표시한다. 무료 질문으로 문장을 이해한 뒤, 플레이어가 `대상 진술 → 근거 → 모순의 이유`를 선택하여 주장을 제출한다. 자료만 무작위로 던져 정답 소리를 찾게 하지 않는다.
+Distinguish free questions and clarification from committed logical challenges. Let the player connect **target statement → evidence → reason for contradiction** before submitting. Randomly throwing items at a speaker is not the intended reasoning.
 
-본편에는 **추궁을 성공해야 처음 얻는 핵심 정보**를 포함한다. 권장 기본은 서로 다른 인물에게 최소 2회다. 이 정보가 실제 다음 추론이나 현장 변화에 필요해야 한다. 다른 메뉴에서 같은 사실을 먼저 자동 지급해 추궁을 장식으로 만들지 않는다.
+Successful interrogation must unlock core information for the first time, with real downstream deductions and events. Distribute these across the substantial chapters; the planning floor is at least two such unlocks involving different people, not an adequate full-game content budget. Do not give the same knowledge automatically elsewhere first. All prerequisites must be available before the challenge, and failure must not permanently close its essential information.
 
-단, 추궁에 필요한 정보는 추궁 전에 얻을 수 있어야 한다. 추궁 실패로 핵심 정보가 영구 폐쇄되지 않으며, 재시도·힌트를 통해 같은 지식 상태에 도달할 수 있어야 한다.
+For each Q record target P, original S/version, prerequisite E/K, accepted evidence combinations and logic, plausible error classes, cost, new E/K, corrected S, follow-up V/D, hint bundle, and retry point. Retain original and corrected testimony with the correction's cause, time, and source.
 
-## 추궁 상태 계약
+## Submission flow
 
 ```text
-Q 준비: 선행 지식·진술 공개
-→ 무료 자세히 묻기: 말의 범위와 화자의 인식 확인
-→ 진술 / 근거 / 모순 설명을 임시 선택
-→ 제출 직전 비용 표시
-→ 정답: 진술 정정본 생성 + 새 K 또는 E + 관계·이벤트 변화
-→ 오답: 이유별 피드백 + 포인트 감소 + 같은 과제에서 재검토
+Prerequisites and target statement available
+→ free clarification
+→ draft statement/evidence/reason selections
+→ visible submission cost
+→ success: correction + new information + world/relationship response
+→ failure: specific feedback + one point deduction + retained draft for revision
 ```
 
-각 `Q`에 대상 인물, 원문 `S`와 버전, 선행 `E/K`, 인정하는 근거 조합, 정답 논리, 예상 오답별 실패 전제, 비용, 새 정보, 후속 이벤트, 힌트, 재시도 지점을 기록한다. 정정된 진술은 이전 진술을 지우지 않고 “당시 발언 / 이후 정정 / 정정 계기”로 연결한다.
+Write the protagonist's chosen claim and the other person's concrete response as actual Korean dialogue. Log only the branch taken. Do not replace these with a result label.
 
-## 정답 있는 선택과 성격 선택
+| Choice type | Judgment |
+|---|---|
+| Logical claim | Right/wrong from available facts; display any error cost before submission |
+| Approach strategy | Changes access order, method, or relationships; not automatically a logical mistake |
+| Personality/relationship | No correct-answer label or point penalty; preserve character and later consequences |
 
-| 선택 유형 | 예시 | 판정과 결과 |
-|---|---|---|
-| 논리 선택 | “그 말을 직접 목격한 사실로 볼 수 있는가?” | 사전에 주어진 정보로 정오 판정. 오답 비용 표시 |
-| 접근 전략 | 공개 대질 / 먼저 비공개 면담 | 정보 접근 순서·관계·후속 대화가 달라짐. 명백한 논리 오답과 구분 |
-| 성격·관계 선택 | 무뚝뚝하게 위로 / 농담으로 긴장 해소 | 정답 표시와 HP 벌점 없음. 캐릭터·관계에 반영 |
+Do not ask players to guess an unknown person's preferred tone as a logic quiz. Different approaches may change the route to information, not past truth.
 
-올바른 선택이 필요한 대화는 선택 전 발언과 관찰에 근거가 있어야 한다. 인물의 취향을 처음 보는 상태에서 작가가 좋아하는 말투를 맞혀야 하는 퀴즈는 피한다. 전략 선택으로 필수 진술에 도달하는 방식이 바뀔 수 있지만, 이미 정한 진상은 바뀌지 않는다.
+## Point policy
 
-## 포인트 규칙 — 권장 기본 모델
+The name, maximum/start value, costs, rewards, and recovery values are project decisions. No old game's numbers are binding. A project must write and verify a complete policy with these invariants:
 
-기본 명칭은 **논증 신뢰도**, 범위 0~100이다. 작품에 맞게 HP·집중력 등으로 바꿀 수 있지만 `최대치 / 행동별 비용 / 회복 / 0점 처리 / 저장`을 반드시 정한다. 아래 모델을 채택하면 수치와 동작을 함께 적용한다.
+- Reading, comparing, maps, people, dialogue, notes, general questions, clarification, hints, draft changes, and cancellation are free.
+- An explicitly submitted incorrect challenge, evidence claim, or logical conclusion incurs the displayed cost.
+- Block incomplete UI input before submission without a penalty. Do not charge separately for multiple errors within one submission.
+- One input event cannot charge twice. A later intentional resubmission is a new attempt.
+- Show current points and anticipated loss clearly. Attach an appropriate in-world response.
+- If success rewards or chapter replenishment are used, apply them once per stable completion ID. Replaying a success or chapter does not farm recovery.
+- The default game retains meaningful error costs. An optional easy mode cannot erase this requirement from the default.
 
-| 행동 | 기본 변화 | 조건 |
-|---|---|---|
-| 자료 읽기·비교, 지도·인물·로그 열람, 일반 질문 | 0 | 탐색과 학습은 무료 |
-| 자세히 묻기, 힌트 보기, 선택 임시 변경·취소 | 0 | 주장 제출과 구별 |
-| 잘못된 근거 제시 또는 유료 추궁 확정 | -10 | 처음부터 비용이 표시된 제출에만 적용 |
-| 틀린 논리 설명 확정 | -10 | 한 번의 제출을 여러 오류로 중복 차감하지 않음 |
-| 최종 주장 제출의 논리 오류 | -15 | 빈칸·UI 입력 누락은 제출 전에 막고 차감하지 않음 |
-| 주요 추론 최초 성공 | +10, 최대 100 | 완료 ID당 한 번, 반복 성공으로 회복 불가 |
-| 새 챕터 시작 | 최소 60으로 보충 | 60 이상이면 유지. 챕터 재열람으로 보충 불가 |
+## Zero points and retry
 
-동일한 버튼 입력의 중복 처리로 두 번 차감하지 않는다. 사용자가 피드백을 읽고 **다시 제출한** 오답은 별도 시도로 차감한다. 현재 값과 예상 손실을 상시 읽을 수 있게 표시하며, 결과에 맞는 인물 반응을 짧게 붙인다.
+At zero, pause the current challenge for an intelligible recovery interaction. Keep evidence, notes, proven knowledge, relationships, dialogue, and the **editable answer draft**. Preserve useful error feedback so the player can correct the failed premise. A failed draft is not a proven proposition.
 
-### 0점과 회복
+Recovery returns enough points to retry and resumes the unresolved task. It is repeatable without limit, does not restart the case, silently reset the answer, invent knowledge, or change truth. Any explicit user-requested clear action is separate from recovery. Hints may be offered after repeated failure but open only on request. Using them must not create a bad ending or relationship punishment.
 
-0점이면 현재 논박을 잠시 중단하고 조수와 사건 정리 화면을 연다. 확보 자료·메모·이미 확정한 명제·관계 분기는 보존한다. 사건 전체를 처음부터 재시작시키지 않는다.
+## H0–H4 hints
 
-“사건 정리 후 재도전”은 신뢰도를 60으로 회복하고 미해결 과제 시작으로 돌린다. 실패한 임시 주장은 초기화하되 사용자가 작성한 메모는 지우지 않는다. 회복 횟수에는 제한을 두지 않으며, 회복 자체로 필수 정보를 공짜 지급하거나 진상을 바꾸지 않는다. 반복 실패 시 다음 힌트를 제안하고 **사용자가 열었을 때만** 공개한다.
+Every required D/Q and mandatory revisit bottleneck needs actual Korean hints, selected by task ID, held facts, available places, and recent failure reason.
 
-포인트 손실은 주장 남발에 긴장과 피드백을 주는 장치다. 저장 파일을 조작하지 못하게 만드는 경쟁 시스템으로 확장할 필요는 없다. 쉬운 모드를 제공하더라도 신작의 기본 모드에는 실제 오답 포인트가 존재해야 한다. 힌트 사용 자체로 나쁜 결말이나 관계 불이익을 주지 않는다.
+| Stage | Function |
+|---|---|
+| H0 | A currently possible investigation action |
+| H1 | The contradiction or feature worth attending to |
+| H2 | Specific available records, statements, or routes to compare |
+| H3 | How to connect them |
+| H4 | Explicit current solution, valid selections, and reasoning |
 
-## 강화된 힌트
+When evidence is missing, guide acquisition; when possessed, guide comparison. Do not disclose future titles, unseen suspects, or later solutions in early hints. H4 must actually release the current bottleneck, not repeat vague encouragement. Ordinary companion dialogue must not automatically recite these answers.
 
-각 필수 `D/Q`와 재방문 병목에는 개별 힌트 묶음을 작성한다. 같은 장이라는 이유로 다른 퍼즐의 답을 주지 않는다.
+## Persistence and checks
 
-| 단계 | 역할 | 예시 형태 |
-|---|---|---|
-| H0 | 지금 할 수 있는 조사 안내 | “이 기록의 시각을 검증할 방법이 아직 남아 있어요.” |
-| H1 | 주목할 모순 | “목격 시간과 장치 표시 시간이 같은 기준일까요?” |
-| H2 | 비교할 자료·진술·경로 | “출입 기록과 재시작 기록을 나란히 확인해 보세요.” |
-| H3 | 연결 방법 | “표시 시각에 확인한 오차를 적용하고 이동 시간을 대조하세요.” |
-| H4 | 명시적 해법과 이유 | 정확한 대상, 자료, 선택, 결론을 현재 과제에 한해 설명 |
+Persist points, first-success/replenishment IDs, processed submission IDs, failures, hint stage, statement versions, task, and draft. Save/resume at failure, zero, recovery, and success must not repeat deductions, rewards, or unlocks. Specify atomic transitions in the project's implementation design.
 
-힌트 선택은 `현재 과제 ID + 보유 사실 + 접근 가능 장소 + 최근 실패 이유`를 기준으로 한다. 필요한 자료가 없으면 획득 경로를 안내하고, 이미 있으면 비교 방법을 안내한다. 읽을 수 없는 미래 자료명이나 아직 의심하지 않은 범인 이름을 선행 단계에 노출하지 않는다.
-
-명시적 해법까지 요청한 사용자는 실제로 해당 병목을 통과할 수 있어야 한다. “잘 생각해 보세요” 같은 반복 문구로 끝내지 않는다. 힌트 창을 닫으면 선택 중이던 진술·자료·답안과 스크롤·초점을 복구한다.
-
-## 저장과 검수
-
-포인트, 최초 성공 보상 ID, 챕터 보충 여부, 제출 처리 ID, 실패 횟수, 공개한 힌트 단계, 진술 버전, 현재 과제와 임시 답안을 저장한다. 오답 직후·0점·회복 중·정답 보상 직후에 불러와도 차감·보상·정보 해금이 반복되지 않아야 한다. 실제 상태 전환의 원자적 처리 방식은 작품 기술 설계에서 정한다.
-
-필수 확인 경로는 `오답 → 감소 확인 → 자료 열람 → 다른 오답 → 0점 → 회복 → 힌트 → 정답 → 새 핵심 정보 → 다음 과제`다. 정답 있는 선택과 성격 선택의 비용 구분도 실제 UI에서 확인한다.
+Run the actual path: wrong claim → displayed loss → free tool inspection → another failure → zero → preserved draft and records → recovery → requested hint → correct challenge → genuinely new core information → downstream task. Verify logical vs relationship costs, duplicate input, valid alternate evidence sets, and all answer types. See [UI return rules](05-ui-and-investigation.md).

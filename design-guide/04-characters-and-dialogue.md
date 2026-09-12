@@ -1,70 +1,57 @@
-# 04. 주인공, 조수, 인물 관계와 대화
+# 04. Characters, Korean dialogue, and full-script production
 
-## 주인공도 인물이다
+## People who drive the story
 
-‘나’에게 직업과 조사 권한, 관찰 습관, 장점과 맹점, 말투, 개인적인 관심을 부여한다. 빈 선택 버튼 역할에 머물지 않는다. 플레이어의 추론을 대신 끝내는 독백은 피하고, 관찰과 질문에서 성격을 드러낸다.
+The protagonist has personality, authority, motivation, observation habits, strengths, blind spots, and interests. Let the player enter a display name without erasing this identity; keep stable IDs independent of names. Choices preserve a coherent person and prior relationships. The protagonist speaks selected questions and claims but does not automatically solve player-owned deductions.
 
-선택지의 말투가 달라도 핵심 인격과 이전 관계를 보존한다. 아무 이유 없이 잔인한 조롱을 하거나 전문가가 이미 아는 기본 규칙을 매 장 잊는 방식으로 선택 폭을 만들지 않는다.
+The cast should include pronounced **나사 빠진 캐릭터성**: odd priorities, foolish persistence, skewed reactions, and behavior that actually inconveniences or changes others. Quiet charm, different costumes, and polished witty replies are insufficient. Preserve recognizable people and intelligible situations without rationalizing every eccentricity or turning all characters into sensible equivalents.
 
-## 조수는 동료이자 이야기의 주체다
+Give each NPC work to do without the player, wants, fears, secrets, abilities, mistakes, observation limits, relationship history, and reasons to lie, cooperate, or resist. Plan at least two meaningful relationships per principal NPC and actual NPC-to-NPC scenes across every main chapter as coverage floors. Relationship behavior must have causes beyond a numeric affinity score.
 
-신작에는 주인공과 함께 조사하는 지속적인 조수를 둔다. 이름·외형·말버릇뿐 아니라 다음을 설계한다.
+## The child companion
 
-- 주인공과 서로 보완하는 능력과 서로 불편해하는 습관.
-- 게임 조작·상황 설명을 자연스럽게 할 직무상 이유.
-- 직접 담당하는 조사·접촉·검증 행동과 사건에 남기는 결과.
-- 본인의 소망, 실수, 배움, 작품 전후 관계 변화.
-- 진지한 순간과 일상적 유머가 공존하는 대화 리듬.
+The companion is an eccentric child with an independently designed name, exact age, identity, family relationship, and reason to accompany the protagonist. Test-fixture identities are not canon. Make supervision, legitimate participation, adult responsibility for dangerous/formal/heavy tasks, interests, observations, misunderstandings, and limits believable.
 
-**조수는 고의로 범죄에 가담하지 않는다.** 공범, 배후 지시, 범행을 알면서 한 운반·증거 파괴·의도적 은폐, 속편에서 드러나는 과거 공모를 반전으로 사용하지 않는다. 제한된 지식에 따른 착각이나 속아서 한 행동은 가능하지만, 몰랐다는 근거와 발견 후의 대응을 설명한다. 이런 예외를 사실상 고의 가담을 포장하는 수단으로 쓰지 않는다.
+The child contributes actual investigation and story consequences, has wants and growth, and changes the relationship with the protagonist. Avoid both an all-knowing miniature adult and an incompetent device that repeatedly requests explanations. Share legitimately known core facts at sensible times. Do not pretend to withhold an answer merely because the player failed.
 
-조수는 자신의 조사 범위에서 유능하게 행동하고 알고 있는 필수 사실을 합당한 시점에 공유한다. 플레이어가 정답을 틀렸다는 이유로 갑자기 답을 숨기지 않는다. 기본 대화는 관찰·질문을 제공하고, 직접적인 추론 도움은 [힌트 단계](02-interrogation-and-hints.md)에 연결한다.
+The companion never knowingly assists crime: no conspiracy, intentional concealment, evidence destruction, informed transport, or retrospective sequel complicity. Unwitting mistakes require evidence of limited knowledge and a credible response after discovery; this cannot disguise intentional participation.
 
-## 주인공과 조수의 대화 배치
+## First encounters and comprehension
 
-서막에서 둘의 관계와 조사 방식, 각 장에서 가설에 관한 의견 차이, 재방문에서 이전 말을 뒤집는 농담, 추궁 후 상대를 대했던 방식에 관한 반응, 종막에서 서로의 변화를 다룬다.
+Give every principal person an actual introductory encounter. Establish why they are here, what they are doing, their immediate purpose, and relevant relationships through action and natural speech. A character sheet or a narrator saying someone is eccentric does not establish this for the reader.
 
-권장 기본은 본편 각 장에 상황별 왕복 대화 3묶음 이상이다. 한 묶음은 여러 발언이 서로 앞말을 받아 변화하는 대화다. 같은 농담을 이동할 때마다 자동 반복해 분량을 채우지 않는다. 첫 방문·이벤트 후·오답 후·정답 후·휴식 대화에 고유 조건을 붙이고, 반복 클릭 시 이미 읽은 내용을 건너뛸 수 있게 한다.
+Stagger introductions. Let the player associate a name, role, and memorable behavior with one new person before another becomes central. Ensemble scenes are welcome after familiarity develops; this is not a permanent speaker-count restriction. A blank line alone does not solve simultaneous introductions. Reappearances, movement, and joining the group also need causes.
 
-가상 대화 예시:
+Explain enough context to make unusual behavior understandable. Brief concrete action directions and natural explanatory dialogue are useful. Do not interpret "show personality" as withholding basic context. Likewise, unfamiliar objects and practices need their purpose, appearance, state, and relevance conveyed through demonstration, images, or speech. Do not require the audience to know author notes.
 
-> 나: “문서가 이렇게 반듯하면 오히려 의심스럽군.”
->
-> 조수: “지난번 선생님 보고서는 비뚤어서 반려됐어요.”
->
-> 나: “형식과 진실은 다르다는 증거지.”
->
-> 조수: “그 주장은 결재란 밖에 적어 주세요.”
+## Natural speech, humor, and pacing
 
-웃음은 습관과 관계에서 나온다. 실제 전작에 보고서 반려 사건이 없다면 위 예시의 과거 언급을 시리즈 사실로 사용하지 않는다. 새로운 사건 안에서 먼저 설정하거나 현재 상황의 농담으로 바꾼다.
+Write Korean dialogue directly, with appropriate forms of address and distinct rhythms. Preserve exact Korean examples in English character guidance. Do not first finish English dialogue and translate it as the mandatory process.
 
-## NPC는 단서 보관함이 아니다
+Speakers listen, misinterpret, hesitate, correct themselves, get distracted, and respond differently. Vary turn lengths. Mechanical question/answer setups, constant sharp comebacks, forced catchphrases, explanatory punchlines, and every scene ending in a joke flatten the cast. The protagonist also acts rather than merely teeing up other people's jokes.
 
-각 주요 NPC에게 다음 시트를 작성한다.
+Preserve pronounced absurdity while cutting repetition: repeated requests, repeated demonstrations of an already understood trait, redundant reactions, and negotiation after the issue is settled. Keep connective language and needed situational explanation. Spread extensive actual dialogue across meaningful encounters, optional conversations, revisits, branches, and endings; do not reduce the full script or chapter depth to meet a local scene cap.
 
-| 영역 | 필수 질문 |
-|---|---|
-| 사회적 역할 | 사건 외에 오늘 여기서 해야 할 일은 무엇인가? |
-| 욕망과 두려움 | 얻으려는 것, 잃기 싫은 것, 숨김의 대가는 무엇인가? |
-| 개성 | 반복 가능한 말투·습관·가치관은 무엇인가? 긴장하면 어떻게 변하는가? |
-| 모순 | 까다롭지만 남을 돌보는 등 예상과 다른 측면은 무엇인가? |
-| 지식 | 직접 목격·전언·추측·거짓말은 각각 무엇인가? |
-| 관계 | 누구에게 부탁·경쟁·부채·신뢰·오해가 있는가? |
-| 행동 | 플레이어가 없을 때 누구를 만나고 무엇을 움직이는가? |
-| 변화 | 추궁·도움·사건 해결 후 태도와 관계가 어떻게 달라지는가? |
+No fixed global character count, speech count, or automatic percentage cut proves quality. The writing experiment's reduction target is local editorial guidance only. Humor may coexist with pain, but serious harm and the victim's suffering are not punchlines. Do not force every absurd habit into a sentimental explanation.
 
-주요 NPC마다 주인공·조수와의 상호작용뿐 아니라 다른 NPC와의 직접 장면을 배치한다. 권장 기본은 NPC마다 의미 있는 관계 2개 이상, 본편 장마다 NPC끼리의 상호작용 장면 1회 이상이다. 모든 대화를 주인공에게 설명하는 독백으로만 만들지 않는다.
+## Full script coverage
 
-유머는 지나치게 정확한 계산 습관, 물건에 붙이는 별명, 틀린 속담을 자신 있게 인용하는 버릇, 과도한 정리벽처럼 장면에서 행동으로 드러나는 특징을 사용한다. 외형·장애·출신에 대한 조롱이나 피해자의 고통을 웃음거리로 쓰지 않는다. 개성 강한 인물도 사건이 심각해지면 그에 맞게 반응한다.
+Write the entire game before implementation, including prologue, first encounters, ordinary investigation, object/context demonstrations, protagonist-companion exchanges, NPC-to-NPC scenes, requests, experiments, confrontations, choices and responses, success/failure, recovery, requested hints, rest, revisits, optional relationships, and branch-sensitive endings.
 
-## 대화 작성과 기록
+For each scene specify purpose, participants, location/time, entry knowledge, forbidden disclosures, intended emotional/practical change, player-owned inference, exits, repeat behavior, and saved position. Write actual Korean utterances and observable action directions. A note that a character jokes or explains something is not a script.
 
-대화 묶음 `C`에는 종류(일반 조사·추궁·조수 상담·인물 간 사건·개인 대화·종막), 제목, 등장인물, 장소, 사건 시각, 선행 지식, 발언 `S`, 선택지, 결과, 재생 정책을 기록한다.
+Records must store only the chosen line and actual response; link statement corrections to their old versions. Replays identify past context and do not reproduce outdated statements as new current knowledge. Skipping optional banter must not erase a required fact; original evidence and heard statements remain available.
 
-발언마다 화자가 당시 알 수 있는 정보만 말한다. 뒤늦게 아는 사실을 초기 인사에 넣거나, 이미 정정한 주장을 현재 사실처럼 반복하지 않는다. 재열람에서는 “과거 대화”임을 표시하고 현재 지식과 분리한다.
+## Drafting and source ownership
 
-선택지는 실제로 선택한 대사와 상대 반응을 로그에 남긴다. 선택하지 않은 분기를 플레이어 기록에 보여주지 않는다. 필수 단서는 농담을 건너뛸 때 사라지지 않고 수첩의 원문·관련 진술로 다시 열람할 수 있어야 한다.
+Use ChatGPT as the current preferred drafting/editorial workflow, based on user feedback, while Codex manages planning originals, logic checks, integration, and implementation. This is a practical workflow choice, not proven general superiority. The [experiment](dialogue-experiment/README.md) preserves the baseline and later refinement instructions.
 
-## 검수 질문
+Supply writers with the real truth, relationships, scene objectives, current knowledge, and disclosure boundaries once designed. Do not fabricate a full case merely to populate a writing packet. Record source version, task, draft, Codex editorial findings, selected revision, and proposed factual changes. Codex accepts revisions within scope; the user only relays writing packets and returned files during production and provides feedback after completed-game delivery. Keep accepted Korean lines in one script source, referenced by ID from planning and judging documents. Incorporate changes accepted through Codex review before the next export; stale uploaded copies must not silently become parallel canon.
 
-이름을 가린 대사에서도 인물별 말투가 구별되는가? 조수가 없어지면 이야기와 조사 과정이 달라지는가? NPC끼리 만날 이유가 있는가? 농담이 인물과 사건에 맞는가? 사건 전후 두 사람이 서로를 대하는 방식이 달라지는가? 답이 불분명하면 대사 수만 늘리지 말고 인물의 욕망과 행동부터 수정한다.
+Follow [the file handoff contract](script-handoff-format.md) for actual source packets, writing/revision requests, stable scene/statement/branch IDs, Korean screenplay Markdown and separate author-notes files, explicit coverage, and incorporation. Return full revised batches as files rather than a chat synopsis or line-change list. Break large chapters into meaningful assignments, then review their assembled continuity. File-format compliance does not establish good dialogue.
+
+## Editorial checks
+
+Read the screenplay without biographies: can a reader understand and remember each person? Do they want another scene? Can the cast be distinguished without speaker labels? Does each NPC affect others? Can a first reader understand unfamiliar objects and goals? Does the dialogue leave the deduction to the player? Review other investigation orders for future knowledge and premature encounters.
+
+Assess specific lines and reader responses. A filled character sheet, a large word count, or an AI's assertion that its humor works is insufficient. Preserve user-reported preference separately from direct review and independent first-reader evidence.

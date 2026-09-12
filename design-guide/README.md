@@ -1,59 +1,56 @@
-# 추리 게임 공통 설계 지시 모음
+# Mystery production guide
 
-버전 2.0 · 갱신일 2026-09-10 · 새 시리즈의 첫 작품 제작용
+Version 3.0 / 2026-09-12
 
-목표는 **어려운 사건을 플레이어가 스스로 입증하고, 인물들과 보낸 시간을 기억하는 추리 게임**이다. 이 문서 모음은 특정 사건·인물·무대에 종속되지 않는 공통 제작 기준이다. 현재 계승할 작품이나 확정된 세계관은 없으며, 새 시리즈의 첫 작품을 처음부터 설계한다. 폐기한 설정과 과거 시놉시스를 참조하거나 복원하지 않는다.
+Build a deeply reasoned mystery with memorable eccentric people, extensive Korean scenes, and investigation tools that support the player's own proof. These guides contain common rules, not a finished case or inherited world.
 
-## 시작하는 방법
+## Current state and first read
 
-새 제작 세션에는 아래 요청을 붙여 넣는다. `project_01`은 사용하려는 작품 폴더명으로 바꾼다.
+Read [workspace instructions](../AGENTS.md), [production principles](00-production-principles.md), and [current decisions](current-direction.md). The discarded `project_01` and its residual case record have been removed from the working tree. No replacement project has been created. [The registry](../series/README.md) has no works; test characters and the hotel premise remain proposals.
 
-```text
-mystery/AGENTS.md와 mystery/design-guide/README.md를 먼저 읽어라.
-design-guide의 00~09 공통 설계 문서와 series의 초기화된 설정 원장을 읽고,
-project_01에 완전히 새로운 시리즈의 첫 추리 게임을 제작하라.
-design-guide/templates/AGENTS.md를 project_01/AGENTS.md로 복사하고 작품 정보를 채워라.
-design-guide/09-project-templates.md에 따라 작품별 기획을 먼저 구체화하고,
-사건의 대안 가설·단서 의존성·지도·추궁·재방문 이벤트를 검토한 뒤 구현하라.
-추리 난이도, 유효한 정답 경로, 강화된 힌트, 조수의 비가담 원칙을 유지하라.
-제목·주제·무대·시대·인물·관계·사건 구조를 처음부터 설계하라.
-폐기한 게임의 내용이나 인물을 계승하지 말고, 에셋은 새 기획에 맞는 경우에만 사용하라.
-완료 시 실제 검증 결과와 속편 인계 기록을 남겨라.
-```
+The next work requires 5–7 substantial investigation chapters. The entire proposed movable-wall reasoning sequence is approximately one chapter, not the entire game's architecture. Detailed truth/player-reasoning design, non-code walkthroughs, and full Korean script drafting/revision precede implementation.
 
-## 문서 지도
+Author-facing MD is English; actual screenplay dialogue, action directions, choices, hints, evidence originals, game UI, and user communication are Korean. Preserve exact Korean source wording where voice or logic depends on it.
 
-| 순서 | 문서 | 맡는 결정 |
-|---|---|---|
-| 00 | [제작 원칙](00-production-principles.md) | 품질 우선순위, 범위, 제작 순서, 기본 규모 |
-| 01 | [사건 논리와 난이도](01-case-logic.md) | 진상, 경쟁 가설, 독립 근거, 챕터 추론 |
-| 02 | [추궁·선택·포인트·힌트](02-interrogation-and-hints.md) | 논박, 핵심 정보 해금, 오답 비용, 회복 |
-| 03 | [공간·재방문·이벤트](03-space-and-events.md) | 물리 지도, 상태 변화, 발견 가능성, 연출 |
-| 04 | [인물·조수·대화](04-characters-and-dialogue.md) | 개성, 유머, 관계, 지식 범위, 대화 분기 |
-| 05 | [UI와 조사 흐름](05-ui-and-investigation.md) | 작은 목록, 인물 기록, 대화 묶음, 추리 중 열람 |
-| 06 | [이미지와 시각 정보](06-visual-direction.md) | 자료별 썸네일, 상황 컷, 시각적 공정성 |
-| 07 | [시리즈와 연속성](07-series-continuity.md) | 정사·분기·관계·복귀 인물·속편 인계 |
-| 08 | [품질 검수](08-quality-gates.md) | 요구사항별 증거, 논리·UI·플레이 검증 |
-| 09 | [작품 설계 템플릿](09-project-templates.md) | 실제로 채울 제작 산출물과 공통 ID |
-| 복사용 | [작품별 AGENTS.md](templates/AGENTS.md) | 각 `project_*` 폴더에서 실행할 지침 |
-| 시리즈 | [시리즈 현황](../series/README.md) | 첫 작품 준비 상태와 향후 기록 서식 |
-| 인계 | [문서 검수 기록](delivery-audit.md) | 이번 문서 작업의 범위와 확인 결과 |
+## Document map
 
-제작 전체를 맡는 세션은 00~09를 순서대로 읽는다. 한 영역을 고치는 세션은 00, 해당 영역, 08, 작품 기획을 읽되 관련 의존 문서도 확인한다. 통합본은 별도로 만들지 않는다. 같은 규칙의 사본이 서로 달라지는 것을 막기 위해 각 주제 문서가 해당 규칙의 원본이다.
+| Document | Authoritative responsibility |
+|---|---|
+| [00 Production](00-production-principles.md) | Scope, chapter depth, full production sequence |
+| [01 Case logic](01-case-logic.md) | Truth, alternatives, proof, disclosure, cross-chapter inference |
+| [02 Challenges](02-interrogation-and-hints.md) | Interrogation, costs, preserved drafts, recovery, H0–H4 |
+| [03 Space/events](03-space-and-events.md) | Physical geometry, travel, access, discovery, revisits and events |
+| [04 Characters/script](04-characters-and-dialogue.md) | Child companion, eccentricity, introductions, Korean writing workflow |
+| [05 UI](05-ui-and-investigation.md) | Scene default, modals, companion tools, evidence display, return/save/accessibility |
+| [06 Visuals](06-visual-direction.md) | Observable evidence images, unique thumbnails, situation states |
+| [07 Continuity](07-series-continuity.md) | New-series records, fact status, branches and later handoffs |
+| [08 Quality](08-quality-gates.md) | All requirement IDs and scope-matched completion evidence |
+| [09 Templates](09-project-templates.md) | Concrete project documents, script ownership, IDs and records |
+| [Project instructions](templates/AGENTS.md) | Copy only when actual project planning begins |
+| [Script handoff](script-handoff-format.md) | MD source packets, ChatGPT requests, returned screenplay/notes files and review |
+| [Current decisions](current-direction.md) | Adopted direction, undecided content, current filesystem stage |
+| [Restart handoff](restart-handoff-2026-09-12.md) | Requirement provenance and how the direction evolved |
+| [Session request](restart-session-prompt.md) | A copyable full-production request with user file relay only |
+| [Dialogue experiment](dialogue-experiment/README.md) | Provisional writing sources and prompts; not series canon |
+| [Delivery audit](delivery-audit.md) | What this cleanup actually changed and verified |
+| [Series registry](../series/README.md) | Real work membership and continuity sources |
 
-## 적용과 보관
+Read all guides 00–09 for complete game production. For a scoped task, read 00, its subject and dependencies, 08, and the actual active project's sources. Current user directions always take precedence. Requirements tables point to their topic authorities; do not maintain divergent copies of the same rule.
+
+## Storage and creation
 
 ```text
-mystery/
-  AGENTS.md
-  design-guide/                  공통 규칙과 복사 템플릿
-  series/                        비어 있는 설정 원장과 사건 기록 서식
-  reusable-assets/               선택적으로 사용할 범용 UI 자산
-  project_01/                    첫 작품 제작 시 생성하는 예시 경로
-    AGENTS.md                    templates/AGENTS.md에서 복사
-    game-plan/                   09 문서에 따라 작성
+AGENTS.md                     workspace instructions
+ design-guide/                common rules, decisions, templates and experiments
+ series/                      registry, bible and real future case records
+ reusable-assets/             optional generic art, selected only after design
+ project_01/                  future reused path; currently absent
+   AGENTS.md                  create with actual new-project planning
+   game-plan/                 substantive new facts and Korean scripts
 ```
 
-**필수**는 신작이 만족해야 할 행동·품질 조건이다. **권장 기본값**은 초기 설계 수치이며 플레이 검증으로 조정한다. 수치를 바꾸더라도 사용자 요구를 삭제하지 않는다. **예시**는 설계 방법을 보여주는 가상 내용이며 기존 작품이나 시리즈의 정사가 아니다.
+Common-document cleanup does not create a blank project or game scaffold. On starting the new work, reuse `project_01` only as a name: create new instructions and substantive planning, not copies of discarded content. Do not inspect the old tree or Git history for creative material. The optional generic asset directory does not choose the premise or characters.
 
-`SPOILERS`가 붙은 파일과 대부분의 설계 문서는 제작자용이다. 플레이어에게 제공하는 도움말이나 게임 내 인물 수첩에 진상 원문을 그대로 노출하지 않는다.
+**Required** rules define necessary behavior and quality. **Planning floors** help catch missing coverage but never prove adequate depth. **Examples/test fixtures** are not canon. **Undecided** facts must remain undecided until actually designed. No old numeric quota constrains the new game's content.
+
+Most planning and all SPOILERS records are author-facing. Never expose their truth ledger directly as player knowledge. Use the full requirement matrix and actual evidence before reporting completion.

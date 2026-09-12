@@ -1,28 +1,26 @@
-# 첫 작품 제작 인계
+# First new work — starting handoff
 
-상태: 신규 기획 전. 계승할 사건·인물·관계·세계관 없음.
+Status: common-document cleanup completed; concrete new-project planning has not started. No inherited world, case, people, or relationships.
 
-## 출발점
+Read [the guide](../design-guide/README.md), [production principles](../design-guide/00-production-principles.md), [current decisions](../design-guide/current-direction.md), [project templates](../design-guide/09-project-templates.md), and [the empty bible](series-bible-SPOILERS.md).
 
-[공통 안내](../design-guide/README.md), [제작 원칙](../design-guide/00-production-principles.md), [작품 설계 템플릿](../design-guide/09-project-templates.md), [빈 설정 원장](series-bible-SPOILERS.md)을 읽고 새 기획을 작성한다. 공통 문서는 높은 추리 품질을 위한 규칙이며 특정 소재나 줄거리를 지정하지 않는다.
+The deleted folder name `project_01` may be reused when substantive planning begins. Start with new instructions and actual game-plan content. Do not create an empty implementation scaffold as part of cleanup or restore the discarded sources.
 
-## 새로 결정할 것
+## Decisions for actual planning
 
-1. 작품 폴더·제목·시리즈명·주제·무대·시대·사건 유형.
-2. 주인공의 직업·조사 동기·권한·능력·맹점·말투.
-3. 조수의 이름·직무·합류 계기·유머·독자적인 조사 및 서사 역할.
-4. NPC의 욕망·비밀·개성·서로의 관계와 직접 상호작용.
-5. 사건 진상과 경쟁 가설, 독립된 근거, 장별 복합 추론과 재검증.
-6. 추궁으로 해금할 핵심 정보, 논리 선택, 오답 포인트·회복·단계별 힌트.
-7. 실제 연결 관계를 갖는 지도, 원인이 있는 재방문 변화, 주요 이벤트와 상황 컷.
-8. 조작·실행 환경, 자료·인물·대화 기록 UI, 추리 중 열람과 답안 유지.
+- Final concept, title, setting, era, central emotion and surface case. The hotel remains a candidate.
+- Protagonist personality, work, motivation and investigation authority.
+- Eccentric child companion's identity, supervision, relationship and independent role.
+- NPC motives, knowledge, secrets, distinctive behavior, introductions and relationships.
+- Entire case truth and 5–7 substantial chapter mysteries, each with multiple player-led inferences and causal links.
+- Supported alternatives, independent evidence, exclusive interrogation unlocks, costs/recovery/hints and revisit events.
+- Spatial and visual facts, access/disclosure, full Korean script and branch responses.
+- Adaptation and implementation details after design, structural walkthrough and full script revision.
 
-사용자가 게임 제작을 요청하면 승인된 범위에서 위 사항을 구체화하며 기획·구현·검증을 진행한다. 항목마다 별도의 승인을 받으라는 목록이 아니다. 현재 정리 작업만으로 새 게임 폴더나 구현 파일을 만들지 않는다.
+Codex owns these planning responsibilities and the subsequent editorial, implementation, and verification decisions for full production. The user only relays prepared ChatGPT packets and returned files during production, then provides feedback after the completed game is delivered. Do not require intermediate creative approvals. Apply the user's actual scope for the next task.
 
-## 에셋 사용
+## Assets and continuity
 
-[범용 에셋](../reusable-assets/README.md)은 새 기획과 미술 방향에 맞는 경우에만 선택한다. 에셋 사용은 기존 사건·인물·세계관의 재사용을 뜻하지 않는다. 인물 초상이나 사건 장면을 가져와 과거 설정을 되살리지 않는다.
+[Generic assets](../reusable-assets/README.md) are optional and cannot determine the new premise or revive past characters. Choose them only after design.
 
-## 제작 이후
-
-첫 작품을 구현한 뒤 [사건 인계 템플릿](templates/case-record-template.md)에 실제 사실·진행·인물·분기·검증 범위를 기록하고 설정 원장을 채운다. 그때부터 이어지는 작품에 한해 이전 사건의 관계·지식·선택 결과를 반영한다.
+After real development, fill [the case record](templates/case-record-template.md), reconcile actual outcomes/branches and verification limits, then update the registry and bible. An attractive writing test is not a released game or an established predecessor.

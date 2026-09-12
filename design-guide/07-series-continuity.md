@@ -1,61 +1,39 @@
-# 07. 시리즈 연속성과 속편 인계
+# 07. Series continuity and handoff
 
-현재는 새 시리즈의 첫 작품을 만들기 전이며 계승할 사건·인물은 없다. 아래의 과거 사건·분기·재등장 규칙은 앞으로 이 시리즈에 실제 작품이 쌓인 뒤 적용한다. 첫 작품에는 새 주제·세계·주인공·조수·관계를 설계하며 폐기한 내용을 원장이나 제안으로 복원하지 않는다.
+The new series has no registered works or inherited characters. [The registry](../series/README.md) and [bible](../series/series-bible-SPOILERS.md) are the authority for actual series membership. The current hotel and dialogue fixture are proposals, not a predecessor game. Never search discarded content or Git history to recover creative material.
 
-## 한 사건은 완결하고 사람은 이어진다
+## Resolve the case, continue the people
 
-각 작품에서 중심 사건의 방법·책임·주요 결과를 입증하고 마무리한다. 다음 작품에 대한 실마리는 현재 사건의 설명을 미루는 대체물이 아니다. 시리즈의 지속성은 주인공과 조수의 관계, 이전 선택으로 달라진 신뢰, 다시 만나는 인물의 삶에서 만든다.
+Each game proves and resolves its core mechanism, responsibility, and major outcomes. Sequel hooks cannot postpone the current explanation. Continuity develops relationships, remembered choices, trust, and returning people's lives. Keep common production rules separate from world facts and rejected ideas.
 
-공통 제작 규칙과 시리즈 설정은 별도로 유지한다. 현재 보관 위치는 [series](../series/README.md)다. 공통 설계 예시, 다음 작품 후보, 미채택 아이디어를 전작의 사실로 기록하지 않는다.
-
-## 사실의 상태
-
-| 상태 | 의미와 사용 방법 |
+| Status | Meaning |
 |---|---|
-| 확인 사실 | 해당 작품의 현재 데이터·장면·결과로 확인된 내용. 근거 위치와 확인 날짜 필수 |
-| 분기 사실 | 특정 선택을 했을 때만 성립. 선택 키, 값, 영향 범위 필수 |
-| 제안 | 다음 작품이나 시리즈에서 채택할 수 있는 기획. 아직 과거 사실로 인용 불가 |
-| 미정 | 이름·연도·관계 등 근거가 없거나 결정 전인 항목 |
-| 충돌 | 작품·문서·분기가 서로 다름. 어느 표현을 어떤 근거로 사용하는지 기록 |
-| 폐기·변경 | 이전 설정을 바꾼 기록. 사유, 영향 작품, 대체 사실을 남김 |
+| Planned | Concrete design, not yet established by implementation |
+| Verified fact | Supported by the specified current source/scene/result; include date and exact verification scope |
+| Branch fact | True only for named choice keys/values and their consequences |
+| Proposal | An option not adopted as historical fact |
+| Undecided | No decision or evidence yet |
+| Conflict | Sources disagree; record the chosen resolution and basis |
+| Revised fact | Within an active series, record reason, affected works, and replacement |
 
-확인 사실도 무엇을 확인했는지 범위를 적는다. 코드에서 엔딩 대사를 읽었다는 사실은 실제 플레이 검증이나 공식 출시를 증명하지 않는다. 시리즈 원장에서 구현 근거와 출시·테스트 상태를 섞지 않는다.
+Reading an ending in code is not evidence of a playtest or release. Distinguish design, implementation, execution, testing, and publication. A deliberate fresh start excludes discarded settings even from examples or change-history proposals that could reintroduce them.
 
-## 공통 원장에 남길 내용
+## Bible content
 
-- 시리즈 중심 주제, 세계의 제도·기술·조사 권한, 각 작품의 시대와 순서.
-- 주인공·조수의 고정 ID, 이름, 역할, 가치관, 능력, 관계 시작점과 변화.
-- 반복 등장 인물의 동일인 식별, 직업·상태, 최근 등장, 아는 사실과 모르는 사실.
-- 작품별 중심 사건, 결과, 관계 변화, 미해결 실마리.
-- 분기 선택의 키·값·의미, 공통 결과와 달라지는 결과.
-- 다음 작품에서 반드시 존중할 사실, 아직 결정하지 않은 내용, 변경 이력.
+Record theme, institutions/technology, investigation authority, time sequence, stable character IDs, names/roles, values, abilities, relationship states, direct experiences, knowledge limits, unresolved threads, and choice-specific outcomes. Map stable series IDs to project IDs independently of display names. A profession or display-name change does not create a new person.
 
-인물의 내부 ID는 표시 이름과 분리한다. 시리즈 전체에서는 `CHAR_001` 같은 고정 ID로 참조하고 작품별 코드 ID와 출처 작품을 함께 남긴다. 직업이나 표시 이름이 바뀌어도 다른 인물로 중복 등록하지 않는다.
+## Branches and returning characters
 
-## 플레이어 선택을 다음 작품으로 잇기
+Choose how a sequel receives relevant choices: previous saves, a spoiler-marked recap selection, or use of common outcomes only. Do not secretly treat one branch as universal because save integration is absent. Explain any default branch in planning and player-facing context without erasing other outcomes. You need not implement every trivial old choice, but facts you do reference must respect their branches.
 
-속편은 기획 단계에서 다음 방식 중 적합한 것을 명시한다.
+For a returning person, write previous end state → intervening events → reason to appear → shared memories → current knowledge → present actions → new relationship change. Explain how previously unknown information was learned. Cameos still need a reason and continuity. The companion's non-complicity rule applies to memories and future revelations alike.
 
-1. 이전 저장 선택을 읽어 분기 대사를 적용한다.
-2. 시작 시 스포일러 표시가 있는 짧은 이전 사건 선택 요약으로 분기를 설정한다.
-3. 공통 결과만 인용하고 선택별로 다른 부분은 단정하지 않는다.
+## Completion handoff
 
-저장 연계가 없다는 이유로 특정 결말을 몰래 유일 정사로 선택하지 않는다. 기본 분기를 정할 필요가 있으면 해당 작품 기획과 플레이어 안내에 적고, 기존 다른 선택을 없었던 일로 만들지 않는다. 후속작이 다루지 않는 사소한 선택까지 전부 구현할 의무는 없지만, 인용하는 관계와 사실은 분기에 맞아야 한다.
+1. Inspect actual implemented scenes, outcomes, and choices; identify unimplemented proposals separately.
+2. Fill [the case-record template](../series/templates/case-record-template.md) in `series/cases/` only for a real new work.
+3. Update the bible and registry with source references and separate common/branch facts.
+4. Reconcile knowledge and relationship endings against the choices.
+5. Update [next-project guidance](../series/next-installment.md) with relevant reading and unresolved decisions.
 
-각 분기는 구체적인 약속·선택·행동과 그 결과로 이어진다. 관계 수치만 읽어 말투를 바꾸지 말고 어떤 경험 때문에 인물이 주인공을 신뢰하거나 경계하는지 대화와 행동에 반영한다.
-
-## 복귀 인물의 장면 계약
-
-복귀 인물마다 `전작 끝 상태 → 이후 경과 → 이번 방문 이유 → 주인공/조수와의 기억 → 현재 아는 정보 → 이번 사건에서 할 행동 → 관계의 새 변화`를 작성한다.
-
-카메오도 이전 사건과의 구체적인 연결을 가진다. 전작에서 범행을 몰랐던 인물이 갑자기 당시 진상을 모두 알고 이야기하면 언제 누구에게 들었는지 설명한다. 아직 신설되지 않은 조수와 예전부터 팀이었다는 대사를 쓰지 않는다. 조수의 고의 범죄 가담 금지는 전작의 회상과 속편 반전에도 동일하게 적용한다.
-
-## 작품 종료 시 인계 절차
-
-1. 실제 구현된 사건·결과·대사를 확인하고 작품 기획의 미구현 아이디어를 제외한다.
-2. [사건 인계 템플릿](../series/templates/case-record-template.md)을 채워 `series/cases/`에 저장한다.
-3. 시리즈 설정 원장의 인물·관계·지식·미해결 항목을 사건 ID와 함께 갱신한다.
-4. 분기별 종료 상태를 대조하고 공통 사실에 분기 내용을 섞지 않았는지 확인한다.
-5. 다음 세션이 읽을 문서와 결정할 사항을 [다음 작품 인계](../series/next-installment.md)에 갱신한다.
-
-운영 중인 시리즈는 변경 기록에 날짜·대상·이유·근거를 남겨 재등장 인물의 연속성을 검토할 수 있게 한다. 사용자가 기존 내용의 폐기와 새 출발을 명시한 경우에는 해당 내용을 이력·예시·제안으로도 남겨 다시 설계에 유입시키지 않는다.
+Do not create empty case records merely to make the directory look complete. Folder reuse does not imply continuity with its deleted predecessor.

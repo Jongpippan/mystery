@@ -1,16 +1,18 @@
-# 새 시리즈 제작 기록
+# New series registry
 
-현재 등록된 작품·사건·인물은 없다. 새로운 시리즈의 첫 작품을 처음부터 설계한다. 폐기한 게임의 세계관·주제·사건·인물·관계·선택 결과를 계승하지 않는다.
+Status: no registered works, cases, people, or adopted setting.
 
-## 읽을 문서
+The discarded project and its residual case record were removed from the working tree on 2026-09-12. The current hotel discussion and writing fixture are new proposals, not registered canon. Do not recover discarded content from residual files or Git history.
 
-1. [설정 원장](series-bible-SPOILERS.md): 첫 작품에서 새로 결정할 항목을 담은 빈 서식.
-2. [첫 작품 제작 인계](next-installment.md): 기획 시작 조건과 작성 순서.
-3. [사건 인계 템플릿](templates/case-record-template.md): 작품이 완성된 뒤 실제 내용을 기록할 서식.
-4. [시리즈 운영 지침](../design-guide/07-series-continuity.md): 향후 작품 간 사실·분기·관계를 관리하는 규칙.
+## Sources
 
-## 작품 목록
+1. [Series bible](series-bible-SPOILERS.md): undecided fields for the first new work.
+2. [Next-project handoff](next-installment.md): current starting conditions.
+3. [Case-record template](templates/case-record-template.md): for actual completed work and its evidence.
+4. [Continuity rules](../design-guide/07-series-continuity.md): status, branches, knowledge and returning people.
 
-등록된 작품 없음. 첫 작품이 제작되면 작품 ID·제목·순서·구현 및 검증 상태·사건 기록 경로를 추가한다. 계획이나 템플릿을 완성된 작품으로 등록하지 않는다.
+## Work registry
 
-설정 원장은 기획 전에는 비워 둔다. 신규 기획에서 정한 내용은 계획임을 표시하고, 실제 구현한 사실은 근거를 붙여 기록한다. 이전 인물의 재등장과 저장 분기 연계는 새 시리즈에 실제 선행 작품이 생긴 뒤 적용한다.
+No entries. When a new work is actually developed, record its ID/title/order, source location, design/implementation/verification status, and real case record. Do not register a blank template or experimental cast as a finished game.
+
+Keep planned, implemented, verified, and branch-specific facts distinct. No predecessor knowledge, returning cast, or save linkage applies until this new series has an actual earlier work.

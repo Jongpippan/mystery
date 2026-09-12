@@ -1,9 +1,9 @@
-# 선택형 범용 에셋
+# Optional generic assets
 
-이 폴더에는 사건·인물 정보가 없는 UI 도형만 보관한다.
+Only story-independent UI shapes are kept here.
 
-| 파일 | 내용 | 사용 조건 |
+| Asset | Description | Use |
 |---|---|---|
-| [star-icon.svg](star-icon.svg) | 어두운 사각 배경, 원, 네 방향 별 도형 | 새 UI에 어울리는 경우에만 사용 |
+| [star-icon.svg](star-icon.svg) | Dark square background, circle, and four-point star shape | Optional if it fits the newly designed UI |
 
-에셋은 새 작품의 주제·무대·인물·색상 방향을 결정하는 기준이 아니다. 새 기획과 미술 방향을 먼저 정한 뒤 적합성을 판단한다. 이미지에 과거의 이야기 의미를 부여하거나 기존 인물·장면을 복원하지 않는다. 이 아이콘을 사용할 의무는 없다.
+Choose assets after the new concept and art direction. An available icon does not determine the theme, place, characters, or colors and must not be assigned discarded story meaning. This cleanup does not require using or modifying the asset.

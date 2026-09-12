@@ -1,51 +1,40 @@
-# 새 시리즈 설정 원장 — 제작용 서식
+# New series bible — author-facing template
 
-상태: 초기화 · 갱신일 2026-09-10 · 등록된 작품과 확정된 설정 없음
+Status: no registered work or adopted world/character facts. Updated 2026-09-12.
 
-이 원장은 새로운 시리즈를 위해 채울 빈 서식이다. 폐기한 내용은 확인 사실·제안·미정 후보·변경 이력 어디에도 복원하지 않는다. 아래 항목은 다음 제작에서 새로 결정한다.
+This is an intentionally unfilled continuity structure. Common production requirements are not fictional world facts. Do not populate it with discarded content, current writing fixtures, or assumptions inferred from available assets.
 
-## 시리즈 중심과 세계
+## World and series
 
-| 항목 | 상태 | 기획 때 작성할 내용 |
+| Field | State | What an actual plan must establish |
 |---|---|---|
-| 시리즈명 | 미정 | 새 제목과 의미 |
-| 중심 주제 | 미정 | 작품들을 관통할 질문과 감정 |
-| 장르·무대·시대 | 미정 | 가능한 사건 유형, 생활환경, 기술 수준 |
-| 세계의 규칙 | 미정 | 증거·권한·물리 조건과 그 한계 |
-| 첫 작품의 사건 | 미정 | 표면 사건, 진상, 핵심 추리 구조 |
-| 시리즈 진행 | 미정 | 작품별 완결성과 장기적인 인물 변화 |
+| Series title | Undecided | New title and meaning |
+| Central theme | Undecided | Continuing questions and emotional concerns |
+| Genre, place, era | Undecided | Social/technical context and scope |
+| World constraints | Undecided | Institutions, evidence, authority and physical assumptions |
+| First central case | Undecided | Surface problem, truth, full chapter architecture |
+| Continuity direction | Undecided | Resolved cases and continuing personal change |
 
-기술 스택과 에셋에 맞춰 세계관을 정하지 않는다. 주제와 사건·인물 설계를 먼저 구체화한다.
+## Protagonist and child companion
 
-## 주인공과 조수
+No registered people. Names, exact age, identity, history, relationship, and long-term participation are to be designed. The production direction requires an eccentric child companion and forbids deliberate criminal participation; these conditions do not establish a particular test character as canon.
 
-이름·직업·외형·과거·관계는 모두 미정이다. 새 기획에서는 주인공과 조수의 능력, 맹점, 욕망, 말투, 유머, 합류 계기, 서로 보완하는 조사 역할을 작성한다.
+## Person record fields
 
-공통 제작 조건으로 조수는 고의적인 범죄 가담자가 될 수 없다. 이 조건 외에 기존 인격이나 직업을 전제로 삼지 않는다.
+```text
+Stable series ID / project ID / Korean display name:
+Role, current purpose, personality, strengths and blind spots:
+First appearance / actual actions / direct knowledge vs hearsay:
+Concrete relationships and experiences:
+Starting → ending state, separated by branch:
+Status: planned / implemented / verified / proposal / unknown / conflict
+Source scene/data/result, date, and scope of verification:
+```
 
-## 인물 등록 서식
+## Cases, choices, and unresolved matters
 
-등록된 인물 없음. 실제 인물이 정해지면 다음 정보를 기록한다.
+No registered cases or branches. For an actual work, record central question, proven truth, common outcome, each person's action/knowledge/relationship changes, choice keys/values and consequences, resolved questions, and supported remaining threads. Do not turn undecided future ideas into established history.
 
-| 항목 | 작성할 내용 |
-|---|---|
-| 고정 ID·표시 이름 | 동일인 식별과 작품별 코드 ID |
-| 역할·목적 | 직업, 사건에서 할 행동, 개인적 욕망 |
-| 개성 | 습관, 말투, 유머, 강점과 맹점 |
-| 등장과 지식 | 첫 등장 작품, 당시 아는 사실과 모르는 사실 |
-| 관계 | 다른 인물과의 구체적 경험, 신뢰·갈등의 이유 |
-| 변화 | 작품·선택별 시작 상태와 종료 상태 |
-| 근거·상태 | 기획/구현/검증 구분, 실제 자료·장면 위치 |
+## Change log
 
-## 사건·관계·분기
-
-등록된 사건, 관계, 선택 분기 없음. 첫 작품부터 다음을 기록한다.
-
-- 작품의 중심 질문, 플레이어가 입증한 진상, 공통 결과.
-- 인물별 행위·지식·관계의 시작 상태와 종료 상태.
-- 선택 키·값, 그 선택에서만 성립하는 결과와 근거.
-- 해결된 질문, 실제로 남긴 실마리, 아직 정하지 않은 미래.
-
-## 변경 기록
-
-새 시리즈의 기획이 시작된 이후 날짜·대상·변경 이유·관련 작품·근거를 기록한다. 비어 있는 서식을 채웠다는 사실을 작품 구현이나 출시 완료로 취급하지 않는다.
+Add dated changes once real new-series planning begins, with reason, affected project/branch, status, and evidence. An unfilled or newly populated plan is not proof of implementation or release. Consult [continuity rules](../design-guide/07-series-continuity.md).

@@ -1,200 +1,210 @@
-# 09. 작품별 설계 템플릿
+# 09. Project documents and source ownership
 
-이 문서는 **신작 제작 시 채울 서식**이다. 아래 예시 경로와 빈칸은 지금 존재해야 하는 제작 결과가 아니다. 실제 작품을 시작할 때 `project_XX/game-plan/`에 파일을 만들고, 공통 규칙을 복사해 부풀리지 말고 그 작품의 구체적 사실·대사·조건·근거를 채운다.
+These are authoring templates, not existing project deliverables. When actual project planning begins, create its `AGENTS.md` from [the template](templates/AGENTS.md) and write substantive English documents in `game-plan/`. Do not create a blank project during common-guide cleanup. Write actual screenplay lines, directions, game strings, hints, and evidence originals in Korean.
 
-## 공통 ID와 연결
+## IDs and authoritative sources
 
-| ID | 대상 | 예시 |
-|---|---|---|
-| P | 인물 | P01 주인공, P02 조수 |
-| L / R | 장소 / 통로 | L03 자료실, R02 복도 연결 |
-| E | 자료 | E07 기상 관측표 |
-| S | 진술·발언 | S12.v1, S12.v2 정정본 |
-| K | 확정 지식 명제 | K04 해당 통로를 이용할 수 없었음 |
-| D / Q | 추론 과제 / 추궁 | D03 동선 검증, Q02 목격 논박 |
-| C / V | 대화 묶음 / 이벤트 | C14 비공개 면담, V05 운반 이후 재방문 |
-| A | 시각·음향 자산 | A_E07_thumb, A_V05_scene |
-| B | 선택 분기 | B03 공개/비공개 확인 |
+| ID | Content |
+|---|---|
+| P | Person, mapped to a stable series ID when registered |
+| L / R | Place / route |
+| E | Evidence item or record |
+| S | Exact spoken statement, versioned on correction |
+| K | Proven proposition, distinct from possessing E |
+| D / Q | Deduction / interrogation |
+| C / V | Conversation / event |
+| A | Visual or audio asset |
+| B | Choice branch |
+| H | Hint bundle for a specific D/Q or revisit bottleneck |
 
-이름을 바꾸어도 ID는 유지한다. 문서·게임 데이터·테스트·시리즈 기록에 동일한 ID 또는 명시적 대응표를 사용한다. 기존 작품 ID를 강제 개명하지 않는다.
+Keep IDs stable through renaming. Use the same IDs or explicit mappings in documents, data, tests, and continuity. Prefix requirement references with `REQ:` where necessary to distinguish R/C requirements from routes/conversations.
 
-## 00-brief.md — 작품 약속과 범위
+Actual world truth belongs in the truth ledger; an item's written/visible content in the evidence ledger; dialogue, choices, responses, feedback, and hint wording in the Korean script; judgment and activation conditions in challenge/event documents. Refer by ID rather than copying mutable text. A false document can legitimately differ from truth; record why. UI presentation state must not become an independent truth store.
 
-```text
-작품 ID / 제목 / 시리즈 내 순서 / 문서 버전:
-사용자 작업 요청과 확정 범위:
-독립작/속편 여부, 참조할 사건 기록:
-주인공·조수와 둘의 관계 시작 상태:
-무대 / 시대 / 조사 권한 / 표현 수위:
-표면 사건 / 중심 감정 / 완결해야 하는 질문:
-플레이어가 직접 추론할 것:
-이 작품 고유의 핵심 추리 구조와 플레이어 경험:
-예상 플레이 시간과 근거(실측 여부):
-챕터·인물·장소·자료·추궁·이벤트 규모와 설계 이유:
-공통 권장값 조정과 동등한 깊이 보장 방식:
-실행 환경 / 입력 방식 / 저장 / 제공할 패키지:
-공통 R01~R17과 작품 내 설계·구현·검증의 연결:
-```
-
-## 01-truth-SPOILERS.md — 작가 진상
+## 00-brief.md — scope and status
 
 ```text
-실제 책임자 / 고의·과실 범위 / 동기 / 목적:
-범행 준비 → 실행 → 은폐 → 발견의 인과관계:
-필수 조건과 실패 가능성:
-실제 시각표: 시각 | 인물 | 장소 | 행동 | 물건 | 목격자 | 남는 흔적
-물건별 출발 → 소지자 → 이동 → 변형 → 최종 상태:
-인물별 지식: 직접 본 것 / 전언 / 오해 / 거짓말 / 숨기는 이유
-실제 시각과 기록 시각의 차이, 오차 근거:
-플레이어가 입증 가능한 시각 범위:
-부차 사건의 목적·실제 영향·범행과의 교차점:
-조수의 모든 관련 행동과 당시 지식, 비가담 검토:
-범행을 끝내는 사실 / 종막에서 덧붙이는 감정:
+Project ID, provisional title, version, current production stage:
+User requirements, authorized scope, proposals, and unknowns:
+Execution responsibility: Codex owns intermediate decisions; user relays files only:
+Current external dependency: exact packet/batch/revision and ready request, if any:
+New work or registered sequel; relevant sources only:
+5–7 substantial chapter commitment and definition of depth:
+Core player experience, tone, investigation authority, content boundaries:
+Direct player deductions vs facts characters may explain:
+Estimated scale with authored basis; reading/reasoning/navigation time:
+No inherited evidence quotas or local dialogue cap applied to whole game:
+Planned runtime/input/save support (when decided):
+Requirement map: R01–R17, U01–U09, C01–C06, I01–I07, N01–N08:
+Exception, reason, alternative, and validation if needed:
 ```
 
-## 02-deduction-graph.md — 가설과 증거
-
-가설마다 다음 표를 한 줄 이상 채운다.
-
-| 가설 ID·주장 | 실제 지지 E/S | 당시 채택할 이유 | 검증 행동 | 반증 E/K | 남는 진실 |
-|---|---|---|---|---|---|
-| 작성 | 작성 | 작성 | 작성 | 작성 | 작성 |
-
-각 자료와 추론 과제에는 다음을 작성한다.
+## 01-concept.md — dramatic premise
 
 ```text
-[자료 E]
-이름 / 종류 / 원래 용도 / 작성자·생성 원리:
-생성 시각 / 획득 시각·장소 / 획득 행동·조건:
-원문·수치·관찰 가능한 외형:
-관찰 사실 / 초기 해석 / 나중 해석 / 증명하지 못하는 것:
-신뢰도·조작 가능성과 검증 수단 / 독립 출처 관계:
-관련 P/L/S / 썸네일 A / 상세 A:
-사용하는 D/Q / 필수·선택 여부 / 놓칠 때 획득 경로:
-
-[추론 D]
-플레이어에게 보이는 질문:
-선행 E/S/K / 관찰 → 연결 → 결론의 사고 단계:
-정답 K / 인정할 대체 근거 집합과 순서:
-주요 오답별 설명 못 하는 사실 / 피드백:
-성공 후 열리는 Q/V/L / HP 변화 / 힌트 묶음 ID:
-최단 해결 경로와 우연 지목 후에도 필요한 입증:
+New theme, place, era, central emotion and surface problem:
+Why the protagonist investigates; why the child participates:
+What is strange, what the player initially believes, what remains open:
+Relationship tensions and intended overall resolution:
+Candidate vs accepted choices; rationale and unresolved design risks:
 ```
 
-마지막에 최종 결론에서 모든 선행 사실까지 연결한 그래프를 그린다. 미획득 자료, 순환 조건, 대안 가설 미반증, 작가만 아는 사실이 필요한 연결을 검토한 결과를 적는다.
-
-## 03-chapters-and-events.md — 장별 경험과 변화
-
-| 장 | 시작 지식·가설 | 중심 질문 | 독립 조사 흐름 | D/Q | 뒤집히는 해석 | 재방문·V | 관계 장면 | 다음 질문 |
-|---|---|---|---|---|---|---|---|---|
-| 작성 | 작성 | 작성 | 작성 | 작성 | 작성 | 작성 | 작성 | 작성 |
+## 02-truth-SPOILERS.md — entire case truth
 
 ```text
-[이벤트 V]
-세계에서 일어나는 일과 원인:
-선행 E/K/B / 발동 장소·시각 / 우선순위·방해 조건:
-플레이어가 없는 동안 가능한 변화:
-발견 단서 / 자연스러운 재방문 이유 / 막힘 힌트:
-실제 대사 C / 장면 A / 새 E/K/S / 인물·통로 상태 변화:
-발동 전·실행 중·완료 상태 / 중복 방지 ID:
-놓칠 수 있는지 / 대기 또는 대체 경로:
-시작·종료 연출 / 종료 후 복귀 상태 / 저장 재개 위치:
+Responsible people, acts, intent/responsibility boundaries, motives:
+Preparation → execution → concealment → discovery:
+Mechanism conditions, failure points, traces, physical calculations:
+Absolute timeline: time | person | place | action | object | observer | trace
+Object history: origin → holders/routes → transformations → final state
+Knowledge per person: direct observation / hearsay / mistake / lie / reason
+Actual time vs recorded/claimed time; independently established offsets:
+Time ranges the player can actually prove:
+Subsidiary incidents and effects on central evidence, observations, and alibis:
+Companion actions/knowledge and non-complicity audit including memories:
+Facts proven in play vs emotional details revealed in the ending:
 ```
 
-장마다 사건 변화, 주인공·조수 대화, NPC 상호작용을 실제 C/V로 연결한다. 단순 획득 알림을 주요 이벤트로 집계하지 않는다.
-
-## 04-characters-and-dialogue.md — 인물과 원문 대화
+## 03-deduction.md — hypotheses, proof, and chapter links
 
 ```text
-[인물 P]
-시리즈 고정 ID / 작품 내부 ID / 이름 / 역할 / 외형 A:
-욕망 / 두려움 / 개인 비밀 / 사건과의 실제 관계:
-능력 / 맹점 / 습관 / 말투 / 유머 / 긴장 시 변화:
-다른 인물별 관계와 구체적 과거 근거:
-당시 지식과 거짓말 범위 / 추궁에 반응하는 이유:
-플레이어가 없는 동안 할 행동 V:
-첫 등장 → 중간 변화 → 결말·분기별 상태:
-조수라면: 설명·힌트 역할 / 독자 조사 기여 / 고의 비가담 검토:
-
-[대화 C]
-종류 / 제목 / 참가 P / 장소 L / 사건 시각:
-선행 K/B/V / 아직 언급하면 안 되는 정보:
-발언 순서: S ID | 화자 | 실제 대사 | 표정·행동
-선택지: 문구 | 논리/전략/관계 유형 | 정답 근거 | 비용 | 결과
-선택 후 각 분기의 실제 응답:
-새 S/E/K/B / 대화 로그 제목·정정 링크:
-재생 가능 여부 / 반복 시 반응 / 저장 재개 위치:
+Overall competing hypotheses (at least three substantively supported):
+For each: claim / supporting E,S / plausibility / unresolved residue
+Test action / refutation E,K / surviving facts and consequences:
+For each D: player question / prerequisites / observation-to-proof steps
+Accepted K / equivalent evidence sets and ordering / insufficiency reasons
+Player-owned connections / permitted character explanation / feedback line IDs
+Follow-up Q,V,L / cost policy reference / H bundle / shortest solution path:
+Graph from final conclusion back to every actual acquisition action:
+Cross-chapter map: resolution → changed interpretation → next investigable problem
+Loops, shortcuts, early guesses, alternative routes, unverified assumptions:
 ```
 
-대사 개요만으로 구현 준비 완료라고 하지 않는다. 대표 구간부터 실제 문장을 쓰고 화자의 지식과 성격을 검토한 뒤 본편 전체를 채운다.
-
-## 05-space-and-map.md — 공간 검산
+## 04-characters.md — people and relationships
 
 ```text
-전체 평면도 / 층 / 축척 여부 / 지도와 데이터 좌표의 대응:
-[장소 L] 용도 / 사용자 / 첫 방문에서 이해할 것 / 물체 / 시야 / 소리:
-[통로 R] 출발·도착 / 방향 / 거리·시간 범위 / 문·계단 / 잠금·권한:
-운반물 제약 / 작업·대기 시간 / 시간별 접근 가능성:
-각 조건을 알게 되는 E/S/현장 실험:
-범행 경로 / 경쟁 가설 경로 / 각 경로의 시간 검산:
-장소별 첫 상태 → 변화 원인 V → 재방문 상태 → 후속 해석:
-필수 재방문 발견 경로 / 오래 미방문할 때 힌트:
-플레이어가 아는 지도·과거 인물 위치의 정보 공개 조건:
+P ID / series ID if registered / Korean display name / player-name behavior:
+Role, work outside investigation, wants, fear, secrets, abilities, blind spots:
+Pronounced eccentric behavior; speech/register with exact Korean examples:
+Relations and concrete shared history; reason to cooperate, resist, or lie:
+Knowledge limits and offscreen actions by time:
+First encounter: current activity → meeting cause → name/role → memorable action
+Introduction order and space before another new principal person:
+Later encounters, changed behavior, ending/branch states:
+Child: believable participation, supervision, own goals, contribution, limits:
+No intentional criminal participation, including retrospective twists:
 ```
 
-## 06-interrogation-and-hints.md — 판정과 회복
+## 05-story-and-scenes.md and scripts/chXX.md — full story and actual text
 
 ```text
-포인트 이름 / 최대·시작값 / 행동별 비용 / 성공 보상:
-0점 처리 / 회복 값 / 보존·초기화 항목 / 저장 규칙:
-[추궁 Q] 대상 P / S 버전 / 선행 E/K / 무료 질문의 실제 대사:
-제출 단위: 진술 + 자료 + 논리 설명:
-정답 집합 / 대체 정답 / 오답 유형별 실제 피드백:
-추궁을 해야만 해금되는 E/K / 후속 D/V:
-논리 선택 문구와 근거 / 전략·관계 선택과 비용 구분:
-[힌트 H] 대상 D/Q/V / 보유 정보별 조건:
-H0, H1, H2, H3, H4의 실제 문구:
-필수 자료가 없을 때 안내 / 이미 있을 때 비교 안내:
-힌트 열람 후 답안 복귀 / 미래 정보 비노출 검토:
+For each of the 5–7 main chapters, plus prologue/epilogue:
+Distinct major mystery, opening interpretation, local question:
+Independent investigation strands and multiple consequential D/Q:
+Supported alternatives, rechecks, reinterpretation, substantive resolution:
+Causal next-chapter consequence and relationship development:
+Major events and revisits; player information/disclosure sequence:
+
+For each C/scene:
+Purpose / participants / L / story time / incoming knowledge and B,V state
+Entry cause / forbidden disclosures / player-owned inference
+Actual Korean S lines and observable action directions in script source
+Choices: actual Korean protagonist utterance and each specific response
+New E,S,K,B / event references / log title and correction links
+Emotional/practical change / exit / repeat and revisit text / saved line position
 ```
 
-## 07-ui-and-assets.md — 화면과 시각 상태
+The script covers ordinary investigation, first appearances, NPC interactions, personal/optional scenes, companion consultation, reenactments, interrogation before/after, correct/incorrect responses, recovery, H0–H4, rest, revisits, branches, and endings. No placeholders such as "joke here" count as finished. Full-script drafting/revision precedes implementation. Preserve breadth while trimming local repetition.
+
+Use [the script handoff contract](script-handoff-format.md) to prepare actual per-batch MD sources and prompts and receive UTF-8 `.ko.md` screenplay plus `.notes.md` files. Record packet/revision, assigned coverage, stable C/S/B and condition references, and explicit missing items. Incoming versions remain candidates; the reviewed Korean script here is the accepted source. Do not create export or script placeholders before their actual content exists.
+
+## 06-space-and-evidence.md — geometry and observable records
 
 ```text
-화면 구조 / 탭 위치 / 지원 화면 크기 / 목록 밀도 시작값:
-자료 목록과 고유 썸네일 / 검색·필터 / 상세·비교·선택 구분:
-인물 상세의 진술·타임라인·관련 자료·관계 / 공개 조건:
-대화 종류 → 묶음 목록 → 상세 로그 → 복귀:
-각 D/Q/최종 화면에서 탭 열람과 답안 유지 방식:
-키보드·초점·Esc·글자 확대·작은 화면 정책:
-임시 답안 저장 값 / 열람과 이동·시간 진행의 구분:
-[자산 A] 종류 / 경로 / 등장 조건 / 연관 E/V/P/L:
-제작 방법 / 고유 특징 / 반드시 보일 것 / 노출 금지 사실:
-대체 텍스트 / 크롭·확대 / 검수 캡처와 수정 결과:
+Whole-site plan / floors / scale vs schematic / coordinates / zoom:
+L: purpose, users, first-visit explanation, objects, sight and sound
+R: endpoints/direction, travel ranges, access, dimensions, work/waiting
+Actual and competing paths, carrying constraints, time calculations:
+Player sources for geometry, knowledge-gated map, last-observed NPC positions:
+First state → caused change V → revisit → reinterpretation and discovery route:
+
+E: Korean name/type/original, purpose, author or generation process
+Creation time vs acquisition time/location/action/condition
+Visible shape, dimensions, writing, damage, arrangement, neutral context
+Observation vs initial/later interpretation vs what it cannot establish
+Authenticity/manipulation tests, independent-source grouping
+Related P,L,S / thumbnail/detail A / required vs optional / missed acquisition route
+Immediate-view queue and return reference / used by D,Q
 ```
 
-## 08-state-and-validation.md — 상태와 검증 결과
+## 07-events-and-state.md — activation and persistence
 
 ```text
-상태 원본: 챕터·사건 시각·현재 장소·열린 통로:
-획득 E / 확정 K / S 버전 / 대화 진행 / 완료 D/Q:
-이벤트 대기·실행·완료 / B 분기 / 관계 / 인물 마지막 확인 위치:
-포인트·보상 ID·제출 ID·실패 횟수·힌트 단계:
-UI 답안·검색·스크롤·초점 / 저장 버전·복구 정책:
-상태 전환별 입력 → 전제 → 효과 → 저장 → 화면 결과:
+V: cause, time/place, prerequisites E,K,B, trigger/blocker/priority
+Actual world change vs discovery, natural cues, missed-event recovery
+C and A references, new E,S,K, route/person changes, once-only effect ID
+Start/running/end, return context, pending acquisition/acknowledgement order
+Save/resume position and duplicate-effect prevention:
 
-검증 ID / 관련 R·G / 빌드·날짜·환경:
-출발 상태 / 수행 행동 / 기대 결과 / 실제 결과:
-근거 파일 / 판정 / 수정과 재검증 / 남은 한계:
-첫 플레이 참가 조건·기록 / 실제 추론·막힘·힌트·인물 반응:
+State authority and single public API for shared writable state:
+Chapter/time/place/access; acquired E, proven K, S versions, D/Q completion
+Conversation/event positions, branches/relationships, NPC last observations
+Points/rewards/submissions/failures/hints; UI drafts/search/scroll/focus
+Save version, migration/recovery rules; input → precondition → effect → persisted/UI result
 ```
 
-작성 시 [08 검수](08-quality-gates.md)의 모든 R과 해당 G를 대응시킨다. 자동 검사 명령은 실제 저장소의 명령으로 기록하며 존재하지 않는 테스트 실행 결과를 쓰지 않는다.
+## 08-challenges-and-hints.md — judging and recovery
 
-## 09-series-handoff-SPOILERS.md — 작품 종료 기록
+```text
+Point name/start/max, costs, optional rewards/replenishment, once-only rules:
+Free actions; incomplete input; visible costs; error feedback line IDs:
+Zero/recovery policy preserving records, knowledge, relationships, editable draft:
+Q: target P/S version, prerequisites, free clarification script IDs
+Submission statement + evidence + contradiction reason:
+Valid and equivalent answers, insufficient sets, per-error explanations:
+Exclusively unlocked E/K and their subsequent D/V use:
+Logical vs strategic vs personality choices:
+H per D/Q/mandatory revisit: conditions by knowledge/access/recent failure
+H0–H4 script IDs, missing-evidence path, full solution and reason:
+No future-information leaks; return and saved draft/hint state:
+```
 
-[사건 인계 템플릿](../series/templates/case-record-template.md)을 바탕으로 작성한다. 진상·공통 결과·분기 결과·인물별 관계와 지식·미해결 실마리·재등장 주의사항·근거를 채운다. 실제 작품과 대조한 후 `series/cases/` 및 공통 원장에 반영한다. 계획했던 대사를 구현하지 않았다면 확인 사실로 옮기지 않는다.
+## 09-ui-and-direction.md — screens and assets
 
-## 빈 서식을 채웠는지 판단하는 법
+```text
+Scene default, evidence/people/map/dialogue modals, spacious deduction modal:
+Right companion area, notes/settings, understood objective's 추리하기 entry:
+Objective revelation through events; chapter title; name-entry behavior:
+Progressive people/places, image-centered evidence and immediate detail queue:
+Directional scene exits consistent with map/routes; explicit travel vs inspection:
+Compact searchable/filterable/sortable lists, sourced person details and timelines:
+Conversation groups → list → full real branch and return:
+Large dialogue portraits, same-size distinct-color italic action directions:
+All answer types: tools, draft/order/text, close/Esc/Back/hint/save restoration:
+Responsive/keyboard/touch/contrast/enlargement/long-title policies:
+A: purpose/conditions/related facts, source/derivative, method, visible/hidden features
+Alt text, crop/zoom, before/during/after state, actual review evidence:
+```
 
-“다양한 단서”, “풍부한 대화”, “적절한 힌트”, “이벤트 발생” 같은 문장만 있으면 미작성이다. 어떤 자료의 어떤 관찰이 어떤 진술과 왜 충돌하는지, 플레이어가 무엇을 눌렀을 때 어떤 상태와 장면이 변하는지, 그 사실을 어떻게 검증하는지까지 적혀 있어야 한다.
+## 10-validation.md — coverage, experiments, and actual results
+
+```text
+Requirement → exact design record → script scene → implementation → check/evidence
+G0–G5 stage results, actual commands, build/date/environment:
+Starting state/actions/expected/actual/source/verdict/unverified scope:
+Failures and linked repairs/retests:
+Writer packet version/model label if known, received draft, Codex editorial findings:
+Revision actions, selected Korean source, fact changes and Codex acceptance:
+Post-delivery user feedback (pending until the completed game is delivered):
+Full script coverage and alternate knowledge/order review:
+Independent first-reader and first-player conditions and actual observations:
+Changes, rationale, affected IDs, rollback options and remaining risks:
+```
+
+## 11-series-handoff-SPOILERS.md — after the real work
+
+Use [the case-record template](../series/templates/case-record-template.md). Reconcile actual outcomes, common/branch facts, character knowledge and relationships, unresolved threads, and implementation/testing limits. Only then update the registry, bible, and real case record. A future project path in this guide does not mean that file currently exists.
+
+## Readiness test
+
+A template containing only adjectives, counts, or "various clues" remains incomplete. Specify which observation contradicts which statement, why alternatives fail, what the player does, what actually changes, the Korean lines shown, and how it is checked. Document roles are organizational tools, not substitutes for full case and script quality.

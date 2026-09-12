@@ -1,74 +1,60 @@
-# 05. UI와 조사 흐름
+# 05. Scene-first UI and investigation flow
 
-## 기본 화면 원칙
+## Default screen and tools
 
-메인 장면·대화·현재 목표와 자료/인물/지도/대화 기록 내비게이션을 함께 설계한다. 추리의 어려움은 사실의 연결에서 나오며 자료를 찾거나 창을 닫는 수고에서 나오지 않아야 한다.
+The **scene is the default screen**. Evidence, people, map, dialogue history, and deduction open as modal tools over the current investigation context. The right-hand companion area holds the companion, current understood objective, notes, and settings. The objective's **추리하기** button opens a spacious deduction modal; deduction is not confined to a sidebar workspace.
 
-데스크톱에서는 왼쪽 공통 탭을 유지하고 오른쪽 작업 영역에서 조사·추궁·최종 추리를 진행하는 구성을 기본으로 삼는다. 작은 화면은 같은 기능을 상단 또는 하단 탐색으로 옮길 수 있으나 최종 추리 중에도 접근 가능해야 한다.
+Small-screen layouts may reposition controls but must retain equivalent access. A modal needs accessible controls inside the active interaction surface; buttons visible behind an inert overlay do not count as usable. Preserve Radix dialog behavior and semantic controls when implementing with shadcn/ui and Tailwind.
 
-## 작고 구별되는 목록
+Show the current chapter title and understood context. Reveal an objective only after arrival, relationships/situation, problem recognition, and the formation of a question make it intelligible. Apply that order to later chapters too. Names or summaries must not reveal future conclusions.
 
-아래 수치는 CSS 픽셀 기준 **디자인 시작값**이며 실제 지원 화면과 글자 확대 상태에서 조정한다. 크기를 줄일 대상은 과한 여백·초상·장식·카드 높이다. 본문을 극도로 작게 만들어 밀도를 확보하지 않는다.
+## Acquiring and understanding evidence
 
-| 요소 | 권장 시작값과 배치 |
+On acquisition, open the evidence's actual detail and image once, then return to the correct scene/line when closed. A toast is insufficient. Define ordering for multiple acquisitions and simultaneous events, with pending/current/completed acknowledgement state for save/resume. Do not replay completed popups or skip unacknowledged evidence when loading. Keep every acquired item available for later inspection.
+
+Evidence should be visually informative, with readable original text, measurements, damage, layout, and features. Supply enough context to understand an unfamiliar object's purpose, appearance, present state, and role through images, demonstrations, and dialogue. Keep detail text focused; do not remove necessary explanation just to make a panel short. See [visual guidance](06-visual-direction.md).
+
+## Compact, distinguishable lists
+
+Reduce excessive card height, decoration, portraits, and whitespace rather than shrinking text. These are design starting points, not absolute layout requirements:
+
+| Element | Starting point |
 |---|---|
-| 자료·인물 목록 항목 | 높이 약 64~88px, 내용에 따라 늘어나는 행 또는 작은 카드 |
-| 자료 썸네일 | 48~64px, 이름·종류·획득/정정 상태와 함께 표시 |
-| 인물 목록 초상 | 40~56px, 이름·역할·현재 확인 상태 표시 |
-| 항목 안쪽 여백 | 약 8~12px, 여러 줄 본문은 상세로 이동 |
-| 본문 글자 | 기본 16px 전후, 설정으로 확대 가능 |
-| 주요 클릭 영역 | 최소 44×44px을 설계 목표로 유지 |
+| Evidence/person row | About 64–88 CSS px, grows with content |
+| Evidence thumbnail | 48–64 px, unique visual identity |
+| List portrait | 40–56 px; dialogue portraits must be substantially more legible |
+| Internal spacing | Around 8–12 px |
+| Body text | Around 16 px with enlargement support |
+| Main touch target | Aim for at least 44×44 px |
 
-1440×900 화면에서 목록이 두세 개의 거대한 카드로 끝나지 않도록 한다. 실제 목록 영역에 자료 8개 이상 또는 인물 6명 이상을 비교할 수 있는 밀도를 시작 목표로 삼되 글자 확대 시 항목 수보다 가독성을 우선한다. 390×844 화면에서는 한 열로 자연스럽게 흐르고 가로 스크롤 없이 제목과 주요 조작이 보이게 한다.
+At 1440×900, initially aim to compare eight evidence items or six known people within the list area rather than two giant cards. At 390×844, use readable single-column flow without horizontal overflow. Enlargement takes priority over fitting an item quota.
 
-자료에는 **자료마다 고유한 작은 이미지**를 제공한다. 같은 문서 아이콘에 E01/E02 숫자만 바꾸거나 색만 다르게 칠한 것을 고유 썸네일로 보지 않는다. 실루엣·구도·대표 물체·문서 유형의 차이를 작은 크기에서도 확인한다. 상세를 열기 전 이름과 이미지로 원하는 자료를 구별할 수 있어야 한다.
+Give every item its own meaningful thumbnail, not a duplicated icon with a new number/color. Provide search, combined type/person/place filters, and acquisition/story-time sorting. Do not leak unacquired titles, images, counts, people, or secret places through filters, empty slots, or previews.
 
-검색·종류 필터·관련 인물/장소 필터·획득순/사건시각순 정렬을 제공한다. 증거가 많을수록 여러 조건을 조합해 찾을 수 있게 한다. 미획득 자료의 제목·이미지·총 개수가 스포일러가 되지 않도록 숨김 정책을 설계한다.
+## People and dialogue presentation
 
-## 인물을 누르면 조사 기록이 열린다
+Register a person only after meeting them. People detail contains the known introduction, actual heard statements with time/place and log links, original/corrected versions, confirmed actions vs claims vs uncertain gaps, related acquired evidence, and observed relationships. Link each timeline entry to its source. Do not display author-only schedules, guilt, secrets, or unsourced live location.
 
-인물 목록 항목은 상세 보기로 연결한다. 상세에는 다음을 넣는다.
+Dialogue portraits must be large enough to recognize the speaker and expression; list portrait dimensions are not dialogue dimensions. Action directions use **the same text size as dialogue, a different readable color, and italics**. Preserve adequate contrast at enlarged text and mobile sizes. Do not rely on color alone to convey status or meaning.
 
-- 초상, 이름, 직무, 플레이어가 알게 된 소개.
-- **진술:** 실제 들은 원문, 발언 시각·장소, 대화 로그 링크, 정정 전후와 모순 상태.
-- **타임라인:** 확인된 행동, 본인의 주장, 타인의 목격, 미확인 구간을 구별. 각 항목에서 근거로 이동.
-- **관련 자료:** 확보한 자료와 관계, 원문 링크.
-- **관계와 변화:** 플레이어가 관찰한 관계 및 태도 변화.
+Support player name entry while keeping the protagonist's stable identity. Use the chosen display name in actual lines and records where appropriate. A choice results in a real protagonist utterance and specific response, not only a result message.
 
-작가용 범행 시간표·비밀·범인 여부를 이 화면에 그대로 넣지 않는다. “모순 확인”과 “유죄 확정”은 다른 상태다. NPC 위치는 마지막 확인 정보임을 표시한다.
+Dialogue history follows **type group → conversation list → full conversation**. Include ordinary investigation, interrogation, companion, NPC events, personal scenes, and endings as relevant. Search by type, speaker, and keyword. Show participants, location, time, actual selections/responses, correction links, and acquired information. Do not include unchosen branches or make each utterance its own list card. Label old conversations as historical rather than new current testimony.
 
-## 대화 기록은 묶음에서 상세로
+## Every answer type retains all investigation tools
 
-1. 종류별 그룹: 일반 조사, 추궁, 조수 상담, 인물 간 이벤트, 개인 대화, 종막 등.
-2. 그룹 안에 대화 묶음 카드: 제목·등장인물·장소·사건 시각·선택/정정 표시.
-3. 카드를 누르면 해당 대화의 전체 발언, 실제 선택지, 상대 반응, 해금된 자료·진술 링크.
+For interrogation, evidence presentation, person selection, evidence linking, time ordering, and final reconstruction, allow evidence, people, map, dialogue, and notes inspection, then return to the **same answer draft**. Provide reachable navigation in the deduction modal and a defined return stack. Avoid inaccessible nested dialogs and background-focus escapes. A single evidence-picker shortcut is insufficient.
 
-종류·인물·키워드로 찾을 수 있게 하고, 대화 상세에서 이전 그룹·스크롤 위치로 돌아간다. 같은 사건의 여러 차례 대화는 버전을 구분한다. 대화 한 줄을 목록 카드 하나로 만들거나 모든 대화를 한 줄짜리 무한 시간순 목록에만 저장하지 않는다.
+Preserve task ID, step, selected people/statements/items, evidence order, time-card arrangement, text/notes, search/filter/sort, scroll positions, focus, points, and hint stage. Keep relevant drafts and conversation/event positions in saves. Closing deduction suspends the draft rather than discarding it. An explicit clear action is separate.
 
-## 최종 추리 중에도 모든 조사 탭을 사용한다
+A representative path is evidence detail → related person → corrected statement → old conversation → map → answer. It must neither submit the answer nor cost points, advance time, or move the player. Map travel requires an explicit separate action; map inspection remains available even if travel is restricted during a task.
 
-추궁, 자료 제시, 인물 선택, 증거 연결, 시간 정렬, 최종 추리 **모든 답안 작성 화면**에서 자료·인물·지도·대화 기록·메모 열람을 보장한다. 자료 수첩만 임시로 열 수 있는 우회 버튼으로 요구를 충족했다고 처리하지 않는다.
+Distinguish **view details** from **select as evidence**. Show selected count and deselection; do not silently replace an earlier item when a limit is reached. Explain incomplete input before submission without a penalty.
 
-기본 동작은 `답안 편집 영역 + 열람 패널`이다. 탭을 눌러도 현재 과제는 유지한다. 전체 화면 모달을 쓰면 내비게이션을 모달 내부의 접근 가능한 공통 영역으로 포함해야 한다. 배경이 비활성화되는 모달 뒤에 탭을 두고 “보이니까 사용 가능”하다고 판단하지 않는다.
+## Navigation, accessibility, and resume
 
-열람 전후 보존할 상태:
+Opening a modal moves focus appropriately. Close, Esc, and Back return to the correct layer and its prior scroll/filter/focus; Esc closes the active inspection surface first and does not erase the underlying answer. Maintain semantic buttons/links, accessible names, focus containment, keyboard and touch access, readable contrast, and text enlargement. Notes and settings must remain usable from the companion area or its responsive equivalent.
 
-```text
-과제 ID, 진행 단계, 선택한 인물·진술·자료, 증거 조합의 순서
-시간 카드 배치, 작성 중인 문장·메모, 검색·필터
-스크롤 위치, 키보드 초점, 포인트, 힌트 단계
-```
+When closing evidence detail, return to the prior list or acquisition scene as appropriate. After hints, recover the edited answer and focus. Save/resume during dialogue, events, error feedback, zero points, recovery, and answer editing must resume intelligibly without duplicate effects.
 
-자료 상세 → 관련 인물 → 그 인물의 과거 대화 → 지도 → 답안으로 돌아와도 위 상태가 유지되어야 한다. **탭 열람은 답안 제출, HP 차감, 시간 진행, 현장 이동을 발생시키지 않는다.** 지도에서 실제 이동하려면 명시적 이동 행동을 사용한다. 추리 중 이동을 제한하더라도 지도 열람을 막지 않는다.
-
-자료 선택 화면에서는 `상세 보기`와 `근거로 선택`을 구분한다. 선택 개수와 해제 방법을 표시하고, 허용 개수를 넘기면 이전 선택을 조용히 덮지 않는다. 전체 정답 조건이 충족되지 않은 빈 답안은 제출 전에 설명한다.
-
-## 입력·접근성과 복귀
-
-모든 중요 기능을 키보드로 사용할 수 있게 한다. 클릭 가능한 카드에 의미 있는 버튼·링크 구조와 이름을 부여한다. 창을 열 때 초점을 이동하고, 닫을 때 원래 열었던 위치로 되돌린다. Esc는 열람 패널만 닫고 진행 중인 답안을 폐기하지 않는다. 숨겨진 배경으로 초점이 빠지지 않게 한다.
-
-대화·사건 이미지를 빨리 넘겨도 자료 원문과 로그가 남아야 한다. 색만으로 의심·정정·선택 여부를 구별하지 않는다. 글자 확대, 작은 화면, 긴 한국어 제목, 터치 입력에서 겹침과 조작 누락을 확인한다.
-
-## 실제 검수 시나리오
-
-최종 추리에서 인물과 근거를 일부 선택한다. 자료 탭에서 필터를 걸고 원문을 연 뒤 관련 인물의 정정 진술과 타임라인을 확인한다. 지도에서 이동 시간을 보고 대화 그룹의 상세 기록까지 열람한 다음 답안으로 돌아온다. 기존 선택·입력·순서·포인트가 동일해야 한다. 같은 시나리오를 추궁·시간 정렬에서도 실행하고, 저장 후 재개 및 키보드 조작으로 반복한다.
+Test all answer types and the acquisition queue with long Korean titles, multiple filters, large text, keyboard-only input, touch, small screens, and saved drafts. Actual rendered behavior is required evidence; a screenshot of visible but disabled controls is not sufficient.

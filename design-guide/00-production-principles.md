@@ -1,52 +1,59 @@
-# 00. 제작 원칙과 진행 순서
+# 00. Production principles and sequence
 
-## 작품이 지켜야 할 약속
+## The experience being built
 
-플레이어는 단서를 읽고, 가설을 세우고, 상대의 말을 검증하고, 다시 현장에 가고, 자신의 근거로 사건을 재구성한다. 중요한 결론을 조수가 먼저 발표하거나 단서 개수를 채우자 자동으로 범인을 확정하는 구조는 이 약속을 충족하지 못한다.
+Build a mystery worth reading as fiction and solving as a game. Preparation, execution, concealment, discovery, misunderstanding, and reinterpretation must form a coherent case. The player observes, develops competing explanations, challenges statements, revisits changing places, and proves conclusions. An automatic speech by the protagonist or companion cannot substitute for the player's reasoning.
 
-품질 판단 순서는 공정하고 깊은 사건 논리 → 플레이어의 추론과 선택 → 살아 있는 인물과 변화하는 현장 → 읽고 비교하기 쉬운 UI → 장면에 맞는 미술이다. 뒤의 항목도 필수이며 앞의 항목을 대체하는 점수로 사용하지 않는다.
+Case logic, player agency, strong characters, extensive actual dialogue, purposeful events, readable investigation tools, and meaningful images are all required. Develop character motives alongside the mechanism; do not leave the people until after the puzzle is fixed. Clear situational explanation supports difficult inference.
 
-## 신작의 필수 경험
+## Full-game scope
 
-- 복수의 용의자와 설명 가능한 경쟁 가설을 검토한다. 한 사람만 접근 가능하다는 초기 기록이나 서명 하나로 범인이 끝나지 않는다.
-- 각 본편 챕터는 여러 사실을 연결하는 중간 추론과 그 결론의 재검증을 포함한다. 자료 수집량만으로 넘어가지 않는다.
-- 추궁·자료 제시·정답 있는 논리 선택을 통해 새로운 핵심 정보가 열린다. 잘못 확정한 주장에는 포인트 손실이 있다.
-- 막히면 현재 지식에 맞는 단계별 힌트를 받을 수 있고, 포인트 소진 후에도 회복해 계속 조사할 수 있다.
-- 이전 장소가 사건 진행에 따라 달라지고, 재방문이 새로운 핵심 단서·대화·사건으로 이어진다.
-- 주인공과 고의로 범죄에 가담하지 않는 조수가 함께 조사한다. 두 사람과 다른 인물들 사이에 개성, 유머, 관계 변화가 충분히 드러난다.
-- 자료·인물 목록은 촘촘하게 비교할 수 있고, 최종 추리 도중에도 자료·인물·지도·대화 기록을 열람한다.
-- 주요 사건은 메인 장면의 상황 이미지와 반응 대사로 체감된다.
-- 한 작품의 사건은 완결하고, 시리즈 기록에는 다음 작품이 이어받을 사실·분기·관계 변화를 남긴다.
+The next game requires **5–7 substantial investigation chapters**, excluding the prologue and epilogue. Each has a major mystery or trick, multiple consequential deductions, supported alternatives, verification, reinterpretation, and a substantive local resolution. Connect their outcomes into the overarching case. Chapter count is not a request for unrelated cases or multiple murders.
 
-## 권장 기본 규모
+As the user's scale reference, the complete proposed movable-wall investigation—observations, contradictory accounts, discovery of the changing space, reconstruction, and attribution of relevant actions—is approximately **one chapter**. Do not split those internal steps into the entire game's chapters. The mechanism and hotel are still proposals, not mandatory series facts.
 
-다음은 복수의 가설을 세우고 검증하며 인물 관계를 발전시킬 시간을 확보하기 위한 기획 출발점이다. 특정 작품의 규모나 구조를 기준으로 삼지 않는다. 분량 자체를 재미나 완성도의 증거로 삼지 않는다.
+Require at least three substantive competing explanations at the overall case level, with actual support into the early/middle investigation. Each chapter also needs meaningful alternatives, not cosmetic suspect lists. Multiple independent investigation strands and multi-step inference are necessary, not sufficient, for the requested chapter depth.
 
-| 항목 | 권장 기본값 | 반드시 확인할 의미 |
-|---|---|---|
-| 첫 플레이 시간 | 120~180분 가설 | 독립 첫 플레이로 추리 시간·독서 시간·헤맨 시간을 분리 측정 |
-| 본편 챕터 | 4~6장, 서막·종막 별도 | 각 장에 고유 질문, 복합 추론, 변화, 정서적 결산 |
-| 주요 인물 | 주인공·조수 + NPC 5~7명 | 역할이 겹치지 않고 서로 행동할 이유가 있음 |
-| 본격 경쟁 가설 | 적어도 3개 | 중반까지 서로 다른 설명이 실제 근거를 가짐 |
-| 증거 자료 | 20~32개 | 원문을 사용할 기회, 재해석, 독립 출처 확보 |
-| 의미 있는 논박 | 4~6회 | 그중 적어도 2회는 추궁으로 새 핵심 명제 해금 |
-| 조사 장소 | 6~8곳 | 주요 장소 최소 3곳에서 원인이 있는 재방문 변화 |
-| 주요 이벤트 | 장마다 2~3개 | 정보·관계·접근성·위험 중 하나 이상이 실질적으로 변함 |
+Determine evidence, location, cast, challenge, and event counts from the design. There is no inherited playtime cap or fixed evidence quota. Estimate reading, reasoning, and navigation time separately from authored content, then measure in first play. Fewer repetitive lines per scene does not authorize reducing the overall script or chapter scope.
 
-숫자가 많아도 동일한 자료 수집과 쉬운 퀴즈를 반복하면 재설계한다. 다른 규모가 작품에 적합하면 `game-plan/00-brief.md`에 이유와 동일한 깊이를 보장할 설계를 기록한다. 조수 비가담, 오답 포인트, 추리 중 열람 등 명시 요구를 규모 조정으로 없애지 않는다.
+## Required experiences
 
-## 제작 순서와 산출물
+- Deduce and recheck intermediate conclusions in every main chapter; collecting everything never automatically solves it.
+- Unlock genuinely new core information through successful evidence-based interrogation and logical choices.
+- Apply visible point costs to incorrect committed claims, with unlimited recovery and state-aware optional hints.
+- Revisit places changed by actual actions, and fairly discover new evidence, conversations, and events.
+- Develop the protagonist, eccentric child companion, NPC relationships, and NPC-to-NPC interactions through actual scenes.
+- Read and compare evidence, people, maps, dialogue, and notes during every kind of answer task without losing work.
+- Experience major changes through situation images and before/after reactions, not acquisition notifications alone.
+- Resolve the central case in this game; later installments may continue relationships without postponing the current explanation.
 
-1. **현황 확인:** 사용자 범위, 제작 환경, 시리즈 원장의 상태를 확인한다. 첫 작품은 계승할 사건·인물 없이 시작한다. 실제 후속작을 제작할 때만 해당 시리즈의 확정 사건과 관계 분기를 확인한다.
-2. **진상 설계:** 범행 인과관계·절대 시간표·물건 이동·공간 조건·인물 지식을 확정한다. 플레이어가 관찰할 수 있는 사실과 작가만 아는 사실을 나눈다.
-3. **역방향 퍼즐 설계:** 최종 주장에서 필요한 하위 명제와 독립 근거를 거꾸로 연결하고 경쟁 가설을 반증한다. 정답 도달 전의 합리적 오해를 설계한다.
-4. **경험 설계:** 챕터, 추궁, 힌트, 포인트, 재방문 이벤트, 인물 관계, 상황 컷을 같은 ID로 연결한다.
-5. **대표 구간 구현:** 조사 → 대화 선택 → 추궁 → 상태 변화 → 재방문 → 중간 추리까지 한 구간을 만든다. 낮은 포인트와 열람 복귀를 포함해 확인한 후 본편을 확장한다.
-6. **전체 구현과 검증:** [08](08-quality-gates.md)에 따라 논리, 분기, 이미지, UI, 저장, 첫 플레이를 검증한다. 예측과 실측을 구분한다.
-7. **속편 인계:** 결과에 맞춰 작품 사건 기록, 관계 변화, 지식 범위, 미해결 실마리, 선택 분기를 갱신한다.
+## Production sequence
 
-새 게임의 기술 스택·실행 형태는 사용자 요청과 작품 환경으로 정한다. 특정 프레임워크·유료 도구·플랫폼을 공통 필수로 만들지 않는다. 세계관·인물·사건 구조를 먼저 독립적으로 설계하고, 재사용 에셋은 이후 적합성을 확인해 선택한다. 게임 플레이에는 제작 문서를 읽거나 제작자에게 정답을 질문할 필요가 없어야 한다.
+1. **Scope and concept:** Read the user's decisions, common guides, and registry. Decide the new premise, emotional direction, agency, and investigation authority. Do not let existing assets or software dictate the case.
+2. **Truth and people:** Design the entire case, motives, subsidiary actions, absolute timeline, objects, space, failure conditions, and each person's knowledge together.
+3. **Player reasoning:** Work backward from the final proof to acquired facts. Design the 5–7 chapter architecture, alternatives, disclosure, interrogation, revisits, and player-owned connections. Plant prerequisites before conclusions.
+4. **Non-code structural walkthrough:** Try different lawful investigation orders with draft records, statements, and spatial diagrams. A representative sequence can calibrate the method, but review all required inference paths. Record missing support, loops, shortcuts, and source ambiguity.
+5. **Full script and revision:** Write the whole story in Korean, including first appearances, investigation, ordinary relationships, NPC exchanges, player choices and responses, success/failure, revisits, hints, recovery, and endings. Use ChatGPT for drafting and editorial iteration; maintain the accepted source and logic checks in the repository. Full draft completion precedes game implementation. Revision remains possible later.
+6. **Script review:** Read continuous scenes without character biographies; inspect alternative orders and knowledge boundaries separately. Stagger introductions, clarify situations, trim repetition, and preserve strong eccentricity and player reasoning. Script notes are not finished dialogue.
+7. **Game adaptation and implementation:** Specify state transitions, triggers, logs, assets, judging, tool access, and save/resume from the reviewed material. Then implement a representative slice to test integration and extend the full game; this slice must not replace the already required full design/script.
+8. **Verification and continuity:** Apply [quality gates](08-quality-gates.md) to actual builds, scenes, alternate paths, and independent first players. Register only facts supported by the resulting work.
 
-## 쉬워지는 지름길을 막는 검토 질문
+Choose the technical stack and runtime for the authorized project. Do not force a specific paid tool or framework into narrative design. Short writing trials are allowed before full drafting, but their local length targets do not constrain the game.
 
-“가장 짧게 범인을 확정할 수 있는 경로는 무엇인가?”, “정답을 추측한 플레이어도 방법과 대안 배제를 입증해야 하는가?”, “조수의 힌트 없이 연결해야 하는 사고 단계가 실제로 남아 있는가?”를 구현 전과 완성 후 다시 답한다. 답이 단일 문서·단일 열쇠·단일 자백으로 수렴하면 가설과 단서 공개 순서를 수정한다.
+Use the [script handoff and return contract](script-handoff-format.md) between steps 5 and 6: export versioned MD sources and a writing request, have ChatGPT return actual Korean screenplay and separate author-notes files, inspect and revise them, and incorporate the selected text. Draft in bounded scene batches while tracking full chapter/game coverage; do not require an entire chapter in one response or replace missing paths with summaries.
+
+## Execution responsibility and user handoffs
+
+For full-game production, the user delegates planning choices, structural review, editorial review, revision preparation, script acceptance, adaptation, implementation, and verification to Codex. Continue through the sequence without asking the user to approve concepts, chapter outlines, drafts, or intermediate builds. Stage gates are Codex checks, not user approval meetings. Resolve ordinary design choices within the agreed requirements and record the rationale and affected sources.
+
+The user's only planned intermediate task is transporting files: send the prepared source packet and prompt to ChatGPT, then bring its output files back. Prepare complete attachments, an exact inventory, and a ready-to-paste request; do not require the user to select scenes, diagnose a draft, or compose editorial feedback. Codex reviews each return and either incorporates it or prepares a targeted revision packet. Consolidate related assignments where practical without exceeding manageable writing units or losing coverage.
+
+While required external screenplay files are absent, continue useful independent planning and checks, record the exact pending batch/revision, and resume dependent work when the files arrive. A file-transfer handoff is not a request for creative approval. Do not fabricate the missing draft or implement before full script readiness merely to avoid the handoff.
+
+Provide concise progress updates. Deliver the complete playable game after implementation and available required verification; the user gives play/reading feedback afterward. Report any unavailable independent first-player evidence honestly, without turning the user into an intermediate tester. This delegation does not expand a separately scoped documentation task into game implementation.
+
+## Change and completion discipline
+
+Document a concrete exception's reason, alternative, and validation; never silently replace the requested game with a smaller one. Revisit the shortest proof path before implementation and after integration. Guessing a culprit may be possible early, but proving method, responsibility, and rejection of alternatives must remain substantive.
+
+Report authored, reviewed, implemented, mechanically verified, visually inspected, and independently playtested states separately. The player must never need author documents or a private explanation from the maker to proceed.

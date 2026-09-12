@@ -1,89 +1,126 @@
-# 08. 품질 검수와 완료 근거
+# 08. Requirements, quality gates, and completion evidence
 
-## 판정 원칙
+## Evidence discipline
 
-각 항목을 `설계됨 / 구현됨 / 검증됨 / 미검증 / 실패 / 해당 없음(사유)`으로 구분한다. 파일이 존재한다고 구현됨으로, 자동 완주했다고 재미와 난이도가 검증됨으로 표시하지 않는다. 필수 항목을 해당 없음으로 바꿔 사용자 요구를 생략하지 않는다.
+Track `planned / authored / editorially reviewed / implemented / mechanically verified / visually inspected / independently playtested / unverified / failed / not applicable with reason`. These are distinct claims. A file does not prove implementation; automatic completion does not prove difficulty, humor, or enjoyment. Do not mark mandatory requirements inapplicable to remove them.
 
-검증 기록에는 대상 빌드·날짜·환경·출발 상태·수행 행동·기대 결과·실제 결과·근거 파일·미확인 범위를 남긴다. 실패한 체크를 지우지 말고 수정 후 재검증 결과로 연결한다.
+For each check record source/build/version, date, environment, starting state, actions, expected vs actual behavior, evidence location, verdict, and untested scope. Keep failed checks and link their retest rather than deleting history. Requirement IDs identify obligations; script IDs identify content.
 
-## 원래 요청의 추적표
+## Retained requirements R01–R17
 
-이 표는 신작이 만족할 요구사항이다. 이번 문서 모음의 작성 완료와 미래 게임의 구현 완료를 혼동하지 않는다.
-
-| ID | 요구사항 | 설계 원본 | 신작에서 필요한 완료 증거 |
+| ID | Requirement | Design authority | Completion evidence |
 |---|---|---|---|
-| R01 | 인물·자료 항목의 과도한 크기 축소 | [05](05-ui-and-investigation.md) | 실제 목록 크기·항목 수·글자 확대·작은 화면 캡처 |
-| R02 | 상세를 열지 않아도 구별되는 자료별 고유 작은 이미지 | [06](06-visual-direction.md) | 전체 썸네일 모음, 실제 목록, 이름으로 자료 찾기 관찰 |
-| R03 | 인물 클릭 후 진술·타임라인 열람 | [05](05-ui-and-investigation.md) | 실제 인물 상세·근거 링크·정정 기록, 미획득 정보 비노출 |
-| R04 | 경로·물리 위치를 반영한 정교한 지도 | [03](03-space-and-events.md) | 공간 모델·도면 대조, 잠금·이동·우회 경로 검산 |
-| R05 | 대화 종류별 그룹과 대화 상세 로그 | [05](05-ui-and-investigation.md) | 그룹→대화→전체 기록→복귀, 실제 선택 분기 보존 |
-| R06 | 최종 추리 등 선택 중 자료·인물·지도 탭 접근 | [05](05-ui-and-investigation.md) | 모든 답안 유형에서 탭 순회 후 선택·입력·포인트 유지 |
-| R07 | 잘못된 추궁·자료 제시의 HP 등 포인트 차감 | [02](02-interrogation-and-hints.md) | 행동별 실제 차감, 무료 열람, 0점 회복, 저장 복구 |
-| R08 | 추궁으로만 얻는 핵심 정보와 정답 있는 대화 선택 | [02](02-interrogation-and-hints.md) | 선행 정보만으로 논박 가능, 성공 시 새 정보·후속 진행, 오답 재시도 |
-| R09 | 사건에 깊게 관여하며 해명 후 영향이 남는 오도 | [01](01-case-logic.md) | 지지 근거·실제 인과 영향·반증·남는 사실, 첫 플레이 가설 변화 |
-| R10 | 논리적 새 단서와 이벤트가 있는 재방문 | [03](03-space-and-events.md) | 최초 방문→원인→변화→발견 경로, 미방문 시 힌트·대체 경로 |
-| R11 | 높은 사건·챕터 난이도와 충분한 단계별 힌트 | [01](01-case-logic.md), [02](02-interrogation-and-hints.md) | 경쟁 가설과 복합 추론 그래프, 지름길 검토, 퍼즐별 힌트 완주, 첫 플레이 기록 |
-| R12 | 충분한 이벤트와 메인 상황 이미지 | [03](03-space-and-events.md), [06](06-visual-direction.md) | 장별 이벤트 목록, 전·중·후 화면, 상태와 이미지 일치 |
-| R13 | 주인공·조수의 설명·서사 역할, 조수 고의 가담 금지 | [04](04-characters-and-dialogue.md) | 인물 지식·행동·진상·회상 검토, 조수의 실제 조사 기여 |
-| R14 | 주인공·조수 간 풍부한 대화와 유머 | [04](04-characters-and-dialogue.md) | 장별 상황 대화·관계 변화·반복 억제, 첫 플레이 반응 |
-| R15 | 다른 인물의 개성·유머·상호작용과 대화 확충 | [04](04-characters-and-dialogue.md) | NPC 시트, 인물 간 실제 장면, 구별되는 말투와 행동 |
-| R16 | 시리즈 중심 내용·인물 역할·진행 기록, 실제 후속작의 연속성 | [07](07-series-continuity.md) | 첫 작품은 새 설정 등록, 이후 작품은 원장·관계·지식 분기 대조 |
-| R17 | mystery 공통 MD와 각 게임의 AGENTS.md | [안내](README.md), [템플릿](templates/AGENTS.md) | 부모 공통 문서·작품 지침 존재, 상대 링크와 읽기 순서 유효 |
+| R01 | Compact evidence/person lists without unreadable text | [05](05-ui-and-investigation.md) | Actual density, large-text and small-screen inspection |
+| R02 | Distinct meaningful thumbnails for each evidence item | [06](06-visual-direction.md) | Whole thumbnail sheet and real item-finding observation |
+| R03 | People detail with sourced statements and timelines | [05](05-ui-and-investigation.md) | Heard statements, correction links, no hidden knowledge |
+| R04 | Physically coherent map and routes | [03](03-space-and-events.md) | Floor plan/data comparison, access and travel calculations |
+| R05 | Grouped conversations and full logs | [05](05-ui-and-investigation.md) | Group/list/detail/return, actual branch only |
+| R06 | All investigation tools available during every answer task | [05](05-ui-and-investigation.md) | Tool round trip with drafts, points, scroll and focus retained |
+| R07 | Real wrong-claim point loss and recovery | [02](02-interrogation-and-hints.md) | Free inspection, correct cost, zero recovery, persistence |
+| R08 | Interrogation-exclusive core facts and logical choices | [02](02-interrogation-and-hints.md) | Solvable prerequisites, new information, downstream use, retry |
+| R09 | Misdirection that materially affects the central case | [01](01-case-logic.md) | Support, causal effects, refutation, surviving facts |
+| R10 | Caused revisit evidence, conversations, and events | [03](03-space-and-events.md) | First state/cause/change/discovery, missed-visit route |
+| R11 | Deep case/chapter reasoning and complete hint ladders | [01](01-case-logic.md), [02](02-interrogation-and-hints.md) | Full graph, alternatives, shortest path, H0–H4, first-play reasoning |
+| R12 | Multiple meaningful events and situation images | [03](03-space-and-events.md), [06](06-visual-direction.md) | Chapter events and before/during/after visual states |
+| R13 | Protagonist/companion narrative and investigation roles; no deliberate companion complicity | [04](04-characters-and-dialogue.md) | Actual actions/knowledge, scenes, truth and flashback review |
+| R14 | Extensive protagonist-companion conversation and humor | [04](04-characters-and-dialogue.md) | Varied full scenes, relationship change, reader response |
+| R15 | NPC individuality, humor, and direct interaction | [04](04-characters-and-dialogue.md) | Distinct actual behavior, speech, and NPC-to-NPC scenes |
+| R16 | Series themes, roles, progress, and later continuity | [07](07-series-continuity.md) | New work sources; later branch/knowledge reconciliation |
+| R17 | Shared MD and active-project instructions | [README](README.md), [template](templates/AGENTS.md) | Correct reading paths and substantive project documents when a project starts |
 
-## G1. 구현 전 사건 검토
+## Direct UI corrections U01–U09
 
-- 최종 주장을 역방향으로 따라 모든 필수 사실의 실제 획득 행동에 도달한다.
-- 각 챕터에서 두 단계 이상의 추론과 재검증이 실제 질문·정답·근거로 작성되어 있는지 확인한다.
-- 가능한 접근자·열쇠·서명만으로 조기 확정되는 지름길을 찾고, 가장 강한 대안 가설을 반증한다.
-- 독립 근거처럼 보이는 자료가 같은 출처의 복사·전언인지 확인한다.
-- 사실·진술·가설·오차 범위를 구분하며 물리 시간표를 검산한다.
-- 오도 해명 후 본 사건에 남는 영향과 재방문 단서의 생성 원인을 확인한다.
-- 조수의 실제 행동과 알고 있던 사실을 시간순으로 검토하여 고의 가담이 없는지 확인한다.
+| ID | Requirement | Authority | Evidence |
+|---|---|---|---|
+| U01 | In-world reasons guide action; explicit controls/costs remain clear | [03](03-space-and-events.md), [04](04-characters-and-dialogue.md) | Natural appointments/signs/dialogue plus usable UI |
+| U02 | Acquisition immediately opens actual evidence detail and image | [05](05-ui-and-investigation.md) | Single/multiple acquisition, acknowledgement queue, close/resume |
+| U03 | Scene default; evidence/people/map/dialogue modals; right companion notes/settings | [05](05-ui-and-investigation.md) | Desktop and responsive navigation with reachable controls |
+| U04 | Reveal objectives after understanding the situation through events | [05](05-ui-and-investigation.md) | Opening and later chapter disclosure sequence |
+| U05 | Objective's 추리하기 opens a spacious deduction modal | [05](05-ui-and-investigation.md) | Actual entry action and full tool round trip |
+| U06 | Scene exits match physical direction and support travel | [03](03-space-and-events.md) | Observation/map/data agreement, locked-route behavior |
+| U07 | Action directions match dialogue size, use distinct readable color and italics | [05](05-ui-and-investigation.md) | Rendered contrast, enlargement, mobile readability |
+| U08 | Understand unfamiliar evidence/places with sufficient context | [04](04-characters-and-dialogue.md), [06](06-visual-direction.md) | Unbriefed reader/player explains purpose and current state |
+| U09 | Image-centered evidence conveys described facts, with needed text and life detail | [06](06-visual-direction.md) | Original/image agreement, detail zoom, no missing crucial information |
 
-산출물은 작가 진상, 플레이어 지식 그래프, 가설별 반증표, 최단 정답 경로, 공간 검산이다. 단순 문서 항목 개수로 통과시키지 않는다.
+U08 and U09 reinforce each other: distribute needed explanation across scenes and images while avoiding bloated detail panels. Do not remove essential information to shorten text.
 
-## G2. 핵심 시스템과 회복
+## Direct character corrections C01–C06
 
-진행 잠금, 포인트, 분기, 이벤트, 저장처럼 실패하면 플레이를 막는 상태 전환은 의미 있는 테스트로 검증한다. 구현 상수를 그대로 읽어 같은 상수와 비교하는 테스트로 규칙의 타당성을 증명하지 않는다. 다른 증거 조합·방문 순서·오답·반복 입력 등 실제 경계 사례를 사용한다.
+| ID | Requirement | Authority | Evidence |
+|---|---|---|---|
+| C01 | Eccentric child companion, identity and relationship designed anew | [04](04-characters-and-dialogue.md) | Age-credible voice, supervision, contribution, independent characterization |
+| C02 | Natural actual exchanges instead of robotic abbreviated dialogue | [04](04-characters-and-dialogue.md) | Concrete dialogue passages and first-reader feedback |
+| C03 | Motivated first appearances, reappearances, and joining events | [03](03-space-and-events.md), [04](04-characters-and-dialogue.md) | Actual scenes showing activity, purpose, introduction, relationships |
+| C04 | Register met people and unlock places situationally | [03](03-space-and-events.md), [05](05-ui-and-investigation.md) | Initial/encounter/unlock states without preview leaks |
+| C05 | Introduce unfamiliar objects, roles, and terms naturally | [04](04-characters-and-dialogue.md) | Demonstration/dialogue/image comprehension before inference |
+| C06 | Extensive actual dialogue across the whole game | [04](04-characters-and-dialogue.md) | Full coverage of main, optional, relationship, revisit, failure, hint and ending scenes |
 
-필수 시나리오:
+The earlier request's unfamiliar-object examples were complaints about discarded content, not instructions to reuse those objects.
 
-1. 여러 합법적 조사 순서로 핵심 정보를 획득하고 최종 주장에 도달.
-2. 정답 선택과 성격 선택의 비용 구별, 오답 1회당 정확한 차감.
-3. 0점 도달 → 자료·메모 보존 → 회복 → 같은 과제 해결.
-4. 논리적으로 동등한 증거 조합 인정, 그럴듯하지만 부족한 조합 거부 및 설명.
-5. 재방문 이벤트 선행 조건 전·후, 오래 미방문, 동시에 준비된 이벤트 처리.
-6. 대화 도중·오답 직후·0점·이벤트 도중·최종 답안 편집 중 저장과 복구.
-7. 반복 클릭·새로고침 후 보상·증거·이벤트가 중복 적용되지 않음.
-8. 각 필수 과제의 H0~H4가 실제 현재 상태에 맞고 최종 단계가 병목을 해결함.
+## Retained handoff context I01–I07
 
-## G3. 실제 화면과 상호작용
+These IDs organize previously retained context; they are not fabricated verbatim user quotations.
 
-[05](05-ui-and-investigation.md)의 탭 순회 시나리오를 자료 제시·인물 선택·시간 정렬·최종 추리 각각 수행한다. 선택한 근거 일부를 남긴 상태에서 닫기·돌아가기·힌트·저장 복구도 확인한다. 열람 전후 상태를 비교하여 의미 없는 초기화가 없는지 확인한다.
+| ID | Obligation | Authority | Evidence |
+|---|---|---|---|
+| I01 | Player name input with a stable protagonist identity | [04](04-characters-and-dialogue.md), [05](05-ui-and-investigation.md) | Name used in actual lines/records without changing stable IDs |
+| I02 | Large readable dialogue portraits, compact list portraits | [05](05-ui-and-investigation.md) | Recognizable expressions at supported sizes |
+| I03 | Visible chapter title/context without future answers | [05](05-ui-and-investigation.md) | Chapter transition and early-display audit |
+| I04 | Chosen claim/question and actual response are spoken and logged | [02](02-interrogation-and-hints.md), [05](05-ui-and-investigation.md) | Selected branch lines; unselected branches absent |
+| I05 | Understand the whole site with routes, direction, timing and zoom | [03](03-space-and-events.md) | Usable whole-space map and sourced travel information |
+| I06 | Deduction does not take away investigation context/tools or drafts | [05](05-ui-and-investigation.md) | Every answer type and modal layer tested |
+| I07 | Return to prior list/filter/scroll/focus and resume saved work | [05](05-ui-and-investigation.md) | Close/Esc/Back/hint/save round trips |
 
-목록 밀도와 고유 썸네일, 인물 진술의 출처 링크, 종류별 대화 로그를 실제 화면에서 확인한다. 화면 폭만 검사하지 말고 긴 제목·스크롤·글자 확대·키보드 초점까지 본다. 이벤트 전·도중·이후의 메인 이미지가 세계 상태와 일치하는지 직접 확인한다.
+## Latest decisions N01–N08
 
-지원하기로 한 환경에서 실행하고 미지원·미검증 환경을 적는다. 자동 이미지 존재 검사는 실제 시각 검수의 보조다.
+| ID | Obligation | Authority | Evidence |
+|---|---|---|---|
+| N01 | 5–7 substantial chapters; full wall investigation is one chapter-scale reference | [00](00-production-principles.md), [01](01-case-logic.md) | Distinct chapter mysteries, internal proof chains, causal cross-chapter graph |
+| N02 | Complete case/player-reasoning design and full script before implementation | [00](00-production-principles.md) | Full truth, structural walkthrough and reviewed script coverage |
+| N03 | English planning, Korean actual script/game/user communication | [04](04-characters-and-dialogue.md) | Direct Korean wording; authoritative source ownership |
+| N04 | Strong 나사 빠진 characterization, not interchangeable witty people | [04](04-characters-and-dialogue.md) | Observable behavior and reader preference |
+| N05 | Clear situations and staggered memorable first encounters | [04](04-characters-and-dialogue.md) | Reader can associate role/name/action before another new focus |
+| N06 | Trim local repetition without shrinking full dialogue or inference scope | [04](04-characters-and-dialogue.md) | Actual editorial comparisons and retained full coverage |
+| N07 | ChatGPT drafting, repository-based source/logic/integration workflow | [04](04-characters-and-dialogue.md), [file handoff](script-handoff-format.md) | Versioned ready-to-relay packet, actual screenplay/notes files, stable IDs and branch coverage, Codex editorial findings/acceptance, post-delivery user feedback |
+| N08 | Fresh start; discarded project/record removed; no premature new scaffold | [README](README.md), [current decisions](current-direction.md) | Actual filesystem, empty registry, no inherited facts or new implementation |
 
-## G4. 첫 플레이의 난이도·재미·힌트
+## Responsibility for gates
 
-권장 기본은 진상을 모르는 첫 플레이 참여자 3명 이상이며 추리 숙련도가 다른 사람을 포함한다. 플레이어에게 제작 문서나 답을 먼저 주지 않는다. 참여자를 확보하지 못하면 이 항목은 **미검증**으로 남긴다. 제작자의 자동 플레이를 독립 플레이테스트로 부르지 않는다.
+Codex performs the production reviews and decides readiness within the agreed scope. G0–G5 do not require intermediate user approvals. The user relays ChatGPT files and gives feedback after delivery of the completed game. Record internal editorial findings, functional/visual checks, and independent reader/player evidence separately; do not claim independent validation from author self-review.
 
-기록 항목은 챕터별 소요 시간, 실제 추론한 연결, 당시 가설과 근거, 바뀐 계기, 오답 종류, 포인트 소진, 힌트 단계, 재방문 계기, UI 탐색 시간, 기억에 남은 인물 대화다. 녹화나 수집은 필요한 범위에서 참여자와 정한 방식으로 수행한다.
+## G0. Script readiness before implementation
 
-| 관찰 | 해석과 대응 |
-|---|---|
-| 범인을 빨리 추측했지만 방법·대안 배제를 계속 고민 | 반드시 실패는 아님. 입증 과정의 깊이를 평가 |
-| 단일 기록만으로 사건과 모든 장이 해결 | 가설·공개 순서·논증 구조를 보강 |
-| 모든 자료를 읽었는데 무엇을 묻는지 모름 | 질문·용어·정보 정리를 개선 |
-| 재방문 이유를 못 찾고 전 장소 반복 클릭 | 자연스러운 징후·힌트·사건 동선을 보강 |
-| H4를 읽어도 해당 상태에서 진행 불가 | 힌트 또는 선행 정보 접근의 결함 |
-| 포인트만 반복 소진하고 배운 점 없음 | 오답 피드백·비용 경계·회복 구간을 개선 |
-| 조수가 모든 결론을 선점 | 기본 대화를 관찰 중심으로, 해법은 요청형 힌트로 이동 |
-| NPC를 직업명 외에 기억하지 못함 | 욕망·습관·관계 장면과 선택의 후속 반응을 보강 |
+Review the complete Korean script, not just a sample. Check all coverage in 04, all actual responses, first appearances, unfamiliar objects, scene transitions, emotional rhythms, and staggered introductions. Read scenes without character sheets and separately examine different knowledge/visit orders. Verify the player still owns key connections. Maintain the selected script and proposed fact changes separately. User-reported preference is evidence of preference, not an unseen screenplay's verified compliance.
 
-목표 시간 달성만으로 높은 난이도를 입증하지 않는다. 사용자가 고민한 이유가 추론인지 읽기·조작의 마찰인지 구별한다. 문제를 해결할 때 핵심 퍼즐을 삭제하고 쉬운 선택지로 바꾸는 것을 기본 대응으로 삼지 않는다.
+For external drafting, inspect actual returned files, source/revision provenance, assigned scene/option/hint coverage, stable and resolvable IDs, knowledge boundaries, and explicit incomplete items against [the return contract](script-handoff-format.md). Review assembled batches and chapters before claiming full-script readiness. A file link, valid Markdown, or partial batch is not evidence that all requested paths were written.
 
-## G5. 인계와 보고
+## G1. Entire case and chapter reasoning
 
-실제 구현한 결과에 맞춰 작품 제작 문서, 검수 보고서, 시리즈 사건 기록·관계·분기·다음 작품 인계를 갱신한다. 구현 완료와 미검증 경험 품질을 구분해 보고한다. 모든 필수 기능을 확인하기 전 완성품으로 선언하지 않는다. 문서 작업에서는 요구사항 대응·구체성·링크·사용자가 정한 변경 범위를 검수하고 게임 테스트를 수행한 것으로 보고하지 않는다. 새 출발 시에는 폐기한 내용이 인계·예시·참조 경로에 남지 않았는지도 확인한다.
+Trace every final claim backward to acquired facts and actual actions. Inspect all 5–7 chapters, each major mechanism, multiple investigation strands, consequential deductions and rechecks, strongest alternatives, source independence, shortest proof path, time/space/object feasibility, and cross-chapter consequences. Verify subsidiary incidents leave effects and revisits have causes. Review companion actions/knowledge through truth and memories. Evidence: actual truth ledger, player knowledge graph, refutation tables, physical calculations, walkthrough results, and unverified assumptions.
+
+## G2. Systems and recovery
+
+Use meaningful behavioral tests for progression, points, choices, events, and saves; checking a constant against itself does not validate a rule. Cover:
+
+1. Different lawful investigation orders reaching the core information and ending.
+2. Logical vs relationship choice costs, one charge per submitted attempt, free tools, incomplete answers.
+3. Zero → retained evidence/notes/knowledge/relationships/draft → recovery → successful retry.
+4. Equivalent valid evidence sets accepted, plausible insufficient sets rejected with useful feedback.
+5. Event prerequisites, delayed revisits, simultaneous event/acquisition queues, and missed-essential recovery.
+6. Saves during dialogue, events, wrong answers, zero, recovery, and edited final answers.
+7. Repeat clicks/reloads without duplicate awards, evidence, costs, or events.
+8. Every mandatory D/Q and revisit bottleneck has H0–H4 that fits current knowledge and actually releases the bottleneck.
+
+## G3. Actual UI and visual behavior
+
+Run the full investigation-tool round trip during evidence presentation, person selection, linking, time ordering, interrogation, and final deduction. Test close/Esc/Back/hints/save with partial drafts, filters, scroll, and focus. Verify objective timing, encountered-person registration, spatial exits, acquisition detail ordering, dialogue portrait/direction readability, notes/settings, real log branches, image state, and no early information leaks. Inspect supported desktop/mobile, long Korean titles, keyboard, touch, and large text. Image-file existence is only supporting evidence.
+
+## G4. Independent first play
+
+Recommended baseline: at least three people unfamiliar with the truth and with varied mystery experience. If unavailable, mark this gate unverified; author or automatic play is not independent. Collect only agreed necessary records. Do not require the user to play or review an intermediate build to satisfy this gate. If no independent players are available, deliver the completed game after the other required checks with G4 explicitly unverified; collect user feedback afterward.
+
+Record chapter time separated into reading, inference, and navigation; actual hypotheses/support; reversals; errors/costs/recovery; requested hint stage; revisit reasons; remembered people/scenes; and confusion. An early culprit guess can coexist with deep proof. A single record solving everything is a failure. Unclear questions/terms require clearer presentation; blind repeated room clicking requires better discovery signals. H4 that cannot help progress, repetitive penalties without learning, answer-spoiling companion speech, or unmemorable interchangeable people require revision. Do not remove core puzzles as the default repair.
+
+## G5. Handoff and report
+
+Update planning, accepted script, case/branch/knowledge records, and audit to match actual work. Complete the required script, logic, functional, and visual checks before reporting production complete. Disclose any unverified independent-play evidence under G4; completed production does not imply verified reception or difficulty. For documentation-only work, verify requirements coverage, concrete templates, links, stale defaults, source roles, and requested cleanup; do not claim game lint/build/play results. Verify the filesystem before reporting deletion or creation.

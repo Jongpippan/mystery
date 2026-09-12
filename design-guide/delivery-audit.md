@@ -1,29 +1,69 @@
-# 공통 설계 문서 검수 기록
+# Common-document reset — delivery audit
 
-버전 2.0 · 갱신일 2026-09-10 · 범위: 새 출발을 위한 내용 초기화와 공통 기준 정리
+Date: 2026-09-12 / guide version 3.0
+Scope: reorganize shared planning documents and remove the discarded project and residual case record. This report supersedes the earlier cleanup report's pending-deletion status.
 
-## 현재 문서의 기준
+## Completed work
 
-새 시리즈에는 등록된 작품·사건·인물·세계관이 없다. 공통 문서에는 추리 구조, 추궁·포인트·힌트, 재방문·이벤트, 캐릭터·대화, UI·미술, 시리즈 운영 및 검증 방법을 남긴다. 폐기한 작품의 줄거리·인물·장소·고유 단서·선택 결과는 예시나 인계에도 남기지 않는다.
+- Rewrote active common guides 00–09, workspace/project instructions, guide entry points, series guidance/templates, and generic-asset guidance in English. Korean game-facing labels and exact characterization terminology remain intentional.
+- Incorporated the current decisions directly into topic bodies and concrete project templates instead of leaving contradictory defaults behind an override note.
+- Established 5–7 substantial chapters, with the entire movable-wall investigation as approximately one chapter's depth. Removed inherited runtime/evidence quotas as scope constraints.
+- Put complete truth/player-reasoning design, structural walkthrough, full Korean script and editorial revision before game implementation. Retained later technical integration checks.
+- Incorporated strong eccentric characterization, clear first encounters, staggered introductions, local repetition cuts with full dialogue breadth, and the ChatGPT drafting/repository integration workflow.
+- Replaced the old sidebar-workspace UI with scene-default modal investigation and deduction, right companion notes/settings, immediate evidence detail, directional movement, progressive disclosure, and persistent drafts/tool access.
+- Preserved interrogation-exclusive knowledge, visible error costs, free inspection, repeatable zero recovery with editable drafts retained, per-task H0–H4, event/revisit causality, physical checks, image fidelity, and series branch/knowledge rules.
+- Expanded [the requirement matrix](08-quality-gates.md) to R01–R17, U01–U09, C01–C06, I01–I07, and N01–N08, with topic authorities and concrete completion evidence. Added script-readiness gate G0 alongside G1–G5.
+- Replaced obsolete restart instructions and historical state claims with [current decisions](current-direction.md), a provenance handoff, and a planning-stage start request.
+- Kept original writing-test source/prompts as the version 1.0 baseline and the refinement brief as a separate editorial condition. Updated reported user acceptance without claiming inspection of the unavailable ChatGPT screenplay.
 
-## 완료한 정리
+## Deletion evidence and limits
 
-- 해당 작품의 공통 시리즈 사건 기록을 삭제하고 원장·작품 목록·제작 인계를 빈 출발 상태로 바꿨다.
-- 공통 지침의 작품 참조·시각·소품·인물·분기 예시와 비교 기준을 제거했다.
-- 이야기 정보가 없는 범용 SVG 도형 하나만 별도 에셋 폴더에 복사하고 원본과 해시가 같은지 확인했다. 새 기획의 기준으로 삼지 않는다.
-- 잔존 게임 폴더의 AGENTS.md를 작업 제외 안내로 교체하고, 부모 지침에서도 폐기한 폴더의 기획·소스 탐색과 계승을 금지했다.
-- 새 작품의 AGENTS.md는 제작 시 [복사 원본](templates/AGENTS.md)에서 만든다. 현재 진행 중인 작품은 없다.
+Before deletion, the exact workspace-local `project_01` was confirmed to be a normal directory, not a symlink, with 364 file entries. Its Git status included 18 modified and 93 untracked entries. The sole residual file in `series/cases/` was confirmed as the specified old case record; its content was not used as creative reference.
 
-## 미완료: 기존 게임 폴더 삭제
+The authorized cleanup removed `project_01` recursively and unlinked `series/cases/project_01-SPOILERS.md`. Subsequent filesystem assertions verified that both paths are absent, `series/cases/` is empty, and no replacement `project_*` directory exists. No new game, implementation scaffold, case record, or canon registration was created. The [registry](../series/README.md) remains empty.
 
-사용자가 요청한 게임 폴더 삭제는 아직 완료되지 않았다. 작업 폴더 안의 정확한 대상 경로와 일반 디렉터리임을 확인했지만, PowerShell 재귀 삭제 명령이 자동 승인 검토에서 차단됐다. 확인된 절대 경로를 직접 지정해 범위를 좁힌 명령도 차단됐으며 세부 사유는 제공되지 않았다.
+This is working-tree deletion, not rewriting Git history. No commit, external deployment, or publication was performed. Discarded project content was not copied into a new creative-reference archive. The generic asset itself and existing dialogue experiment source/prompt baselines were not repurposed as game canon.
 
-사용자가 잔존 게임 폴더를 직접 삭제해야 파일 자체의 제거가 완료된다. 내부 소스·이미지·배포본·제작 자료가 사라졌다고 주장하지 않는다. 해당 내용은 현재 공통 문서와 새 시리즈의 참고 대상에서 제외되어 있다.
+## Requirement preservation review
 
-## 검수 항목
+| Area | Review performed | Result |
+|---|---|---|
+| Earlier shared R01–R17 | Compared old obligations with current topic rules and evidence matrix | Retained; UI and chapter scope updated |
+| Explicit U01–U09 and C01–C06 | Compared the restart handoff's corrections with current rules/templates | Retained, including action-direction style and image/context balance |
+| Prior context I01–I07 | Name entry, portrait size, chapter context, chosen responses, full map, tools, return/save | Explicitly tracked |
+| Latest N01–N08 | Chapter depth, script-first process, language, eccentricity, introductions, pacing, workflow, reset | Incorporated in active rules |
+| Full script and source ownership | Templates cover actual lines, alternative responses, hints, events, conditions, and accepted-source linkage | Defined; actual game material remains unwritten |
+| Numerical and workflow conflicts | Searched for prior chapter/time/evidence defaults, sidebar UI, pre-script implementation, draft reset, and pending-deletion instructions | Removed from active rules; historical chronology is labeled |
+| Evidence claims | Separated user report, authored documents, implementation, rendered behavior and independent play | No unsupported game-completion claim |
 
-공통 문서·시리즈 서식·에셋 안내·작업 제외 지침 총 20개 Markdown에서 로컬 링크 60개와 복사 원본의 상대 경로 11개를 확인했다. 점검한 폐기 작품 식별자·인물명·고유 단서 참조, 코드 블록, 인코딩 오류는 0건이다. 공통 사건 기록 폴더가 비어 있고 잔존 게임 폴더가 아직 존재함도 확인했다.
+## Executed checks
 
-[요구사항 R01~R17](08-quality-gates.md)은 공통 제작 기준으로 유지하되, 실제 선행 작품이 필요한 시리즈 연속성 항목은 향후 후속작에 적용한다.
+- `git diff --check`: passed.
+- Python Markdown audit across the workspace instructions, all guide/experiment MD, series MD, and generic-asset README: final newline, balanced fences, trailing whitespace, and every relative Markdown link checked.
+- Requirement audit: exactly 47 matrix rows in complete ordered R/U/C/I/N ranges, with G0–G5 present.
+- Copied project-template path check: parent references resolve from a hypothetical project root; no empty project was created to perform the check.
+- Stale-rule search and language inspection: no old active defaults or untranslated common prose remained; Korean screenplay terms and labels are intentional.
+- Filesystem assertions: discarded paths absent, case directory empty, no replacement project.
 
-이번 작업은 삭제·문서 초기화이며 새 게임 구현이나 플레이 검증 결과가 아니다.
+Reset audit snapshot: 27 Markdown files, 151 relative Markdown links, 8 copied-template parent paths, 47 requirement rows, and 6 quality gates checked; all passed. Deleted paths are absent and no new project exists.
+
+## Current delivery boundary
+
+The shared production documents and requested old-project removal are complete. Concrete new case design, final hotel/cast adoption, full 5–7 chapter architecture, accepted complete Korean script, game implementation, image production, runtime tests, visual QA, and independent game play remain future work.
+
+No application lint/build suite was run: this task changed planning documents and deliberately removed the old application. Markdown and filesystem checks match the delivered scope and do not imply a functioning new game.
+
+## Subsequent workflow clarification — screenplay file returns
+
+The user requested an explicit ChatGPT MD/prompt handoff and formatted screenplay-file return process. Added `script-handoff-format.md` and connected it to production, character/script guidance, project templates, current decisions, and N07/G0. The contract defines self-contained versioned inputs, bounded scene batches, actual Korean screenplay and separate author-notes files, stable IDs/branches, full revision returns, incomplete-delivery reporting, and repository incorporation.
+
+This adds a common workflow specification and generic request template only. No actual new-game packet, returned screenplay, upload, parser, or project was created.
+Verification: 28 Markdown files and 160 relative links checked; nested fences, whitespace, packet/output fields, retained requirement ranges, and reset state passed. `git diff --check` passed. Actual ChatGPT file generation and importer behavior are not tested.
+
+## Subsequent workflow clarification — autonomous production
+
+The user clarified that they do not want intermediate reviews. Updated production responsibility, workspace/project instructions, writing handoffs, script review, quality gates, project templates, current decisions, series starting guidance, and the next-session request. Codex owns planning decisions, editorial findings and acceptance, revision preparation, implementation, and verification. The user only transports ready ChatGPT packets and returned screenplay files during production; their feedback follows completed-game delivery.
+
+Replaced the earlier intermediate user-reading-review step. External file returns remain explicit dependencies, and full script readiness still precedes implementation. Independent first-play evidence remains separately reported; its absence does not turn the user into an intermediate tester. The next-session request now covers full production without repeated stage approvals.
+
+Verification: 28 Markdown files, 161 relative links, balanced fences, whitespace/final newlines, all 47 ordered requirements, and G0–G5 checked successfully. Searched active rules for conflicting user review/approval gates; historical experiment feedback remains labeled as prior evidence. `git diff --check` passed. No new project, screenplay packet, game implementation, runtime test, or independent playtest was created or claimed in this documentation update.

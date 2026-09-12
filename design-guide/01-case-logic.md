@@ -1,67 +1,62 @@
-# 01. 사건 논리, 경쟁 가설, 높은 난이도
+# 01. Case logic, alternatives, and chapter depth
 
-## 진상부터 고정한다
+## Fixed truth, separately modeled knowledge
 
-플레이어 진행에 맞춰 범인이나 과거 사실이 바뀌지 않는다. 범행 목적, 실제 행동, 필요한 조건, 실패 가능성, 은폐, 발견 계기를 먼저 작성한다. 인물별 `실제 위치 / 행동 / 소지품 / 직접 본 것 / 들은 것 / 오해 / 거짓말 / 이유`를 시간표에 기록한다.
+Write motive, purpose, preparation, execution, necessary conditions, possible failure, concealment, and discovery. The past does not change with the player's approach. For each person and time interval, record actual location, action, possessions, direct observations, hearsay, mistakes, lies, and reasons. Develop wants and relationships alongside these facts.
 
-시각은 `실제 시각`, `기록된 시각`, `증언 시각`, `플레이어가 입증 가능한 범위`를 분리한다. 시계 오차나 지연이 트릭이라면 오차를 알아낼 독립 기준을 사전에 제공한다. 플레이어가 관찰로 시간 구간만 좁힐 수 있다면 작가만 아는 정확한 분을 정답으로 요구하지 않는다.
+Separate actual time, recorded time, claimed time, and the range the player can prove. If a clock offset or delay matters, establish an independent way to measure it before requiring the deduction. Never demand an exact minute available only to the author when the evidence establishes a range.
 
-## 복수의 가능성이 실제로 살아 있어야 한다
+Validate dimensions, transport, visibility, sound, access, waiting, and work durations against [the space model](03-space-and-events.md). Do not rescue a broken mechanism with a late exception, hidden twin, duplicate key, or newly invented equipment capability.
 
-기회·능력·동기·행동 흔적을 인물별로 작성한다. 최소 3개의 본격 가설이 초기~중반 자료로 합리적으로 성립하도록 설계한다. 단순히 인물을 많이 배치하거나 모두 “수상한 표정”을 짓게 하는 것은 경쟁 가설이 아니다.
+## Supported alternative explanations
 
-| 가설별 필수 항목 | 작성 내용 |
+The overall case must sustain at least three substantive competing explanations into the early/middle investigation. Record opportunity, capability, motive, and actual traces. A suspicious expression or several suspects is insufficient.
+
+| Field for each hypothesis | Required substance |
 |---|---|
-| 주장 | 누가 무엇을 어떤 경로와 시점에 했다는 것인지 |
-| 실제 지지 근거 | 관찰 가능한 사실 최소 2개와 출처 |
-| 그럴듯한 이유 | 당시 지식에서 플레이어가 채택할 이유 |
-| 아직 설명 못 하는 사실 | 반증 전에도 남는 의문 |
-| 검증 행동 | 재방문, 대질, 기록 대조, 물리 실험 등 |
-| 결정적 반증 | 어떤 새 사실이 어떤 전제를 무너뜨리는지 |
-| 남는 진실 | 틀린 가설 속 실제 행동과 사건에 남긴 영향 |
+| Claim | Who did what, when, where, and by which route or mechanism |
+| Support | At least two observable facts with their actual sources |
+| Initial plausibility | Why someone with the player's current knowledge could believe it |
+| Unexplained residue | What remains uncertain even before refutation |
+| Test | A revisit, comparison, confrontation, reenactment, or physical check |
+| Refutation | The evidence and specific premise it defeats |
+| Surviving truth | What really happened within the mistaken explanation and what it still changes |
 
-공유 열쇠·대리 운반·관측 착오·위임·사전 조작 등은 설정과 기록이 뒷받침될 때 사용한다. 마지막 순간에 복제 열쇠나 비밀 쌍둥이를 추가해 난이도를 연장하지 않는다. 중반에 특정 용의자가 유력해져도 `실행 방식 / 시간 / 협력 여부 / 고의 / 대안 배제`에 실질적 의문이 남아야 한다.
+Shared access, delegated work, transport by another person, and observation errors need prior support. Even when a suspect becomes likely, execution, timing, intent, cooperation, or alternative exclusion must remain real questions. Defend the strongest competing explanation all the way to the end; if it cannot be excluded, repair the case or acceptance rules.
 
-## 명제와 근거를 구분한다
+## Evidence, statements, knowledge, and tasks
 
-`E`는 증거 자료, `S`는 발언, `K`는 입증한 명제, `D`는 플레이어 추론 과제다. “E07을 획득함”과 “E07이 무엇을 입증하는지 이해·확정함”을 다른 상태로 취급한다.
+`E` is an acquired record or object; `S` is a statement; `K` is a proven proposition; `D` is a deduction task; `Q` is an interrogation. Acquiring E does not establish the K that can be inferred from it. A statement can be false without its speaker being the murderer.
 
-최종 책임 논증은 최소한 `실제 행위`, `시간·공간상의 가능성`, `그 인물과 행위의 연결`, `의도 또는 책임 범위`, `주요 대안의 배제`를 포함한다. 각 핵심 명제에는 독립 출처의 교차 검증을 붙인다. 같은 사람이 쓴 지시서와 그 사본은 두 개의 독립 근거가 아니다. 고유한 결정적 증거 하나를 쓸 때도 진위·작성 맥락·행위와의 연결을 다른 근거로 확인한다.
+Final responsibility requires proof of the act, its time/space feasibility, the person's connection to it, intent or responsibility boundaries, and exclusion of major alternatives. Support core propositions with independent sources and rechecks. Copies, quotations, and hearsay from one origin are not independent evidence. A unique decisive item still requires authentication, context, and a link to the act.
 
-```text
-예시 구조 — 실제 사건의 정답 아님
-E01 현장 관찰 + E04 독립 측정 → D01 → K01 관찰이 성립하는 조건
-S03 목격 주장 + K01 + E09 환경 정보 → Q02 논박 → K02 목격 진술의 한계
-K02 + 재방문 E12 + 독립 증인 S08 → D03 → K03 사건 순서 재구성
-K03 + 별도 행위 흔적 + 경쟁 가설 반증 → 최종 책임 논증
-```
+For every D/Q, specify prerequisite E/S/K, observation-to-inference steps, accepted conclusions, equivalent evidence sets or orders, plausible errors, explanations, and resulting events. Trace every required fact back to an actual acquisition action. Remove circular prerequisites and essential facts that can be permanently lost through a relationship choice.
 
-각 연결에 필요한 선행 정보와 획득 행동을 명시한다. 증거를 얻으려면 그 증거로 먼저 추궁해야 하는 순환, 정답을 이미 알아야 눌러 볼 수 있는 행동, 특정 선택에서 필수 정보가 영구 소실되는 경로를 제거한다.
+The final conclusion must follow from already accessible information. A confession can add emotion and motive, but cannot supply the only evidence after the player has been required to answer. Do not automatically mark a suspect guilty after collecting a quota.
 
-## 챕터는 생각이 진전되는 단위다
+## Chapter architecture
 
-서막·종막을 제외한 각 장에는 다음을 넣는다.
+Apply the **5–7 substantial chapter** scope in [production principles](00-production-principles.md). Each chapter must include:
 
-1. 장 시작 시 플레이어가 믿을 만한 설명과 중심 질문.
-2. 두 개 이상의 독립된 조사 흐름. 예: 기록 대조와 현장 동선 확인.
-3. 최소 두 단계의 인과 연결이 필요한 추론. `관찰과 진술이 다르다`에서 끝내지 않고 무엇이 배제되고 무엇은 아직 모르는지 판단하게 한다.
-4. 그 결론을 상대의 진술·공간·다른 기록에 적용하는 검증 행동.
-5. 가설 또는 이미 사용한 단서의 의미가 바뀌는 장면.
-6. 다음 장의 새로운 질문과 인물 관계 변화.
+1. A distinct substantial mystery and an initially reasonable interpretation.
+2. Multiple independent investigation strands, not repeated collection errands.
+3. Several consequential inference points; each major chain connects facts through intermediate conclusions and rechecks. A two-step chain alone does not fulfill a whole chapter.
+4. Supported alternatives and player actions that test them.
+5. Reinterpretation of evidence already used, with new causal consequences.
+6. A substantive local resolution, relationship development, and a causally motivated opening for the next chapter.
 
-단서 전부 수집, 대사 전부 클릭, 정답 선택지 한 번 선택만으로 본편 장을 끝내지 않는다. 이미 확정한 사실을 매 장 처음부터 증명하게 하지도 않는다. 익숙해진 추론 방식을 다른 조건에 적용하면서 난이도를 올린다.
+The complete movable-wall investigation is one chapter-scale reference, not a list of six thin chapters. Discover such a mechanism through observations and verification rather than announcing it at arrival. Preserve fair inspection and disclosure; do not force knowledgeable people to conceal ordinary facts for no reason. Early discovery leaves the remaining proof obligations meaningful.
 
-## 사건에 깊게 관여하는 오도
+Use a cross-chapter dependency map: what each resolution establishes, what it changes in earlier evidence, what becomes investigable next, and what remains unsettled. Do not repeat proven facts from scratch each chapter or make every mystery the same trick with different props. Character and subsidiary-story mysteries should carry their own deductions and affect the central case.
 
-오도는 진짜 사실을 잘못 해석하게 하는 구조로 만든다. 부차 사건에는 독립된 목적과 원인이 있고, 본 사건의 관측·증거·동선·알리바이 중 적어도 두 측면에 실제 영향을 남긴다. 해명 후에도 본 사건 해결에 쓰이는 정보나 관계 결과가 남아야 한다.
+## Consequential misdirection
 
-가상 예시: 한 인물이 개인적인 약속을 감추려고 모임 장소를 바꾼다. 그 결과 두 증인의 관찰 범위가 달라지고, 다른 인물은 만남 시각을 잘못 추정한다. 약속의 목적이 본 사건과 무관하다고 밝혀져도 누가 어디서 무엇을 볼 수 있었는지와 증언의 시간 기준을 다시 검증해야 한다. 각 영향은 실제 인과관계와 독립 근거로 뒷받침한다. 단순히 “그 인물은 범인이 아니었다”는 해명으로 부차 사건을 퇴장시키지 않는다. 이 예시의 소재를 신작에 사용할 의무는 없다.
+A subsidiary incident has its own motive and cause and materially affects at least two aspects of the main case, such as observation, evidence, movement, or alibi. Resolving it leaves usable facts or relationship consequences. It cannot disappear with the statement that its participant was not the culprit.
 
-## 공정성 검수
+Distinguish true observations from interpretations, errors, deliberate lies, and author-only truth. A witness's certainty does not turn their account into objective UI text. Disagreeable behavior, silence, or a signature alone does not establish guilt.
 
-- 결론을 요구하기 전에 그 결론에 필요한 전문 지식·공간 규칙·증거를 게임 안에서 제공한다.
-- 작가의 진상과 등장인물의 확신, 플레이어가 확정한 사실을 분리한다. 거짓말하는 인물의 진술을 객관적 UI 설명으로 바꾸지 않는다.
-- 용의자의 침묵·버릇·불쾌한 태도를 유죄 근거로 삼지 않는다. 서명도 작성자와 문서 맥락을 보여줄 뿐 범행 전체를 자동 증명하지 않는다.
-- 타당한 다른 증거 조합과 논리적으로 동등한 순서를 인정한다. 자유 입력을 판정할 수 없는 UI라면 선택 가능한 표현을 충분히 제공한다.
-- 최종 결론은 이미 접근 가능한 사실로 도출 가능해야 한다. 종막 자백은 감정과 동기를 보완하며 유일한 필수 증거를 뒤늦게 공급하지 않는다.
-- 구현 전 “가장 강한 다른 범인 가설”을 끝까지 변호해 본다. 배제할 수 없으면 정답을 고집하지 말고 사건·판정·근거를 보완한다.
+## Fairness and player ownership
+
+Provide necessary terminology, specialized knowledge, physical rules, and evidence before asking for the inference. Situational clarity is not a hint that automatically joins the facts. Mark what the player must connect and what characters can explain now.
+
+Accept logically equivalent evidence and ordering. If free-text judging is unsuitable, provide enough selectable expressions for valid reasoning. Inspect the shortest solution path, accidental early culprit guesses, alternative visit orders, and every necessary acquisition chain. Document actual reasoning support rather than declaring a trick creative or difficult on impression alone.
