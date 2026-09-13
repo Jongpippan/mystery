@@ -6,9 +6,9 @@ Build a deeply reasoned mystery with memorable eccentric people, extensive Korea
 
 ## Current state and first read
 
-Read [workspace instructions](../AGENTS.md), [production principles](00-production-principles.md), and [current decisions](current-direction.md). The discarded `project_01` and its residual case record have been removed from the working tree. No replacement project has been created. [The registry](../series/README.md) has no works; test characters and the hotel premise remain proposals.
+Read [workspace instructions](../AGENTS.md), [production principles](00-production-principles.md), and [current decisions](current-direction.md). The discarded work remains excluded. Substantive new planning has now begun in [project_01](../project_01/game-plan/00-brief.md), reusing only the folder name. The [registry](../series/README.md) distinguishes this planned first work from a completed release. The earlier dialogue fixture remains provisional and was not adopted as canon.
 
-The next work requires 5–7 substantial investigation chapters. The entire proposed movable-wall reasoning sequence is approximately one chapter, not the entire game's architecture. Detailed truth/player-reasoning design, non-code walkthroughs, and full Korean script drafting/revision precede implementation.
+The work requires 5–7 substantial investigation chapters; the current new plan selects six. The entire movable-wall reasoning sequence is approximately one chapter, not the entire game's architecture. Detailed truth/player-reasoning design, non-code walkthroughs, and full Korean script drafting/revision precede implementation. The complete screenplay is editorially accepted as accepted-full-r03-c01 following internal G0/G1 review; adaptation and implementation are next. Use the project's actual validation records for functional, visual and release status.
 
 Author-facing MD is English; actual screenplay dialogue, action directions, choices, hints, evidence originals, game UI, and user communication are Korean. Preserve exact Korean source wording where voice or logic depends on it.
 
@@ -44,9 +44,9 @@ AGENTS.md                     workspace instructions
  design-guide/                common rules, decisions, templates and experiments
  series/                      registry, bible and real future case records
  reusable-assets/             optional generic art, selected only after design
- project_01/                  future reused path; currently absent
-   AGENTS.md                  create with actual new-project planning
-   game-plan/                 substantive new facts and Korean scripts
+ project_01/                  new six-chapter work, currently planned
+   AGENTS.md                  actual project instructions
+   game-plan/                 actual new planning; scripts only after reviewed returns
 ```
 
 Common-document cleanup does not create a blank project or game scaffold. On starting the new work, reuse `project_01` only as a name: create new instructions and substantive planning, not copies of discarded content. Do not inspect the old tree or Git history for creative material. The optional generic asset directory does not choose the premise or characters.

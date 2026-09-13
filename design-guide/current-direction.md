@@ -1,7 +1,7 @@
 # Current decisions and project state
 
-Updated: 2026-09-12 / common-document reset
-Status: production direction adopted; concrete full game not yet designed.
+Updated: 2026-09-12 / new production started after common-document reset
+Status updated2026-09-14: project_01 complete screenplay accepted as accepted-full-r03-c01; G0/G1 script/design review ready, implementation/verification next. Current facts and evidence are authoritative in [the project brief](../project_01/game-plan/00-brief.md) and [validation](../project_01/game-plan/10-validation.md).
 
 ## Adopted direction
 
@@ -25,7 +25,7 @@ The topic guides are the authoritative rules. This record identifies the decisio
 
 No inherited playtime, evidence, or challenge quota limits the full game. A local writing experiment's length or reduction target is not a game-wide cap.
 
-## Actual current state
+## Reset baseline (historical, before new production)
 
 - The old `project_01` directory and `series/cases/project_01-SPOILERS.md` have been deleted from the working tree in this cleanup. No replacement project directory or implementation scaffold has been created.
 - The series registry and bible contain no registered works, established people, or adopted setting. Git history is not a creative reference source.
@@ -39,10 +39,16 @@ The user reports that the ChatGPT draft was substantially better than the earlie
 
 The actual ChatGPT screenplay, model/settings, prompts actually used, and measured lengths are not present here. Do not claim direct line-by-line review, a controlled comparison, or approval of unseen text. Keep [the original test source and refinement brief](dialogue-experiment/README.md) as provisional fixtures; do not reconstruct the rejected demonstration dialogue as an approved style sample.
 
-## Execution policy and next stage
+## Current production and execution policy
+
+The user has now invoked full production. A new `project_01` contains independently authored facts for **여울관: 남겨 둔 자리**, six investigation chapters, project instructions and actual planning sources. The user subsequently requested more distinctive memorable names; the authoritative cast now uses 나여백, 나모눈, 봉만실, 차무록, 탁두철, 소해금, 배한술, 진새벽, 표문식 and 목백로. This is planned work, not a released case or proof of successful characterization.
+
+Use [the writing packet index](../project_01/game-plan/writing/packet-index.md) for the exact external draft dependency. Earlier reset statements above are historical and must not be used to claim the new project is still absent. No discarded contents or test cast were restored.
 
 The user delegates the full production process to Codex, with no intermediate creative reviews or stage approvals. Their only planned intermediate role is relaying the prepared ChatGPT sources/prompt and returning screenplay files. Codex makes planning and editorial decisions, prepares revisions, accepts scripts, implements, and verifies; user feedback comes after completed-game delivery.
 
-The current work has organized the common process; substantive new-project planning remains the next production stage. Create project instructions and actual game-plan documents when that work begins, then continue through the full sequence without requesting fresh approval at each stage. Design the entire case/chapter architecture with characters and relationships, complete structural review and the full script, then implement. External screenplay returns are real dependencies, not user approval gates. Reading this state file alone does not expand a documentation-only task into immediate implementation.
+Continue from actual project sources through full script/revision, then adaptation and implementation without requesting fresh approval at each stage. External screenplay returns are real dependencies, not user approval gates. The first bounded handoff does not establish full-script readiness. Reading this state file alone does not expand a separately scoped documentation-only request into implementation.
 
 Refer to [the delivery audit](delivery-audit.md) for cleanup checks and [the restart handoff](restart-handoff-2026-09-12.md) for provenance. Recheck current files in future sessions rather than treating this dated record as proof forever.
+
+The user requested fewer file exchanges. The active project now prepares one remaining-full-script packet with internal bounded writing units and a progress manifest, then reviews one assembled draft return. Consolidated revisions follow only where actual material issues require them. This changes transport cadence, not scope, writer responsibility or the full-script-before-implementation gate. See the project writing workflow for exact current outputs.

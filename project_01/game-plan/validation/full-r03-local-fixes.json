@@ -1,0 +1,1153 @@
+{
+  "edition": "working-r03-c01",
+  "status": "frozen reviewed snapshot selected as accepted-full-r03-c01; editable sources are scripts/ only",
+  "raw_zip_sha256": "2e01c789aca1316a0ac028d03fad1c8c12b2e768024162b2595db45c1cbd8519",
+  "operations": [
+    {
+      "file": "script-ch05-r03.ko.md",
+      "anchor": "C_H_D21",
+      "before": "#### Deterministic selector (normative)\n- Return **one Korean utterance only**. Priority: `K21 complete` → `missing prerequisite` → `recent named error (H3/H4 only)` → `requested all-held level`. Interruption does not outrank a missing source.\n- `K21 complete`, any H0–H4 → `S_H_D21_0091`.\n- E40 missing, any H0–H4 → `S_H_D21_0002`; else E42 missing → `S_H_D21_0003`.\n- With E40/E42 held and recent `silhouette_identifies_person`, H3/H4 → `S_H_D21_0032`; recent `nothing_was_visible`, H3/H4 → `S_H_D21_0033`.\n- With both held: H0 `S_H_D21_0004`; H1 `S_H_D21_0011`; H2 `S_H_D21_0021`; H3 `S_H_D21_0031`; H4 `S_H_D21_0041`.\n\n",
+      "after": "#### Deterministic selector (normative)\n- Return **one Korean utterance only**. Priority: `K21 complete` → `missing prerequisite` → `recent named error (H3 only)` → `requested all-held level`. Interruption does not outrank a missing source.\n- `K21 complete`, any H0–H4 → `S_H_D21_0091`.\n- E40 missing, any H0–H4 → `S_H_D21_0002`; else E42 missing → `S_H_D21_0003`.\n- With E40/E42 held and recent `silhouette_identifies_person`, H3 → `S_H_D21_0032`; recent `nothing_was_visible`, H3 → `S_H_D21_0033`.\n- With both held: H0 `S_H_D21_0004`; H1 `S_H_D21_0011`; H2 `S_H_D21_0021`; H3 `S_H_D21_0031`; H4 `S_H_D21_0041`.\n\n\n- All-held H4 is always the authored complete solution/question: S_H_D21_0041. Recent-error and interruption overlays never override H4. Missing prerequisites still take priority and do not acquire knowledge.\n",
+      "reason": "Ensure explicit H4 request reaches the already-authored complete help after an error or interruption."
+    },
+    {
+      "file": "script-ch05-r03.ko.md",
+      "anchor": "C_H_Q05",
+      "before": "#### Deterministic selector (normative)\n- Return **one Korean utterance only**. Priority: `KQ05 complete` → `missing prerequisite` → `recent named error (H3/H4 only)` → `requested live-v1 level`. Never expose `S_Q05_v2` content through a hint.\n- `KQ05 complete`, any H0–H4 → `S_H_Q05_0091`.\n- E41 missing, any H0–H4 → `S_H_Q05_0002`; else K21 missing → `S_H_Q05_0003`.\n- With E41+K21 and live `S_Q05_v1`, recent `notebook_is_second_witness`, H3/H4 → `S_H_Q05_0032`; recent `guessed_color`, H3/H4 → `S_H_Q05_0033`.\n- Otherwise with E41+K21: H0 `S_H_Q05_0004`; H1 `S_H_Q05_0011`; H2 `S_H_Q05_0021`; H3 `S_H_Q05_0031`; H4 `S_H_Q05_0041`. Interrupted state uses the same held-source rule; if no recent named error applies, H4 may use `S_H_Q05_0042` only when resuming an already-written question.\n\n",
+      "after": "#### Deterministic selector (normative)\n- Return **one Korean utterance only**. Priority: `KQ05 complete` → `missing prerequisite` → `recent named error (H3 only)` → `requested live-v1 level`. Never expose `S_Q05_v2` content through a hint.\n- `KQ05 complete`, any H0–H4 → `S_H_Q05_0091`.\n- E41 missing, any H0–H4 → `S_H_Q05_0002`; else K21 missing → `S_H_Q05_0003`.\n- With E41+K21 and live `S_Q05_v1`, recent `notebook_is_second_witness`, H3 → `S_H_Q05_0032`; recent `guessed_color`, H3 → `S_H_Q05_0033`.\n- Otherwise with E41+K21: H0 `S_H_Q05_0004`; H1 `S_H_Q05_0011`; H2 `S_H_Q05_0021`; H3 `S_H_Q05_0031`; H4 `S_H_Q05_0041`.\n- Interruption preserves the draft; it does not replace the requested held-source level.\n\n\n- All-held H4 is always the authored complete solution/question: S_H_Q05_0041. Recent-error and interruption overlays never override H4. Missing prerequisites still take priority and do not acquire knowledge.\n",
+      "reason": "Ensure explicit H4 request reaches the already-authored complete help after an error or interruption."
+    },
+    {
+      "file": "script-ch05-r03.ko.md",
+      "anchor": "C_H_D22",
+      "before": "#### Deterministic selector (normative)\n- Return **one Korean utterance only**. Priority: `K22 complete` → `missing prerequisite` → `recent named error (H3/H4 only)` → `requested all-held level`.\n- `K22 complete`, any H0–H4 → `S_H_D22_0091`.\n- If any of E42/E43/E45 is missing, any H0–H4 → `S_H_D22_0002`; this line does not invent Q05's correction when E43 is absent.\n- With all three held and recent `gate_proves_push`, H3/H4 → `S_H_D22_0032`; recent `test_is_past`, H3/H4 → `S_H_D22_0033`.\n- With all held: H0 `S_H_D22_0003`; H1 `S_H_D22_0011`; H2 `S_H_D22_0021`; H3 `S_H_D22_0031`; H4 `S_H_D22_0041`. Interrupted state without a named recent error uses the requested all-held line, except H4 may use `S_H_D22_0042` when resuming a partially filled comparison.\n\n",
+      "after": "#### Deterministic selector (normative)\n- Return **one Korean utterance only**. Priority: `K22 complete` → `missing prerequisite` → `recent named error (H3 only)` → `requested all-held level`.\n- `K22 complete`, any H0–H4 → `S_H_D22_0091`.\n- If any of E42/E43/E45 is missing, any H0–H4 → `S_H_D22_0002`; this line does not invent Q05's correction when E43 is absent.\n- With all three held and recent `gate_proves_push`, H3 → `S_H_D22_0032`; recent `test_is_past`, H3 → `S_H_D22_0033`.\n- With all held: H0 `S_H_D22_0003`; H1 `S_H_D22_0011`; H2 `S_H_D22_0021`; H3 `S_H_D22_0031`; H4 `S_H_D22_0041`.\n- Interruption preserves the draft; it does not replace the requested held-source level.\n\n\n- All-held H4 is always the authored complete solution/question: S_H_D22_0041. Recent-error and interruption overlays never override H4. Missing prerequisites still take priority and do not acquire knowledge.\n",
+      "reason": "Ensure explicit H4 request reaches the already-authored complete help after an error or interruption."
+    },
+    {
+      "file": "script-ch05-r03.ko.md",
+      "anchor": "C_H_D23",
+      "before": "#### Deterministic selector (normative)\n- Return **one Korean utterance only**. Priority: `K23 complete` → `missing E43` → `missing timing source` → `recent named error (H3/H4 only)` → `requested all-held level`.\n- `K23 complete`, any H0–H4 → `S_H_D23_0091`.\n- E43 missing, any H0–H4 → `S_H_D23_0002`.\n- If any required live-signal/recovery/clock-comparison source is missing, any H0–H4 → `S_H_D23_0003`.\n- With all required sources and recent `outage_only`, H3/H4 → `S_H_D23_0032`; recent `20_30_live`, H3/H4 → `S_H_D23_0033`.\n- With all sources: H0 `S_H_D23_0004`; H1 `S_H_D23_0011`; H2 `S_H_D23_0021`; H3 `S_H_D23_0031`; H4 `S_H_D23_0041`.\n\n",
+      "after": "#### Deterministic selector (normative)\n- Return **one Korean utterance only**. Priority: `K23 complete` → `missing E43` → `missing timing source` → `recent named error (H3 only)` → `requested all-held level`.\n- `K23 complete`, any H0–H4 → `S_H_D23_0091`.\n- E43 missing, any H0–H4 → `S_H_D23_0002`.\n- If any required live-signal/recovery/clock-comparison source is missing, any H0–H4 → `S_H_D23_0003`.\n- With all required sources and recent `outage_only`, H3 → `S_H_D23_0032`; recent `20_30_live`, H3 → `S_H_D23_0033`.\n- With all sources: H0 `S_H_D23_0004`; H1 `S_H_D23_0011`; H2 `S_H_D23_0021`; H3 `S_H_D23_0031`; H4 `S_H_D23_0041`.\n\n\n- All-held H4 is always the authored complete solution/question: S_H_D23_0041. Recent-error and interruption overlays never override H4. Missing prerequisites still take priority and do not acquire knowledge.\n",
+      "reason": "Ensure explicit H4 request reaches the already-authored complete help after an error or interruption."
+    },
+    {
+      "file": "script-ch05-r03.ko.md",
+      "anchor": "C_H_D24",
+      "before": "#### Deterministic selector (normative)\n- Return **one Korean utterance only**. Priority: `K24 complete` → `missing source` → `recent named error (H3/H4 only)` → `requested all-held level`.\n- `K24 complete`, any H0–H4 → `S_H_D24_0091`.\n- If any of E44/E46/E47/E10 is missing, any H0–H4 → `S_H_D24_0002`.\n- With all held and recent `later_holder_is_event_wearer`, H3/H4 → `S_H_D24_0032`; recent `silhouette_color`, H3/H4 → `S_H_D24_0033`.\n- With all held: H0 `S_H_D24_0003`; H1 `S_H_D24_0011`; H2 `S_H_D24_0021`; H3 `S_H_D24_0031`; H4 `S_H_D24_0041`.\n\n",
+      "after": "#### Deterministic selector (normative)\n- Return **one Korean utterance only**. Priority: `K24 complete` → `missing source` → `recent named error (H3 only)` → `requested all-held level`.\n- `K24 complete`, any H0–H4 → `S_H_D24_0091`.\n- If any of E44/E46/E47/E10 is missing, any H0–H4 → `S_H_D24_0002`.\n- With all held and recent `later_holder_is_event_wearer`, H3 → `S_H_D24_0032`; recent `silhouette_color`, H3 → `S_H_D24_0033`.\n- With all held: H0 `S_H_D24_0003`; H1 `S_H_D24_0011`; H2 `S_H_D24_0021`; H3 `S_H_D24_0031`; H4 `S_H_D24_0041`.\n\n\n- All-held H4 is always the authored complete solution/question: S_H_D24_0041. Recent-error and interruption overlays never override H4. Missing prerequisites still take priority and do not acquire knowledge.\n",
+      "reason": "Ensure explicit H4 request reaches the already-authored complete help after an error or interruption."
+    },
+    {
+      "file": "script-ch05-r03.ko.md",
+      "anchor": "C_H_D25",
+      "before": "#### Deterministic selector (normative)\n- Return **one Korean utterance only**. Priority: `K25 complete` → `missing prior conclusion` → `missing E27/E30 secured-original state` → `recent disputed-copy error (H3/H4 only)` → `requested all-held level`.\n- `K25 complete`, any H0–H4 → `S_H_D25_0091`.\n- If any required earlier conclusion for motive/action/time/coat chain is missing, any H0–H4 → `S_H_D25_0002`.\n- Else if E27 or the secured-but-still-unread E30 original is missing, any H0–H4 → `S_H_D25_0003`. The selector must not reveal E30's later readable times.\n- With all prerequisites and recent `disputed_copy_as_fact`, H3/H4 → `S_H_D25_0032`.\n- Otherwise: H0 `S_H_D25_0004`; H1 `S_H_D25_0011`; H2 `S_H_D25_0021`; H3 `S_H_D25_0031`; H4 `S_H_D25_0041`.\n\n",
+      "after": "#### Deterministic selector (normative)\n- Return **one Korean utterance only**. Priority: `K25 complete` → `missing prior conclusion` → `missing E27/E30 secured-original state` → `recent disputed-copy error (H3 only)` → `requested all-held level`.\n- `K25 complete`, any H0–H4 → `S_H_D25_0091`.\n- If any required earlier conclusion for motive/action/time/coat chain is missing, any H0–H4 → `S_H_D25_0002`.\n- Else if E27 or the secured-but-still-unread E30 original is missing, any H0–H4 → `S_H_D25_0003`. The selector must not reveal E30's later readable times.\n- With all prerequisites and recent `disputed_copy_as_fact`, H3 → `S_H_D25_0032`.\n- Otherwise: H0 `S_H_D25_0004`; H1 `S_H_D25_0011`; H2 `S_H_D25_0021`; H3 `S_H_D25_0031`; H4 `S_H_D25_0041`.\n\n\n- All-held H4 is always the authored complete solution/question: S_H_D25_0041. Recent-error and interruption overlays never override H4. Missing prerequisites still take priority and do not acquire knowledge.\n",
+      "reason": "Ensure explicit H4 request reaches the already-authored complete help after an error or interruption."
+    },
+    {
+      "file": "script-ch03-r03.ko.md",
+      "anchor": "C_H_Q03",
+      "before": "#### Deterministic selector (normative)\n- Return exactly one Korean S line. Priority: `KQ03 complete` → `missing prerequisite` → eligible recent error/interruption → requested all-held level. Missing knowledge always outranks a recent-error overlay.\n- KQ03 complete, any requested H0–H4 → `S_H_Q03_0091`.\n- E20 missing, any H0–H4 → `S_H_Q03_0002`; else E27 missing → `S_H_Q03_0003`.\n- With E20/E27 held and Q03 unresolved: H0 `S_H_Q03_0001`; H1 `S_H_Q03_0011` (interrupted draft may use `0012`); H2 `S_H_Q03_0021`; H3 `S_H_Q03_0032`; H4 `S_H_Q03_0041`.\n- With all prerequisites held and recent `cart_photo_proves_corpse`, H3/H4 → `S_H_Q03_0031`. H0–H2 still use the requested-level held-source line.\n- The selector never uses E24/S_Q03_v2 text before Q03 success.\n",
+      "after": "#### Deterministic selector (normative)\n- Return exactly one Korean S line. Priority: `KQ03 complete` → `missing prerequisite` → eligible recent error/interruption → requested all-held level. Missing knowledge always outranks a recent-error overlay.\n- KQ03 complete, any requested H0–H4 → `S_H_Q03_0091`.\n- E20 missing, any H0–H4 → `S_H_Q03_0002`; else E27 missing → `S_H_Q03_0003`.\n- With E20/E27 held and Q03 unresolved: H0 `S_H_Q03_0001`; H1 `S_H_Q03_0011` (interrupted draft may use `0012`); H2 `S_H_Q03_0021`; H3 `S_H_Q03_0032`; H4 `S_H_Q03_0041`.\n- With all prerequisites held and recent `cart_photo_proves_corpse`, H3 → `S_H_Q03_0031`. H0–H2 still use the requested-level held-source line.\n- The selector never uses E24/S_Q03_v2 text before Q03 success.\n\n- All-held H4 is always the authored complete solution/question: S_H_Q03_0041. Recent-error and interruption overlays never override H4. Missing prerequisites still take priority and do not acquire knowledge.\n",
+      "reason": "Ensure explicit H4 request reaches the already-authored complete help after an error or interruption."
+    },
+    {
+      "file": "script-ch03-r03.ko.md",
+      "anchor": "C_H_D11",
+      "before": "#### Deterministic selector (normative)\n- Return exactly one Korean S line. Priority: `K11 complete` → `missing prerequisite` → eligible recent error/interruption → requested all-held level.\n- K11 complete, any H0–H4 → `S_H_D11_0091`.\n- E20 missing, any H0–H4 → `S_H_D11_0002`; else E22 missing → `S_H_D11_0003`.\n- All held: H0 `S_H_D11_0001`; H1 `S_H_D11_0011` (interrupted draft → `0012`); H2 `S_H_D11_0021`; H3 `S_H_D11_0033`; H4 `S_H_D11_0041`.\n- With all sources held, recent `shape_proves_body` at H3/H4 → `S_H_D11_0031`; recent `shape_proves_no_body` → `S_H_D11_0032`.\n- Missing-source states never select the H4 body/non-body conclusion.\n",
+      "after": "#### Deterministic selector (normative)\n- Return exactly one Korean S line. Priority: `K11 complete` → `missing prerequisite` → eligible recent error/interruption → requested all-held level.\n- K11 complete, any H0–H4 → `S_H_D11_0091`.\n- E20 missing, any H0–H4 → `S_H_D11_0002`; else E22 missing → `S_H_D11_0003`.\n- All held: H0 `S_H_D11_0001`; H1 `S_H_D11_0011` (interrupted draft → `0012`); H2 `S_H_D11_0021`; H3 `S_H_D11_0033`; H4 `S_H_D11_0041`.\n- With all sources held, recent `shape_proves_body` at H3 → `S_H_D11_0031`; recent `shape_proves_no_body` → `S_H_D11_0032`.\n- Missing-source states never select the H4 body/non-body conclusion.\n\n- All-held H4 is always the authored complete solution/question: S_H_D11_0041. Recent-error and interruption overlays never override H4. Missing prerequisites still take priority and do not acquire knowledge.\n",
+      "reason": "Ensure explicit H4 request reaches the already-authored complete help after an error or interruption."
+    },
+    {
+      "file": "script-ch03-r03.ko.md",
+      "anchor": "C_H_D12",
+      "before": "#### Deterministic selector (normative)\n- Return exactly one Korean S line. Priority: `K12 complete` → `missing prerequisite` → eligible recent error/interruption → requested all-held level.\n- K12 complete, any H0–H4 → `S_H_D12_0091`.\n- E21 missing, any H0–H4 → `S_H_D12_0002`; else prior route context missing → `S_H_D12_0003`.\n- All route context held: H0 `S_H_D12_0001`; H1 `S_H_D12_0011` (interrupted route check → `0012`); H2 `S_H_D12_0021`; H3 `S_H_D12_0033`; H4 `S_H_D12_0041`.\n- With prerequisites held, recent `cart_width_excludes_carried_person` at H3/H4 → `S_H_D12_0031`; recent `intact_cart_fits_stair` → `S_H_D12_0032`.\n- Geometry about the intact cart never becomes a claim that a carried person/object cannot use the stairs.\n",
+      "after": "#### Deterministic selector (normative)\n- Return exactly one Korean S line. Priority: `K12 complete` → `missing prerequisite` → eligible recent error/interruption → requested all-held level.\n- K12 complete, any H0–H4 → `S_H_D12_0091`.\n- E21 missing, any H0–H4 → `S_H_D12_0002`; else prior route context missing → `S_H_D12_0003`.\n- All route context held: H0 `S_H_D12_0001`; H1 `S_H_D12_0011` (interrupted route check → `0012`); H2 `S_H_D12_0021`; H3 `S_H_D12_0033`; H4 `S_H_D12_0041`.\n- With prerequisites held, recent `cart_width_excludes_carried_person` at H3 → `S_H_D12_0031`; recent `intact_cart_fits_stair` → `S_H_D12_0032`.\n- Geometry about the intact cart never becomes a claim that a carried person/object cannot use the stairs.\n\n- All-held H4 is always the authored complete solution/question: S_H_D12_0041. Recent-error and interruption overlays never override H4. Missing prerequisites still take priority and do not acquire knowledge.\n",
+      "reason": "Ensure explicit H4 request reaches the already-authored complete help after an error or interruption."
+    },
+    {
+      "file": "script-ch03-r03.ko.md",
+      "anchor": "C_H_D13",
+      "before": "#### Deterministic selector (normative)\n- Return exactly one Korean S line. Priority: `K13 complete` → `missing prerequisite` → V03 stage/incomplete acquisition → eligible recent error/interruption → requested all-held level.\n- K13 complete, any requested H0–H4 → `S_H_D13_0091`.\n- E24/KQ03 missing, any H0–H4 → `S_H_D13_0002`; else K12 missing → `S_H_D13_0003`.\n- If V03 has not completed the witnessed opening, any H0–H4 → `S_H_D13_0004`; if V03 was interrupted after opening but E23/E29 is not yet acknowledged, any H0–H4 → `S_H_D13_0012`.\n- All required held: H0 `S_H_D13_0001`; H1 `S_H_D13_0011`; H2 `S_H_D13_0021`; H3 `S_H_D13_0033`; H4 `S_H_D13_0041`.\n- With all required held, recent `present_contents_prove_past_contents` at H3/H4 → `S_H_D13_0031`; recent `engineer_escorts_continuously_after_24` → `S_H_D13_0032`.\n- A missing Q03 correction never routes directly to the crate visit that depends on it.\n",
+      "after": "#### Deterministic selector (normative)\n- Return exactly one Korean S line. Priority: `K13 complete` → `missing prerequisite` → V03 stage/incomplete acquisition → eligible recent error/interruption → requested all-held level.\n- K13 complete, any requested H0–H4 → `S_H_D13_0091`.\n- E24/KQ03 missing, any H0–H4 → `S_H_D13_0002`; else K12 missing → `S_H_D13_0003`.\n- If V03 has not completed the witnessed opening, any H0–H4 → `S_H_D13_0004`; if V03 was interrupted after opening but E23/E29 is not yet acknowledged, any H0–H4 → `S_H_D13_0012`.\n- All required held: H0 `S_H_D13_0001`; H1 `S_H_D13_0011`; H2 `S_H_D13_0021`; H3 `S_H_D13_0033`; H4 `S_H_D13_0041`.\n- With all required held, recent `present_contents_prove_past_contents` at H3 → `S_H_D13_0031`; recent `engineer_escorts_continuously_after_24` → `S_H_D13_0032`.\n- A missing Q03 correction never routes directly to the crate visit that depends on it.\n\n- All-held H4 is always the authored complete solution/question: S_H_D13_0041. Recent-error and interruption overlays never override H4. Missing prerequisites still take priority and do not acquire knowledge.\n",
+      "reason": "Ensure explicit H4 request reaches the already-authored complete help after an error or interruption."
+    },
+    {
+      "file": "script-ch03-r03.ko.md",
+      "anchor": "C_H_D14",
+      "before": "#### Deterministic selector (normative)\n- Return exactly one Korean S line. Priority: `K14 complete` → `missing prerequisite` → eligible recent error/interruption → requested all-held level.\n- K14 complete, any requested H0–H4 → `S_H_D14_0091`.\n- E25 missing, any H0–H4 → `S_H_D14_0002`; else E26 missing, any H0–H4 → `S_H_D14_0003`.\n- `S_H_D14_0003` is an acquisition route only: before the opaque cargo box is opened it does not name or describe interior leaves.\n- E25/E26 held: H0 `S_H_D14_0001`; H1 `S_H_D14_0011` (interrupted draft → `0012`); H2 `S_H_D14_0021`; H3 `S_H_D14_0032`; H4 `S_H_D14_0041`.\n- With both sources held and recent `ash_title_proves_all_originals_destroyed`, H3/H4 → `S_H_D14_0031`.\n",
+      "after": "#### Deterministic selector (normative)\n- Return exactly one Korean S line. Priority: `K14 complete` → `missing prerequisite` → eligible recent error/interruption → requested all-held level.\n- K14 complete, any requested H0–H4 → `S_H_D14_0091`.\n- E25 missing, any H0–H4 → `S_H_D14_0002`; else E26 missing, any H0–H4 → `S_H_D14_0003`.\n- `S_H_D14_0003` is an acquisition route only: before the opaque cargo box is opened it does not name or describe interior leaves.\n- E25/E26 held: H0 `S_H_D14_0001`; H1 `S_H_D14_0011` (interrupted draft → `0012`); H2 `S_H_D14_0021`; H3 `S_H_D14_0032`; H4 `S_H_D14_0041`.\n- With both sources held and recent `ash_title_proves_all_originals_destroyed`, H3 → `S_H_D14_0031`.\n\n- All-held H4 is always the authored complete solution/question: S_H_D14_0041. Recent-error and interruption overlays never override H4. Missing prerequisites still take priority and do not acquire knowledge.\n",
+      "reason": "Ensure explicit H4 request reaches the already-authored complete help after an error or interruption."
+    },
+    {
+      "file": "script-ch03-r03.ko.md",
+      "anchor": "C_H_D15",
+      "before": "#### Deterministic selector (normative)\n- Return exactly one Korean S line. Priority: `K15 complete` → `missing predecessor/source` → eligible recent error/interruption → requested all-held level.\n- K15 complete, any requested H0–H4 → `S_H_D15_0091`.\n- K13 missing → `S_H_D15_0002`; else K14 missing → `S_H_D15_0003`; else E24 missing → `S_H_D15_0004`; else E26 or E30 missing after an interrupted V03 → `S_H_D15_0005`, regardless of requested level.\n- All required held: H0 `S_H_D15_0001`; H1 `S_H_D15_0011` (interrupted draft → `0012`); H2 `S_H_D15_0021`; H3 `S_H_D15_0033`; H4 `S_H_D15_0041`.\n- With all prerequisites held, recent `cargo_clears_all_helpers` at H3/H4 → `S_H_D15_0031`; recent `removal_proves_murder` → `S_H_D15_0032`.\n- E30 being held but unreadable is a valid all-held state; the selector never invents its hidden text.\n",
+      "after": "#### Deterministic selector (normative)\n- Return exactly one Korean S line. Priority: `K15 complete` → `missing predecessor/source` → eligible recent error/interruption → requested all-held level.\n- K15 complete, any requested H0–H4 → `S_H_D15_0091`.\n- K13 missing → `S_H_D15_0002`; else K14 missing → `S_H_D15_0003`; else E24 missing → `S_H_D15_0004`; else E26 or E30 missing after an interrupted V03 → `S_H_D15_0005`, regardless of requested level.\n- All required held: H0 `S_H_D15_0001`; H1 `S_H_D15_0011` (interrupted draft → `0012`); H2 `S_H_D15_0021`; H3 `S_H_D15_0033`; H4 `S_H_D15_0041`.\n- With all prerequisites held, recent `cargo_clears_all_helpers` at H3 → `S_H_D15_0031`; recent `removal_proves_murder` → `S_H_D15_0032`.\n- E30 being held but unreadable is a valid all-held state; the selector never invents its hidden text.\n\n- All-held H4 is always the authored complete solution/question: S_H_D15_0041. Recent-error and interruption overlays never override H4. Missing prerequisites still take priority and do not acquire knowledge.\n",
+      "reason": "Ensure explicit H4 request reaches the already-authored complete help after an error or interruption."
+    },
+    {
+      "file": "script-ch04-r03.ko.md",
+      "anchor": "C_H_D16",
+      "before": "#### Deterministic selector (normative)\n- Return exactly one Korean S line. Priority: `K16 complete` → `missing E31/E32/E33/E34` → eligible recent error/interruption → requested all-held level.\n- K16 complete, any H0–H4 → `S_H_D16_0091`.\n- Any required purpose document missing, any H0–H4 → `S_H_D16_0002`.\n- All four held and unsolved: H0 `S_H_D16_0003`; H1 `S_H_D16_0011`; H2 `S_H_D16_0021`; H3 `S_H_D16_0031`; H4 `S_H_D16_0041`.\n- With all four held, recent `all_consent_has_same_scope` at H3/H4 → `S_H_D16_0032`; recent `all_signatures_forged` at H3/H4 → `S_H_D16_0033`.\n- With all prerequisites held and an interrupted draft, H1–H4 may select `S_H_D16_0042`; missing documents still outrank interruption.\n",
+      "after": "#### Deterministic selector (normative)\n- Return exactly one Korean S line. Priority: `K16 complete` → `missing E31/E32/E33/E34` → eligible recent error/interruption → requested all-held level.\n- K16 complete, any H0–H4 → `S_H_D16_0091`.\n- Any required purpose document missing, any H0–H4 → `S_H_D16_0002`.\n- All four held and unsolved: H0 `S_H_D16_0003`; H1 `S_H_D16_0011`; H2 `S_H_D16_0021`; H3 `S_H_D16_0031`; H4 `S_H_D16_0041`.\n- With all four held, recent `all_consent_has_same_scope` at H3 → `S_H_D16_0032`; recent `all_signatures_forged` at H3 → `S_H_D16_0033`.\n- With all prerequisites held and an interrupted draft, H3 selects `S_H_D16_0042`; missing documents still outrank interruption.\n\n- All-held H4 is always the authored complete solution/question: S_H_D16_0041. Recent-error and interruption overlays never override H4. Missing prerequisites still take priority and do not acquire knowledge.\n",
+      "reason": "Ensure explicit H4 request reaches the already-authored complete help after an error or interruption."
+    },
+    {
+      "file": "script-ch04-r03.ko.md",
+      "anchor": "C_H_D17",
+      "before": "#### Deterministic selector (normative)\n- Return exactly one Korean S line. Priority: `K17 complete` → `missing K16/E33/E34/E26 custody view` → eligible recent error/interruption → requested all-held level.\n- K17 complete, any H0–H4 → `S_H_D17_0091`.\n- Any prerequisite missing, any H0–H4 → `S_H_D17_0002`.\n- All held and unsolved: H0 `S_H_D17_0003`; H1 `S_H_D17_0011`; H2 `S_H_D17_0021`; H3 `S_H_D17_0031`; H4 `S_H_D17_0041`.\n- With all prerequisites held, recent `handwriting_intuition_only` at H3/H4 → `S_H_D17_0032`; recent `tear_identifies_murderer` at H3/H4 → `S_H_D17_0033`.\n- With all prerequisites held and an interrupted comparison, H1–H4 may select `S_H_D17_0042`; the selector never tells the player to move the wet bound original from custody.\n",
+      "after": "#### Deterministic selector (normative)\n- Return exactly one Korean S line. Priority: `K17 complete` → `missing K16/E33/E34/E26 custody view` → eligible recent error/interruption → requested all-held level.\n- K17 complete, any H0–H4 → `S_H_D17_0091`.\n- Any prerequisite missing, any H0–H4 → `S_H_D17_0002`.\n- All held and unsolved: H0 `S_H_D17_0003`; H1 `S_H_D17_0011`; H2 `S_H_D17_0021`; H3 `S_H_D17_0031`; H4 `S_H_D17_0041`.\n- With all prerequisites held, recent `handwriting_intuition_only` at H3 → `S_H_D17_0032`; recent `tear_identifies_murderer` at H3 → `S_H_D17_0033`.\n- With all prerequisites held and an interrupted comparison, H3 selects `S_H_D17_0042`; the selector never tells the player to move the wet bound original from custody.\n\n- All-held H4 is always the authored complete solution/question: S_H_D17_0041. Recent-error and interruption overlays never override H4. Missing prerequisites still take priority and do not acquire knowledge.\n",
+      "reason": "Ensure explicit H4 request reaches the already-authored complete help after an error or interruption."
+    },
+    {
+      "file": "script-ch04-r03.ko.md",
+      "anchor": "C_H_Q04",
+      "before": "#### Deterministic selector (normative)\n- Return exactly one Korean S line. Priority: `KQ04 complete` → `missing K17/E31/E34` → eligible recent error/interruption → requested live-v1 level. Missing knowledge always outranks the recent-error overlay.\n- KQ04 complete, any H0–H4 → `S_H_Q04_0091`.\n- Any prerequisite missing, any H0–H4 → `S_H_Q04_0002`.\n- With K17/E31/E34 held and S_Q04_v1 still live: H0 `S_H_Q04_0003`; H1 `S_H_Q04_0011`; H2 `S_H_Q04_0021`; H3 `S_H_Q04_0031`; H4 `S_H_Q04_0041`.\n- With all prerequisites held, recent `owner_authorized_no_loan` at H3/H4 → `S_H_Q04_0032`.\n- With all prerequisites held and an interrupted challenge, H1–H4 may select `S_H_Q04_0042`.\n- No pre-success selector line may disclose the delegation/assembly/no-waiver-meeting facts first stated in `S_Q04_v2` / E36.\n",
+      "after": "#### Deterministic selector (normative)\n- Return exactly one Korean S line. Priority: `KQ04 complete` → `missing K17/E31/E34` → eligible recent error/interruption → requested live-v1 level. Missing knowledge always outranks the recent-error overlay.\n- KQ04 complete, any H0–H4 → `S_H_Q04_0091`.\n- Any prerequisite missing, any H0–H4 → `S_H_Q04_0002`.\n- With K17/E31/E34 held and S_Q04_v1 still live: H0 `S_H_Q04_0003`; H1 `S_H_Q04_0011`; H2 `S_H_Q04_0021`; H3 `S_H_Q04_0031`; H4 `S_H_Q04_0041`.\n- With all prerequisites held, recent `owner_authorized_no_loan` at H3 → `S_H_Q04_0032`.\n- With all prerequisites held and an interrupted challenge, H3 selects `S_H_Q04_0042`.\n- No pre-success selector line may disclose the delegation/assembly/no-waiver-meeting facts first stated in `S_Q04_v2` / E36.\n\n- All-held H4 is always the authored complete solution/question: S_H_Q04_0041. Recent-error and interruption overlays never override H4. Missing prerequisites still take priority and do not acquire knowledge.\n",
+      "reason": "Ensure explicit H4 request reaches the already-authored complete help after an error or interruption."
+    },
+    {
+      "file": "script-ch04-r03.ko.md",
+      "anchor": "C_H_D18",
+      "before": "#### Deterministic selector (normative)\n- Return exactly one Korean S line. Priority: `K18 complete` → `missing E35/E37` → `missing K16/E36` → eligible recent error/interruption → requested all-held level.\n- K18 complete, any H0–H4 → `S_H_D18_0091`.\n- E35 or E37 missing, any H0–H4 → `S_H_D18_0002`.\n- With transaction sources held but K16 or E36 missing, any H0–H4 → `S_H_D18_0003`.\n- All prerequisites held: H0 `S_H_D18_0004`; H1 `S_H_D18_0011`; H2 `S_H_D18_0021`; H3 `S_H_D18_0031`; H4 `S_H_D18_0041`.\n- With all prerequisites held, recent `account_contact_alone_proves_diversion` / `second_pledge_equals_contractor_receipt` / `same_origin_as_independent` at H3/H4 → `S_H_D18_0032` / `S_H_D18_0033` / `S_H_D18_0034`.\n- With all prerequisites held and an interrupted draft, H1–H4 may select `S_H_D18_0042`.\n",
+      "after": "#### Deterministic selector (normative)\n- Return exactly one Korean S line. Priority: `K18 complete` → `missing E35/E37` → `missing K16/E36` → eligible recent error/interruption → requested all-held level.\n- K18 complete, any H0–H4 → `S_H_D18_0091`.\n- E35 or E37 missing, any H0–H4 → `S_H_D18_0002`.\n- With transaction sources held but K16 or E36 missing, any H0–H4 → `S_H_D18_0003`.\n- All prerequisites held: H0 `S_H_D18_0004`; H1 `S_H_D18_0011`; H2 `S_H_D18_0021`; H3 `S_H_D18_0031`; H4 `S_H_D18_0041`.\n- With all prerequisites held, recent `account_contact_alone_proves_diversion` / `second_pledge_equals_contractor_receipt` / `same_origin_as_independent` at H3 → `S_H_D18_0032` / `S_H_D18_0033` / `S_H_D18_0034`.\n- With all prerequisites held and an interrupted draft, H3 selects `S_H_D18_0042`.\n\n- All-held H4 is always the authored complete solution/question: S_H_D18_0041. Recent-error and interruption overlays never override H4. Missing prerequisites still take priority and do not acquire knowledge.\n",
+      "reason": "Ensure explicit H4 request reaches the already-authored complete help after an error or interruption."
+    },
+    {
+      "file": "script-ch04-r03.ko.md",
+      "anchor": "C_H_D19",
+      "before": "#### Deterministic selector (normative)\n- Return exactly one Korean S line. Priority: `K19 complete` → `missing E19/E37/E38/E39/K18` → eligible recent error/interruption → requested all-held level.\n- K19 complete, any H0–H4 → `S_H_D19_0091`.\n- Any required source/conclusion missing, any H0–H4 → `S_H_D19_0002`.\n- All held: H0 `S_H_D19_0003`; H1 `S_H_D19_0011`; H2 `S_H_D19_0021`; H3 `S_H_D19_0031`; H4 `S_H_D19_0041`.\n- With all prerequisites held, recent `rudeness_is_motive` at H3/H4 → `S_H_D19_0032`; recent `meeting_card_is_murder_plan` at H3/H4 → `S_H_D19_0033`.\n- With all prerequisites held and an interrupted draft, H1–H4 may select `S_H_D19_0042`.\n",
+      "after": "#### Deterministic selector (normative)\n- Return exactly one Korean S line. Priority: `K19 complete` → `missing E19/E37/E38/E39/K18` → eligible recent error/interruption → requested all-held level.\n- K19 complete, any H0–H4 → `S_H_D19_0091`.\n- Any required source/conclusion missing, any H0–H4 → `S_H_D19_0002`.\n- All held: H0 `S_H_D19_0003`; H1 `S_H_D19_0011`; H2 `S_H_D19_0021`; H3 `S_H_D19_0031`; H4 `S_H_D19_0041`.\n- With all prerequisites held, recent `rudeness_is_motive` at H3 → `S_H_D19_0032`; recent `meeting_card_is_murder_plan` at H3 → `S_H_D19_0033`.\n- With all prerequisites held and an interrupted draft, H3 selects `S_H_D19_0042`.\n\n- All-held H4 is always the authored complete solution/question: S_H_D19_0041. Recent-error and interruption overlays never override H4. Missing prerequisites still take priority and do not acquire knowledge.\n",
+      "reason": "Ensure explicit H4 request reaches the already-authored complete help after an error or interruption."
+    },
+    {
+      "file": "script-ch04-r03.ko.md",
+      "anchor": "C_H_D20",
+      "before": "#### Deterministic selector (normative)\n- Return exactly one Korean S line. Priority: `K20 complete` → `missing K16/K17/K18/K19` → eligible recent error/interruption → requested all-held level.\n- K20 complete, any H0–H4 → `S_H_D20_0091`.\n- Any predecessor conclusion missing, any H0–H4 → `S_H_D20_0002`.\n- All four conclusions held: H0 `S_H_D20_0003`; H1 `S_H_D20_0011`; H2 `S_H_D20_0021`; H3 `S_H_D20_0031`; H4 `S_H_D20_0041`.\n- With all prerequisites held, recent `one_person_explains_all` at H3/H4 → `S_H_D20_0032`; recent `finance_proves_push` at H3/H4 → `S_H_D20_0033`.\n- With all prerequisites held and an interrupted matrix, H1–H4 may select `S_H_D20_0042`.\n",
+      "after": "#### Deterministic selector (normative)\n- Return exactly one Korean S line. Priority: `K20 complete` → `missing K16/K17/K18/K19` → eligible recent error/interruption → requested all-held level.\n- K20 complete, any H0–H4 → `S_H_D20_0091`.\n- Any predecessor conclusion missing, any H0–H4 → `S_H_D20_0002`.\n- All four conclusions held: H0 `S_H_D20_0003`; H1 `S_H_D20_0011`; H2 `S_H_D20_0021`; H3 `S_H_D20_0031`; H4 `S_H_D20_0041`.\n- With all prerequisites held, recent `one_person_explains_all` at H3 → `S_H_D20_0032`; recent `finance_proves_push` at H3 → `S_H_D20_0033`.\n- With all prerequisites held and an interrupted matrix, H3 selects `S_H_D20_0042`.\n\n- All-held H4 is always the authored complete solution/question: S_H_D20_0041. Recent-error and interruption overlays never override H4. Missing prerequisites still take priority and do not acquire knowledge.\n",
+      "reason": "Ensure explicit H4 request reaches the already-authored complete help after an error or interruption."
+    },
+    {
+      "file": "script-ch02-r03.ko.md",
+      "anchor": "C_H_D06",
+      "before": "#### Deterministic selector (normative)\n- Return exactly one Korean S line. Priority: `K06 complete` → `missing prerequisite` → eligible recent named error at H3/H4 → requested all-held level. Missing knowledge always wins over recent-error help.\n- K06 complete, any H0–H4 → `S_H_D06_0042`.\n- E12 missing → `S_H_D06_0001`; else E11 missing → `S_H_D06_0002`; else E14 missing → `S_H_D06_0003`, regardless of requested level.\n- All held: H0 `S_H_D06_0004`, H1 `S_H_D06_0011`, H2 `S_H_D06_0021`, H3 `S_H_D06_0011`, H4 `S_H_D06_0041`.\n- With all prerequisites held, recent `voice_similarity_only` at H3/H4 → `S_H_D06_0031`; recent `schedule_only` → `S_H_D06_0032`; recent `same_origin_as_independent` → `S_H_D06_0033`.\n- Interrupted alignment uses the same selector from the held-source state; it does not replay acquisition or append another hint.\n",
+      "after": "#### Deterministic selector (normative)\n- Return exactly one Korean S line. Priority: `K06 complete` → `missing prerequisite` → eligible recent named error at H3 → requested all-held level. Missing knowledge always wins over recent-error help.\n- K06 complete, any H0–H4 → `S_H_D06_0042`.\n- E12 missing → `S_H_D06_0001`; else E11 missing → `S_H_D06_0002`; else E14 missing → `S_H_D06_0003`, regardless of requested level.\n- All held: H0 `S_H_D06_0004`, H1 `S_H_D06_0011`, H2 `S_H_D06_0021`, H3 `S_H_D06_0011`, H4 `S_H_D06_0041`.\n- With all prerequisites held, recent `voice_similarity_only` at H3 → `S_H_D06_0031`; recent `schedule_only` → `S_H_D06_0032`; recent `same_origin_as_independent` → `S_H_D06_0033`.\n- Interrupted alignment uses the same selector from the held-source state; it does not replay acquisition or append another hint.\n\n- All-held H4 is always the authored complete solution/question: S_H_D06_0041. Recent-error and interruption overlays never override H4. Missing prerequisites still take priority and do not acquire knowledge.\n",
+      "reason": "Ensure explicit H4 request reaches the already-authored complete help after an error or interruption."
+    },
+    {
+      "file": "script-ch02-r03.ko.md",
+      "anchor": "C_H_Q02",
+      "before": "#### Deterministic selector (normative)\n- Return exactly one Korean S line. Priority: `Q02 complete` → `missing prerequisite` → eligible recent named error at H3/H4 → requested pre-success level. Missing evidence outranks a recent error.\n- E15/KQ02 complete, any H0–H4 → `S_H_Q02_0042`.\n- Before success: if E12 or E14 is missing → `S_H_Q02_0002`; else if K06 is missing → `S_H_Q02_0001`, regardless of requested H level.\n- All pre-success prerequisites held: H0 `S_H_Q02_0003`, H1 `S_H_Q02_0011`, H2 `S_H_Q02_0021`, H3 `S_H_Q02_0003`, H4 `S_H_Q02_0041`.\n- With all prerequisites held, recent `console_proves_murder` at H3/H4 → `S_H_Q02_0031`; recent `technician_mimicked_voice` → `S_H_Q02_0032`.\n- Interrupted challenge drafting preserves the same current claim and selector state. Pre-success selection never uses `S_H_Q02_0022`, which is post-success E15 summary only.\n",
+      "after": "#### Deterministic selector (normative)\n- Return exactly one Korean S line. Priority: `Q02 complete` → `missing prerequisite` → eligible recent named error at H3 → requested pre-success level. Missing evidence outranks a recent error.\n- E15/KQ02 complete, any H0–H4 → `S_H_Q02_0042`.\n- Before success: if E12 or E14 is missing → `S_H_Q02_0002`; else if K06 is missing → `S_H_Q02_0001`, regardless of requested H level.\n- All pre-success prerequisites held: H0 `S_H_Q02_0003`, H1 `S_H_Q02_0011`, H2 `S_H_Q02_0021`, H3 `S_H_Q02_0003`, H4 `S_H_Q02_0041`.\n- With all prerequisites held, recent `console_proves_murder` at H3 → `S_H_Q02_0031`; recent `technician_mimicked_voice` → `S_H_Q02_0032`.\n- Interrupted challenge drafting preserves the same current claim and selector state. Pre-success selection never uses `S_H_Q02_0022`, which is post-success E15 summary only.\n\n- All-held H4 is always the authored complete solution/question: S_H_Q02_0041. Recent-error and interruption overlays never override H4. Missing prerequisites still take priority and do not acquire knowledge.\n",
+      "reason": "Ensure explicit H4 request reaches the already-authored complete help after an error or interruption."
+    },
+    {
+      "file": "script-ch02-r03.ko.md",
+      "anchor": "C_H_D07",
+      "before": "#### Deterministic selector (normative)\n- Return exactly one Korean S line. Priority: `K07 complete` → `missing prerequisite` → recent named error at H3/H4 → requested all-held level.\n- K07 complete, any H0–H4 → `S_H_D07_0042`.\n- E11 missing → `S_H_D07_0001`; else E15 missing/Q02 unresolved → `S_H_D07_0002`; else E12 missing → `S_H_D07_0003`, regardless of requested level.\n- All held: H0 `S_H_D07_0004`, H1 `S_H_D07_0011`, H2 `S_H_D07_0021`, H3 `S_H_D07_0032`, H4 `S_H_D07_0041`.\n- With all prerequisites held, recent `file_time_is_death_time` at H3/H4 → `S_H_D07_0031`.\n- Interrupted three-column drafting resumes from the same held-source state and does not add an extra line.\n",
+      "after": "#### Deterministic selector (normative)\n- Return exactly one Korean S line. Priority: `K07 complete` → `missing prerequisite` → recent named error at H3 → requested all-held level.\n- K07 complete, any H0–H4 → `S_H_D07_0042`.\n- E11 missing → `S_H_D07_0001`; else E15 missing/Q02 unresolved → `S_H_D07_0002`; else E12 missing → `S_H_D07_0003`, regardless of requested level.\n- All held: H0 `S_H_D07_0004`, H1 `S_H_D07_0011`, H2 `S_H_D07_0021`, H3 `S_H_D07_0032`, H4 `S_H_D07_0041`.\n- With all prerequisites held, recent `file_time_is_death_time` at H3 → `S_H_D07_0031`.\n- Interrupted three-column drafting resumes from the same held-source state and does not add an extra line.\n\n- All-held H4 is always the authored complete solution/question: S_H_D07_0041. Recent-error and interruption overlays never override H4. Missing prerequisites still take priority and do not acquire knowledge.\n",
+      "reason": "Ensure explicit H4 request reaches the already-authored complete help after an error or interruption."
+    },
+    {
+      "file": "script-ch02-r03.ko.md",
+      "anchor": "C_H_D08",
+      "before": "#### Deterministic selector (normative)\n- Return exactly one Korean S line. Priority: `K08 complete` → `missing prerequisite` → recent named error at H3/H4 → interruption at H3/H4 → requested all-held level.\n- K08 complete, any H0–H4 → `S_H_D08_0042`.\n- K07 missing → `S_H_D08_0002`; else E16 missing → `S_H_D08_0001`; else E13 missing → `S_H_D08_0012`, regardless of requested level.\n- All held: H0 `S_H_D08_0013`, H1 `S_H_D08_0011`, H2 `S_H_D08_0021`, H3 `S_H_D08_0011`, H4 `S_H_D08_0041`.\n- With all prerequisites held, recent `receipt_proves_continued_kitchen_stay` at H3/H4 → `S_H_D08_0031`; recent `receipt_is_death_time` → `S_H_D08_0032`; interrupted draft at H3/H4 → `S_H_D08_0033`.\n",
+      "after": "#### Deterministic selector (normative)\n- Return exactly one Korean S line. Priority: `K08 complete` → `missing prerequisite` → recent named error at H3 → interruption at H3 → requested all-held level.\n- K08 complete, any H0–H4 → `S_H_D08_0042`.\n- K07 missing → `S_H_D08_0002`; else E16 missing → `S_H_D08_0001`; else E13 missing → `S_H_D08_0012`, regardless of requested level.\n- All held: H0 `S_H_D08_0013`, H1 `S_H_D08_0011`, H2 `S_H_D08_0021`, H3 `S_H_D08_0011`, H4 `S_H_D08_0041`.\n- With all prerequisites held, recent `receipt_proves_continued_kitchen_stay` at H3 → `S_H_D08_0031`; recent `receipt_is_death_time` → `S_H_D08_0032`; interrupted draft at H3 → `S_H_D08_0033`.\n\n- All-held H4 is always the authored complete solution/question: S_H_D08_0041. Recent-error and interruption overlays never override H4. Missing prerequisites still take priority and do not acquire knowledge.\n",
+      "reason": "Ensure explicit H4 request reaches the already-authored complete help after an error or interruption."
+    },
+    {
+      "file": "script-ch02-r03.ko.md",
+      "anchor": "C_H_D09",
+      "before": "#### Deterministic selector (normative)\n- Return exactly one Korean S line. Priority: `K09 complete` → `missing prerequisite` → recent named error at H3/H4 → interruption at H3/H4 → requested all-held level.\n- K09 complete, any H0–H4 → `S_H_D09_0042`.\n- E12 missing → `S_H_D09_0001`; else E17 missing → `S_H_D09_0012`; else E18 missing/not yet reindexed → `S_H_D09_0013`, regardless of requested level.\n- All held: H0 `S_H_D09_0014`, H1 `S_H_D09_0011`, H2 `S_H_D09_0021`, H3 `S_H_D09_0011`, H4 `S_H_D09_0041`.\n- With all prerequisites held, recent `schedule_is_performance` at H3/H4 → `S_H_D09_0031`; recent `perfect_clock_claim` → `S_H_D09_0032`; interrupted draft at H3/H4 → `S_H_D09_0033`.\n",
+      "after": "#### Deterministic selector (normative)\n- Return exactly one Korean S line. Priority: `K09 complete` → `missing prerequisite` → recent named error at H3 → interruption at H3 → requested all-held level.\n- K09 complete, any H0–H4 → `S_H_D09_0042`.\n- E12 missing → `S_H_D09_0001`; else E17 missing → `S_H_D09_0012`; else E18 missing/not yet reindexed → `S_H_D09_0013`, regardless of requested level.\n- All held: H0 `S_H_D09_0014`, H1 `S_H_D09_0011`, H2 `S_H_D09_0021`, H3 `S_H_D09_0011`, H4 `S_H_D09_0041`.\n- With all prerequisites held, recent `schedule_is_performance` at H3 → `S_H_D09_0031`; recent `perfect_clock_claim` → `S_H_D09_0032`; interrupted draft at H3 → `S_H_D09_0033`.\n\n- All-held H4 is always the authored complete solution/question: S_H_D09_0041. Recent-error and interruption overlays never override H4. Missing prerequisites still take priority and do not acquire knowledge.\n",
+      "reason": "Ensure explicit H4 request reaches the already-authored complete help after an error or interruption."
+    },
+    {
+      "file": "script-ch02-r03.ko.md",
+      "anchor": "C_H_D10",
+      "before": "#### Deterministic selector (normative)\n- Return exactly one Korean S line. Priority: `K10 complete` → `missing prerequisite` → recent named error at H3/H4 → interruption at H3/H4 → requested all-held level.\n- K10 complete, any H0–H4 → `S_H_D10_0042`.\n- K05 or K07 missing → `S_H_D10_0013`; else K08 missing → `S_H_D10_0001`; else K09 missing → `S_H_D10_0012`, regardless of requested level.\n- All held: H0 `S_H_D10_0014`, H1 `S_H_D10_0011`, H2 `S_H_D10_0021`, H3 `S_H_D10_0011`, H4 `S_H_D10_0041`.\n- With all prerequisites held, recent `automatic_culprit` at H3/H4 → `S_H_D10_0031`; recent `exact_death_minute` → `S_H_D10_0032`; interrupted draft at H3/H4 → `S_H_D10_0033`.\n",
+      "after": "#### Deterministic selector (normative)\n- Return exactly one Korean S line. Priority: `K10 complete` → `missing prerequisite` → recent named error at H3 → interruption at H3 → requested all-held level.\n- K10 complete, any H0–H4 → `S_H_D10_0042`.\n- K05 or K07 missing → `S_H_D10_0013`; else K08 missing → `S_H_D10_0001`; else K09 missing → `S_H_D10_0012`, regardless of requested level.\n- All held: H0 `S_H_D10_0014`, H1 `S_H_D10_0011`, H2 `S_H_D10_0021`, H3 `S_H_D10_0011`, H4 `S_H_D10_0041`.\n- With all prerequisites held, recent `automatic_culprit` at H3 → `S_H_D10_0031`; recent `exact_death_minute` → `S_H_D10_0032`; interrupted draft at H3 → `S_H_D10_0033`.\n\n- All-held H4 is always the authored complete solution/question: S_H_D10_0041. Recent-error and interruption overlays never override H4. Missing prerequisites still take priority and do not acquire knowledge.\n",
+      "reason": "Ensure explicit H4 request reaches the already-authored complete help after an error or interruption."
+    },
+    {
+      "file": "script-ch01-r03.ko.md",
+      "anchor": "C_H_D01",
+      "before": "#### Deterministic selector (normative)\n- Return **one Korean utterance only** for a hint request; never concatenate overlays.\n- Priority: `K01 complete` → `missing prerequisite` → `recent named error (H3/H4 only)` → `requested held-source level`. Interruption keeps the same held/missing state and does not outrank it.\n- `K01 complete`, any requested H0–H4 → `S_H_D01_0043`.\n- E05 missing, any H0–H4 → `S_H_D01_0001`; else E03 missing, any H0–H4 → `S_H_D01_0002`. These acquisition lines intentionally reveal no x7/x6/x9 answer.\n- All held: H0 `S_H_D01_0003`; H1 `S_H_D01_0011`; H2 `S_H_D01_0021`; H3 `S_H_D01_0032`; H4 `S_H_D01_0042`.\n- With all sources held and recent `moving_window_or_door`, H3/H4 → `S_H_D01_0033`; H0–H2 still use their requested-level held-source line.\n",
+      "after": "#### Deterministic selector (normative)\n- Return **one Korean utterance only** for a hint request; never concatenate overlays.\n- Priority: `K01 complete` → `missing prerequisite` → `recent named error (H3 only)` → `requested held-source level`. Interruption keeps the same held/missing state and does not outrank it.\n- `K01 complete`, any requested H0–H4 → `S_H_D01_0043`.\n- E05 missing, any H0–H4 → `S_H_D01_0001`; else E03 missing, any H0–H4 → `S_H_D01_0002`. These acquisition lines intentionally reveal no x7/x6/x9 answer.\n- All held: H0 `S_H_D01_0003`; H1 `S_H_D01_0011`; H2 `S_H_D01_0021`; H3 `S_H_D01_0032`; H4 `S_H_D01_0042`.\n- With all sources held and recent `moving_window_or_door`, H3 → `S_H_D01_0033`; H0–H2 still use their requested-level held-source line.\n\n- All-held H4 is always the authored complete solution/question: S_H_D01_0042. Recent-error and interruption overlays never override H4. Missing prerequisites still take priority and do not acquire knowledge.\n",
+      "reason": "Ensure explicit H4 request reaches the already-authored complete help after an error or interruption."
+    },
+    {
+      "file": "script-ch01-r03.ko.md",
+      "anchor": "C_H_D02",
+      "before": "#### Deterministic selector (normative)\n- Return one utterance only. Priority: `K02 complete` → `missing prerequisite` → `recent named error at H3/H4` → `requested held-source level`; interruption preserves the same selector state.\n- `K02 complete`, any H0–H4 → `S_H_D02_0043`.\n- K01 missing → `S_H_D02_0001`; else E04 missing → `S_H_D02_0002`; else E05 missing → `S_H_D02_0003`, regardless of requested H level.\n- All held: H0 `S_H_D02_0004`; H1 `S_H_D02_0011`; H2 `S_H_D02_0021`; H3 `S_H_D02_0032`; H4 `S_H_D02_0042`.\n- With all prerequisites held, recent `fresh_track_dates_exact_move` at H3/H4 → `S_H_D02_0033`; recent `culprit_moved_alone` at H3/H4 → `S_H_D02_0034`.\n",
+      "after": "#### Deterministic selector (normative)\n- Return one utterance only. Priority: `K02 complete` → `missing prerequisite` → `recent named error at H3` → `requested held-source level`; interruption preserves the same selector state.\n- `K02 complete`, any H0–H4 → `S_H_D02_0043`.\n- K01 missing → `S_H_D02_0001`; else E04 missing → `S_H_D02_0002`; else E05 missing → `S_H_D02_0003`, regardless of requested H level.\n- All held: H0 `S_H_D02_0004`; H1 `S_H_D02_0011`; H2 `S_H_D02_0021`; H3 `S_H_D02_0032`; H4 `S_H_D02_0042`.\n- With all prerequisites held, recent `fresh_track_dates_exact_move` at H3 → `S_H_D02_0033`; recent `culprit_moved_alone` at H3 → `S_H_D02_0034`.\n\n- All-held H4 is always the authored complete solution/question: S_H_D02_0042. Recent-error and interruption overlays never override H4. Missing prerequisites still take priority and do not acquire knowledge.\n",
+      "reason": "Ensure explicit H4 request reaches the already-authored complete help after an error or interruption."
+    },
+    {
+      "file": "script-ch01-r03.ko.md",
+      "anchor": "C_H_Q01",
+      "before": "#### Deterministic selector (normative)\n- Return one line only. Priority: `Q01 complete/E08 held` → `no complete valid route` → `recent named error with a complete route (H3/H4)` → `requested route-specific level`.\n- Q01 complete/E08 held, any H0–H4 → `S_H_Q01_0044`.\n- Before success, if route A can be completed from the already witnessed prologue sequence and E10 is missing → `S_H_Q01_0001` at any level. Otherwise, if E06 or E07 is missing → `S_H_Q01_0002`; else if K02 is missing → `S_H_Q01_0003`. No higher-level answer is exposed while a route is incomplete.\n- If route A (E10+E18) is complete: H0 `S_H_Q01_0004`; H1 `S_H_Q01_0011`; H2 `S_H_Q01_0021`; H3 `S_H_Q01_0032`; H4 `S_H_Q01_0042`.\n- If route B (E06+E07+K02) is complete: H0 `S_H_Q01_0004`; H1 `S_H_Q01_0011`; H2 `S_H_Q01_0022`; H3 `S_H_Q01_0032`; H4 `S_H_Q01_0043`. If both are complete, prefer route A only when the player entered through the early-photo route; otherwise preserve the currently selected proof route.\n- With a complete route and recent `uncertainty_proves_complicity`, H3/H4 → `S_H_Q01_0033`; H0–H2 remain requested-level route text. Interrupted drafting preserves the selected route and most recent error; it never reactivates S_Q01_v1 after success.\n",
+      "after": "#### Deterministic selector (normative)\n- Return one line only. Priority: `Q01 complete/E08 held` → `no complete valid route` → `recent named error with a complete route (H3)` → `requested route-specific level`.\n- Q01 complete/E08 held, any H0–H4 → `S_H_Q01_0044`.\n- Before success, if route A can be completed from the already witnessed prologue sequence and E10 is missing → `S_H_Q01_0001` at any level. Otherwise, if E06 or E07 is missing → `S_H_Q01_0002`; else if K02 is missing → `S_H_Q01_0003`. No higher-level answer is exposed while a route is incomplete.\n- If route A (E10+E18) is complete: H0 `S_H_Q01_0004`; H1 `S_H_Q01_0011`; H2 `S_H_Q01_0021`; H3 `S_H_Q01_0032`; H4 `S_H_Q01_0042`.\n- If route B (E06+E07+K02) is complete: H0 `S_H_Q01_0004`; H1 `S_H_Q01_0011`; H2 `S_H_Q01_0022`; H3 `S_H_Q01_0032`; H4 `S_H_Q01_0043`. If both are complete, prefer route A only when the player entered through the early-photo route; otherwise preserve the currently selected proof route.\n- With a complete route and recent `uncertainty_proves_complicity`, H3 → `S_H_Q01_0033`; H0–H2 remain requested-level route text. Interrupted drafting preserves the selected route and most recent error; it never reactivates S_Q01_v1 after success.\n\n- All-held H4 is always the authored complete solution/question: S_H_Q01_0042 for the selected complete photo route, or S_H_Q01_0043 for the selected complete sightline route. Recent-error and interruption overlays never override H4. Missing prerequisites still take priority and do not acquire knowledge.\n",
+      "reason": "Ensure explicit H4 request reaches the already-authored complete help after an error or interruption."
+    },
+    {
+      "file": "script-ch01-r03.ko.md",
+      "anchor": "C_H_D03",
+      "before": "#### Deterministic selector (normative)\n- One request returns one line. Priority: `K03 complete` → `missing prerequisite` → `recent named error at H3/H4` → `requested held-source level`.\n- `K03 complete`, any H0–H4 → `S_H_D03_0043`.\n- K01 missing → `S_H_D03_0001`; else K02 missing → `S_H_D03_0002`; else E08 missing → `S_H_D03_0003`; else E07 missing → `S_H_D03_0004`, regardless of requested level.\n- All required held: H0 `S_H_D03_0005`; H1 `S_H_D03_0011`; H2 `S_H_D03_0022` when E10+E18 are also held, otherwise `S_H_D03_0021`; H3 `S_H_D03_0031`; H4 `S_H_D03_0042`.\n- Recent `ambiguous_chair_identifies_murderer` with all prerequisites held, H3/H4 → `S_H_D03_0032`. Interruption does not bypass missing checks.\n",
+      "after": "#### Deterministic selector (normative)\n- One request returns one line. Priority: `K03 complete` → `missing prerequisite` → `recent named error at H3` → `requested held-source level`.\n- `K03 complete`, any H0–H4 → `S_H_D03_0043`.\n- K01 missing → `S_H_D03_0001`; else K02 missing → `S_H_D03_0002`; else E08 missing → `S_H_D03_0003`; else E07 missing → `S_H_D03_0004`, regardless of requested level.\n- All required held: H0 `S_H_D03_0005`; H1 `S_H_D03_0011`; H2 `S_H_D03_0022` when E10+E18 are also held, otherwise `S_H_D03_0021`; H3 `S_H_D03_0031`; H4 `S_H_D03_0042`.\n- Recent `ambiguous_chair_identifies_murderer` with all prerequisites held, H3 → `S_H_D03_0032`. Interruption does not bypass missing checks.\n\n- All-held H4 is always the authored complete solution/question: S_H_D03_0042. Recent-error and interruption overlays never override H4. Missing prerequisites still take priority and do not acquire knowledge.\n",
+      "reason": "Ensure explicit H4 request reaches the already-authored complete help after an error or interruption."
+    },
+    {
+      "file": "script-ch01-r03.ko.md",
+      "anchor": "C_H_D04",
+      "before": "#### Deterministic selector (normative)\n- One request returns one line. Priority: `K04 complete` → `missing prerequisite` → `recent named error at H3/H4` → `requested held-source level`.\n- `K04 complete`, any H0–H4 → `S_H_D04_0043`.\n- K03 missing → `S_H_D04_0001`; else K01 missing → `S_H_D04_0003`; else E09 missing → `S_H_D04_0002`, at any requested level.\n- All held: H0 `S_H_D04_0004`; H1 `S_H_D04_0011`; H2 `S_H_D04_0021`; H3 `S_H_D04_0031`; H4 `S_H_D04_0042`.\n- With all held, recent `route_crosses_closed_partition` at H3/H4 → `S_H_D04_0032`; recent `feasible_route_proves_observed_use` → `S_H_D04_0033`.\n",
+      "after": "#### Deterministic selector (normative)\n- One request returns one line. Priority: `K04 complete` → `missing prerequisite` → `recent named error at H3` → `requested held-source level`.\n- `K04 complete`, any H0–H4 → `S_H_D04_0043`.\n- K03 missing → `S_H_D04_0001`; else K01 missing → `S_H_D04_0003`; else E09 missing → `S_H_D04_0002`, at any requested level.\n- All held: H0 `S_H_D04_0004`; H1 `S_H_D04_0011`; H2 `S_H_D04_0021`; H3 `S_H_D04_0031`; H4 `S_H_D04_0042`.\n- With all held, recent `route_crosses_closed_partition` at H3 → `S_H_D04_0032`; recent `feasible_route_proves_observed_use` → `S_H_D04_0033`.\n\n- All-held H4 is always the authored complete solution/question: S_H_D04_0042. Recent-error and interruption overlays never override H4. Missing prerequisites still take priority and do not acquire knowledge.\n",
+      "reason": "Ensure explicit H4 request reaches the already-authored complete help after an error or interruption."
+    },
+    {
+      "file": "script-ch01-r03.ko.md",
+      "anchor": "C_H_D05",
+      "before": "#### Deterministic selector (normative)\n- One request returns one line. Priority: `K05 complete` → `missing prerequisite` → `recent named error at H3/H4` → `requested held-source level`.\n- `K05 complete`, any H0–H4 → `S_H_D05_0043`.\n- K02 missing → `S_H_D05_0001`; else K03 missing → `S_H_D05_0002`; else K04 missing → `S_H_D05_0003`, at any requested level.\n- All held: H0 `S_H_D05_0004`; H1 `S_H_D05_0011`; H2 `S_H_D05_0021`; H3 `S_H_D05_0031`; H4 `S_H_D05_0042`.\n- With all held, recent `collective_guilt` at H3/H4 → `S_H_D05_0032`; recent `all_rooms_unlocked` → `S_H_D05_0033`. Interruption preserves the three-category draft and uses the same priority.\n",
+      "after": "#### Deterministic selector (normative)\n- One request returns one line. Priority: `K05 complete` → `missing prerequisite` → `recent named error at H3` → `requested held-source level`.\n- `K05 complete`, any H0–H4 → `S_H_D05_0043`.\n- K02 missing → `S_H_D05_0001`; else K03 missing → `S_H_D05_0002`; else K04 missing → `S_H_D05_0003`, at any requested level.\n- All held: H0 `S_H_D05_0004`; H1 `S_H_D05_0011`; H2 `S_H_D05_0021`; H3 `S_H_D05_0031`; H4 `S_H_D05_0042`.\n- With all held, recent `collective_guilt` at H3 → `S_H_D05_0032`; recent `all_rooms_unlocked` → `S_H_D05_0033`. Interruption preserves the three-category draft and uses the same priority.\n\n- All-held H4 is always the authored complete solution/question: S_H_D05_0042. Recent-error and interruption overlays never override H4. Missing prerequisites still take priority and do not acquire knowledge.\n",
+      "reason": "Ensure explicit H4 request reaches the already-authored complete help after an error or interruption."
+    },
+    {
+      "file": "script-ch06-r03.ko.md",
+      "anchor": "C_H_D26",
+      "before": "#### Deterministic selector (normative)\n- Return **one Korean utterance only**. Priority: `K26 complete` → `missing prerequisite/source` → `recent named error (H3/H4 only)` → `requested all-held level`. Interruption never outranks a missing physical check.\n- `K26 complete`, any H0–H4 → `S_H_D26_0091`.\n- E49/unfolded view missing, any H0–H4 → `S_H_D26_0002`; else E50 missing → `S_H_D26_0003`; else E29 or E28 missing → `S_H_D26_0004`.\n- With all required views held, recent label/profession error and requested H3/H4 → `S_H_D26_0032`.\n- Otherwise all-held: H0 `S_H_D26_0001`; H1 `S_H_D26_0011`; H2 `S_H_D26_0021`; H3 `S_H_D26_0031`; H4 `S_H_D26_0041`. If an all-held draft was interrupted, H4 may use `S_H_D26_0042`.\n",
+      "after": "#### Deterministic selector (normative)\n- Return **one Korean utterance only**. Priority: `K26 complete` → `missing prerequisite/source` → `recent named error (H3 only)` → `requested all-held level`. Interruption never outranks a missing physical check.\n- `K26 complete`, any H0–H4 → `S_H_D26_0091`.\n- E49/unfolded view missing, any H0–H4 → `S_H_D26_0002`; else E50 missing → `S_H_D26_0003`; else E29 or E28 missing → `S_H_D26_0004`.\n- With all required views held, recent label/profession error and requested H3 → `S_H_D26_0032`.\n- Otherwise all-held: H0 `S_H_D26_0001`; H1 `S_H_D26_0011`; H2 `S_H_D26_0021`; H3 `S_H_D26_0031`; H4 `S_H_D26_0041`.\n\n- All-held H4 is always the authored complete solution/question: S_H_D26_0041. Recent-error and interruption overlays never override H4. Missing prerequisites still take priority and do not acquire knowledge.\n",
+      "reason": "Ensure explicit H4 request reaches the already-authored complete help after an error or interruption."
+    },
+    {
+      "file": "script-ch06-r03.ko.md",
+      "anchor": "C_H_D27",
+      "before": "#### Deterministic selector (normative)\n- Return **one Korean utterance only**. Priority: `K27 complete` → `missing prerequisite/source` → `recent named error (H3/H4 only)` → `requested all-held level`. Do not repeat a finished machine demo merely because a higher hint was requested.\n- `K27 complete`, any H0–H4 → `S_H_D27_0091`.\n- K26 missing, any H0–H4 → `S_H_D27_0002`; else E48 or E51 missing → `S_H_D27_0003`.\n- With all required material held, recent printer-shift error and requested H3/H4 → `S_H_D27_0032`; recent all-pages-forged error and H3/H4 → `S_H_D27_0033`.\n- Otherwise all-held: H0 `S_H_D27_0001`; H1 `S_H_D27_0011`; H2 `S_H_D27_0021`; H3 `S_H_D27_0031`; H4 `S_H_D27_0041`. If interrupted with all material held, H4 may use `S_H_D27_0042`.\n",
+      "after": "#### Deterministic selector (normative)\n- Return **one Korean utterance only**. Priority: `K27 complete` → `missing prerequisite/source` → `recent named error (H3 only)` → `requested all-held level`. Do not repeat a finished machine demo merely because a higher hint was requested.\n- `K27 complete`, any H0–H4 → `S_H_D27_0091`.\n- K26 missing, any H0–H4 → `S_H_D27_0002`; else E48 or E51 missing → `S_H_D27_0003`.\n- With all required material held, recent printer-shift error and requested H3 → `S_H_D27_0032`; recent all-pages-forged error and H3 → `S_H_D27_0033`.\n- Otherwise all-held: H0 `S_H_D27_0001`; H1 `S_H_D27_0011`; H2 `S_H_D27_0021`; H3 `S_H_D27_0031`; H4 `S_H_D27_0041`.\n\n- All-held H4 is always the authored complete solution/question: S_H_D27_0041. Recent-error and interruption overlays never override H4. Missing prerequisites still take priority and do not acquire knowledge.\n",
+      "reason": "Ensure explicit H4 request reaches the already-authored complete help after an error or interruption."
+    },
+    {
+      "file": "script-ch06-r03.ko.md",
+      "anchor": "C_H_Q06",
+      "before": "#### Deterministic selector (normative)\n- Return **one Korean utterance only**. Priority: `KQ06 complete` → `K27 missing` → `E28 missing` → `E51 missing` → `recent named error (H3/H4 only)` → `requested live-v1 level`. Before success, no selector path may mention the 20:40–20:50 solo-copy interval, nonreturn or P03's exclusive access.\n- `KQ06 complete`, any H0–H4 → `S_H_Q06_0091`.\n- K27 missing, any H0–H4 → `S_H_Q06_0002`.\n- K27 held but E28 missing, any H0–H4 → `S_H_Q06_0003`.\n- K27+E28 held but E51 missing, any H0–H4 → `S_H_Q06_0005`.\n- With K27+E28+E51 and live `S_Q06_v1`, recent murder-scope error and H3/H4 → `S_H_Q06_0032`; recent original-clock error and H3/H4 → `S_H_Q06_0033`.\n- Otherwise live-v1/all-held: H0 `S_H_Q06_0004`; H1 `S_H_Q06_0011`; H2 `S_H_Q06_0021`; H3 `S_H_Q06_0031`; H4 `S_H_Q06_0041`. If interrupted before correction, H4 may use `S_H_Q06_0042`.\n",
+      "after": "#### Deterministic selector (normative)\n- Return **one Korean utterance only**. Priority: `KQ06 complete` → `K27 missing` → `E28 missing` → `E51 missing` → `recent named error (H3 only)` → `requested live-v1 level`. Before success, no selector path may mention the 20:40–20:50 solo-copy interval, nonreturn or P03's exclusive access.\n- `KQ06 complete`, any H0–H4 → `S_H_Q06_0091`.\n- K27 missing, any H0–H4 → `S_H_Q06_0002`.\n- K27 held but E28 missing, any H0–H4 → `S_H_Q06_0003`.\n- K27+E28 held but E51 missing, any H0–H4 → `S_H_Q06_0005`.\n- With K27+E28+E51 and live `S_Q06_v1`, recent murder-scope error and H3 → `S_H_Q06_0032`; recent original-clock error and H3 → `S_H_Q06_0033`.\n- Otherwise live-v1/all-held: H0 `S_H_Q06_0004`; H1 `S_H_Q06_0011`; H2 `S_H_Q06_0021`; H3 `S_H_Q06_0031`; H4 `S_H_Q06_0041`.\n\n- All-held H4 is always the authored complete solution/question: S_H_Q06_0041. Recent-error and interruption overlays never override H4. Missing prerequisites still take priority and do not acquire knowledge.\n",
+      "reason": "Ensure explicit H4 request reaches the already-authored complete help after an error or interruption."
+    },
+    {
+      "file": "script-ch06-r03.ko.md",
+      "anchor": "C_H_D28",
+      "before": "#### Deterministic selector (normative)\n- Return **one Korean utterance only**. Priority: `K28 complete` → `missing prerequisite/source` → `recent named error (H3/H4 only)` → `requested all-held level`. Coat-transfer timing never substitutes for the direct-observation prerequisite.\n- `K28 complete`, any H0–H4 → `S_H_D28_0091`.\n- K26/E49 missing, any H0–H4 → `S_H_D28_0002`; else E52 missing → `S_H_D28_0003`; else E13 or K23 missing → `S_H_D28_0004`.\n- With all required material held, recent walking-speed error and H3/H4 → `S_H_D28_0032`; recent copied-corroboration error and H3/H4 → `S_H_D28_0033`.\n- Otherwise all-held: H0 `S_H_D28_0001`; H1 `S_H_D28_0011`; H2 `S_H_D28_0021`; H3 `S_H_D28_0031`; H4 `S_H_D28_0041`. If interrupted with all sources held, H4 may use `S_H_D28_0042`.\n",
+      "after": "#### Deterministic selector (normative)\n- Return **one Korean utterance only**. Priority: `K28 complete` → `missing prerequisite/source` → `recent named error (H3 only)` → `requested all-held level`. Coat-transfer timing never substitutes for the direct-observation prerequisite.\n- `K28 complete`, any H0–H4 → `S_H_D28_0091`.\n- K26/E49 missing, any H0–H4 → `S_H_D28_0002`; else E52 missing → `S_H_D28_0003`; else E13 or K23 missing → `S_H_D28_0004`.\n- With all required material held, recent walking-speed error and H3 → `S_H_D28_0032`; recent copied-corroboration error and H3 → `S_H_D28_0033`.\n- Otherwise all-held: H0 `S_H_D28_0001`; H1 `S_H_D28_0011`; H2 `S_H_D28_0021`; H3 `S_H_D28_0031`; H4 `S_H_D28_0041`.\n\n- All-held H4 is always the authored complete solution/question: S_H_D28_0041. Recent-error and interruption overlays never override H4. Missing prerequisites still take priority and do not acquire knowledge.\n",
+      "reason": "Ensure explicit H4 request reaches the already-authored complete help after an error or interruption."
+    },
+    {
+      "file": "script-ch06-r03.ko.md",
+      "anchor": "C_H_D29",
+      "before": "#### Deterministic selector (normative)\n- Return **one Korean utterance only**. Priority: `K29 complete` → `missing prior conclusion/source` → `recent named error (H3/H4 only)` → `requested all-held level`. In particular, a missing K28 or KQ06 always blocks the H1–H4 person-selection solution.\n- `K29 complete`, any H0–H4 → `S_H_D29_0091`.\n- Any of K18/K19/K24 missing, any H0–H4 → `S_H_D29_0001`; else K27 or KQ06 missing → `S_H_D29_0003`; else K28 missing → `S_H_D29_0002`; else any of E10/E19/E46/E18 missing → `S_H_D29_0004`.\n- With all required material held, recent name-only error and H3/H4 → `S_H_D29_0032`; recent motive-only or copy-only error and H3/H4 → `S_H_D29_0033`; recent unsupported-conspiracy error and H3/H4 → `S_H_D29_0034`.\n- Otherwise all-held: H0 `S_H_D29_0001`; H1 `S_H_D29_0011`; H2 `S_H_D29_0021`; H3 `S_H_D29_0031`; H4 `S_H_D29_0041`. If interrupted with all sources held, H4 may use `S_H_D29_0042`.\n",
+      "after": "#### Deterministic selector (normative)\n- Return **one Korean utterance only**. Priority: `K29 complete` → `missing prior conclusion/source` → `recent named error (H3 only)` → `requested all-held level`. In particular, a missing K28 or KQ06 always blocks the H1–H4 person-selection solution.\n- `K29 complete`, any H0–H4 → `S_H_D29_0091`.\n- Any of K18/K19/K24 missing, any H0–H4 → `S_H_D29_0001`; else K27 or KQ06 missing → `S_H_D29_0003`; else K28 missing → `S_H_D29_0002`; else any of E10/E19/E46/E18 missing → `S_H_D29_0004`.\n- With all required material held, recent name-only error and H3 → `S_H_D29_0032`; recent motive-only or copy-only error and H3 → `S_H_D29_0033`; recent unsupported-conspiracy error and H3 → `S_H_D29_0034`.\n- Otherwise all-held: H0 `S_H_D29_0001`; H1 `S_H_D29_0011`; H2 `S_H_D29_0021`; H3 `S_H_D29_0031`; H4 `S_H_D29_0041`.\n\n- All-held H4 is always the authored complete solution/question: S_H_D29_0041. Recent-error and interruption overlays never override H4. Missing prerequisites still take priority and do not acquire knowledge.\n",
+      "reason": "Ensure explicit H4 request reaches the already-authored complete help after an error or interruption."
+    },
+    {
+      "file": "script-ch06-r03.ko.md",
+      "anchor": "C_H_D30",
+      "before": "#### Deterministic selector (normative)\n- Return **one Korean utterance only**. Priority: `K30 complete` → `missing prerequisite by role` → `recent named error (H3/H4 only)` → `requested current level/order`. A recent error or interrupted draft never bypasses a now-missing prerequisite.\n- `K30 complete`, any H0–H4 → `S_H_D30_0091`.\n- Missing act/time support (including K22/K23), any H0–H4 → `S_H_D30_0002`.\n- Missing coat/alibi support (including K24/K28), any H0–H4 → `S_H_D30_0003`.\n- Missing altered-copy support (K27 or KQ06), any H0–H4 → `S_H_D30_0004`.\n- Missing another required earlier conclusion (K05/K10/K15/K20/K29), any H0–H4 → `S_H_D30_0001`.\n- With all prerequisites held, recent wrong-interval and H3/H4 → `S_H_D30_0032`; recent wearer=holder and H3/H4 → `S_H_D30_0033`; recent one-origin-corroboration and H3/H4 → `S_H_D30_0034`; recent unsupported-complicity or erased-collateral error and H3/H4 → `S_H_D30_0035`.\n- Otherwise all-held: H0 `S_H_D30_0001`; H1 `S_H_D30_0011`; H2 `S_H_D30_0021`; H3 `S_H_D30_0031`; H4 uses `S_H_D30_0042` for a stored concealment-first order, otherwise `S_H_D30_0041`. If interrupted with all prerequisites held, H4 may use `S_H_D30_0043`.\n",
+      "after": "#### Deterministic selector (normative)\n- Return **one Korean utterance only**. Priority: `K30 complete` → `missing prerequisite by role` → `recent named error (H3 only)` → `requested current level/order`. A recent error or interrupted draft never bypasses a now-missing prerequisite.\n- `K30 complete`, any H0–H4 → `S_H_D30_0091`.\n- Missing act/time support (including K22/K23), any H0–H4 → `S_H_D30_0002`.\n- Missing coat/alibi support (including K24/K28), any H0–H4 → `S_H_D30_0003`.\n- Missing altered-copy support (K27 or KQ06), any H0–H4 → `S_H_D30_0004`.\n- Missing another required earlier conclusion (K05/K10/K15/K20/K29), any H0–H4 → `S_H_D30_0001`.\n- With all prerequisites held, recent wrong-interval and H3 → `S_H_D30_0032`; recent wearer=holder and H3 → `S_H_D30_0033`; recent one-origin-corroboration and H3 → `S_H_D30_0034`; recent unsupported-complicity or erased-collateral error and H3 → `S_H_D30_0035`.\n- Otherwise all-held: H0 `S_H_D30_0001`; H1 `S_H_D30_0011`; H2 `S_H_D30_0021`; H3 `S_H_D30_0031`; H4 uses `S_H_D30_0042` for a stored concealment-first order, otherwise `S_H_D30_0041`.\n\n- All-held H4 is always the authored complete solution/question: S_H_D30_0042 when the stored presentation order is concealment-first; otherwise S_H_D30_0041. Recent-error and interruption overlays never override H4. Missing prerequisites still take priority and do not acquire knowledge.\n",
+      "reason": "Ensure explicit H4 request reaches the already-authored complete help after an error or interruption."
+    },
+    {
+      "file": "script-ch03-r03.ko.md",
+      "anchor": "S_CH03_02_0005",
+      "before": "그 숫자를 지금 제 기억이라고 덧붙이진 않겠습니다. 제가 여기서 책임질 수 있는 건 이 공개용 사본을 제가 보관소에 냈고, 인계 자리에서 두철 씨와 한술 씨를 봤다는 사실입니다. 시각 자체는 나중에 원본과 맞춰 보세요.",
+      "after": "제가 여기서 확인해 드릴 수 있는 건 이 공개용 사본을 제가 보관소에 냈고, 인계 자리에서 두철 씨와 한술 씨를 봤다는 사실입니다. 시각 자체는 나중에 원본과 맞춰 보세요.",
+      "reason": "Remove premature disclaimer of P09 memory; retain supplied provenance and observed presence."
+    },
+    {
+      "file": "script-ch03-r03.ko.md",
+      "anchor": "S_H_V03_0031",
+      "before": "먼저 상자 겉면의 현재 봉인 번호와 개봉 전 인수 사진의 **상자 외관·봉인 번호만** 맞춘다. 번호가 맞은 뒤에만 입회 아래 봉인을 끊고 상자를 열고, 장부 라벨과 접힌 주름은 그때 처음 대조한다.",
+      "after": "먼저 상자 겉면의 현재 봉인 번호와 개봉 전 인수 사진의 **상자 외관·봉인 번호만** 맞춘다. 번호가 맞은 뒤에만 입회 아래 봉인을 끊고 상자를 열고. 안쪽 물건은 개봉 뒤에 확인한다.",
+      "reason": "Do not identify unseen interior features before opening."
+    },
+    {
+      "file": "script-ch03-r03.ko.md",
+      "anchor": "S_H_V03_0041",
+      "before": "재개 순서는 이렇다. `목백로 씨와 합류하고 모눈의 감독을 확인한다 → 실제 경사로를 따라 보관소로 간다 → 상자 겉면과 봉인 번호만 먼저 맞춘다 → 입회 아래 개봉한다 → 그 뒤에 상자 내용, 장부 외부 라벨·주름, 살아남은 장부, 봉인·인수 기록, 아직 읽히지 않는 제본 원본을 차례로 확인한다.`",
+      "after": "재개 순서는 이렇다. `목백로 씨와 합류하고 모눈의 감독을 확인한다 → 실제 경사로를 따라 보관소로 간다 → 상자 겉면과 봉인 번호만 먼저 맞춘다 → 입회 아래 개봉한다 → 그 뒤에 처음 드러난 물건과 인수 기록을 차례로 확인한다.`",
+      "reason": "Remove future contents from pre-join help."
+    },
+    {
+      "file": "script-ch03-r03.ko.md",
+      "anchor": "S_H_V03_0032",
+      "before": "상자는 이미 열렸다. 마지막으로 확인한 항목 다음부터 이어서 `상자 현재 내용→살아남은 묶인 장부→봉인 사진과 인수 기록→젖어 붙은 제본 원본` 순으로 기록하자.",
+      "after": "상자는 이미 열렸다. 마지막으로 확인한 항목 다음부터 이어서, 지금 열린 물건 하나를 먼저 확인하고 다음 항목으로 넘어가자.",
+      "reason": "Do not reveal later acquisition details in a partial queue."
+    },
+    {
+      "file": "script-ch03-r03.ko.md",
+      "anchor": "S_H_D14_0003",
+      "before": "탄 종이만 보고는 `무엇이 남았는지` 알 수 없다. 아직 화물 상자를 입회 개봉하지 않았다면 Q03 정정과 수레 경로를 끝낸 뒤 봉인 상태부터 확인하고 개봉 방문을 마치자. 열기 전에는 상자 안 내용을 미리 이름 붙이지 않는다.",
+      "after": "탄 종이만 보고는 `무엇이 남았는지` 알 수 없다. 아직 화물 상자를 입회 개봉하지 않았다면 한술 씨의 반출 진술 정정과 수레 경로를 끝낸 뒤 봉인 상태부터 확인하고 개봉 방문을 마치자. 열기 전에는 상자 안 내용을 미리 이름 붙이지 않는다.",
+      "reason": "Replace internal task identifier in visible help."
+    },
+    {
+      "file": "script-ch04-r03.ko.md",
+      "anchor": "C_CH04_01",
+      "before": "전날 모눈이 붙여 둔",
+      "after": "아까 모눈이 붙여 둔",
+      "reason": "CH03 and CH04 occur on the same October22; do not invent an overnight transition."
+    },
+    {
+      "file": "script-ch04-r03.ko.md",
+      "anchor": "C_CH04_01",
+      "before": "어제 제가 `대표석`이라고",
+      "after": "아까 제가 `대표석`이라고",
+      "reason": "CH03 and CH04 occur on the same October22; do not invent an overnight transition."
+    },
+    {
+      "file": "script-ch04-r03.ko.md",
+      "anchor": "C_CH04_01",
+      "before": "어제 정한 대로 여기는",
+      "after": "아까 정한 대로 여기는",
+      "reason": "CH03 and CH04 occur on the same October22; do not invent an overnight transition."
+    },
+    {
+      "file": "script-ch04-r03.ko.md",
+      "anchor": "S_CH04_O2_0091",
+      "before": "공동 주석 방식으로 정했습니다. 원문은 그대로 두고, 각자 자기 이름 옆에 `내가 동의한 범위 / 몰랐던 범위 / 지금 인정하는 책임`만 따로 남겨 두겠습니다.",
+      "after": "아까 정한 방식대로 남기겠습니다. 보여 주는 형식을 정했다고 각자의 동의 범위나 책임까지 바뀌지는 않습니다.",
+      "reason": "Make a common revisit true for both existing exhibition choices."
+    },
+    {
+      "file": "script-ch04-r03.ko.md",
+      "anchor": "S_H_V04_0091",
+      "before": "직원 원본 모임에서 필요한 목적·거래 자료는 모두 열렸습니다. 현재 진행 중인 D/Q를 그대로 이어 가면 됩니다.",
+      "after": "직원 원본 모임에서 필요한 목적·거래 자료는 모두 열렸습니다. 현재 진행 중인 추리와 질문를 그대로 이어 가면 됩니다.",
+      "reason": "Replace internal control notation."
+    },
+    {
+      "file": "script-ch04-r03.ko.md",
+      "anchor": "S_H_Q04_0021",
+      "before": "지금 가진 자료로는 `직원 전원이 포기했다`는 설명이 실제 서명 목적과 맞지 않는다는 데까지 갈 수 있습니다. 누가 취합본을 조립했는지는 성공 뒤 정정에서만 듣습니다.",
+      "after": "지금 가진 자료로는 `직원 전원이 포기했다`는 설명이 실제 서명 목적과 맞지 않는다는 데까지 갈 수 있습니다.",
+      "reason": "Remove production instruction from spoken self-guidance."
+    },
+    {
+      "file": "script-ch05-r03.ko.md",
+      "anchor": "S_H_V05_0091",
+      "before": "시야 확인 방문에 필요한 창·수첩·게이트와 안전 비교는 모두 끝났습니다. 현재 남은 D/Q를 이어 가면 됩니다.",
+      "after": "시야 확인 방문에 필요한 창·수첩·게이트와 안전 비교는 모두 끝났습니다. 현재 남은 추리와 질문를 이어 가면 됩니다.",
+      "reason": "Replace internal control notation."
+    },
+    {
+      "file": "script-ch05-r03.ko.md",
+      "anchor": "S_H_D22_0002",
+      "before": "`열린 게이트 / 정정된 목격 / 헛디딤·부축·밀어내는 접촉 비교` 가운데 빠진 것을 먼저 확인하세요. 목격 정정은 Q05 성공 전에는 추측하지 않습니다.",
+      "after": "`열린 게이트 / 정정된 목격 / 헛디딤·부축·밀어내는 접촉 비교` 가운데 빠진 것을 먼저 확인하세요. 해금 씨가 아직 본인의 말을 바로잡지 않았다면 현재 진술과 수첩부터 대조하세요.",
+      "reason": "Use the actual available witness question instead of a task code."
+    },
+    {
+      "file": "script-ch05-r03.ko.md",
+      "anchor": "S_H_D23_0002",
+      "before": "해금 씨가 본 동작의 앞뒤 신호가 아직 없습니다. Q05 정정을 먼저 끝내세요.",
+      "after": "해금 씨가 본 동작의 앞뒤 신호가 아직 없습니다. 해금 씨의 현재 진술과 당시 수첩부터 대조하세요.",
+      "reason": "Replace internal task identifier."
+    },
+    {
+      "file": "script-ch06-r03.ko.md",
+      "anchor": "S_CH06_01_0015",
+      "before": "좋습니다. 모눈 감독 인계도 끝났으니 지금 같이 내려가죠.",
+      "after": "좋습니다. 모눈이는 만실 씨와 있으니 지금 같이 내려가죠.",
+      "reason": "Use established concrete supervision in natural dialogue."
+    },
+    {
+      "file": "script-ch06-r03.ko.md",
+      "anchor": "S_H_V06_0013",
+      "before": "이동 중 멈췄다면 다시 전화를 받을 필요는 없습니다. 숙소에서 여울관으로 돌아오는 길과 감독 인계 중 마지막으로 끝낸 지점부터 이어 갑니다.",
+      "after": "이동 중 멈췄다면 다시 전화를 받을 필요는 없습니다. 숙소에서 여울관으로 돌아오는 길과 모눈이를 만실 씨에게 맡기는 과정 중 마지막으로 끝낸 지점부터 이어 갑니다.",
+      "reason": "Remove production-style handoff term."
+    },
+    {
+      "file": "script-ch06-r03.ko.md",
+      "anchor": "S_CH06_02_0004",
+      "before": "숫자가 다르다는 건 확인했습니다. 하지만 아직 `이쪽이 원본이니 맞다`고 뛰지는 않겠습니다. 이제 이 장이 어제 봉인한 바로 그 장인지 보겠습니다.",
+      "after": "숫자가 다르다는 건 확인했습니다. 하지만 아직 `이쪽이 원본이니 맞다`고 뛰지는 않겠습니다. 이제 이 장이 21일 밤 봉인한 화물 속에 있던 바로 그 장인지 보겠습니다.",
+      "reason": "Correct sealing date; the crate was opened October22."
+    },
+    {
+      "file": "script-ch06-r03.ko.md",
+      "anchor": "S_D26_0011",
+      "before": "펼친 장의 글자만으로는 부족합니다. 어제 봉인된 장부와 오늘 펼친 장을 잇는 제본·봉인 연결, 인계표의 원래 양식까지 확인한 뒤 적어 둔 문장에서 이어 보겠습니다.",
+      "after": "펼친 장의 글자만으로는 부족합니다. 21일 밤 봉인된 화물 속 장부와 오늘 펼친 장을 잇는 제본·봉인 연결, 인계표의 원래 양식까지 확인한 뒤 적어 둔 문장에서 이어 보겠습니다.",
+      "reason": "Correct sealing date."
+    },
+    {
+      "file": "script-ch06-r03.ko.md",
+      "anchor": "S_D26_0022",
+      "before": "직업은 증거가 아닙니다. 제목도 복사할 수 있고요. 어제 봉인된 물건과 오늘 펼친 물건이 실제로 어떻게 이어지는지를 대세요.",
+      "after": "직업은 증거가 아닙니다. 제목도 복사할 수 있고요. 21일 밤 봉인된 화물 속 물건과 오늘 펼친 물건이 실제로 어떻게 이어지는지를 대세요.",
+      "reason": "Correct sealing date."
+    },
+    {
+      "file": "script-ch06-r03.ko.md",
+      "anchor": "S_H_D26_0003",
+      "before": "내용은 읽었지만 연결부가 비어 있습니다. 장부를 옮기지 말고 제본 실·연속 번호·절취선과 어제 봉인 사진을 같은 자리에서 맞추세요.",
+      "after": "내용은 읽었지만 연결부가 비어 있습니다. 장부를 옮기지 말고 제본 실·연속 번호·절취선과 21일 인수 사진과 어제 개봉 기록을 같은 자리에서 맞추세요.",
+      "reason": "Distinguish receipt images and later interior views."
+    },
+    {
+      "file": "script-ch06-r03.ko.md",
+      "anchor": "S_H_D26_0004",
+      "before": "봉인 경계가 빠졌다면 CH03의 봉인 사진과 인수 기록을, 원래 양식이 빠졌다면 프롤로그의 인계표 견본을 다시 열어 보면 됩니다. 새 원본을 찾을 필요는 없습니다.",
+      "after": "봉인 경계가 빠졌다면 화물을 개봉할 때 확인한 봉인 사진과 인수 기록을, 원래 양식이 빠졌다면 프롤로그의 인계표 견본을 다시 열어 보면 됩니다. 새 원본을 찾을 필요는 없습니다.",
+      "reason": "Replace internal chapter identifier."
+    },
+    {
+      "file": "script-ch06-r03.ko.md",
+      "anchor": "S_H_D26_0031",
+      "before": "`원본이라고 적혀 있다`나 `여백이 전문가다`는 이유를 버리고, 사건 전후의 봉인 경계와 제본 구조가 끊기지 않았다는 결론을 만드세요.",
+      "after": "`원본이라고 적혀 있다`나 `여백이 전문가다`는 이유를 버리고, 발견 전 봉인부터 개봉 뒤 보관까지의 경계와 제본 구조가 끊기지 않았다는 결론을 만드세요.",
+      "reason": "Sealing followed the incident; preserve the custody boundary."
+    },
+    {
+      "file": "script-ch06-r03.ko.md",
+      "anchor": "S_H_D26_0041",
+      "before": "이렇게 말하면 됩니다. `어제 봉인된 장부 안에서 젖은 하단 본장이 발견됐고, 오늘 같은 장이 제본 실·연속 일련번호·천공과 절취선을 그대로 잇는다. 인계표 견본과 같은 원래 필드 구조도 남아 있어, 나중에 끼운 사본이 아니라 사건 전부터 장부에 묶여 있던 본장으로 볼 수 있다. 시간값의 정확성은 별도로 비교한다.`",
+      "after": "이렇게 말하면 됩니다. `21일 밤 봉인한 화물을 어제 개봉했을 때 장부 안에서 젖은 하단 본장이 발견됐고, 오늘 같은 장이 제본 실·연속 일련번호·천공과 절취선을 그대로 잇는다. 인계표 견본과 같은 원래 필드 구조도 남아 있어, 나중에 끼운 사본이 아니라 사건 전부터 장부에 묶여 있던 본장으로 볼 수 있다. 시간값의 정확성은 별도로 비교한다.`",
+      "reason": "Correct sealing/opening chronology."
+    },
+    {
+      "file": "script-ch06-r03.ko.md",
+      "anchor": "S_H_Q06_0021",
+      "before": "인계표 견본은 원래 부본 구조, 겹침 비교는 실제 변경 범위를 맡습니다. 성공 전에는 아직 `누가 혼자 복사했는지`를 가진 자료가 없습니다.",
+      "after": "인계표 견본은 원래 부본 구조, 겹침 비교는 실제 변경 범위를 맡습니다. 누가 어디까지 복사를 지켜봤는지는 아직 본인에게 확인해야 합니다.",
+      "reason": "Remove production speech and pre-correction solo-access hint."
+    },
+    {
+      "file": "script-ch06-r03.ko.md",
+      "anchor": "S_H_Q06_0041",
+      "before": "성공 전 질문은 이 정도면 충분합니다. `금액만 가렸고 전 과정을 직접 봤다면, 원본과 다른 두 시간값은 언제 어떻게 생겼습니까? 상단 업무용 부본을 실제로 누가 복사했고, 당신은 그 과정을 어디까지 직접 봤습니까?`",
+      "after": "질문은 이 정도면 충분합니다. `금액만 가렸고 전 과정을 직접 봤다면, 원본과 다른 두 시간값은 언제 어떻게 생겼습니까? 상단 업무용 부본을 실제로 누가 복사했고, 당신은 그 과정을 어디까지 직접 봤습니까?`",
+      "reason": "Remove production speech."
+    },
+    {
+      "file": "script-ch06-r03.ko.md",
+      "anchor": "S_H_D28_0003",
+      "before": "백로 씨의 복사 감독 정정이 아직 없습니다. Q06을 끝내 `원본 인계 동안 두철·한술을 계속 봤다`는 직접 관찰 범위를 확보하세요.",
+      "after": "백로 씨의 복사 감독 정정이 아직 없습니다. 공개본의 바뀐 시간 칸을 근거로, 복사를 내내 지켜봤다는 현재 설명부터 확인하세요.",
+      "reason": "Missing E52 must not reveal the exclusive continuous-observation correction."
+    },
+    {
+      "file": "script-ch06-r03.ko.md",
+      "anchor": "S_H_D30_0002",
+      "before": "밀침 형태나 사건 범위가 비었습니다. 창 목격 정정·안전 재현과 20:17–20:21 결론을 먼저 확인하세요.",
+      "after": "밀침 형태나 사건 범위가 비었습니다. 창 목격 진술을 검증하고, 공개 신호와 시계 오차를 대조하는 시간 질문부터 마치세요.",
+      "reason": "Avoid supplying the uncompleted interval conclusion through missing-state help."
+    },
+    {
+      "file": "script-ch06-r03.ko.md",
+      "anchor": "C_CH06_02/E50",
+      "before": "*새벽이 개봉 전 봉인 사진을 작업대 옆에 세우고, 백로가 이웃 장의 일련번호가 보이도록 장부를 더 펼친다. 여백은 젖은 장의 찢김과 접힌 자국, 제본 실이 지나가는 구멍, 앞뒤 장의 절취선을 사진과 맞춘다.*",
+      "after": "*새벽이 21일 인수 사진과 전날 개봉 뒤 남긴 장부 사진을 작업대 옆에 세우고, 백로가 이웃 장의 일련번호가 보이도록 장부를 더 펼친다. 여백은 젖은 장의 찢김과 접힌 자국, 제본 실이 지나가는 구멍, 앞뒤 장의 절취선을 각 사진에 보이는 범위 안에서 맞춘다.*",
+      "reason": "The sealed exterior image cannot show interior binding; use the existing receipt/opening record chain."
+    },
+    {
+      "file": "script-ch06-r03.ko.md",
+      "anchor": "E50",
+      "before": "펼친 하단 본장은 전날 개봉 전에 찍어 둔 봉인 사진 속 장부와 같은 제본 실을 공유하고, 앞뒤 장의 작업 일련번호도 연속한다. 천공·절취선·접힌 자국이 사진과 맞으며",
+      "after": "펼친 하단 본장은 전날 개봉 뒤 기록한 장부와 같은 제본 실을 공유하고, 앞뒤 장의 작업 일련번호도 연속한다. 천공·절취선은 개봉 기록 및 이웃 장과, 외부 라벨·접힌 자국은 21일 인수 사진에서 보이는 부분과 맞으며",
+      "reason": "Preserve E29/E30/E50 source roles without a view through the unopened opaque crate."
+    },
+    {
+      "file": "script-ch06-r03.ko.md",
+      "anchor": "C_H_V06",
+      "before": "- Call confirmed but P01 supervision has not been handed to P02, any H0–H4 → `S_H_V06_0012`.\n- Return travel/handoff interrupted, any H0–H4 → `S_H_V06_0013`.",
+      "after": "- After the call, return travel/handoff interrupted → `S_H_V06_0013` at any level; otherwise, before arrival at Yeowul → `S_H_V06_0011`; after arrival but before P02 explicitly accepts supervision → `S_H_V06_0012`. These cases are mutually exclusive and precede the L12 unfolding cases.",
+      "reason": "Use the already-authored return-travel line before claiming arrival."
+    },
+    {
+      "file": "script-ch03-r03.ko.md",
+      "anchor": "C_H_V03",
+      "before": "- KQ03+K12 held but visit not joined: H0 `S_H_V03_0001`; H1 `S_H_V03_0011`; H2 `S_H_V03_0011`; H3 `S_H_V03_0012`; H4 `S_H_V03_0041`.",
+      "after": "- KQ03+K12 held but visit not joined: H0 `S_H_V03_0001`; H1/H2/H3 `S_H_V03_0011`; H4 `S_H_V03_0041`. If joined but the supervision confirmation is unfinished, every level uses `S_H_V03_0011`.",
+      "reason": "Do not claim confirmed supervision before the actual handoff check."
+    },
+    {
+      "file": "script-ch01-r03.ko.md",
+      "anchor": "C_H_V01",
+      "before": "- If not yet joined and K02 is held:",
+      "after": "- If K02 is held and the visit is neither complete nor interrupted at x6 (including joined setup before movement or restored-x9 wrap-up):",
+      "reason": "Cover the actual setup and wrap-up stages using existing current-comparison guidance."
+    },
+    {
+      "file": "script-ch01-r03.ko.md",
+      "anchor": "C_H_Q01",
+      "before": "- Before success, if route A can be completed from the already witnessed prologue sequence and E10 is missing",
+      "after": "- Only when neither route A nor route B is complete: if route A can be completed from the already witnessed prologue sequence and E10 is missing",
+      "reason": "A complete valid route must not be blocked by missing sources for the alternative route."
+    },
+    {
+      "file": "script-ch02-r03.ko.md",
+      "anchor": "C_CH02_O3",
+      "before": "- Entry: available after C_CH02_08. P00 returns from L01 to L02, where P02 has continuously supervised P01 since the C_CH02_08 handoff.",
+      "after": "- Entry: available after C_CH02_08. P00/P01 are already together in L02 after the authored handback; P02 remains at the same lounge table. P00 directly supervises P01 while speaking with P02.",
+      "reason": "Update optional-scene metadata to match the newly authored CH02_08 return."
+    },
+    {
+      "file": "script-ch01-r03.ko.md",
+      "anchor": "S_D02_0041",
+      "before": "어젯밤 19시 40분부터 46분 사이, 두철 씨가 작업하고 봉 선생님이 보조·확인해서 칸막이를 정지선 9로 옮겼습니다. 칸막이 작업표가 그 작업을 당시 기록했고, 두 정지선의 두 정지선과 현재 물리 상태가 그 설명과 맞습니다. 이건 행사 준비 전에 끝난 이동이지, 사건 중에 누군가 몰래 벽을 바꿨다는 근거가 아닙니다.",
+      "after": "어젯밤 19시 40분부터 46분 사이, 두철 씨가 작업하고 봉 선생님이 보조·확인해서 칸막이를 정지선 9로 옮겼습니다. 칸막이 작업표가 그 작업을 당시 기록했고, 두 정지선과 현재 물리 상태가 그 설명과 맞습니다. 이건 행사 준비 전에 끝난 이동이지, 사건 중에 누군가 몰래 벽을 바꿨다는 근거가 아닙니다.",
+      "reason": "Remove duplicated evidence title."
+    },
+    {
+      "file": "script-ch01-r03.ko.md",
+      "anchor": "S_D03_0041",
+      "before": "정리하면, 창가의 두 모습은 차무록 씨가 그 자리에 계속 있었다는 연속 재실 증명이 아닙니다. 같은 소매 모양은 주인 없이 남을 수 있고, 봉 선생님은 그 사이를 지켜보지 않았습니다. 공개 점검 사진을 이미 확인했다면 실제로 그 사이 다른 위치에 있었던 장면까지 있습니다. 여기서 확정되는 건 알리바이의 약화이지 범행입니다.",
+      "after": "정리하면, 창가의 두 모습은 차무록 씨가 그 자리에 계속 있었다는 연속 재실 증명이 아닙니다. 같은 소매 모양은 주인 없이 남을 수 있고, 봉 선생님은 그 사이를 지켜보지 않았습니다. 공개 점검 사진을 이미 확인했다면 실제로 그 사이 다른 위치에 있었던 장면까지 있습니다. 여기서 확정되는 건 알리바이의 약화이지, 범행이 아닙니다.",
+      "reason": "Restore omitted negation; no actor proof is created by D03."
+    },
+    {
+      "file": "script-ch01-r03.ko.md",
+      "anchor": "S_D03_0091",
+      "before": "창가 목격의 한계 결론은 `차무록 씨가 계속 방에 있었다는 증거가 없다`입니다. `차무록 씨가 반드시 방을 나갔다`나 `누군가 재킷을 범행용으로 배치했다`까지는 아닙니다.",
+      "after": "창가 목격만으로 말할 수 있는 한계는 `차무록 씨가 계속 방에 있었다는 증거가 없다`입니다. `차무록 씨가 반드시 방을 나갔다`나 `누군가 재킷을 범행용으로 배치했다`까지는 아닙니다.",
+      "reason": "Limit this recap to the witness source; do not negate an acquired direct photo counterexample."
+    },
+    {
+      "file": "script-ch02-r03.ko.md",
+      "anchor": "S_CH02_O1_0001",
+      "before": "이모 목소리는 허락받았고, 내 목소리는 내가 정하고, 의자 소리는 의자한테 물어볼 수 없잖아. 그럼 의자는 그냥 써도 돼?",
+      "after": "이모 목소리는 이모한테 허락받아야 하고, 내 목소리는 내가 정하고, 의자 소리는 의자한테 물어볼 수 없잖아. 그럼 의자는 그냥 써도 돼?",
+      "reason": "Do not invent unplayed protagonist voice permission."
+    },
+    {
+      "file": "script-ch03-r03.ko.md",
+      "anchor": "S_D11_0011",
+      "before": "덮개 아래 윤곽 사진과 공연용 다리 목록 소품 목록 둘 중 하나가 없으면 보류합니다. 사진 모양만으로 사람/비사람을 확정하지 않습니다.",
+      "after": "덮개 아래 윤곽 사진과 공연용 다리 목록 둘 중 하나가 없으면 보류합니다. 사진 모양만으로 사람/비사람을 확정하지 않습니다.",
+      "reason": "Remove duplicated title."
+    },
+    {
+      "file": "script-ch03-r03.ko.md",
+      "anchor": "S_D12_0041",
+      "before": "수레와 계단으로 적재된 수레는 계단 회전부를 통째로 통과하지 못합니다. 반면 바퀴 흔적과 행사장 안내도의 연결을 보면 적재·기록 데스크에서 덮인 경사로를 거쳐 보관소로 가는 경사로는 수레가 갈 수 있습니다. 다만 물건을 따로 들고 계단으로 옮기는 가능성은 폭 숫자만으로 없애지 않습니다. 그래서 실제 시험할 것은 경사로 이동과 그 사이 화물 인계·봉인 연속성입니다.",
+      "after": "실측을 보면 적재된 수레는 계단 회전부를 통째로 통과하지 못합니다. 반면 바퀴 흔적과 행사장 안내도의 연결을 보면 적재·기록 데스크에서 덮인 경사로를 거쳐 보관소로 가는 경사로는 수레가 갈 수 있습니다. 다만 물건을 따로 들고 계단으로 옮기는 가능성은 폭 숫자만으로 없애지 않습니다. 그래서 실제 시험할 것은 경사로 이동과 그 사이 화물 인계·봉인 연속성입니다.",
+      "reason": "Repair malformed evidence-title substitution."
+    },
+    {
+      "file": "script-ch04-r03.ko.md",
+      "anchor": "S_D20_0032",
+      "before": "동기와 문서 행위가 강해져도 수영장 행동은 별도 증거가 필요합니다. 다음 장에서 그 행동을 확인합니다.",
+      "after": "동기와 문서 행위가 강해져도 수영장 행동은 별도 증거가 필요합니다. 다음에는 그 행동을 확인합시다.",
+      "reason": "Remove production sequencing from investigator dialogue."
+    },
+    {
+      "file": "script-ch05-r03.ko.md",
+      "anchor": "S_D21_0001",
+      "before": "부스 창 실측의 창 실측과 열린 보수문의 실제 위치를 연결해, 목격자가 볼 수 있었던 범위를 먼저 정하겠습니다.",
+      "after": "부스 창의 실측과 열린 보수문의 실제 위치를 연결해, 목격자가 볼 수 있었던 범위를 먼저 정하겠습니다.",
+      "reason": "Remove duplicated title."
+    },
+    {
+      "file": "script-ch05-r03.ko.md",
+      "anchor": "S_D21_0022",
+      "before": "저도 그렇게 자신 있게 말할 수 없어요. 얼굴도 안 보였고 색도 흐렸습니다. 제가 본 건 사람 수랑 큰 동작 정도예요.",
+      "after": "저도 그렇게 자신 있게 말할 수 없어요. 얼굴도 안 보였고 색도 흐렸습니다. 지금 시험으로 구별한 건 사람 수랑 큰 동작 정도예요.",
+      "reason": "Do not concede actual past movement before Q05; refer to the current visibility test."
+    },
+    {
+      "file": "script-ch05-r03.ko.md",
+      "anchor": "S_D21_0032",
+      "before": "부스 창 실측 실측에서는 성인 두 사람의 수와 큰 전후 이동은 구별됐습니다. 보이지 않는 것과 보이는 것을 둘 다 남기세요.",
+      "after": "부스 창 실측에서는 성인 두 사람의 수와 큰 전후 이동은 구별됐습니다. 보이지 않는 것과 보이는 것을 둘 다 남기세요.",
+      "reason": "Remove duplicated word."
+    },
+    {
+      "file": "script-ch06-r03.ko.md",
+      "anchor": "S_Q06_0032",
+      "before": "사람이 나중에 본 종이의 숫자를 기억에 섞은 것과, 인증된 본장의 인상 시각이 자동으로 거짓이라는 건 다른 주장입니다.",
+      "after": "사람의 기억에 오류가 있다는 주장과, 인증된 본장의 인상 시각이 자동으로 거짓이라는 건 다른 주장입니다.",
+      "reason": "Do not supply the exclusive copied-memory correction through a pre-success error reply."
+    },
+    {
+      "file": "script-ch01-r03.ko.md",
+      "anchor": "C_D02",
+      "before": "*칸막이 작업표/두 정지선/북쪽 창과 칸막이 위치 결론 중 하나가 없거나, 실제 이동과 오늘 재현시험을 섞은 채 제출하려 하면 무료로 멈춘다.*",
+      "after": "- Author validation: missing required sources or unfilled claim fields are free-incomplete. A complete committed claim using the wrong historical premise is evaluated as an error, never bypassed by this incomplete branch.",
+      "reason": "Separate incomplete input from an already-authored scored wrong claim."
+    },
+    {
+      "file": "script-ch01-r03.ko.md",
+      "anchor": "C_D03",
+      "before": "*필수 K/E 중 하나가 없거나, `소매가 보였다` 다음에 곧바로 사람의 이동·범행을 채워 넣으면 제출 전에 무료로 보류한다.*",
+      "after": "- Author validation: missing required sources or an unfilled claim role are free-incomplete. A complete committed actor claim from ambiguous clothing selects B_D03_err_ambiguous_chair_identifies_murderer and costs2.",
+      "reason": "Separate incomplete input from an already-authored scored wrong claim."
+    },
+    {
+      "file": "script-ch02-r03.ko.md",
+      "anchor": "C_D06",
+      "before": "*리허설 녹음/안내 음성 비교/음향 진행표 중 하나가 없거나, `같은 사람 목소리`만 제출하면 정답 판정 전에 무료 보류한다.*",
+      "after": "- Author validation: missing E11/E14/E12 or unfilled claim fields are free-incomplete. A complete committed reuse claim based only on voice similarity selects B_D06_err_voice_similarity_only and costs2.",
+      "reason": "Separate incomplete input from an already-authored scored wrong claim."
+    },
+    {
+      "file": "script-ch03-r03.ko.md",
+      "anchor": "C_D15",
+      "before": "- Entry: K13 + K14 + E24 + E26 + E27 + E30 required;",
+      "after": "- Entry: K11 + K13 + K14 + E24 + E26 + E27 + E30 required;",
+      "reason": "Keep the authored cargo alternative comparison mandatory at chapter convergence without delaying early Q03."
+    },
+    {
+      "file": "script-ch03-r03.ko.md",
+      "anchor": "C_H_D15",
+      "before": "- K13 missing → `S_H_D15_0002`;",
+      "after": "- K11 missing → reuse `S_H_D11_0001` after E20/E22 acquisition, or the missing-source selector of C_H_D11 if either is unheld; else K13 missing → `S_H_D15_0002`;",
+      "reason": "Reuse existing Korean shape-comparison help when the required D11 is unfinished."
+    },
+    {
+      "file": "script-ch06-r03.ko.md",
+      "anchor": "C_CH06_O2",
+      "before": "- Entry: K30 / optional\n- Exit: truthful receipt correction closure",
+      "after": "- Entry: K30 / optional after C_CH06_08; P00 hands P01 to P02 in L02 before the adult L12 visit and receives her back afterward.\n- Exit: truthful receipt correction closure",
+      "reason": "Make the optional adult trip consistent with the reunion already played."
+    },
+    {
+      "file": "script-ch06-r03.ko.md",
+      "anchor": "C_CH06_O2",
+      "before": "*백로가 새 인수 확인서를 출력한다. 한술이 먼저 시간을 읽는다.*",
+      "after": "*여백이 휴게실에서 만실에게 모눈이를 잠시 부탁한다. 만실이 모눈 옆에 앉아 함께 있겠다고 답한 것을 확인한 뒤, 여백은 보관 창고로 간다. 백로가 새 인수 확인서를 출력하고, 한술이 먼저 시간을 읽는다.*",
+      "reason": "Bounded supervision transition for an already-authored optional scene."
+    },
+    {
+      "file": "script-ch06-r03.ko.md",
+      "anchor": "C_CH06_O2 exit",
+      "before": "## C_CH06_O3 — 자리를 떠나는 연습",
+      "after": "*여백은 확인을 마치고 휴게실로 돌아온다. 만실에게서 모눈이를 다시 맡아 함께 앉는다.*\n\n## C_CH06_O3 — 자리를 떠나는 연습",
+      "reason": "Close the optional adult trip with the same established handback."
+    },
+    {
+      "file": "script-ch06-r03.ko.md",
+      "anchor": "C_CH06_O3",
+      "before": "- Cast: P00, P02, P04, P05\n- Entry: K30 / optional",
+      "after": "- Cast: P00, P02, P04, P05; P01 accompanies P00 silently in the public ballroom safety area\n- Entry: K30 / optional after C_CH06_08 or the C_CH06_O2 handback",
+      "reason": "Preserve P00 supervision while both adults are away from the lounge."
+    },
+    {
+      "file": "script-ch05-r03.ko.md",
+      "anchor": "display boundary",
+      "before": "> **D21:** `그 창에서 구별할 수 있는 것과 없는 것은?`",
+      "after": "> **추리:** `그 창에서 구별할 수 있는 것과 없는 것은?`",
+      "reason": "Separate player-facing Korean from technical effect/replay notation."
+    },
+    {
+      "file": "script-ch05-r03.ko.md",
+      "anchor": "display boundary",
+      "before": "> **D22:** `헛디딤·부축·밀침 중 어떤 설명이 관찰과 맞을까?`",
+      "after": "> **추리:** `헛디딤·부축·밀침 중 어떤 설명이 관찰과 맞을까?`",
+      "reason": "Separate player-facing Korean from technical effect/replay notation."
+    },
+    {
+      "file": "script-ch05-r03.ko.md",
+      "anchor": "display boundary",
+      "before": "> **D23:** `추락 사건의 시각은 어디까지 좁힐 수 있을까?`",
+      "after": "> **추리:** `추락 사건의 시각은 어디까지 좁힐 수 있을까?`",
+      "reason": "Separate player-facing Korean from technical effect/replay notation."
+    },
+    {
+      "file": "script-ch05-r03.ko.md",
+      "anchor": "display boundary",
+      "before": "*여백은 `20:18 신호 → 20:19 차단 → 20:20 복귀` 세 카드를 놓고, 양쪽 바깥에 `±1분` 쪽지를 붙인다. 아직 D23이 끝나지 않았다면 이 상태 그대로 추론으로 돌아갈 수 있다.*",
+      "after": "*여백은 `20:18 신호 → 20:19 차단 → 20:20 복귀` 세 카드를 놓고, 양쪽 바깥에 `±1분` 쪽지를 붙인다.*\n\n- Author state: if D23 is unfinished, preserve this board and resume its deduction.",
+      "reason": "Separate player-facing Korean from technical effect/replay notation."
+    },
+    {
+      "file": "script-ch05-r03.ko.md",
+      "anchor": "display boundary",
+      "before": "> **D24:** `옷깃 조각이 연결하는 것은 사람일까, 옷일까?`",
+      "after": "> **추리:** `옷깃 조각이 연결하는 것은 사람일까, 옷일까?`",
+      "reason": "Separate player-facing Korean from technical effect/replay notation."
+    },
+    {
+      "file": "script-ch05-r03.ko.md",
+      "anchor": "display boundary",
+      "before": "> **D25:** `남은 두 설명은 무엇으로 갈라질까?`",
+      "after": "> **추리:** `남은 두 설명은 무엇으로 갈라질까?`",
+      "reason": "Separate player-facing Korean from technical effect/replay notation."
+    },
+    {
+      "file": "script-ch03-r03.ko.md",
+      "anchor": "display boundary",
+      "before": "> 여유 `-2`. Q03 target and draft retained.",
+      "after": "> 여유 `-2`. 질문과 작성 중인 답은 유지됩니다.",
+      "reason": "Separate player-facing Korean from technical effect/replay notation."
+    },
+    {
+      "file": "script-ch03-r03.ko.md",
+      "anchor": "display boundary",
+      "before": "> **D11:** `덮개 아래 윤곽을 사람으로 단정할 수 있을까?`",
+      "after": "> **추리:** `덮개 아래 윤곽을 사람으로 단정할 수 있을까?`",
+      "reason": "Separate player-facing Korean from technical effect/replay notation."
+    },
+    {
+      "file": "script-ch03-r03.ko.md",
+      "anchor": "display boundary",
+      "before": "> **D12:** `어떤 운반 경로를 실제로 시험해야 할까?`",
+      "after": "> **추리:** `어떤 운반 경로를 실제로 시험해야 할까?`",
+      "reason": "Separate player-facing Korean from technical effect/replay notation."
+    },
+    {
+      "file": "script-ch03-r03.ko.md",
+      "anchor": "display boundary",
+      "before": "> V31 available.",
+      "after": "- Author state: V31 available.",
+      "reason": "Separate player-facing Korean from technical effect/replay notation."
+    },
+    {
+      "file": "script-ch03-r03.ko.md",
+      "anchor": "display boundary",
+      "before": "> **D13:** `개봉한 내용물이 그때의 화물이었던 근거는?`",
+      "after": "> **추리:** `개봉한 내용물이 그때의 화물이었던 근거는?`",
+      "reason": "Separate player-facing Korean from technical effect/replay notation."
+    },
+    {
+      "file": "script-ch03-r03.ko.md",
+      "anchor": "display boundary",
+      "before": "> **D14:** `불탄 것과 남은 것은 같은 기록일까?`",
+      "after": "> **추리:** `불탄 것과 남은 것은 같은 기록일까?`",
+      "reason": "Separate player-facing Korean from technical effect/replay notation."
+    },
+    {
+      "file": "script-ch03-r03.ko.md",
+      "anchor": "display boundary",
+      "before": "> **D15:** `반출과 소각은 누구의 어떤 문제를 남겼을까?`",
+      "after": "> **추리:** `반출과 소각은 누구의 어떤 문제를 남겼을까?`",
+      "reason": "Separate player-facing Korean from technical effect/replay notation."
+    },
+    {
+      "file": "script-ch04-r03.ko.md",
+      "anchor": "display boundary",
+      "before": "> **D16:** `이 서명들은 무엇에 동의한 것일까?`",
+      "after": "> **추리:** `이 서명들은 무엇에 동의한 것일까?`",
+      "reason": "Separate player-facing Korean from technical effect/replay notation."
+    },
+    {
+      "file": "script-ch04-r03.ko.md",
+      "anchor": "display boundary",
+      "before": "> **D17:** `서명지와 표지는 처음부터 한 묶음이었을까?`",
+      "after": "> **추리:** `서명지와 표지는 처음부터 한 묶음이었을까?`",
+      "reason": "Separate player-facing Korean from technical effect/replay notation."
+    },
+    {
+      "file": "script-ch04-r03.ko.md",
+      "anchor": "display boundary",
+      "before": "> **D18:** `실제 돈의 이동은 어느 승인과도 맞지 않을까?`",
+      "after": "> **추리:** `실제 돈의 이동은 어느 승인과도 맞지 않을까?`",
+      "reason": "Separate player-facing Korean from technical effect/replay notation."
+    },
+    {
+      "file": "script-ch04-r03.ko.md",
+      "anchor": "display boundary",
+      "before": "> **D19:** `원본 확인을 막으려 한 압박은 어디로 향했을까?`",
+      "after": "> **추리:** `원본 확인을 막으려 한 압박은 어디로 향했을까?`",
+      "reason": "Separate player-facing Korean from technical effect/replay notation."
+    },
+    {
+      "file": "script-ch04-r03.ko.md",
+      "anchor": "display boundary",
+      "before": "> **D20:** `세 사람의 책임을 섞지 않고 정리하자.`",
+      "after": "> **추리:** `세 사람의 책임을 섞지 않고 정리하자.`",
+      "reason": "Separate player-facing Korean from technical effect/replay notation."
+    },
+    {
+      "file": "script-pr-rest-r03.ko.md",
+      "anchor": "display boundary",
+      "before": "*이 동쪽 기록 탁자를 다시 확인하려면 봉만실의 동행을 받아 같은 R05 경로로 들어온다. 이미 확인한 물건은 새로 획득되지 않으며, 고정 책상등과 이동식 작업등을 서로 바꿔 기록하지 않는다.*",
+      "after": "- Author revisit metadata: 이 동쪽 기록 탁자를 다시 확인하려면 봉만실의 동행을 받아 같은 R05 경로로 들어온다. 이미 확인한 물건은 새로 획득되지 않으며, 고정 책상등과 이동식 작업등을 서로 바꿔 기록하지 않는다.",
+      "reason": "Separate player-facing Korean from technical effect/replay notation."
+    },
+    {
+      "file": "script-pr-rest-r03.ko.md",
+      "anchor": "display boundary",
+      "before": "*Historical replay condition: replay only the witnessed sequence `20:15 count begins → P02 takes instant photo → P03 leaves the visible frame`; do not add P03's current or later location.*",
+      "after": "- Author replay condition:  replay only the witnessed sequence `20:15 count begins → P02 takes instant photo → P03 leaves the visible frame`; do not add P03's current or later location.",
+      "reason": "Separate player-facing Korean from technical effect/replay notation."
+    },
+    {
+      "file": "script-pr-rest-r03.ko.md",
+      "anchor": "display boundary",
+      "before": "*Historical replay condition: label this only as the raw public-event output captured around 20:30. Before later evidence, do not tag it as rehearsal reuse or playback.*",
+      "after": "- Author replay condition:  label this only as the raw public-event output captured around 20:30. Before later evidence, do not tag it as rehearsal reuse or playback.",
+      "reason": "Separate player-facing Korean from technical effect/replay notation."
+    },
+    {
+      "file": "script-pr-rest-r03.ko.md",
+      "anchor": "display boundary",
+      "before": "*Historical replay condition: the discovery call does not recur. Replay only `~21:05 discovery report → P00 gives direct observations at reception → P01 remains in L02 with P02`.*",
+      "after": "- Author replay condition:  the discovery call does not recur. Replay only `~21:05 discovery report → P00 gives direct observations at reception → P01 remains in L02 with P02`.",
+      "reason": "Separate player-facing Korean from technical effect/replay notation."
+    },
+    {
+      "file": "script-ch02-r03.ko.md",
+      "anchor": "display boundary",
+      "before": "> **CH02 objective:** `안내 음성이 그 시각의 대면을 대신할 수 있는지 살피자.`",
+      "after": "> **목표:** `안내 음성이 그 시각의 대면을 대신할 수 있는지 살피자.`",
+      "reason": "Separate player-facing Korean from technical effect/replay notation."
+    },
+    {
+      "file": "script-ch02-r03.ko.md",
+      "anchor": "display boundary",
+      "before": "> **Player task opens: D06 — `같은 목소리가 아니라 같은 녹음이라고 할 근거는?`**",
+      "after": "> **추리 — `같은 목소리가 아니라 같은 녹음이라고 할 근거는?`**",
+      "reason": "Separate player-facing Korean from technical effect/replay notation."
+    },
+    {
+      "file": "script-ch02-r03.ko.md",
+      "anchor": "display boundary",
+      "before": "> **D06:** `같은 목소리가 아니라 같은 녹음이라고 할 근거는?`",
+      "after": "> **추리:** `같은 목소리가 아니라 같은 녹음이라고 할 근거는?`",
+      "reason": "Separate player-facing Korean from technical effect/replay notation."
+    },
+    {
+      "file": "script-ch02-r03.ko.md",
+      "anchor": "display boundary",
+      "before": "> 여유 변화 없음. Q02 초안은 유지된다.",
+      "after": "> 여유 변화 없음. 작성 중인 답은 유지됩니다.",
+      "reason": "Separate player-facing Korean from technical effect/replay notation."
+    },
+    {
+      "file": "script-ch02-r03.ko.md",
+      "anchor": "display boundary",
+      "before": "> **D07:** `녹음한 때·틀어 둔 때·사람이 있던 때를 나누자.`",
+      "after": "> **추리:** `녹음한 때·틀어 둔 때·사람이 있던 때를 나누자.`",
+      "reason": "Separate player-facing Korean from technical effect/replay notation."
+    },
+    {
+      "file": "script-ch02-r03.ko.md",
+      "anchor": "display boundary",
+      "before": "> **D08:** `마지막으로 직접 확인된 대면은 무엇일까?`",
+      "after": "> **추리:** `마지막으로 직접 확인된 대면은 무엇일까?`",
+      "reason": "Separate player-facing Korean from technical effect/replay notation."
+    },
+    {
+      "file": "script-ch02-r03.ko.md",
+      "anchor": "display boundary",
+      "before": "> **D09:** `점검 신호와 정전, 안내 방송은 어떤 순서였을까?`",
+      "after": "> **추리:** `점검 신호와 정전, 안내 방송은 어떤 순서였을까?`",
+      "reason": "Separate player-facing Korean from technical effect/replay notation."
+    },
+    {
+      "file": "script-ch02-r03.ko.md",
+      "anchor": "display boundary",
+      "before": "> **D10:** `방송으로 설명할 수 없는 빈틈은 어디일까?`",
+      "after": "> **추리:** `방송으로 설명할 수 없는 빈틈은 어디일까?`",
+      "reason": "Separate player-facing Korean from technical effect/replay notation."
+    },
+    {
+      "file": "script-ch01-r03.ko.md",
+      "anchor": "display boundary",
+      "before": "> **D01:** `북쪽 창은 어느 쪽 공간을 비췄을까?`",
+      "after": "> **추리:** `북쪽 창은 어느 쪽 공간을 비췄을까?`",
+      "reason": "Separate player-facing Korean from technical effect/replay notation."
+    },
+    {
+      "file": "script-ch01-r03.ko.md",
+      "anchor": "display boundary",
+      "before": "> **D02:** `그날 실제로 바뀐 것은 무엇일까?`",
+      "after": "> **추리:** `그날 실제로 바뀐 것은 무엇일까?`",
+      "reason": "Separate player-facing Korean from technical effect/replay notation."
+    },
+    {
+      "file": "script-ch01-r03.ko.md",
+      "anchor": "display boundary",
+      "before": "> **S_Q01_v1 — 봉만실:** `무록 씨는 그 방에 계속 있었어요. 창으로 제가 봤다니까요.`",
+      "after": "> **앞서 들은 진술 — 봉만실:** `무록 씨는 그 방에 계속 있었어요. 창으로 제가 봤다니까요.`",
+      "reason": "Separate player-facing Korean from technical effect/replay notation."
+    },
+    {
+      "file": "script-ch01-r03.ko.md",
+      "anchor": "display boundary",
+      "before": "> D03 eligibility opens. If D01/D02 are still unfinished because early route A was used, they remain required and their prompts are reworded as unresolved configuration/work questions rather than repeating the alibi correction.",
+      "after": "- Author state: D03 eligibility opens. If D01/D02 are still unfinished because early route A was used, they remain required and their prompts are reworded as unresolved configuration/work questions rather than repeating the alibi correction.",
+      "reason": "Separate player-facing Korean from technical effect/replay notation."
+    },
+    {
+      "file": "script-ch01-r03.ko.md",
+      "anchor": "display boundary",
+      "before": "> **D03 진입:** `창가의 모습은 연속된 재실 증명일까?`",
+      "after": "> **추리:** `창가의 모습은 연속된 재실 증명일까?`",
+      "reason": "Separate player-facing Korean from technical effect/replay notation."
+    },
+    {
+      "file": "script-ch01-r03.ko.md",
+      "anchor": "display boundary",
+      "before": "> **D03:** `창가의 모습은 연속된 재실 증명일까?`",
+      "after": "> **추리:** `창가의 모습은 연속된 재실 증명일까?`",
+      "reason": "Separate player-facing Korean from technical effect/replay notation."
+    },
+    {
+      "file": "script-ch01-r03.ko.md",
+      "anchor": "display boundary",
+      "before": "> **D04 진입:** `잠긴 작업실을 거치지 않고 나갈 수 있었을까?`",
+      "after": "> **추리:** `잠긴 작업실을 거치지 않고 나갈 수 있었을까?`",
+      "reason": "Separate player-facing Korean from technical effect/replay notation."
+    },
+    {
+      "file": "script-ch01-r03.ko.md",
+      "anchor": "display boundary",
+      "before": "> **D04:** `잠긴 작업실을 거치지 않고 나갈 수 있었을까?`",
+      "after": "> **추리:** `잠긴 작업실을 거치지 않고 나갈 수 있었을까?`",
+      "reason": "Separate player-facing Korean from technical effect/replay notation."
+    },
+    {
+      "file": "script-ch01-r03.ko.md",
+      "anchor": "display boundary",
+      "before": "*공용 출구 동선 추론을 끝낸 뒤 여백·새벽·두철은 R05를 거꾸로 걸어 연회장으로 돌아온다. 새벽과 두철이 각자 업무로 빠지고, 여백은 곧바로 휴게실로 가서 모눈이 계속 봉만실과 함께 있었음을 확인한다.*",
+      "after": "*공용 출구 동선 추론을 끝낸 뒤 여백·새벽·두철은 공용 통로를 거꾸로 걸어 연회장으로 돌아온다. 새벽과 두철이 각자 업무로 빠지고, 여백은 곧바로 휴게실로 가서 모눈이 계속 봉만실과 함께 있었음을 확인한다.*",
+      "reason": "Separate player-facing Korean from technical effect/replay notation."
+    },
+    {
+      "file": "script-ch01-r03.ko.md",
+      "anchor": "display boundary",
+      "before": "> **D05 진입:** `방에 관한 진술에서 확인된 일과 남은 일을 나누자.`",
+      "after": "> **추리:** `방에 관한 진술에서 확인된 일과 남은 일을 나누자.`",
+      "reason": "Separate player-facing Korean from technical effect/replay notation."
+    },
+    {
+      "file": "script-ch01-r03.ko.md",
+      "anchor": "display boundary",
+      "before": "> **D05:** `방에 관한 진술에서 확인된 일과 남은 일을 나누자.`",
+      "after": "> **추리:** `방에 관한 진술에서 확인된 일과 남은 일을 나누자.`",
+      "reason": "Separate player-facing Korean from technical effect/replay notation."
+    },
+    {
+      "file": "script-ch06-r03.ko.md",
+      "anchor": "display boundary",
+      "before": "> **D26:** `펼쳐진 종이를 당시의 원본으로 볼 근거는?`",
+      "after": "> **추리:** `펼쳐진 종이를 당시의 원본으로 볼 근거는?`",
+      "reason": "Separate player-facing Korean from technical effect/replay notation."
+    },
+    {
+      "file": "script-ch06-r03.ko.md",
+      "anchor": "display boundary",
+      "before": "> **D27:** `가림 처리만으로 두 시각의 차이를 설명할 수 있을까?`",
+      "after": "> **추리:** `가림 처리만으로 두 시각의 차이를 설명할 수 있을까?`",
+      "reason": "Separate player-facing Korean from technical effect/replay notation."
+    },
+    {
+      "file": "script-ch06-r03.ko.md",
+      "anchor": "display boundary",
+      "before": "> **D28:** `두철이 자리를 비울 수 있었던 틈이 실제로 있었을까?`",
+      "after": "> **추리:** `두철이 자리를 비울 수 있었던 틈이 실제로 있었을까?`",
+      "reason": "Separate player-facing Korean from technical effect/replay notation."
+    },
+    {
+      "file": "script-ch06-r03.ko.md",
+      "anchor": "display boundary",
+      "before": "> **D29:** `외투의 인계와 변조를 함께 설명하는 사람은?`",
+      "after": "> **추리:** `외투의 인계와 변조를 함께 설명하는 사람은?`",
+      "reason": "Separate player-facing Korean from technical effect/replay notation."
+    },
+    {
+      "file": "script-ch06-r03.ko.md",
+      "anchor": "display boundary",
+      "before": "> **D30:** `그날의 행동과 은폐를 증거로 재구성하자.`  ",
+      "after": "> **추리:** `그날의 행동과 은폐를 증거로 재구성하자.`  ",
+      "reason": "Separate player-facing Korean from technical effect/replay notation."
+    },
+    {
+      "file": "script-ch02-r03.ko.md",
+      "anchor": "C_CH02_O3",
+      "before": "*저녁 직전 휴게실. 봉만실이 작은 상 하나를 차리다가 네 번째 수저를 놓고 멈춘다. 전날 표문식이 서서 식사하겠다고 고집했던 자리다.*",
+      "after": "*휴게실. 봉만실이 작은 상 하나를 차리다가 네 번째 수저를 놓고 멈춘다. 빈 자리를 보던 눈길이 잠시 머문다.*",
+      "reason": "CH02 follows lunch and precedes CH03 afternoon; the ballroom chair does not move to this lounge."
+    },
+    {
+      "file": "script-ch02-r03.ko.md",
+      "anchor": "S_CH02_O3_0001",
+      "before": "저 양반은 앉으라고 해도 그 의자는 서류 받는 자리라고 안 앉았어요. 발 아프다고 투덜대면서도.",
+      "after": "어제 연회장 창가에서 저 양반은 앉으라고 해도 그 의자는 서류 받는 자리라고 안 앉았어요. 발 아프다고 투덜대면서도.",
+      "reason": "Make the existing chair anecdote an explicit ballroom recollection."
+    },
+    {
+      "file": "script-ch03-r03.ko.md",
+      "anchor": "C_CH03_O2",
+      "before": "- Entry: after the cart demonstration; no required E/K.",
+      "after": "- Entry: after the cart demonstration and before the C_CH03_07 handback; no required E/K. This is an adult-pause optional, and its availability is signalled before leaving for the handback.",
+      "reason": "Bound the existing pause to the actually established P02 supervision window."
+    },
+    {
+      "file": "script-ch01-r03.ko.md",
+      "anchor": "C_CH01_03",
+      "before": "**P07 | 진새벽 [S_CH01_03_0012]**",
+      "after": "### Common test authorization — both Q01 states\n\n**P07 | 진새벽 [S_CH01_03_0012]**",
+      "reason": "Early Q01 correction must not skip the authorization used by the partition test."
+    },
+    {
+      "file": "script-ch01-r03.ko.md",
+      "anchor": "S_CH01_04_0024",
+      "before": "맞습니다. 목격 자체를 없애지 않고, 그 두 번이 무엇까지 증명하는지만 묻겠습니다.",
+      "after": "맞습니다. 두 번의 목격은 그대로 남기고, 그 범위는 아까 정정한 기록대로 두겠습니다.",
+      "reason": "Do not reopen an already corrected testimony in its completed branch."
+    },
+    {
+      "file": "script-ch01-r03.ko.md",
+      "anchor": "C_CH01_04",
+      "before": "*만실 씨 목격 진술 추궁의 표준 북쪽 창 시야/의자에 걸린 재킷+행사 전 칸막이 이동 결론 경로가 열린다.*",
+      "after": "- Author state: the standard E06/E07+K02 proof route is available only if Q01 remains unresolved; the existing correction persists otherwise.",
+      "reason": "Do not present a second interrogation as newly required after early correction."
+    },
+    {
+      "file": "script-sys-r03.ko.md",
+      "anchor": "C_SYS_01",
+      "before": "*같은 D/Q 답안 화면으로 돌아가며 `확정 제출`이 다시 활성화된다.*",
+      "after": "*작성하던 답안 화면으로 돌아가며 `확정 제출`이 다시 활성화된다.*",
+      "reason": "Remove internal task notation from displayed direction."
+    },
+    {
+      "file": "script-sys-r03.ko.md",
+      "anchor": "C_SYS_04",
+      "before": "- 선택: `이 이름으로 시작` → Branch B의 확정 대사 `S_SYS_04_0021..0024`를 사용\n- 선택: `다시 입력` → Branch B의 재입력 대사 `S_SYS_04_0025..0026`를 사용",
+      "after": "- Author choice binding: `이 이름으로 시작` uses S_SYS_04_0021 through S_SYS_04_0024; `다시 입력` uses S_SYS_04_0025 through S_SYS_04_0026. Only the Korean labels are displayed.",
+      "reason": "Distinguish reusable script selection metadata from visible choices."
+    },
+    {
+      "file": "script-ch05-r03.ko.md",
+      "anchor": "canonical-hint-bindings-Q05",
+      "before": "## C_H_Q05 — Q05 힌트\n\n### Context\n- Place: L07 / testimony help\n- Cast: P00 guidance\n- Entry: Q05 live or interrupted\n- Exit: returns without leaking S_Q05_v2\n- State keys: missing E41 / missing K21 / all-held-live-v1 / notebook-second-witness error / guessed-color error / interrupted / KQ05-complete\n\n#### Deterministic selector (normative)\n- Return **one Korean utterance only**. Priority: `KQ05 complete` → `missing prerequisite` → `recent named error (H3 only)` → `requested live-v1 level`. Never expose `S_Q05_v2` content through a hint.\n- `KQ05 complete`, any H0–H4 → `S_H_Q05_0091`.\n- E41 missing, any H0–H4 → `S_H_Q05_0002`; else K21 missing → `S_H_Q05_0003`.\n- With E41+K21 and live `S_Q05_v1`, recent `notebook_is_second_witness`, H3 → `S_H_Q05_0032`; recent `guessed_color`, H3 → `S_H_Q05_0033`.\n- Otherwise with E41+K21: H0 `S_H_Q05_0004`; H1 `S_H_Q05_0011`; H2 `S_H_Q05_0021`; H3 `S_H_Q05_0031`; H4 `S_H_Q05_0041`.\n- Interruption preserves the draft; it does not replace the requested held-source level.\n\n\n- All-held H4 is always the authored complete solution/question: S_H_Q05_0041. Recent-error and interruption overlays never override H4. Missing prerequisites still take priority and do not acquire knowledge.\n\n### H_Q05_0\n**P00 | 나여백 [S_H_Q05_0001]**\n\n수첩과 시야 한계 결론이 모두 있는지 먼저 봅니다. 빠진 쪽을 확인한 뒤 해금 씨의 현재 `움직임을 못 봤다`는 말과 비교합니다.\n\n#### State — missing E41\n**P00 | 나여백 [S_H_Q05_0002]**\n\n해금 씨에게 당시 접어 둔 음향 수첩을 보여 달라고 요청하세요. 그 메모는 해금 씨와 같은 관찰자에서 나온 자료입니다.\n\n#### State — missing K21\n**P00 | 나여백 [S_H_Q05_0003]**\n\n먼저 반투명 창에서 무엇이 실제로 보이는지 정리하세요. 보이지 않는 신원·색을 추궁에 요구하면 안 됩니다.\n\n#### State — all held / live v1\n**P00 | 나여백 [S_H_Q05_0004]**\n\n현재 진술은 `사람 움직임을 보지 못했다`입니다. 수첩에는 이름 없이 `둘 / 앞으로 / 두 손`이 적혀 있고, 실측상 그 정도 큰 움직임은 보일 수 있습니다.\n\n### H_Q05_1\n**P00 | 나여백 [S_H_Q05_0011]**\n\n수첩에 없는 얼굴·색·정확한 시각을 채우지 말고, 적혀 있는 움직임만 현재 진술과 대조하세요.\n\n### H_Q05_2\n**P00 | 나여백 [S_H_Q05_0021]**\n\n수첩과 현재 진술은 둘 다 해금 씨 한 사람에게서 나왔습니다. 서로 독립된 두 목격처럼 세면 안 됩니다.\n\n### H_Q05_3\n**P00 | 나여백 [S_H_Q05_0031]**\n\n`수첩=두 번째 증인`도, `색을 추측해 신원을 말하라`도 버리고 관찰 가능한 행동만 다시 묻습니다.\n\n#### State — recent second-witness error\n**P00 | 나여백 [S_H_Q05_0032]**\n\n방금은 같은 사람의 메모와 말을 두 목격으로 셌습니다. 한 관찰자의 모순으로만 사용하세요.\n\n#### State — recent guessed-color error\n**P00 | 나여백 [S_H_Q05_0033]**\n\n방금은 보이지 않는 옷 색을 추측시키려 했습니다. 얼굴·색은 질문에서 빼고 큰 동작만 남기세요.\n\n### H_Q05_4\n**P00 | 나여백 [S_H_Q05_0041]**\n\n질문은 이렇게 좁히면 됩니다. `이 창에서는 사람 수와 큰 움직임은 볼 수 있고, 당신 수첩에도 둘·전진·두 손이 적혀 있습니다. 그런데 지금은 움직임을 보지 못했다고 말합니다. 실제로 본 동작을 신원이나 색 없이 다시 설명해 주시겠습니까?`\n\n#### State — interrupted\n**P00 | 나여백 [S_H_Q05_0042]**\n\n중단했다면 현재 부정과 수첩 세 단어를 그대로 두고 이어 질문합니다. 정정 내용을 먼저 제시하지 않습니다.\n\n#### State — complete\n**P00 | 나여백 [S_H_Q05_0091]**\n\n해금 씨 진술은 이미 정정됐습니다. 이후 행사 중 창 목격 기록과 정정 진술을 독립된 두 목격처럼 세지 말고, 시야 한계를 붙인 한 목격자 계열로 사용합니다.\n\n",
+      "after": "## C_H_Q05 — Q05 힌트\n\n### Context\n- Place: L07 / testimony help\n- Cast: P00 guidance\n- Entry: Q05 live or interrupted\n- Exit: returns without leaking S_Q05_v2\n- State keys: missing E41 / missing K21 / all-held-live-v1 / notebook-second-witness error / guessed-color error / interrupted / KQ05-complete\n\n#### Deterministic selector (normative)\n- Canonical error binding (all prerequisites held, requested H3 only): `B_Q05_err_demand_guessed_coat_color` → `S_H_Q05_0033`. These exact branch IDs take precedence over descriptive aliases below.\n- Return **one Korean utterance only**. Priority: `KQ05 complete` → `missing prerequisite` → `recent named error (H3 only)` → `requested live-v1 level`. Never expose `S_Q05_v2` content through a hint.\n- `KQ05 complete`, any H0–H4 → `S_H_Q05_0091`.\n- E41 missing, any H0–H4 → `S_H_Q05_0002`; else K21 missing → `S_H_Q05_0003`.\n- With E41+K21 and live `S_Q05_v1`, recent `notebook_is_second_witness`, H3 → `S_H_Q05_0032`; recent `guessed_color`, H3 → `S_H_Q05_0033`.\n- Otherwise with E41+K21: H0 `S_H_Q05_0004`; H1 `S_H_Q05_0011`; H2 `S_H_Q05_0021`; H3 `S_H_Q05_0031`; H4 `S_H_Q05_0041`.\n- Interruption preserves the draft; it does not replace the requested held-source level.\n\n\n- All-held H4 is always the authored complete solution/question: S_H_Q05_0041. Recent-error and interruption overlays never override H4. Missing prerequisites still take priority and do not acquire knowledge.\n\n### H_Q05_0\n**P00 | 나여백 [S_H_Q05_0001]**\n\n수첩과 시야 한계 결론이 모두 있는지 먼저 봅니다. 빠진 쪽을 확인한 뒤 해금 씨의 현재 `움직임을 못 봤다`는 말과 비교합니다.\n\n#### State — missing E41\n**P00 | 나여백 [S_H_Q05_0002]**\n\n해금 씨에게 당시 접어 둔 음향 수첩을 보여 달라고 요청하세요. 그 메모는 해금 씨와 같은 관찰자에서 나온 자료입니다.\n\n#### State — missing K21\n**P00 | 나여백 [S_H_Q05_0003]**\n\n먼저 반투명 창에서 무엇이 실제로 보이는지 정리하세요. 보이지 않는 신원·색을 추궁에 요구하면 안 됩니다.\n\n#### State — all held / live v1\n**P00 | 나여백 [S_H_Q05_0004]**\n\n현재 진술은 `사람 움직임을 보지 못했다`입니다. 수첩에는 이름 없이 `둘 / 앞으로 / 두 손`이 적혀 있고, 실측상 그 정도 큰 움직임은 보일 수 있습니다.\n\n### H_Q05_1\n**P00 | 나여백 [S_H_Q05_0011]**\n\n수첩에 없는 얼굴·색·정확한 시각을 채우지 말고, 적혀 있는 움직임만 현재 진술과 대조하세요.\n\n### H_Q05_2\n**P00 | 나여백 [S_H_Q05_0021]**\n\n수첩과 현재 진술은 둘 다 해금 씨 한 사람에게서 나왔습니다. 서로 독립된 두 목격처럼 세면 안 됩니다.\n\n### H_Q05_3\n**P00 | 나여백 [S_H_Q05_0031]**\n\n`수첩=두 번째 증인`도, `색을 추측해 신원을 말하라`도 버리고 관찰 가능한 행동만 다시 묻습니다.\n\n#### State — recent second-witness error\n**P00 | 나여백 [S_H_Q05_0032]**\n\n방금은 같은 사람의 메모와 말을 두 목격으로 셌습니다. 한 관찰자의 모순으로만 사용하세요.\n\n#### State — recent guessed-color error\n**P00 | 나여백 [S_H_Q05_0033]**\n\n방금은 보이지 않는 옷 색을 추측시키려 했습니다. 얼굴·색은 질문에서 빼고 큰 동작만 남기세요.\n\n### H_Q05_4\n**P00 | 나여백 [S_H_Q05_0041]**\n\n질문은 이렇게 좁히면 됩니다. `이 창에서는 사람 수와 큰 움직임은 볼 수 있고, 당신 수첩에도 둘·전진·두 손이 적혀 있습니다. 그런데 지금은 움직임을 보지 못했다고 말합니다. 실제로 본 동작을 신원이나 색 없이 다시 설명해 주시겠습니까?`\n\n#### State — interrupted\n**P00 | 나여백 [S_H_Q05_0042]**\n\n중단했다면 현재 부정과 수첩 세 단어를 그대로 두고 이어 질문합니다. 정정 내용을 먼저 제시하지 않습니다.\n\n#### State — complete\n**P00 | 나여백 [S_H_Q05_0091]**\n\n해금 씨 진술은 이미 정정됐습니다. 이후 행사 중 창 목격 기록과 정정 진술을 독립된 두 목격처럼 세지 말고, 시야 한계를 붙인 한 목격자 계열로 사용합니다.\n\n",
+      "reason": "Bind actual authored wrong-claim keys to the existing matching H3 response."
+    },
+    {
+      "file": "script-ch05-r03.ko.md",
+      "anchor": "canonical-hint-bindings-D22",
+      "before": "## C_H_D22 — D22 힌트\n\n### Context\n- Place: L07 / reasoning help\n- Cast: P00 guidance\n- Entry: D22 available or interrupted\n- Exit: state-selected return\n- State keys: missing E42/E43/E45 / all-held / gate-proves-push error / test-is-past error / interrupted / K22-complete\n\n#### Deterministic selector (normative)\n- Return **one Korean utterance only**. Priority: `K22 complete` → `missing prerequisite` → `recent named error (H3 only)` → `requested all-held level`.\n- `K22 complete`, any H0–H4 → `S_H_D22_0091`.\n- If any of E42/E43/E45 is missing, any H0–H4 → `S_H_D22_0002`; this line does not invent Q05's correction when E43 is absent.\n- With all three held and recent `gate_proves_push`, H3 → `S_H_D22_0032`; recent `test_is_past`, H3 → `S_H_D22_0033`.\n- With all held: H0 `S_H_D22_0003`; H1 `S_H_D22_0011`; H2 `S_H_D22_0021`; H3 `S_H_D22_0031`; H4 `S_H_D22_0041`.\n- Interruption preserves the draft; it does not replace the requested held-source level.\n\n\n- All-held H4 is always the authored complete solution/question: S_H_D22_0041. Recent-error and interruption overlays never override H4. Missing prerequisites still take priority and do not acquire knowledge.\n\n### H_D22_0\n**P00 | 나여백 [S_H_D22_0001]**\n\n게이트 상태, 해금 씨의 정정된 동작, 세 가지 안전 비교 기록이 모두 있는지 확인합니다. 하나가 없으면 그 단계부터 이어 갑니다.\n\n#### State — missing prerequisite\n**P00 | 나여백 [S_H_D22_0002]**\n\n`열린 게이트 / 정정된 목격 / 헛디딤·부축·밀어내는 접촉 비교` 가운데 빠진 것을 먼저 확인하세요. 해금 씨가 아직 본인의 말을 바로잡지 않았다면 현재 진술과 수첩부터 대조하세요.\n\n#### State — all held\n**P00 | 나여백 [S_H_D22_0003]**\n\n세 자료가 모두 있습니다. 누가 먼저 움직였는지, 두 팔이 언제 나왔는지, 상대가 그 뒤 어떻게 움직였는지를 세 가설과 비교하면 됩니다.\n\n### H_D22_1\n**P00 | 나여백 [S_H_D22_0011]**\n\n헛디딤은 상대의 선행 접근·양팔이 없고, 부축은 흔들림/후퇴가 먼저, 밀어내는 접촉은 접근·양팔이 먼저 나온 뒤 상대가 뒤로 갑니다.\n\n### H_D22_2\n**P00 | 나여백 [S_H_D22_0021]**\n\n게이트는 사고 가능 조건, 해금 씨 정정은 과거 목격, 오늘 비교는 그 동작을 이 시야에서 구별할 수 있는지 확인한 실험입니다. 역할을 합치지 마세요.\n\n### H_D22_3\n**P00 | 나여백 [S_H_D22_0031]**\n\n열린 문만으로 밀침을 만들지 말고, 오늘 실험을 어제의 새 목격으로 만들지도 마세요.\n\n#### State — recent gate-proves-push error\n**P00 | 나여백 [S_H_D22_0032]**\n\n방금은 위험한 게이트 자체를 고의 접촉의 증거로 만들었습니다. 목격된 팔 동작을 따로 붙이세요.\n\n#### State — recent test-is-past error\n**P00 | 나여백 [S_H_D22_0033]**\n\n방금은 오늘 가능성 비교를 과거 사건 기록으로 바꿨습니다. 과거 행동은 해금 씨 목격, 오늘 기록은 식별 가능성 확인입니다.\n\n### H_D22_4\n**P00 | 나여백 [S_H_D22_0041]**\n\n저라면 `열린 게이트만으로는 헛디딤도 가능하지만, 정정된 목격은 한 사람이 먼저 다가가 두 팔을 상대 윗몸 쪽에 뻗은 뒤 상대가 뒤로 갔다고 한다. 안전 비교에서도 그 순서는 부축보다 밀어내는 접촉과 더 잘 맞는다. 실험은 과거의 독립 목격이 아니다`라고 정리하겠습니다.\n\n#### State — interrupted\n**P00 | 나여백 [S_H_D22_0042]**\n\n중단했다면 세 가설 중 아직 비교하지 않은 동작부터 이어 봅니다.\n\n#### State — complete\n**P00 | 나여백 [S_H_D22_0091]**\n\n행동은 밀침과 가장 잘 맞는다고 정리했습니다. 신원과 정확한 한 분은 아직 별도 문제입니다.\n\n",
+      "after": "## C_H_D22 — D22 힌트\n\n### Context\n- Place: L07 / reasoning help\n- Cast: P00 guidance\n- Entry: D22 available or interrupted\n- Exit: state-selected return\n- State keys: missing E42/E43/E45 / all-held / gate-proves-push error / test-is-past error / interrupted / K22-complete\n\n#### Deterministic selector (normative)\n- Canonical error binding (all prerequisites held, requested H3 only): `B_D22_err_open_gate_proves_push` → `S_H_D22_0032`; `B_D22_err_test_is_record_of_past` → `S_H_D22_0033`. These exact branch IDs take precedence over descriptive aliases below.\n- Return **one Korean utterance only**. Priority: `K22 complete` → `missing prerequisite` → `recent named error (H3 only)` → `requested all-held level`.\n- `K22 complete`, any H0–H4 → `S_H_D22_0091`.\n- If any of E42/E43/E45 is missing, any H0–H4 → `S_H_D22_0002`; this line does not invent Q05's correction when E43 is absent.\n- With all three held and recent `gate_proves_push`, H3 → `S_H_D22_0032`; recent `test_is_past`, H3 → `S_H_D22_0033`.\n- With all held: H0 `S_H_D22_0003`; H1 `S_H_D22_0011`; H2 `S_H_D22_0021`; H3 `S_H_D22_0031`; H4 `S_H_D22_0041`.\n- Interruption preserves the draft; it does not replace the requested held-source level.\n\n\n- All-held H4 is always the authored complete solution/question: S_H_D22_0041. Recent-error and interruption overlays never override H4. Missing prerequisites still take priority and do not acquire knowledge.\n\n### H_D22_0\n**P00 | 나여백 [S_H_D22_0001]**\n\n게이트 상태, 해금 씨의 정정된 동작, 세 가지 안전 비교 기록이 모두 있는지 확인합니다. 하나가 없으면 그 단계부터 이어 갑니다.\n\n#### State — missing prerequisite\n**P00 | 나여백 [S_H_D22_0002]**\n\n`열린 게이트 / 정정된 목격 / 헛디딤·부축·밀어내는 접촉 비교` 가운데 빠진 것을 먼저 확인하세요. 해금 씨가 아직 본인의 말을 바로잡지 않았다면 현재 진술과 수첩부터 대조하세요.\n\n#### State — all held\n**P00 | 나여백 [S_H_D22_0003]**\n\n세 자료가 모두 있습니다. 누가 먼저 움직였는지, 두 팔이 언제 나왔는지, 상대가 그 뒤 어떻게 움직였는지를 세 가설과 비교하면 됩니다.\n\n### H_D22_1\n**P00 | 나여백 [S_H_D22_0011]**\n\n헛디딤은 상대의 선행 접근·양팔이 없고, 부축은 흔들림/후퇴가 먼저, 밀어내는 접촉은 접근·양팔이 먼저 나온 뒤 상대가 뒤로 갑니다.\n\n### H_D22_2\n**P00 | 나여백 [S_H_D22_0021]**\n\n게이트는 사고 가능 조건, 해금 씨 정정은 과거 목격, 오늘 비교는 그 동작을 이 시야에서 구별할 수 있는지 확인한 실험입니다. 역할을 합치지 마세요.\n\n### H_D22_3\n**P00 | 나여백 [S_H_D22_0031]**\n\n열린 문만으로 밀침을 만들지 말고, 오늘 실험을 어제의 새 목격으로 만들지도 마세요.\n\n#### State — recent gate-proves-push error\n**P00 | 나여백 [S_H_D22_0032]**\n\n방금은 위험한 게이트 자체를 고의 접촉의 증거로 만들었습니다. 목격된 팔 동작을 따로 붙이세요.\n\n#### State — recent test-is-past error\n**P00 | 나여백 [S_H_D22_0033]**\n\n방금은 오늘 가능성 비교를 과거 사건 기록으로 바꿨습니다. 과거 행동은 해금 씨 목격, 오늘 기록은 식별 가능성 확인입니다.\n\n### H_D22_4\n**P00 | 나여백 [S_H_D22_0041]**\n\n저라면 `열린 게이트만으로는 헛디딤도 가능하지만, 정정된 목격은 한 사람이 먼저 다가가 두 팔을 상대 윗몸 쪽에 뻗은 뒤 상대가 뒤로 갔다고 한다. 안전 비교에서도 그 순서는 부축보다 밀어내는 접촉과 더 잘 맞는다. 실험은 과거의 독립 목격이 아니다`라고 정리하겠습니다.\n\n#### State — interrupted\n**P00 | 나여백 [S_H_D22_0042]**\n\n중단했다면 세 가설 중 아직 비교하지 않은 동작부터 이어 봅니다.\n\n#### State — complete\n**P00 | 나여백 [S_H_D22_0091]**\n\n행동은 밀침과 가장 잘 맞는다고 정리했습니다. 신원과 정확한 한 분은 아직 별도 문제입니다.\n\n",
+      "reason": "Bind actual authored wrong-claim keys to the existing matching H3 response."
+    },
+    {
+      "file": "script-ch05-r03.ko.md",
+      "anchor": "canonical-hint-bindings-D23",
+      "before": "## C_H_D23 — D23 힌트\n\n### Context\n- Place: L02 / reasoning help\n- Cast: P00 guidance\n- Entry: D23 available or interrupted\n- Exit: state-selected return\n- State keys: missing E43 / missing timing sources / all-held / outage-only error / 20:30-live error / interrupted / K23-complete\n\n#### Deterministic selector (normative)\n- Return **one Korean utterance only**. Priority: `K23 complete` → `missing E43` → `missing timing source` → `recent named error (H3 only)` → `requested all-held level`.\n- `K23 complete`, any H0–H4 → `S_H_D23_0091`.\n- E43 missing, any H0–H4 → `S_H_D23_0002`.\n- If any required live-signal/recovery/clock-comparison source is missing, any H0–H4 → `S_H_D23_0003`.\n- With all required sources and recent `outage_only`, H3 → `S_H_D23_0032`; recent `20_30_live`, H3 → `S_H_D23_0033`.\n- With all sources: H0 `S_H_D23_0004`; H1 `S_H_D23_0011`; H2 `S_H_D23_0021`; H3 `S_H_D23_0031`; H4 `S_H_D23_0041`.\n\n\n- All-held H4 is always the authored complete solution/question: S_H_D23_0041. Recent-error and interruption overlays never override H4. Missing prerequisites still take priority and do not acquire knowledge.\n\n### H_D23_0\n**P00 | 나여백 [S_H_D23_0001]**\n\n해금 씨의 정정, 앞서 공개 자리에서 확인한 신호 순서, 시계 대조 기록, 전원 복귀 기록, 공개 점검 기록이 모두 있어야 합니다. 빠진 쪽부터 확인합니다.\n\n#### State — missing E43\n**P00 | 나여백 [S_H_D23_0002]**\n\n해금 씨가 본 동작의 앞뒤 신호가 아직 없습니다. 해금 씨의 현재 진술과 당시 수첩부터 대조하세요.\n\n#### State — missing prior timing source\n**P00 | 나여백 [S_H_D23_0003]**\n\n실시간 신호·복귀 순서 또는 1분 이내 시계 대조가 빠져 있습니다. 앞서 남긴 공개 점검 기록을 확인한 뒤 범위를 계산합니다.\n\n#### State — all held\n**P00 | 나여백 [S_H_D23_0004]**\n\n동작은 20:18 실시간 신호 뒤, 20:20 복귀 확인 전입니다. 시계는 1분 안쪽 차이가 있으니 바깥 경계를 각각 한 분 넓힙니다.\n\n### H_D23_1\n**P00 | 나여백 [S_H_D23_0011]**\n\n정정 진술은 `신호 뒤 / 복귀 전`, 전원·공개 기록은 순서, 시계 대조는 경계 오차를 줍니다.\n\n### H_D23_2\n**P00 | 나여백 [S_H_D23_0021]**\n\n20:18과 20:20에 ±1분을 바깥으로 적용하면 20:17–20:21입니다. 특정 한 분을 골라내는 계산이 아닙니다.\n\n### H_D23_3\n**P00 | 나여백 [S_H_D23_0031]**\n\n20:19 전원 차단만으로 추락을 찍지 말고, 20:30 목소리는 이미 녹음 재생이므로 생존 증거로 쓰지 마세요.\n\n#### State — recent outage-only error\n**P00 | 나여백 [S_H_D23_0032]**\n\n방금은 전원 사건 하나를 추락 시각으로 만들었습니다. 목격의 앞뒤 신호와 시계 오차를 다시 붙이세요.\n\n#### State — recent 20:30-live error\n**P00 | 나여백 [S_H_D23_0033]**\n\n방금은 정정된 녹음 재생을 다시 생존 목소리로 사용했습니다. 20:30 음성은 사건 시각 하한/상한이 아닙니다.\n\n### H_D23_4\n**P00 | 나여백 [S_H_D23_0041]**\n\n저라면 `목격된 동작은 실시간 20:18 신호 뒤, 20:20 복귀 확인 전이고 시계 대조의 1분 불확실성을 양쪽 바깥으로 적용하므로 사건 범위는 20:17–20:21`이라고 정리하겠습니다.\n\n#### State — interrupted\n**P00 | 나여백 [S_H_D23_0042]**\n\n중단했다면 `앞 신호 / 뒤 신호 / 오차` 세 칸 중 비어 있는 칸부터 이어 갑니다.\n\n#### State — complete\n**P00 | 나여백 [S_H_D23_0091]**\n\n사건의 입증 가능한 범위는 20:17–20:21로 정리됐습니다. 한 분짜리 사망 시각은 만들지 않습니다.\n\n",
+      "after": "## C_H_D23 — D23 힌트\n\n### Context\n- Place: L02 / reasoning help\n- Cast: P00 guidance\n- Entry: D23 available or interrupted\n- Exit: state-selected return\n- State keys: missing E43 / missing timing sources / all-held / outage-only error / 20:30-live error / interrupted / K23-complete\n\n#### Deterministic selector (normative)\n- Canonical error binding (all prerequisites held, requested H3 only): `B_D23_err_outage_alone_dates_death` → `S_H_D23_0032`; `B_D23_err_recorded_voice_proves_alive_2030` → `S_H_D23_0033`. These exact branch IDs take precedence over descriptive aliases below.\n- Return **one Korean utterance only**. Priority: `K23 complete` → `missing E43` → `missing timing source` → `recent named error (H3 only)` → `requested all-held level`.\n- `K23 complete`, any H0–H4 → `S_H_D23_0091`.\n- E43 missing, any H0–H4 → `S_H_D23_0002`.\n- If any required live-signal/recovery/clock-comparison source is missing, any H0–H4 → `S_H_D23_0003`.\n- With all required sources and recent `outage_only`, H3 → `S_H_D23_0032`; recent `20_30_live`, H3 → `S_H_D23_0033`.\n- With all sources: H0 `S_H_D23_0004`; H1 `S_H_D23_0011`; H2 `S_H_D23_0021`; H3 `S_H_D23_0031`; H4 `S_H_D23_0041`.\n\n\n- All-held H4 is always the authored complete solution/question: S_H_D23_0041. Recent-error and interruption overlays never override H4. Missing prerequisites still take priority and do not acquire knowledge.\n\n### H_D23_0\n**P00 | 나여백 [S_H_D23_0001]**\n\n해금 씨의 정정, 앞서 공개 자리에서 확인한 신호 순서, 시계 대조 기록, 전원 복귀 기록, 공개 점검 기록이 모두 있어야 합니다. 빠진 쪽부터 확인합니다.\n\n#### State — missing E43\n**P00 | 나여백 [S_H_D23_0002]**\n\n해금 씨가 본 동작의 앞뒤 신호가 아직 없습니다. 해금 씨의 현재 진술과 당시 수첩부터 대조하세요.\n\n#### State — missing prior timing source\n**P00 | 나여백 [S_H_D23_0003]**\n\n실시간 신호·복귀 순서 또는 1분 이내 시계 대조가 빠져 있습니다. 앞서 남긴 공개 점검 기록을 확인한 뒤 범위를 계산합니다.\n\n#### State — all held\n**P00 | 나여백 [S_H_D23_0004]**\n\n동작은 20:18 실시간 신호 뒤, 20:20 복귀 확인 전입니다. 시계는 1분 안쪽 차이가 있으니 바깥 경계를 각각 한 분 넓힙니다.\n\n### H_D23_1\n**P00 | 나여백 [S_H_D23_0011]**\n\n정정 진술은 `신호 뒤 / 복귀 전`, 전원·공개 기록은 순서, 시계 대조는 경계 오차를 줍니다.\n\n### H_D23_2\n**P00 | 나여백 [S_H_D23_0021]**\n\n20:18과 20:20에 ±1분을 바깥으로 적용하면 20:17–20:21입니다. 특정 한 분을 골라내는 계산이 아닙니다.\n\n### H_D23_3\n**P00 | 나여백 [S_H_D23_0031]**\n\n20:19 전원 차단만으로 추락을 찍지 말고, 20:30 목소리는 이미 녹음 재생이므로 생존 증거로 쓰지 마세요.\n\n#### State — recent outage-only error\n**P00 | 나여백 [S_H_D23_0032]**\n\n방금은 전원 사건 하나를 추락 시각으로 만들었습니다. 목격의 앞뒤 신호와 시계 오차를 다시 붙이세요.\n\n#### State — recent 20:30-live error\n**P00 | 나여백 [S_H_D23_0033]**\n\n방금은 정정된 녹음 재생을 다시 생존 목소리로 사용했습니다. 20:30 음성은 사건 시각 하한/상한이 아닙니다.\n\n### H_D23_4\n**P00 | 나여백 [S_H_D23_0041]**\n\n저라면 `목격된 동작은 실시간 20:18 신호 뒤, 20:20 복귀 확인 전이고 시계 대조의 1분 불확실성을 양쪽 바깥으로 적용하므로 사건 범위는 20:17–20:21`이라고 정리하겠습니다.\n\n#### State — interrupted\n**P00 | 나여백 [S_H_D23_0042]**\n\n중단했다면 `앞 신호 / 뒤 신호 / 오차` 세 칸 중 비어 있는 칸부터 이어 갑니다.\n\n#### State — complete\n**P00 | 나여백 [S_H_D23_0091]**\n\n사건의 입증 가능한 범위는 20:17–20:21로 정리됐습니다. 한 분짜리 사망 시각은 만들지 않습니다.\n\n",
+      "reason": "Bind actual authored wrong-claim keys to the existing matching H3 response."
+    },
+    {
+      "file": "script-ch05-r03.ko.md",
+      "anchor": "canonical-hint-bindings-D24",
+      "before": "## C_H_D24 — D24 힌트\n\n### Context\n- Place: L01 / reasoning help\n- Cast: P00 guidance\n- Entry: D24 available or interrupted\n- Exit: state-selected return\n- State keys: missing E44/E46/E47/E10 / all-held / later-holder error / silhouette-color error / interrupted / K24-complete\n\n#### Deterministic selector (normative)\n- Return **one Korean utterance only**. Priority: `K24 complete` → `missing source` → `recent named error (H3 only)` → `requested all-held level`.\n- `K24 complete`, any H0–H4 → `S_H_D24_0091`.\n- If any of E44/E46/E47/E10 is missing, any H0–H4 → `S_H_D24_0002`.\n- With all held and recent `later_holder_is_event_wearer`, H3 → `S_H_D24_0032`; recent `silhouette_color`, H3 → `S_H_D24_0033`.\n- With all held: H0 `S_H_D24_0003`; H1 `S_H_D24_0011`; H2 `S_H_D24_0021`; H3 `S_H_D24_0031`; H4 `S_H_D24_0041`.\n\n\n- All-held H4 is always the authored complete solution/question: S_H_D24_0041. Recent-error and interruption overlays never override H4. Missing prerequisites still take priority and do not acquire knowledge.\n\n### H_D24_0\n**P00 | 나여백 [S_H_D24_0001]**\n\n현장 조각-비옷 대조, 양쪽 인계 진술, 젖은 파란 작업복 기록, 행사 사진을 모두 확인하세요.\n\n#### State — missing source\n**P00 | 나여백 [S_H_D24_0002]**\n\n빠진 자료만 먼저 확인합니다. 회수·봉인된 옷깃 조각은 비옷과의 물리 연결을 맡고, 진술은 누가 언제 입었는지를 따로 다룹니다.\n\n#### State — all held\n**P00 | 나여백 [S_H_D24_0003]**\n\n자료가 모두 있습니다. `옷 자체의 연결 / 사건 전 착용 사진 / 사건 뒤 두 사람의 상반된 인계 주장`을 세 칸으로 나누세요.\n\n### H_D24_1\n**P00 | 나여백 [S_H_D24_0011]**\n\n옷깃 조각이 가장 강하게 말하는 건 `이 조각이 이 붉은 비옷에서 떨어졌다`는 사실입니다. 착용자 이름은 다음 문제입니다.\n\n### H_D24_2\n**P00 | 나여백 [S_H_D24_0021]**\n\n행사 사진은 사건 전 차무록 착용, 외투 인계 진술은 서로 다른 인계 시각, 젖은 작업복 기록은 두철이 비옷을 필요로 하게 된 뒤쪽 맥락을 줍니다.\n\n### H_D24_3\n**P00 | 나여백 [S_H_D24_0031]**\n\n나중 보유자를 사건 착용자로 만들지 말고, 해금 씨가 보지 못한 붉은색을 실루엣 진술에 넣지도 마세요.\n\n#### State — recent later-holder error\n**P00 | 나여백 [S_H_D24_0032]**\n\n방금은 나중에 비옷을 가진 두철 씨를 곧 사건 착용자로 만들었습니다. 옷 이동 시각이 다투어진다는 점을 남기세요.\n\n#### State — recent color error\n**P00 | 나여백 [S_H_D24_0033]**\n\n방금은 반투명 창에서 보이지 않은 색을 새로 넣었습니다. 옷의 색은 사진·물리 증거에서만 사용하세요.\n\n### H_D24_4\n**P00 | 나여백 [S_H_D24_0041]**\n\n저라면 `현장 조각은 붉은 비옷과 물리적으로 이어지고, 20:16 무렵 사진에는 차무록이 그 옷을 입고 있다. 하지만 두철은 20:26쯤 받았다고 하고 차무록은 20:17 전 빌려줬다고 하므로, 조각은 옷을 증명할 뿐 사건 시 착용자는 아직 갈린다`고 정리하겠습니다.\n\n#### State — interrupted\n**P00 | 나여백 [S_H_D24_0042]**\n\n중단했다면 물리 연결과 두 인계 진술 중 아직 대조하지 않은 쪽부터 이어 갑니다.\n\n#### State — complete\n**P00 | 나여백 [S_H_D24_0091]**\n\n붉은 비옷의 물리 사슬과 상반된 인계 주장은 정리됐습니다. 다음은 그 두 설명을 어떤 원본이 가르는지입니다.\n\n",
+      "after": "## C_H_D24 — D24 힌트\n\n### Context\n- Place: L01 / reasoning help\n- Cast: P00 guidance\n- Entry: D24 available or interrupted\n- Exit: state-selected return\n- State keys: missing E44/E46/E47/E10 / all-held / later-holder error / silhouette-color error / interrupted / K24-complete\n\n#### Deterministic selector (normative)\n- Canonical error binding (all prerequisites held, requested H3 only): `B_D24_err_later_holder_is_actor` → `S_H_D24_0032`; `B_D24_err_silhouette_identifies_red` → `S_H_D24_0033`. These exact branch IDs take precedence over descriptive aliases below.\n- Return **one Korean utterance only**. Priority: `K24 complete` → `missing source` → `recent named error (H3 only)` → `requested all-held level`.\n- `K24 complete`, any H0–H4 → `S_H_D24_0091`.\n- If any of E44/E46/E47/E10 is missing, any H0–H4 → `S_H_D24_0002`.\n- With all held and recent `later_holder_is_event_wearer`, H3 → `S_H_D24_0032`; recent `silhouette_color`, H3 → `S_H_D24_0033`.\n- With all held: H0 `S_H_D24_0003`; H1 `S_H_D24_0011`; H2 `S_H_D24_0021`; H3 `S_H_D24_0031`; H4 `S_H_D24_0041`.\n\n\n- All-held H4 is always the authored complete solution/question: S_H_D24_0041. Recent-error and interruption overlays never override H4. Missing prerequisites still take priority and do not acquire knowledge.\n\n### H_D24_0\n**P00 | 나여백 [S_H_D24_0001]**\n\n현장 조각-비옷 대조, 양쪽 인계 진술, 젖은 파란 작업복 기록, 행사 사진을 모두 확인하세요.\n\n#### State — missing source\n**P00 | 나여백 [S_H_D24_0002]**\n\n빠진 자료만 먼저 확인합니다. 회수·봉인된 옷깃 조각은 비옷과의 물리 연결을 맡고, 진술은 누가 언제 입었는지를 따로 다룹니다.\n\n#### State — all held\n**P00 | 나여백 [S_H_D24_0003]**\n\n자료가 모두 있습니다. `옷 자체의 연결 / 사건 전 착용 사진 / 사건 뒤 두 사람의 상반된 인계 주장`을 세 칸으로 나누세요.\n\n### H_D24_1\n**P00 | 나여백 [S_H_D24_0011]**\n\n옷깃 조각이 가장 강하게 말하는 건 `이 조각이 이 붉은 비옷에서 떨어졌다`는 사실입니다. 착용자 이름은 다음 문제입니다.\n\n### H_D24_2\n**P00 | 나여백 [S_H_D24_0021]**\n\n행사 사진은 사건 전 차무록 착용, 외투 인계 진술은 서로 다른 인계 시각, 젖은 작업복 기록은 두철이 비옷을 필요로 하게 된 뒤쪽 맥락을 줍니다.\n\n### H_D24_3\n**P00 | 나여백 [S_H_D24_0031]**\n\n나중 보유자를 사건 착용자로 만들지 말고, 해금 씨가 보지 못한 붉은색을 실루엣 진술에 넣지도 마세요.\n\n#### State — recent later-holder error\n**P00 | 나여백 [S_H_D24_0032]**\n\n방금은 나중에 비옷을 가진 두철 씨를 곧 사건 착용자로 만들었습니다. 옷 이동 시각이 다투어진다는 점을 남기세요.\n\n#### State — recent color error\n**P00 | 나여백 [S_H_D24_0033]**\n\n방금은 반투명 창에서 보이지 않은 색을 새로 넣었습니다. 옷의 색은 사진·물리 증거에서만 사용하세요.\n\n### H_D24_4\n**P00 | 나여백 [S_H_D24_0041]**\n\n저라면 `현장 조각은 붉은 비옷과 물리적으로 이어지고, 20:16 무렵 사진에는 차무록이 그 옷을 입고 있다. 하지만 두철은 20:26쯤 받았다고 하고 차무록은 20:17 전 빌려줬다고 하므로, 조각은 옷을 증명할 뿐 사건 시 착용자는 아직 갈린다`고 정리하겠습니다.\n\n#### State — interrupted\n**P00 | 나여백 [S_H_D24_0042]**\n\n중단했다면 물리 연결과 두 인계 진술 중 아직 대조하지 않은 쪽부터 이어 갑니다.\n\n#### State — complete\n**P00 | 나여백 [S_H_D24_0091]**\n\n붉은 비옷의 물리 사슬과 상반된 인계 주장은 정리됐습니다. 다음은 그 두 설명을 어떤 원본이 가르는지입니다.\n\n",
+      "reason": "Bind actual authored wrong-claim keys to the existing matching H3 response."
+    },
+    {
+      "file": "script-ch05-r03.ko.md",
+      "anchor": "canonical-hint-bindings-D25",
+      "before": "## C_H_D25 — D25 힌트\n\n### Context\n- Place: L02 / reasoning help\n- Cast: P00 guidance\n- Entry: D25 available or interrupted\n- Exit: state-selected return\n- State keys: missing K / missing E27/E30 / all-held / disputed-copy error / interrupted / K25-complete\n\n#### Deterministic selector (normative)\n- Return **one Korean utterance only**. Priority: `K25 complete` → `missing prior conclusion` → `missing E27/E30 secured-original state` → `recent disputed-copy error (H3 only)` → `requested all-held level`.\n- `K25 complete`, any H0–H4 → `S_H_D25_0091`.\n- If any required earlier conclusion for motive/action/time/coat chain is missing, any H0–H4 → `S_H_D25_0002`.\n- Else if E27 or the secured-but-still-unread E30 original is missing, any H0–H4 → `S_H_D25_0003`. The selector must not reveal E30's later readable times.\n- With all prerequisites and recent `disputed_copy_as_fact`, H3 → `S_H_D25_0032`.\n- Otherwise: H0 `S_H_D25_0004`; H1 `S_H_D25_0011`; H2 `S_H_D25_0021`; H3 `S_H_D25_0031`; H4 `S_H_D25_0041`.\n\n\n- All-held H4 is always the authored complete solution/question: S_H_D25_0041. Recent-error and interruption overlays never override H4. Missing prerequisites still take priority and do not acquire knowledge.\n\n### H_D25_0\n**P00 | 나여백 [S_H_D25_0001]**\n\n재정 책임, 밀침 행동, 20:17–20:21 범위, 비옷 사슬 결론과 공개 사본/젖은 제본 원본이 모두 있는지 확인합니다.\n\n#### State — missing prior K\n**P00 | 나여백 [S_H_D25_0002]**\n\n아직 행동·시간·옷 사슬 중 하나가 비어 있습니다. 그 결론을 먼저 끝내야 두 사람 가설을 공정하게 비교할 수 있습니다.\n\n#### State — missing E27/E30\n**P00 | 나여백 [S_H_D25_0003]**\n\n공개 인계 사본과 같은 인계의 젖은 제본 원본이 모두 필요합니다. 원본은 아직 읽히지 않아도 `보존 중인 같은 물건`으로 확보돼 있어야 합니다.\n\n#### State — all held\n**P00 | 나여백 [S_H_D25_0004]**\n\n두 가설은 `차무록 계속 착용`과 `20:17 전 조기 대여로 두철이 사건 때 착용`입니다. 둘을 가르는 건 공개 사본 숫자를 믿는 게 아니라 실제 인계 구간과 그 사본의 생성·보관 경로입니다.\n\n### H_D25_1\n**P00 | 나여백 [S_H_D25_0011]**\n\n핵심은 사건 구간 20:17–20:21 동안 두철 씨가 실제로 자리를 비울 수 있었는지입니다.\n\n### H_D25_2\n**P00 | 나여백 [S_H_D25_0021]**\n\n공개 사본의 20:07–20:17은 한 파생본의 숫자이고, 젖은 제본 원본은 아직 붙어 있어 값을 읽지 못합니다. 둘을 독립 출처처럼 세지 마세요.\n\n### H_D25_3\n**P00 | 나여백 [S_H_D25_0031]**\n\n논쟁 중인 공개 사본을 먼저 참이라고 가정해 사람을 고르면 순환합니다. 보존된 원본의 실제 시간과 이후 복사 경로를 확인해야 합니다.\n\n#### State — recent disputed-copy error\n**P00 | 나여백 [S_H_D25_0032]**\n\n방금은 20:07–20:17을 확정 사실로 놓고 두철 씨를 골랐습니다. 지금 단계에서는 두 가설을 모두 보존하고 원본 비교를 요청하세요.\n\n### H_D25_4\n**P00 | 나여백 [S_H_D25_0041]**\n\n저라면 `차무록 계속 착용설과 조기 대여/두철 행위설을 가르는 핵심은 20:17–20:21 동안의 실제 인계·부재 가능성이다. 공개 사본은 파생본 하나이므로 확정하지 않고, 이미 보존 중인 제본 원본이 펼쳐지면 같은 인계의 실제 시간과 복사 경로를 대조한다`고 정리하겠습니다.\n\n#### State — interrupted\n**P00 | 나여백 [S_H_D25_0042]**\n\n중단했다면 두 가설을 그대로 둔 채, 아직 확인하지 못한 `원본 시간 / 복사 경로` 쪽을 다음 날 약속으로 남기면 됩니다.\n\n#### State — complete\n**P00 | 나여백 [S_H_D25_0091]**\n\n최종 병목은 보존된 원본과 공개 사본의 관계로 정리됐습니다. 실제 펼침 가능 연락이 올 때까지 새 결론을 만들지 않습니다.\n\n",
+      "after": "## C_H_D25 — D25 힌트\n\n### Context\n- Place: L02 / reasoning help\n- Cast: P00 guidance\n- Entry: D25 available or interrupted\n- Exit: state-selected return\n- State keys: missing K / missing E27/E30 / all-held / disputed-copy error / interrupted / K25-complete\n\n#### Deterministic selector (normative)\n- Canonical error binding (all prerequisites held, requested H3 only): `B_D25_err_disputed_copy_already_identifies_actor` → `S_H_D25_0032`. These exact branch IDs take precedence over descriptive aliases below.\n- Return **one Korean utterance only**. Priority: `K25 complete` → `missing prior conclusion` → `missing E27/E30 secured-original state` → `recent disputed-copy error (H3 only)` → `requested all-held level`.\n- `K25 complete`, any H0–H4 → `S_H_D25_0091`.\n- If any required earlier conclusion for motive/action/time/coat chain is missing, any H0–H4 → `S_H_D25_0002`.\n- Else if E27 or the secured-but-still-unread E30 original is missing, any H0–H4 → `S_H_D25_0003`. The selector must not reveal E30's later readable times.\n- With all prerequisites and recent `disputed_copy_as_fact`, H3 → `S_H_D25_0032`.\n- Otherwise: H0 `S_H_D25_0004`; H1 `S_H_D25_0011`; H2 `S_H_D25_0021`; H3 `S_H_D25_0031`; H4 `S_H_D25_0041`.\n\n\n- All-held H4 is always the authored complete solution/question: S_H_D25_0041. Recent-error and interruption overlays never override H4. Missing prerequisites still take priority and do not acquire knowledge.\n\n### H_D25_0\n**P00 | 나여백 [S_H_D25_0001]**\n\n재정 책임, 밀침 행동, 20:17–20:21 범위, 비옷 사슬 결론과 공개 사본/젖은 제본 원본이 모두 있는지 확인합니다.\n\n#### State — missing prior K\n**P00 | 나여백 [S_H_D25_0002]**\n\n아직 행동·시간·옷 사슬 중 하나가 비어 있습니다. 그 결론을 먼저 끝내야 두 사람 가설을 공정하게 비교할 수 있습니다.\n\n#### State — missing E27/E30\n**P00 | 나여백 [S_H_D25_0003]**\n\n공개 인계 사본과 같은 인계의 젖은 제본 원본이 모두 필요합니다. 원본은 아직 읽히지 않아도 `보존 중인 같은 물건`으로 확보돼 있어야 합니다.\n\n#### State — all held\n**P00 | 나여백 [S_H_D25_0004]**\n\n두 가설은 `차무록 계속 착용`과 `20:17 전 조기 대여로 두철이 사건 때 착용`입니다. 둘을 가르는 건 공개 사본 숫자를 믿는 게 아니라 실제 인계 구간과 그 사본의 생성·보관 경로입니다.\n\n### H_D25_1\n**P00 | 나여백 [S_H_D25_0011]**\n\n핵심은 사건 구간 20:17–20:21 동안 두철 씨가 실제로 자리를 비울 수 있었는지입니다.\n\n### H_D25_2\n**P00 | 나여백 [S_H_D25_0021]**\n\n공개 사본의 20:07–20:17은 한 파생본의 숫자이고, 젖은 제본 원본은 아직 붙어 있어 값을 읽지 못합니다. 둘을 독립 출처처럼 세지 마세요.\n\n### H_D25_3\n**P00 | 나여백 [S_H_D25_0031]**\n\n논쟁 중인 공개 사본을 먼저 참이라고 가정해 사람을 고르면 순환합니다. 보존된 원본의 실제 시간과 이후 복사 경로를 확인해야 합니다.\n\n#### State — recent disputed-copy error\n**P00 | 나여백 [S_H_D25_0032]**\n\n방금은 20:07–20:17을 확정 사실로 놓고 두철 씨를 골랐습니다. 지금 단계에서는 두 가설을 모두 보존하고 원본 비교를 요청하세요.\n\n### H_D25_4\n**P00 | 나여백 [S_H_D25_0041]**\n\n저라면 `차무록 계속 착용설과 조기 대여/두철 행위설을 가르는 핵심은 20:17–20:21 동안의 실제 인계·부재 가능성이다. 공개 사본은 파생본 하나이므로 확정하지 않고, 이미 보존 중인 제본 원본이 펼쳐지면 같은 인계의 실제 시간과 복사 경로를 대조한다`고 정리하겠습니다.\n\n#### State — interrupted\n**P00 | 나여백 [S_H_D25_0042]**\n\n중단했다면 두 가설을 그대로 둔 채, 아직 확인하지 못한 `원본 시간 / 복사 경로` 쪽을 다음 날 약속으로 남기면 됩니다.\n\n#### State — complete\n**P00 | 나여백 [S_H_D25_0091]**\n\n최종 병목은 보존된 원본과 공개 사본의 관계로 정리됐습니다. 실제 펼침 가능 연락이 올 때까지 새 결론을 만들지 않습니다.\n\n",
+      "reason": "Bind actual authored wrong-claim keys to the existing matching H3 response."
+    },
+    {
+      "file": "script-ch04-r03.ko.md",
+      "anchor": "canonical-hint-bindings-D19",
+      "before": "## C_H_D19 — D19 힌트\n\n### Context\n- Place: L03 / reasoning help\n- Cast: P00 guidance\n- Entry: D19 available or interrupted\n- Exit: state-selected return to D19\n- State keys: missing E19/E37/E38/E39/K18 / all-held / rudeness error / murder-plan error / interrupted / K19-complete\n\n#### Deterministic selector (normative)\n- Return exactly one Korean S line. Priority: `K19 complete` → `missing E19/E37/E38/E39/K18` → eligible recent error/interruption → requested all-held level.\n- K19 complete, any H0–H4 → `S_H_D19_0091`.\n- Any required source/conclusion missing, any H0–H4 → `S_H_D19_0002`.\n- All held: H0 `S_H_D19_0003`; H1 `S_H_D19_0011`; H2 `S_H_D19_0021`; H3 `S_H_D19_0031`; H4 `S_H_D19_0041`.\n- With all prerequisites held, recent `rudeness_is_motive` at H3 → `S_H_D19_0032`; recent `meeting_card_is_murder_plan` at H3 → `S_H_D19_0033`.\n- With all prerequisites held and an interrupted draft, H3 selects `S_H_D19_0042`.\n\n- All-held H4 is always the authored complete solution/question: S_H_D19_0041. Recent-error and interruption overlays never override H4. Missing prerequisites still take priority and do not acquire knowledge.\n\n### H_D19_0\n**P00 | 나여백 [S_H_D19_0001]**\n\n약속 카드, 정산 차이 통지, 한술 씨 메모, 문식 씨의 원본 보존 요청, 자금 전용 결론 가운데 빠진 것이 있으면 그 자료부터 확인합니다.\n\n#### State — missing source\n**P00 | 나여백 [S_H_D19_0002]**\n\n지금 필요한 건 `무엇이 공개될 위험이었는지 / 누가 자료 통제를 압박했는지 / 둘이 따로 확인할 약속이 있었는지` 세 갈래입니다. 비어 있는 갈래의 자료만 보충하세요.\n\n#### State — all held\n**P00 | 나여백 [S_H_D19_0003]**\n\n세 갈래가 모두 있습니다. 불쾌감 대신 `구체적 노출 위험 + 압박 + 예정된 만남`까지만 연결하면 됩니다.\n\n### H_D19_1\n**P00 | 나여백 [S_H_D19_0011]**\n\n원본을 보면 해담설비 이동과 수령 연결, 공사 부재가 드러날 수 있었습니다. 그 공개를 막을 구체적 이유가 있었는지가 핵심입니다.\n\n### H_D19_2\n**P00 | 나여백 [S_H_D19_0021]**\n\n차이 통지는 원본 확인 예고, 한술 씨 메모는 담보 비밀을 이용한 압박, 피해자 요청은 목적 페이지 보존 의지, 약속 카드는 행사 뒤 직원 통로에서의 확인 예정입니다.\n\n### H_D19_3\n**P00 | 나여백 [S_H_D19_0031]**\n\n피해자가 까다로웠다는 이유로 모두의 동기를 같게 만들지 말고, 약속 카드가 공격 계획까지 적었다고도 하지 마세요.\n\n#### State — recent rudeness error\n**P00 | 나여백 [S_H_D19_0032]**\n\n방금은 넓은 반감을 모두 같은 동기로 만들었습니다. 이번에는 차무록 씨에게만 걸리는 자금 노출과 자료 통제 압박을 쓰세요.\n\n#### State — recent murder-plan error\n**P00 | 나여백 [S_H_D19_0033]**\n\n방금은 만남 장소를 살인 계획으로 바꿨습니다. 카드는 `만날 예정`까지만 증명합니다.\n\n### H_D19_4\n**P00 | 나여백 [S_H_D19_0041]**\n\n저라면 `원본 확인은 차무록 씨의 해담설비 수령 연결과 공사 부재를 드러낼 위험이었고, 한술 씨 담보 비밀을 이용한 자료 통제 압박도 있었다. 피해자는 원본 보존을 요구했고 둘은 행사 뒤 따로 확인할 약속이 있었다. 이는 막을 이유와 만남 기회이지 밀침의 증명은 아니다`라고 정리하겠습니다.\n\n#### State — interrupted\n**P00 | 나여백 [S_H_D19_0042]**\n\n중단했다면 네 칸 받침에서 마지막으로 연결한 자료 다음부터 이어 갑니다.\n\n#### State — complete\n**P00 | 나여백 [S_H_D19_0091]**\n\n원본 공개를 막을 이유와 사적 확인 약속은 이미 정리했습니다. 실제 추락 행동은 다음 장의 현장·시야 자료로 검증해야 합니다.\n\n",
+      "after": "## C_H_D19 — D19 힌트\n\n### Context\n- Place: L03 / reasoning help\n- Cast: P00 guidance\n- Entry: D19 available or interrupted\n- Exit: state-selected return to D19\n- State keys: missing E19/E37/E38/E39/K18 / all-held / rudeness error / murder-plan error / interrupted / K19-complete\n\n#### Deterministic selector (normative)\n- Canonical error binding (all prerequisites held, requested H3 only): `B_D19_err_rudeness_makes_all_motives_equal` → `S_H_D19_0032`; `B_D19_err_note_predicts_exact_murder` → `S_H_D19_0033`. These exact branch IDs take precedence over descriptive aliases below.\n- Return exactly one Korean S line. Priority: `K19 complete` → `missing E19/E37/E38/E39/K18` → eligible recent error/interruption → requested all-held level.\n- K19 complete, any H0–H4 → `S_H_D19_0091`.\n- Any required source/conclusion missing, any H0–H4 → `S_H_D19_0002`.\n- All held: H0 `S_H_D19_0003`; H1 `S_H_D19_0011`; H2 `S_H_D19_0021`; H3 `S_H_D19_0031`; H4 `S_H_D19_0041`.\n- With all prerequisites held, recent `rudeness_is_motive` at H3 → `S_H_D19_0032`; recent `meeting_card_is_murder_plan` at H3 → `S_H_D19_0033`.\n- With all prerequisites held and an interrupted draft, H3 selects `S_H_D19_0042`.\n\n- All-held H4 is always the authored complete solution/question: S_H_D19_0041. Recent-error and interruption overlays never override H4. Missing prerequisites still take priority and do not acquire knowledge.\n\n### H_D19_0\n**P00 | 나여백 [S_H_D19_0001]**\n\n약속 카드, 정산 차이 통지, 한술 씨 메모, 문식 씨의 원본 보존 요청, 자금 전용 결론 가운데 빠진 것이 있으면 그 자료부터 확인합니다.\n\n#### State — missing source\n**P00 | 나여백 [S_H_D19_0002]**\n\n지금 필요한 건 `무엇이 공개될 위험이었는지 / 누가 자료 통제를 압박했는지 / 둘이 따로 확인할 약속이 있었는지` 세 갈래입니다. 비어 있는 갈래의 자료만 보충하세요.\n\n#### State — all held\n**P00 | 나여백 [S_H_D19_0003]**\n\n세 갈래가 모두 있습니다. 불쾌감 대신 `구체적 노출 위험 + 압박 + 예정된 만남`까지만 연결하면 됩니다.\n\n### H_D19_1\n**P00 | 나여백 [S_H_D19_0011]**\n\n원본을 보면 해담설비 이동과 수령 연결, 공사 부재가 드러날 수 있었습니다. 그 공개를 막을 구체적 이유가 있었는지가 핵심입니다.\n\n### H_D19_2\n**P00 | 나여백 [S_H_D19_0021]**\n\n차이 통지는 원본 확인 예고, 한술 씨 메모는 담보 비밀을 이용한 압박, 피해자 요청은 목적 페이지 보존 의지, 약속 카드는 행사 뒤 직원 통로에서의 확인 예정입니다.\n\n### H_D19_3\n**P00 | 나여백 [S_H_D19_0031]**\n\n피해자가 까다로웠다는 이유로 모두의 동기를 같게 만들지 말고, 약속 카드가 공격 계획까지 적었다고도 하지 마세요.\n\n#### State — recent rudeness error\n**P00 | 나여백 [S_H_D19_0032]**\n\n방금은 넓은 반감을 모두 같은 동기로 만들었습니다. 이번에는 차무록 씨에게만 걸리는 자금 노출과 자료 통제 압박을 쓰세요.\n\n#### State — recent murder-plan error\n**P00 | 나여백 [S_H_D19_0033]**\n\n방금은 만남 장소를 살인 계획으로 바꿨습니다. 카드는 `만날 예정`까지만 증명합니다.\n\n### H_D19_4\n**P00 | 나여백 [S_H_D19_0041]**\n\n저라면 `원본 확인은 차무록 씨의 해담설비 수령 연결과 공사 부재를 드러낼 위험이었고, 한술 씨 담보 비밀을 이용한 자료 통제 압박도 있었다. 피해자는 원본 보존을 요구했고 둘은 행사 뒤 따로 확인할 약속이 있었다. 이는 막을 이유와 만남 기회이지 밀침의 증명은 아니다`라고 정리하겠습니다.\n\n#### State — interrupted\n**P00 | 나여백 [S_H_D19_0042]**\n\n중단했다면 네 칸 받침에서 마지막으로 연결한 자료 다음부터 이어 갑니다.\n\n#### State — complete\n**P00 | 나여백 [S_H_D19_0091]**\n\n원본 공개를 막을 이유와 사적 확인 약속은 이미 정리했습니다. 실제 추락 행동은 다음 장의 현장·시야 자료로 검증해야 합니다.\n\n",
+      "reason": "Bind actual authored wrong-claim keys to the existing matching H3 response."
+    },
+    {
+      "file": "script-ch04-r03.ko.md",
+      "anchor": "canonical-hint-bindings-D20",
+      "before": "## C_H_D20 — D20 힌트\n\n### Context\n- Place: L02 / reasoning help\n- Cast: P00 guidance\n- Entry: D20 available or interrupted\n- Exit: state-selected return to D20\n- State keys: missing K16..K19 / all-held / one-person error / finance-proves-push error / interrupted / K20-complete\n\n#### Deterministic selector (normative)\n- Return exactly one Korean S line. Priority: `K20 complete` → `missing K16/K17/K18/K19` → eligible recent error/interruption → requested all-held level.\n- K20 complete, any H0–H4 → `S_H_D20_0091`.\n- Any predecessor conclusion missing, any H0–H4 → `S_H_D20_0002`.\n- All four conclusions held: H0 `S_H_D20_0003`; H1 `S_H_D20_0011`; H2 `S_H_D20_0021`; H3 `S_H_D20_0031`; H4 `S_H_D20_0041`.\n- With all prerequisites held, recent `one_person_explains_all` at H3 → `S_H_D20_0032`; recent `finance_proves_push` at H3 → `S_H_D20_0033`.\n- With all prerequisites held and an interrupted matrix, H3 selects `S_H_D20_0042`.\n\n- All-held H4 is always the authored complete solution/question: S_H_D20_0041. Recent-error and interruption overlays never override H4. Missing prerequisites still take priority and do not acquire knowledge.\n\n### H_D20_0\n**P00 | 나여백 [S_H_D20_0001]**\n\n네 결론 가운데 비어 있는 것이 있으면 그 작업부터 끝냅니다. 모두 있다면 만실·한술·무록 세 사람의 `실제로 한 행동`을 세 칸에 나눕니다.\n\n#### State — missing K\n**P00 | 나여백 [S_H_D20_0002]**\n\n아직 비어 있는 결론을 먼저 채우세요: 동의 범위, 서명지 목적 대체, 실제 자금 이동, 원본 공개 압박과 만남 예정 중 하나입니다.\n\n#### State — all held\n**P00 | 나여백 [S_H_D20_0003]**\n\n네 결론이 모두 있습니다. 책임의 크기를 순위 매기지 말고 `대출 승인 / 두 번째 담보 / 문서 대체·승인 밖 자금 이동`을 각각 배치하세요.\n\n### H_D20_1\n**P00 | 나여백 [S_H_D20_0011]**\n\n핵심은 누가 더 나쁜가가 아니라 책임의 종류가 다르다는 점입니다.\n\n### H_D20_2\n**P00 | 나여백 [S_H_D20_0021]**\n\n만실 씨의 실제 대출, 한술 씨의 두 번째 담보, 무록 씨의 문서 목적 대체와 승인 밖 자금 이동·원본 공개 압박을 각각 자기 칸에 둡니다.\n\n### H_D20_3\n**P00 | 나여백 [S_H_D20_0031]**\n\n한 사람의 큰 책임이 다른 사람 책임을 지우지 않습니다. 그리고 금융 문서는 수영장 밀침을 직접 보여 주지 않습니다.\n\n#### State — recent one-person error\n**P00 | 나여백 [S_H_D20_0032]**\n\n방금은 무록 씨 책임이 크다는 이유로 다른 두 사람의 실제 결정을 지웠습니다. 세 칸을 모두 남기세요.\n\n#### State — recent finance-proves-push error\n**P00 | 나여백 [S_H_D20_0033]**\n\n방금은 재정 범행을 곧바로 밀침으로 이어 붙였습니다. 추락 행동은 아직 열린 칸으로 남겨 둡니다.\n\n### H_D20_4\n**P00 | 나여백 [S_H_D20_0041]**\n\n저라면 `봉만실은 실제 대출 승인과 설명 부족, 배한술은 별도 두 번째 담보와 은폐, 차무록은 서명 목적 대체·승인 밖 자금 이동·원본 공개 압박의 책임이 있다. 세 책임은 서로를 지우지 않으며 추락 행위자는 이 문서만으로 확정하지 않는다`고 정리하겠습니다.\n\n#### State — interrupted\n**P00 | 나여백 [S_H_D20_0042]**\n\n중단했다면 세 사람 표에서 아직 비어 있는 사람부터 이어 적습니다.\n\n#### State — complete\n**P00 | 나여백 [S_H_D20_0091]**\n\n재정·문서 책임은 분리됐습니다. 이제 해금 씨의 제한된 시야를 안전하게 검증하는 다음 약속으로 넘어가면 됩니다.\n\n",
+      "after": "## C_H_D20 — D20 힌트\n\n### Context\n- Place: L02 / reasoning help\n- Cast: P00 guidance\n- Entry: D20 available or interrupted\n- Exit: state-selected return to D20\n- State keys: missing K16..K19 / all-held / one-person error / finance-proves-push error / interrupted / K20-complete\n\n#### Deterministic selector (normative)\n- Canonical error binding (all prerequisites held, requested H3 only): `B_D20_err_only_one_person_at_fault` → `S_H_D20_0032`; `B_D20_err_finance_papers_prove_push` → `S_H_D20_0033`. These exact branch IDs take precedence over descriptive aliases below.\n- Return exactly one Korean S line. Priority: `K20 complete` → `missing K16/K17/K18/K19` → eligible recent error/interruption → requested all-held level.\n- K20 complete, any H0–H4 → `S_H_D20_0091`.\n- Any predecessor conclusion missing, any H0–H4 → `S_H_D20_0002`.\n- All four conclusions held: H0 `S_H_D20_0003`; H1 `S_H_D20_0011`; H2 `S_H_D20_0021`; H3 `S_H_D20_0031`; H4 `S_H_D20_0041`.\n- With all prerequisites held, recent `one_person_explains_all` at H3 → `S_H_D20_0032`; recent `finance_proves_push` at H3 → `S_H_D20_0033`.\n- With all prerequisites held and an interrupted matrix, H3 selects `S_H_D20_0042`.\n\n- All-held H4 is always the authored complete solution/question: S_H_D20_0041. Recent-error and interruption overlays never override H4. Missing prerequisites still take priority and do not acquire knowledge.\n\n### H_D20_0\n**P00 | 나여백 [S_H_D20_0001]**\n\n네 결론 가운데 비어 있는 것이 있으면 그 작업부터 끝냅니다. 모두 있다면 만실·한술·무록 세 사람의 `실제로 한 행동`을 세 칸에 나눕니다.\n\n#### State — missing K\n**P00 | 나여백 [S_H_D20_0002]**\n\n아직 비어 있는 결론을 먼저 채우세요: 동의 범위, 서명지 목적 대체, 실제 자금 이동, 원본 공개 압박과 만남 예정 중 하나입니다.\n\n#### State — all held\n**P00 | 나여백 [S_H_D20_0003]**\n\n네 결론이 모두 있습니다. 책임의 크기를 순위 매기지 말고 `대출 승인 / 두 번째 담보 / 문서 대체·승인 밖 자금 이동`을 각각 배치하세요.\n\n### H_D20_1\n**P00 | 나여백 [S_H_D20_0011]**\n\n핵심은 누가 더 나쁜가가 아니라 책임의 종류가 다르다는 점입니다.\n\n### H_D20_2\n**P00 | 나여백 [S_H_D20_0021]**\n\n만실 씨의 실제 대출, 한술 씨의 두 번째 담보, 무록 씨의 문서 목적 대체와 승인 밖 자금 이동·원본 공개 압박을 각각 자기 칸에 둡니다.\n\n### H_D20_3\n**P00 | 나여백 [S_H_D20_0031]**\n\n한 사람의 큰 책임이 다른 사람 책임을 지우지 않습니다. 그리고 금융 문서는 수영장 밀침을 직접 보여 주지 않습니다.\n\n#### State — recent one-person error\n**P00 | 나여백 [S_H_D20_0032]**\n\n방금은 무록 씨 책임이 크다는 이유로 다른 두 사람의 실제 결정을 지웠습니다. 세 칸을 모두 남기세요.\n\n#### State — recent finance-proves-push error\n**P00 | 나여백 [S_H_D20_0033]**\n\n방금은 재정 범행을 곧바로 밀침으로 이어 붙였습니다. 추락 행동은 아직 열린 칸으로 남겨 둡니다.\n\n### H_D20_4\n**P00 | 나여백 [S_H_D20_0041]**\n\n저라면 `봉만실은 실제 대출 승인과 설명 부족, 배한술은 별도 두 번째 담보와 은폐, 차무록은 서명 목적 대체·승인 밖 자금 이동·원본 공개 압박의 책임이 있다. 세 책임은 서로를 지우지 않으며 추락 행위자는 이 문서만으로 확정하지 않는다`고 정리하겠습니다.\n\n#### State — interrupted\n**P00 | 나여백 [S_H_D20_0042]**\n\n중단했다면 세 사람 표에서 아직 비어 있는 사람부터 이어 적습니다.\n\n#### State — complete\n**P00 | 나여백 [S_H_D20_0091]**\n\n재정·문서 책임은 분리됐습니다. 이제 해금 씨의 제한된 시야를 안전하게 검증하는 다음 약속으로 넘어가면 됩니다.\n\n",
+      "reason": "Bind actual authored wrong-claim keys to the existing matching H3 response."
+    },
+    {
+      "file": "script-ch06-r03.ko.md",
+      "anchor": "canonical-hint-bindings-D26",
+      "before": "## C_H_D26 — D26 힌트\n\n### Context\n- Place: L12 / help overlay\n- Cast: P00 guidance\n- Entry: D26 live, interrupted or complete\n- Exit: routes to missing physical check or current D26 draft\n- State keys: E49-or-E30-view missing / E50 missing / E29 missing / E28 missing / all-held / recent label-profession error / interrupted / K26-complete\n- Repeat/resume: no source-count quota; one object in two states remains one source\n\n#### Deterministic selector (normative)\n- Return **one Korean utterance only**. Priority: `K26 complete` → `missing prerequisite/source` → `recent named error (H3 only)` → `requested all-held level`. Interruption never outranks a missing physical check.\n- `K26 complete`, any H0–H4 → `S_H_D26_0091`.\n- E49/unfolded view missing, any H0–H4 → `S_H_D26_0002`; else E50 missing → `S_H_D26_0003`; else E29 or E28 missing → `S_H_D26_0004`.\n- With all required views held, recent label/profession error and requested H3 → `S_H_D26_0032`.\n- Otherwise all-held: H0 `S_H_D26_0001`; H1 `S_H_D26_0011`; H2 `S_H_D26_0021`; H3 `S_H_D26_0031`; H4 `S_H_D26_0041`.\n\n- All-held H4 is always the authored complete solution/question: S_H_D26_0041. Recent-error and interruption overlays never override H4. Missing prerequisites still take priority and do not acquire knowledge.\n\n### H_D26_0\n**P00 | 나여백 [S_H_D26_0001]**\n\n먼저 지금 가진 자료에서 `장부가 사건 전부터 이어졌는가`를 확인할 수 있는 물리 연결이 빠졌는지 봅니다. 모두 있으면 바로 원본성 비교로 돌아갑니다.\n\n#### State — unfolded view missing\n**P00 | 나여백 [S_H_D26_0002]**\n\n아직 접혀 붙은 하단 본장을 펼쳐 확인하지 않았다면 호숫가 보관 창고의 감독하 펼침부터 마치세요. 어제 젖은 상태와 오늘 펼친 상태는 같은 장입니다.\n\n#### State — E50 missing\n**P00 | 나여백 [S_H_D26_0003]**\n\n내용은 읽었지만 연결부가 비어 있습니다. 장부를 옮기지 말고 제본 실·연속 번호·절취선과 21일 인수 사진과 어제 개봉 기록을 같은 자리에서 맞추세요.\n\n#### State — E29/E28 missing\n**P00 | 나여백 [S_H_D26_0004]**\n\n봉인 경계가 빠졌다면 화물을 개봉할 때 확인한 봉인 사진과 인수 기록을, 원래 양식이 빠졌다면 프롤로그의 인계표 견본을 다시 열어 보면 됩니다. 새 원본을 찾을 필요는 없습니다.\n\n### H_D26_1\n**P00 | 나여백 [S_H_D26_0011]**\n\n내용의 시간보다 먼저 종이의 몸을 보세요. 제본 실, 앞뒤 일련번호, 천공·절취선, 봉인 경계가 한 장부를 계속 가리키는지가 핵심입니다.\n\n### H_D26_2\n**P00 | 나여백 [S_H_D26_0021]**\n\n펼친 현재 장과 전날 접혀 젖어 있던 상태 기록, 연결부 대조, 봉인 사진과 인수 기록, 인계표 견본을 역할에 맞게 씁니다. 같은 장의 젖은 상태와 펼친 상태를 서로 다른 증언처럼 더하지 않습니다.\n\n### H_D26_3\n**P00 | 나여백 [S_H_D26_0031]**\n\n`원본이라고 적혀 있다`나 `여백이 전문가다`는 이유를 버리고, 발견 전 봉인부터 개봉 뒤 보관까지의 경계와 제본 구조가 끊기지 않았다는 결론을 만드세요.\n\n#### State — recent label/profession error\n**P00 | 나여백 [S_H_D26_0032]**\n\n방금은 사람의 직업이나 문서 제목을 신뢰 근거로 썼습니다. 사람 대신 제본·일련번호·봉인 사진을 연결하세요.\n\n### H_D26_4\n**P00 | 나여백 [S_H_D26_0041]**\n\n이렇게 말하면 됩니다. `21일 밤 봉인한 화물을 어제 개봉했을 때 장부 안에서 젖은 하단 본장이 발견됐고, 오늘 같은 장이 제본 실·연속 일련번호·천공과 절취선을 그대로 잇는다. 인계표 견본과 같은 원래 필드 구조도 남아 있어, 나중에 끼운 사본이 아니라 사건 전부터 장부에 묶여 있던 본장으로 볼 수 있다. 시간값의 정확성은 별도로 비교한다.`\n\n#### State — interrupted\n**P00 | 나여백 [S_H_D26_0042]**\n\n중단했다면 원본성에 관해 적어 둔 문장과 이미 고른 물리 연결을 그대로 두고 이어서 정리합니다. 새 자료 수집부터 다시 시작하지 않습니다.\n\n#### State — complete\n**P00 | 나여백 [S_H_D26_0091]**\n\n원본성은 이미 닫혔습니다. 이제 공개본과 이 장의 시간 필드가 어떻게 다른지만 비교하면 됩니다.\n\n",
+      "after": "## C_H_D26 — D26 힌트\n\n### Context\n- Place: L12 / help overlay\n- Cast: P00 guidance\n- Entry: D26 live, interrupted or complete\n- Exit: routes to missing physical check or current D26 draft\n- State keys: E49-or-E30-view missing / E50 missing / E29 missing / E28 missing / all-held / recent label-profession error / interrupted / K26-complete\n- Repeat/resume: no source-count quota; one object in two states remains one source\n\n#### Deterministic selector (normative)\n- Canonical error binding (all prerequisites held, requested H3 only): `B_D26_err_original_label_or_profession_suffices` → `S_H_D26_0032`. These exact branch IDs take precedence over descriptive aliases below.\n- Return **one Korean utterance only**. Priority: `K26 complete` → `missing prerequisite/source` → `recent named error (H3 only)` → `requested all-held level`. Interruption never outranks a missing physical check.\n- `K26 complete`, any H0–H4 → `S_H_D26_0091`.\n- E49/unfolded view missing, any H0–H4 → `S_H_D26_0002`; else E50 missing → `S_H_D26_0003`; else E29 or E28 missing → `S_H_D26_0004`.\n- With all required views held, recent label/profession error and requested H3 → `S_H_D26_0032`.\n- Otherwise all-held: H0 `S_H_D26_0001`; H1 `S_H_D26_0011`; H2 `S_H_D26_0021`; H3 `S_H_D26_0031`; H4 `S_H_D26_0041`.\n\n- All-held H4 is always the authored complete solution/question: S_H_D26_0041. Recent-error and interruption overlays never override H4. Missing prerequisites still take priority and do not acquire knowledge.\n\n### H_D26_0\n**P00 | 나여백 [S_H_D26_0001]**\n\n먼저 지금 가진 자료에서 `장부가 사건 전부터 이어졌는가`를 확인할 수 있는 물리 연결이 빠졌는지 봅니다. 모두 있으면 바로 원본성 비교로 돌아갑니다.\n\n#### State — unfolded view missing\n**P00 | 나여백 [S_H_D26_0002]**\n\n아직 접혀 붙은 하단 본장을 펼쳐 확인하지 않았다면 호숫가 보관 창고의 감독하 펼침부터 마치세요. 어제 젖은 상태와 오늘 펼친 상태는 같은 장입니다.\n\n#### State — E50 missing\n**P00 | 나여백 [S_H_D26_0003]**\n\n내용은 읽었지만 연결부가 비어 있습니다. 장부를 옮기지 말고 제본 실·연속 번호·절취선과 21일 인수 사진과 어제 개봉 기록을 같은 자리에서 맞추세요.\n\n#### State — E29/E28 missing\n**P00 | 나여백 [S_H_D26_0004]**\n\n봉인 경계가 빠졌다면 화물을 개봉할 때 확인한 봉인 사진과 인수 기록을, 원래 양식이 빠졌다면 프롤로그의 인계표 견본을 다시 열어 보면 됩니다. 새 원본을 찾을 필요는 없습니다.\n\n### H_D26_1\n**P00 | 나여백 [S_H_D26_0011]**\n\n내용의 시간보다 먼저 종이의 몸을 보세요. 제본 실, 앞뒤 일련번호, 천공·절취선, 봉인 경계가 한 장부를 계속 가리키는지가 핵심입니다.\n\n### H_D26_2\n**P00 | 나여백 [S_H_D26_0021]**\n\n펼친 현재 장과 전날 접혀 젖어 있던 상태 기록, 연결부 대조, 봉인 사진과 인수 기록, 인계표 견본을 역할에 맞게 씁니다. 같은 장의 젖은 상태와 펼친 상태를 서로 다른 증언처럼 더하지 않습니다.\n\n### H_D26_3\n**P00 | 나여백 [S_H_D26_0031]**\n\n`원본이라고 적혀 있다`나 `여백이 전문가다`는 이유를 버리고, 발견 전 봉인부터 개봉 뒤 보관까지의 경계와 제본 구조가 끊기지 않았다는 결론을 만드세요.\n\n#### State — recent label/profession error\n**P00 | 나여백 [S_H_D26_0032]**\n\n방금은 사람의 직업이나 문서 제목을 신뢰 근거로 썼습니다. 사람 대신 제본·일련번호·봉인 사진을 연결하세요.\n\n### H_D26_4\n**P00 | 나여백 [S_H_D26_0041]**\n\n이렇게 말하면 됩니다. `21일 밤 봉인한 화물을 어제 개봉했을 때 장부 안에서 젖은 하단 본장이 발견됐고, 오늘 같은 장이 제본 실·연속 일련번호·천공과 절취선을 그대로 잇는다. 인계표 견본과 같은 원래 필드 구조도 남아 있어, 나중에 끼운 사본이 아니라 사건 전부터 장부에 묶여 있던 본장으로 볼 수 있다. 시간값의 정확성은 별도로 비교한다.`\n\n#### State — interrupted\n**P00 | 나여백 [S_H_D26_0042]**\n\n중단했다면 원본성에 관해 적어 둔 문장과 이미 고른 물리 연결을 그대로 두고 이어서 정리합니다. 새 자료 수집부터 다시 시작하지 않습니다.\n\n#### State — complete\n**P00 | 나여백 [S_H_D26_0091]**\n\n원본성은 이미 닫혔습니다. 이제 공개본과 이 장의 시간 필드가 어떻게 다른지만 비교하면 됩니다.\n\n",
+      "reason": "Bind actual authored wrong-claim keys to the existing matching H3 response."
+    },
+    {
+      "file": "script-ch06-r03.ko.md",
+      "anchor": "canonical-hint-bindings-D27",
+      "before": "## C_H_D27 — D27 힌트\n\n### Context\n- Place: L06 / help overlay\n- Cast: P00 guidance\n- Entry: D27 live, interrupted or complete\n- Exit: missing comparison action or current D27 draft\n- State keys: K26-missing / E48-missing / E51-missing / all-held / recent printer-error / recent all-forged-error / interrupted / K27-complete\n- Repeat/resume: does not force a repeated device demo when E48/E51 are already held\n\n#### Deterministic selector (normative)\n- Return **one Korean utterance only**. Priority: `K27 complete` → `missing prerequisite/source` → `recent named error (H3 only)` → `requested all-held level`. Do not repeat a finished machine demo merely because a higher hint was requested.\n- `K27 complete`, any H0–H4 → `S_H_D27_0091`.\n- K26 missing, any H0–H4 → `S_H_D27_0002`; else E48 or E51 missing → `S_H_D27_0003`.\n- With all required material held, recent printer-shift error and requested H3 → `S_H_D27_0032`; recent all-pages-forged error and H3 → `S_H_D27_0033`.\n- Otherwise all-held: H0 `S_H_D27_0001`; H1 `S_H_D27_0011`; H2 `S_H_D27_0021`; H3 `S_H_D27_0031`; H4 `S_H_D27_0041`.\n\n- All-held H4 is always the authored complete solution/question: S_H_D27_0041. Recent-error and interruption overlays never override H4. Missing prerequisites still take priority and do not acquire knowledge.\n\n### H_D27_0\n**P00 | 나여백 [S_H_D27_0001]**\n\n먼저 인증된 원본, 현재 입회 시험, 공개본 겹침 비교가 모두 있는지 확인합니다. 빠진 비교만 채우고 이미 끝낸 원본 확인은 반복하지 않습니다.\n\n#### State — K26 missing\n**P00 | 나여백 [S_H_D27_0002]**\n\n원본성이 아직 미해결입니다. 시간 차이를 해석하기 전에 호숫가 보관 창고의 장부가 사건 당시부터 이어진 본장인지 먼저 확인하세요.\n\n#### State — E48/E51 missing\n**P00 | 나여백 [S_H_D27_0003]**\n\n기계가 시간을 저절로 바꾸는지 보려면 현재 견본 시험이 필요하고, 실제 어떤 칸이 달라졌는지 보려면 공개본과 원본의 겹침 비교가 필요합니다. 빠진 하나만 수행하세요.\n\n### H_D27_1\n**P00 | 나여백 [S_H_D27_0011]**\n\n같은 공개본에서 `합의돼 가린 금액 칸`과 `원본과 값이 달라진 시간 칸`을 나눠 보세요. 바뀐 두 시각은 같은 방향으로 정확히 7분 움직였습니다.\n\n### H_D27_2\n**P00 | 나여백 [S_H_D27_0021]**\n\n공개용 사본, 입회 시험, 인증된 하단 본장, 겹침 비교가 맡는 역할이 다릅니다. 공개용 사본을 읽은 여러 사람의 말은 새로운 원본이 아닙니다.\n\n### H_D27_3\n**P00 | 나여백 [S_H_D27_0031]**\n\n복사기가 시간을 재계산한다는 증거는 없고, 장부 전체 위조는 이미 확인한 제본 연속성과 충돌합니다. 남는 범위는 공개본의 특정 시간 필드 편집입니다.\n\n#### State — recent printer error\n**P00 | 나여백 [S_H_D27_0032]**\n\n방금은 기계가 7분을 계산했다고 가정했습니다. 입회 시험에서 같은 시각이 그대로 복사된 점으로 돌아가세요.\n\n#### State — recent all-forged error\n**P00 | 나여백 [S_H_D27_0033]**\n\n방금은 특정 사본 편집을 장부 전체 위조로 넓혔습니다. 바뀐 두 칸과 그대로인 나머지 필드를 구분하세요.\n\n### H_D27_4\n**P00 | 나여백 [S_H_D27_0041]**\n\n`정상 인상과 일반 복사에서는 두 시각이 유지되는데, 공개본에서는 금액 가림 외에 접수·종료 두 값만 각각 7분 빨라졌다. 나머지 필드 정렬과 작업 번호는 유지된다. 따라서 공개본의 두 시간값은 허용 범위를 넘어 의도적으로 편집됐다. 편집자 신원은 아직 별도다.`라고 정리하면 됩니다.\n\n#### State — interrupted\n**P00 | 나여백 [S_H_D27_0042]**\n\n중단했다면 겹쳐 둔 두 장과 선택한 시간 필드를 그대로 유지하고 결론만 이어 말합니다.\n\n#### State — complete\n**P00 | 나여백 [S_H_D27_0091]**\n\n시간값 편집은 이미 닫혔습니다. 다음은 `누가 복사 내내 지켜봤는가`라는 현재 설명을 그 결과와 대조할 차례입니다.\n\n",
+      "after": "## C_H_D27 — D27 힌트\n\n### Context\n- Place: L06 / help overlay\n- Cast: P00 guidance\n- Entry: D27 live, interrupted or complete\n- Exit: missing comparison action or current D27 draft\n- State keys: K26-missing / E48-missing / E51-missing / all-held / recent printer-error / recent all-forged-error / interrupted / K27-complete\n- Repeat/resume: does not force a repeated device demo when E48/E51 are already held\n\n#### Deterministic selector (normative)\n- Canonical error binding (all prerequisites held, requested H3 only): `B_D27_err_printer_shifts_values_seven_minutes` → `S_H_D27_0032`; `B_D27_err_all_pages_forged` → `S_H_D27_0033`. These exact branch IDs take precedence over descriptive aliases below.\n- Return **one Korean utterance only**. Priority: `K27 complete` → `missing prerequisite/source` → `recent named error (H3 only)` → `requested all-held level`. Do not repeat a finished machine demo merely because a higher hint was requested.\n- `K27 complete`, any H0–H4 → `S_H_D27_0091`.\n- K26 missing, any H0–H4 → `S_H_D27_0002`; else E48 or E51 missing → `S_H_D27_0003`.\n- With all required material held, recent printer-shift error and requested H3 → `S_H_D27_0032`; recent all-pages-forged error and H3 → `S_H_D27_0033`.\n- Otherwise all-held: H0 `S_H_D27_0001`; H1 `S_H_D27_0011`; H2 `S_H_D27_0021`; H3 `S_H_D27_0031`; H4 `S_H_D27_0041`.\n\n- All-held H4 is always the authored complete solution/question: S_H_D27_0041. Recent-error and interruption overlays never override H4. Missing prerequisites still take priority and do not acquire knowledge.\n\n### H_D27_0\n**P00 | 나여백 [S_H_D27_0001]**\n\n먼저 인증된 원본, 현재 입회 시험, 공개본 겹침 비교가 모두 있는지 확인합니다. 빠진 비교만 채우고 이미 끝낸 원본 확인은 반복하지 않습니다.\n\n#### State — K26 missing\n**P00 | 나여백 [S_H_D27_0002]**\n\n원본성이 아직 미해결입니다. 시간 차이를 해석하기 전에 호숫가 보관 창고의 장부가 사건 당시부터 이어진 본장인지 먼저 확인하세요.\n\n#### State — E48/E51 missing\n**P00 | 나여백 [S_H_D27_0003]**\n\n기계가 시간을 저절로 바꾸는지 보려면 현재 견본 시험이 필요하고, 실제 어떤 칸이 달라졌는지 보려면 공개본과 원본의 겹침 비교가 필요합니다. 빠진 하나만 수행하세요.\n\n### H_D27_1\n**P00 | 나여백 [S_H_D27_0011]**\n\n같은 공개본에서 `합의돼 가린 금액 칸`과 `원본과 값이 달라진 시간 칸`을 나눠 보세요. 바뀐 두 시각은 같은 방향으로 정확히 7분 움직였습니다.\n\n### H_D27_2\n**P00 | 나여백 [S_H_D27_0021]**\n\n공개용 사본, 입회 시험, 인증된 하단 본장, 겹침 비교가 맡는 역할이 다릅니다. 공개용 사본을 읽은 여러 사람의 말은 새로운 원본이 아닙니다.\n\n### H_D27_3\n**P00 | 나여백 [S_H_D27_0031]**\n\n복사기가 시간을 재계산한다는 증거는 없고, 장부 전체 위조는 이미 확인한 제본 연속성과 충돌합니다. 남는 범위는 공개본의 특정 시간 필드 편집입니다.\n\n#### State — recent printer error\n**P00 | 나여백 [S_H_D27_0032]**\n\n방금은 기계가 7분을 계산했다고 가정했습니다. 입회 시험에서 같은 시각이 그대로 복사된 점으로 돌아가세요.\n\n#### State — recent all-forged error\n**P00 | 나여백 [S_H_D27_0033]**\n\n방금은 특정 사본 편집을 장부 전체 위조로 넓혔습니다. 바뀐 두 칸과 그대로인 나머지 필드를 구분하세요.\n\n### H_D27_4\n**P00 | 나여백 [S_H_D27_0041]**\n\n`정상 인상과 일반 복사에서는 두 시각이 유지되는데, 공개본에서는 금액 가림 외에 접수·종료 두 값만 각각 7분 빨라졌다. 나머지 필드 정렬과 작업 번호는 유지된다. 따라서 공개본의 두 시간값은 허용 범위를 넘어 의도적으로 편집됐다. 편집자 신원은 아직 별도다.`라고 정리하면 됩니다.\n\n#### State — interrupted\n**P00 | 나여백 [S_H_D27_0042]**\n\n중단했다면 겹쳐 둔 두 장과 선택한 시간 필드를 그대로 유지하고 결론만 이어 말합니다.\n\n#### State — complete\n**P00 | 나여백 [S_H_D27_0091]**\n\n시간값 편집은 이미 닫혔습니다. 다음은 `누가 복사 내내 지켜봤는가`라는 현재 설명을 그 결과와 대조할 차례입니다.\n\n",
+      "reason": "Bind actual authored wrong-claim keys to the existing matching H3 response."
+    },
+    {
+      "file": "script-ch06-r03.ko.md",
+      "anchor": "canonical-hint-bindings-Q06",
+      "before": "## C_H_Q06 — Q06 힌트\n\n### Context\n- Place: L05 / help overlay\n- Cast: P00 guidance\n- Entry: Q06 live, interrupted or complete\n- Exit: returns to the contradiction without leaking E52 before success\n- State keys: K27-missing / E28-missing / E51-missing / all-held-v1 / recent murder-scope error / recent original-clock error / interrupted / KQ06-complete\n- Repeat/resume: before success, no line states solo-copy time, nonreturn or P03 access; after success, E52 may be summarized\n\n#### Deterministic selector (normative)\n- Return **one Korean utterance only**. Priority: `KQ06 complete` → `K27 missing` → `E28 missing` → `E51 missing` → `recent named error (H3 only)` → `requested live-v1 level`. Before success, no selector path may mention the 20:40–20:50 solo-copy interval, nonreturn or P03's exclusive access.\n- `KQ06 complete`, any H0–H4 → `S_H_Q06_0091`.\n- K27 missing, any H0–H4 → `S_H_Q06_0002`.\n- K27 held but E28 missing, any H0–H4 → `S_H_Q06_0003`.\n- K27+E28 held but E51 missing, any H0–H4 → `S_H_Q06_0005`.\n- With K27+E28+E51 and live `S_Q06_v1`, recent murder-scope error and H3 → `S_H_Q06_0032`; recent original-clock error and H3 → `S_H_Q06_0033`.\n- Otherwise live-v1/all-held: H0 `S_H_Q06_0004`; H1 `S_H_Q06_0011`; H2 `S_H_Q06_0021`; H3 `S_H_Q06_0031`; H4 `S_H_Q06_0041`.\n\n- All-held H4 is always the authored complete solution/question: S_H_Q06_0041. Recent-error and interruption overlays never override H4. Missing prerequisites still take priority and do not acquire knowledge.\n\n### H_Q06_0\n**P00 | 나여백 [S_H_Q06_0001]**\n\n먼저 `금액 말고는 안 바뀌었다`는 현재 설명과, 공개본에서 실제로 바뀐 칸을 같은 화면에 둘 수 있는지 확인합니다. 빠진 비교가 있으면 그것만 채웁니다.\n\n#### State — K27 missing\n**P00 | 나여백 [S_H_Q06_0002]**\n\n두 시각이 의도적으로 편집됐다는 결론이 아직 없습니다. 먼저 원본과 공개본의 같은 필드를 비교해 정상 가림과 시간 변경을 분리하세요.\n\n#### State — E28/E51 missing\n**P00 | 나여백 [S_H_Q06_0003]**\n\n인계표 견본이 아직 없다면 먼저 상단 업무용 부본과 제본되는 하단 본장이 원래 어떻게 한 쌍으로 만들어지는지 확인합니다. 겹침 비교의 결론은 그 다음입니다.\n\n#### State — E51 missing\n**P00 | 나여백 [S_H_Q06_0005]**\n\n공개본과 인증된 원본을 같은 작업 번호·같은 필드 위치로 아직 겹쳐 보지 못했습니다. 먼저 실제로 어느 칸이 달라졌는지 확인하고, 편집자를 추측하는 건 그 뒤로 미룹니다.\n\n#### State — all held / v1 still live\n**P00 | 나여백 [S_H_Q06_0004]**\n\n현재 백로 씨의 말은 `복사 내내 지켜봤다`, `금액 외에는 안 바뀌었다`입니다. 겹침 비교는 시간 두 칸도 바뀌었다고 보여 줍니다. 이 모순 자체만 질문하세요.\n\n### H_Q06_1\n**P00 | 나여백 [S_H_Q06_0011]**\n\n살인 현장으로 건너뛰지 말고 복사 과정만 봅니다. 전 과정을 직접 봤다면 금액 외 변경을 어떻게 못 봤는지가 질문의 중심입니다.\n\n### H_Q06_2\n**P00 | 나여백 [S_H_Q06_0021]**\n\n인계표 견본은 원래 부본 구조, 겹침 비교는 실제 변경 범위를 맡습니다. 누가 어디까지 복사를 지켜봤는지는 아직 본인에게 확인해야 합니다.\n\n#### State — after Q06 success\n**P00 | 나여백 [S_H_Q06_0022]**\n\n정정 뒤에는 복사 입회 정정을 추가로 쓸 수 있습니다. 이 자료는 복사 접근과 직접 관찰 구간을 밝히지만 살인 목격을 새로 만들지는 않습니다.\n\n### H_Q06_3\n**P00 | 나여백 [S_H_Q06_0031]**\n\n`백로가 살인을 봤다`도, `기억이 틀렸으니 원본 시각도 거짓`도 버립니다. 현재 복사 감독 설명과 확인된 시간 필드 변경만 충돌시키세요.\n\n#### State — recent murder-scope error\n**P00 | 나여백 [S_H_Q06_0032]**\n\n방금은 복사 감독을 살인 목격으로 넓혔습니다. 주방 쪽 일반 복사기 앞에서 누가 무엇을 지켜봤는지로 질문을 되돌리세요.\n\n#### State — recent original-clock error\n**P00 | 나여백 [S_H_Q06_0033]**\n\n방금은 사람의 기억 오류를 장부 인상 시각의 오류로 옮겼습니다. 두 문제를 분리하세요.\n\n### H_Q06_4\n**P00 | 나여백 [S_H_Q06_0041]**\n\n질문은 이 정도면 충분합니다. `금액만 가렸고 전 과정을 직접 봤다면, 원본과 다른 두 시간값은 언제 어떻게 생겼습니까? 상단 업무용 부본을 실제로 누가 복사했고, 당신은 그 과정을 어디까지 직접 봤습니까?`\n\n#### State — interrupted before correction\n**P00 | 나여백 [S_H_Q06_0042]**\n\n중단했다면 백로 씨의 현재 두 주장과 겹침 비교를 그대로 두고 질문을 이어 갑니다. 정정 시간이나 미반환을 먼저 제시하지 않습니다.\n\n#### State — complete\n**P00 | 나여백 [S_H_Q06_0091]**\n\n정정이 끝났습니다. 이제 `원본 인계는 직접 연속 관찰`, `공개본 숫자는 나중에 읽어 기억에 섞임`, `상단 부본의 복사·미반환은 별도 과정`이라는 세 범위를 분리해 다음 알리바이 검토에 씁니다.\n\n",
+      "after": "## C_H_Q06 — Q06 힌트\n\n### Context\n- Place: L05 / help overlay\n- Cast: P00 guidance\n- Entry: Q06 live, interrupted or complete\n- Exit: returns to the contradiction without leaking E52 before success\n- State keys: K27-missing / E28-missing / E51-missing / all-held-v1 / recent murder-scope error / recent original-clock error / interrupted / KQ06-complete\n- Repeat/resume: before success, no line states solo-copy time, nonreturn or P03 access; after success, E52 may be summarized\n\n#### Deterministic selector (normative)\n- Canonical error binding (all prerequisites held, requested H3 only): `B_Q06_err_custodian_saw_murder` → `S_H_Q06_0032`; `B_Q06_err_original_clock_inherently_false` → `S_H_Q06_0033`. These exact branch IDs take precedence over descriptive aliases below.\n- Return **one Korean utterance only**. Priority: `KQ06 complete` → `K27 missing` → `E28 missing` → `E51 missing` → `recent named error (H3 only)` → `requested live-v1 level`. Before success, no selector path may mention the 20:40–20:50 solo-copy interval, nonreturn or P03's exclusive access.\n- `KQ06 complete`, any H0–H4 → `S_H_Q06_0091`.\n- K27 missing, any H0–H4 → `S_H_Q06_0002`.\n- K27 held but E28 missing, any H0–H4 → `S_H_Q06_0003`.\n- K27+E28 held but E51 missing, any H0–H4 → `S_H_Q06_0005`.\n- With K27+E28+E51 and live `S_Q06_v1`, recent murder-scope error and H3 → `S_H_Q06_0032`; recent original-clock error and H3 → `S_H_Q06_0033`.\n- Otherwise live-v1/all-held: H0 `S_H_Q06_0004`; H1 `S_H_Q06_0011`; H2 `S_H_Q06_0021`; H3 `S_H_Q06_0031`; H4 `S_H_Q06_0041`.\n\n- All-held H4 is always the authored complete solution/question: S_H_Q06_0041. Recent-error and interruption overlays never override H4. Missing prerequisites still take priority and do not acquire knowledge.\n\n### H_Q06_0\n**P00 | 나여백 [S_H_Q06_0001]**\n\n먼저 `금액 말고는 안 바뀌었다`는 현재 설명과, 공개본에서 실제로 바뀐 칸을 같은 화면에 둘 수 있는지 확인합니다. 빠진 비교가 있으면 그것만 채웁니다.\n\n#### State — K27 missing\n**P00 | 나여백 [S_H_Q06_0002]**\n\n두 시각이 의도적으로 편집됐다는 결론이 아직 없습니다. 먼저 원본과 공개본의 같은 필드를 비교해 정상 가림과 시간 변경을 분리하세요.\n\n#### State — E28/E51 missing\n**P00 | 나여백 [S_H_Q06_0003]**\n\n인계표 견본이 아직 없다면 먼저 상단 업무용 부본과 제본되는 하단 본장이 원래 어떻게 한 쌍으로 만들어지는지 확인합니다. 겹침 비교의 결론은 그 다음입니다.\n\n#### State — E51 missing\n**P00 | 나여백 [S_H_Q06_0005]**\n\n공개본과 인증된 원본을 같은 작업 번호·같은 필드 위치로 아직 겹쳐 보지 못했습니다. 먼저 실제로 어느 칸이 달라졌는지 확인하고, 편집자를 추측하는 건 그 뒤로 미룹니다.\n\n#### State — all held / v1 still live\n**P00 | 나여백 [S_H_Q06_0004]**\n\n현재 백로 씨의 말은 `복사 내내 지켜봤다`, `금액 외에는 안 바뀌었다`입니다. 겹침 비교는 시간 두 칸도 바뀌었다고 보여 줍니다. 이 모순 자체만 질문하세요.\n\n### H_Q06_1\n**P00 | 나여백 [S_H_Q06_0011]**\n\n살인 현장으로 건너뛰지 말고 복사 과정만 봅니다. 전 과정을 직접 봤다면 금액 외 변경을 어떻게 못 봤는지가 질문의 중심입니다.\n\n### H_Q06_2\n**P00 | 나여백 [S_H_Q06_0021]**\n\n인계표 견본은 원래 부본 구조, 겹침 비교는 실제 변경 범위를 맡습니다. 누가 어디까지 복사를 지켜봤는지는 아직 본인에게 확인해야 합니다.\n\n#### State — after Q06 success\n**P00 | 나여백 [S_H_Q06_0022]**\n\n정정 뒤에는 복사 입회 정정을 추가로 쓸 수 있습니다. 이 자료는 복사 접근과 직접 관찰 구간을 밝히지만 살인 목격을 새로 만들지는 않습니다.\n\n### H_Q06_3\n**P00 | 나여백 [S_H_Q06_0031]**\n\n`백로가 살인을 봤다`도, `기억이 틀렸으니 원본 시각도 거짓`도 버립니다. 현재 복사 감독 설명과 확인된 시간 필드 변경만 충돌시키세요.\n\n#### State — recent murder-scope error\n**P00 | 나여백 [S_H_Q06_0032]**\n\n방금은 복사 감독을 살인 목격으로 넓혔습니다. 주방 쪽 일반 복사기 앞에서 누가 무엇을 지켜봤는지로 질문을 되돌리세요.\n\n#### State — recent original-clock error\n**P00 | 나여백 [S_H_Q06_0033]**\n\n방금은 사람의 기억 오류를 장부 인상 시각의 오류로 옮겼습니다. 두 문제를 분리하세요.\n\n### H_Q06_4\n**P00 | 나여백 [S_H_Q06_0041]**\n\n질문은 이 정도면 충분합니다. `금액만 가렸고 전 과정을 직접 봤다면, 원본과 다른 두 시간값은 언제 어떻게 생겼습니까? 상단 업무용 부본을 실제로 누가 복사했고, 당신은 그 과정을 어디까지 직접 봤습니까?`\n\n#### State — interrupted before correction\n**P00 | 나여백 [S_H_Q06_0042]**\n\n중단했다면 백로 씨의 현재 두 주장과 겹침 비교를 그대로 두고 질문을 이어 갑니다. 정정 시간이나 미반환을 먼저 제시하지 않습니다.\n\n#### State — complete\n**P00 | 나여백 [S_H_Q06_0091]**\n\n정정이 끝났습니다. 이제 `원본 인계는 직접 연속 관찰`, `공개본 숫자는 나중에 읽어 기억에 섞임`, `상단 부본의 복사·미반환은 별도 과정`이라는 세 범위를 분리해 다음 알리바이 검토에 씁니다.\n\n",
+      "reason": "Bind actual authored wrong-claim keys to the existing matching H3 response."
+    },
+    {
+      "file": "script-ch06-r03.ko.md",
+      "anchor": "canonical-hint-bindings-D28",
+      "before": "## C_H_D28 — D28 힌트\n\n### Context\n- Place: L02 / help overlay\n- Cast: P00 guidance\n- Entry: D28 live, interrupted or complete\n- Exit: missing source/action or current D28 draft\n- State keys: K26-missing / E52-missing / E13-or-K23-missing / all-held / recent walking-error / recent copied-corroboration-error / interrupted / K28-complete\n- Repeat/resume: never uses coat-transfer timing as a substitute for actor exclusion\n\n#### Deterministic selector (normative)\n- Return **one Korean utterance only**. Priority: `K28 complete` → `missing prerequisite/source` → `recent named error (H3 only)` → `requested all-held level`. Coat-transfer timing never substitutes for the direct-observation prerequisite.\n- `K28 complete`, any H0–H4 → `S_H_D28_0091`.\n- K26/E49 missing, any H0–H4 → `S_H_D28_0002`; else E52 missing → `S_H_D28_0003`; else E13 or K23 missing → `S_H_D28_0004`.\n- With all required material held, recent walking-speed error and H3 → `S_H_D28_0032`; recent copied-corroboration error and H3 → `S_H_D28_0033`.\n- Otherwise all-held: H0 `S_H_D28_0001`; H1 `S_H_D28_0011`; H2 `S_H_D28_0021`; H3 `S_H_D28_0031`; H4 `S_H_D28_0041`.\n\n- All-held H4 is always the authored complete solution/question: S_H_D28_0041. Recent-error and interruption overlays never override H4. Missing prerequisites still take priority and do not acquire knowledge.\n\n### H_D28_0\n**P00 | 나여백 [S_H_D28_0001]**\n\n원본 인계 구간과 사건 구간, 백로 씨의 직접 관찰이 모두 있는지 확인합니다. 빠진 한 줄만 채우고 이미 끝낸 복사 추궁을 반복하지 않습니다.\n\n#### State — K26/E49 missing\n**P00 | 나여백 [S_H_D28_0002]**\n\n인계 원본이 아직 인증되지 않았다면 먼저 원본성부터 닫으세요. 공개본 시간으로는 연속 알리바이를 세울 수 없습니다.\n\n#### State — E52 missing\n**P00 | 나여백 [S_H_D28_0003]**\n\n백로 씨의 복사 감독 정정이 아직 없습니다. 공개본의 바뀐 시간 칸을 근거로, 복사를 내내 지켜봤다는 현재 설명부터 확인하세요.\n\n#### State — E13/K23 missing\n**P00 | 나여백 [S_H_D28_0004]**\n\n사건 범위나 시계 오차가 빠져 있습니다. 이미 확보한 전원 복귀·공개 점검 비교와 시계 대조 기록을 다시 확인하세요.\n\n### H_D28_1\n**P00 | 나여백 [S_H_D28_0011]**\n\n사건 20:17–20:21을 가운데 두고, 원본 인계 20:14–20:24와 ±1분 한계를 겹쳐 보세요. 그 전체에서 두철·한술을 직접 본 사람이 있습니다.\n\n### H_D28_2\n**P00 | 나여백 [S_H_D28_0021]**\n\n인증된 하단 본장은 시간 구간, 복사 입회 정정은 직접 연속 관찰, 시계 대조 기록은 허용 오차를 맡습니다. 공개본을 인용한 여러 말은 한 파생 원천입니다.\n\n### H_D28_3\n**P00 | 나여백 [S_H_D28_0031]**\n\n`빨리 걸어도 못 간다`보다 강한 건 `그 동안 바로 옆에서 계속 봤다`입니다. 그리고 이 결론은 두철의 사건 행위 가능성을 배제할 뿐, 외투 인계 시각을 혼자 확정하지 않습니다.\n\n#### State — recent walking-speed error\n**P00 | 나여백 [S_H_D28_0032]**\n\n방금은 거리 계산을 알리바이로 썼습니다. 이동 가능성 말고 직접 연속 관찰로 바꾸세요.\n\n#### State — recent copied-corroboration error\n**P00 | 나여백 [S_H_D28_0033]**\n\n방금은 같은 공개본에서 나온 숫자를 독립 증언처럼 더했습니다. 원본과 백로 씨의 실제 관찰만 남기세요.\n\n### H_D28_4\n**P00 | 나여백 [S_H_D28_0041]**\n\n`사건은 20:17–20:21, 인증 원본 인계는 20:14–20:24이고 오차를 감안해도 겹친다. 목백로가 그 인계 내내 탁두철·배한술을 직접 봤으므로 두 사람은 사건 구간 랜딩의 행위자가 될 수 없다. 다만 열린 게이트·화물 책임과 외투 인계 시각은 별도 문제다.`라고 정리하면 됩니다.\n\n#### State — interrupted\n**P00 | 나여백 [S_H_D28_0042]**\n\n중단했다면 세 시간 띠와 직접 관찰 표시를 그대로 둔 채 이어서 정리합니다.\n\n#### State — complete\n**P00 | 나여백 [S_H_D28_0091]**\n\n두철·한술의 사건 행위 가능성은 배제됐습니다. 이제 외투·피해자 접점·사본 접근을 한 사람에게 함께 연결할 수 있는지 봅니다.\n\n",
+      "after": "## C_H_D28 — D28 힌트\n\n### Context\n- Place: L02 / help overlay\n- Cast: P00 guidance\n- Entry: D28 live, interrupted or complete\n- Exit: missing source/action or current D28 draft\n- State keys: K26-missing / E52-missing / E13-or-K23-missing / all-held / recent walking-error / recent copied-corroboration-error / interrupted / K28-complete\n- Repeat/resume: never uses coat-transfer timing as a substitute for actor exclusion\n\n#### Deterministic selector (normative)\n- Canonical error binding (all prerequisites held, requested H3 only): `B_D28_err_walking_speed_exclusion` → `S_H_D28_0032`; `B_D28_err_two_copy_accounts_are_independent` → `S_H_D28_0033`. These exact branch IDs take precedence over descriptive aliases below.\n- Return **one Korean utterance only**. Priority: `K28 complete` → `missing prerequisite/source` → `recent named error (H3 only)` → `requested all-held level`. Coat-transfer timing never substitutes for the direct-observation prerequisite.\n- `K28 complete`, any H0–H4 → `S_H_D28_0091`.\n- K26/E49 missing, any H0–H4 → `S_H_D28_0002`; else E52 missing → `S_H_D28_0003`; else E13 or K23 missing → `S_H_D28_0004`.\n- With all required material held, recent walking-speed error and H3 → `S_H_D28_0032`; recent copied-corroboration error and H3 → `S_H_D28_0033`.\n- Otherwise all-held: H0 `S_H_D28_0001`; H1 `S_H_D28_0011`; H2 `S_H_D28_0021`; H3 `S_H_D28_0031`; H4 `S_H_D28_0041`.\n\n- All-held H4 is always the authored complete solution/question: S_H_D28_0041. Recent-error and interruption overlays never override H4. Missing prerequisites still take priority and do not acquire knowledge.\n\n### H_D28_0\n**P00 | 나여백 [S_H_D28_0001]**\n\n원본 인계 구간과 사건 구간, 백로 씨의 직접 관찰이 모두 있는지 확인합니다. 빠진 한 줄만 채우고 이미 끝낸 복사 추궁을 반복하지 않습니다.\n\n#### State — K26/E49 missing\n**P00 | 나여백 [S_H_D28_0002]**\n\n인계 원본이 아직 인증되지 않았다면 먼저 원본성부터 닫으세요. 공개본 시간으로는 연속 알리바이를 세울 수 없습니다.\n\n#### State — E52 missing\n**P00 | 나여백 [S_H_D28_0003]**\n\n백로 씨의 복사 감독 정정이 아직 없습니다. 공개본의 바뀐 시간 칸을 근거로, 복사를 내내 지켜봤다는 현재 설명부터 확인하세요.\n\n#### State — E13/K23 missing\n**P00 | 나여백 [S_H_D28_0004]**\n\n사건 범위나 시계 오차가 빠져 있습니다. 이미 확보한 전원 복귀·공개 점검 비교와 시계 대조 기록을 다시 확인하세요.\n\n### H_D28_1\n**P00 | 나여백 [S_H_D28_0011]**\n\n사건 20:17–20:21을 가운데 두고, 원본 인계 20:14–20:24와 ±1분 한계를 겹쳐 보세요. 그 전체에서 두철·한술을 직접 본 사람이 있습니다.\n\n### H_D28_2\n**P00 | 나여백 [S_H_D28_0021]**\n\n인증된 하단 본장은 시간 구간, 복사 입회 정정은 직접 연속 관찰, 시계 대조 기록은 허용 오차를 맡습니다. 공개본을 인용한 여러 말은 한 파생 원천입니다.\n\n### H_D28_3\n**P00 | 나여백 [S_H_D28_0031]**\n\n`빨리 걸어도 못 간다`보다 강한 건 `그 동안 바로 옆에서 계속 봤다`입니다. 그리고 이 결론은 두철의 사건 행위 가능성을 배제할 뿐, 외투 인계 시각을 혼자 확정하지 않습니다.\n\n#### State — recent walking-speed error\n**P00 | 나여백 [S_H_D28_0032]**\n\n방금은 거리 계산을 알리바이로 썼습니다. 이동 가능성 말고 직접 연속 관찰로 바꾸세요.\n\n#### State — recent copied-corroboration error\n**P00 | 나여백 [S_H_D28_0033]**\n\n방금은 같은 공개본에서 나온 숫자를 독립 증언처럼 더했습니다. 원본과 백로 씨의 실제 관찰만 남기세요.\n\n### H_D28_4\n**P00 | 나여백 [S_H_D28_0041]**\n\n`사건은 20:17–20:21, 인증 원본 인계는 20:14–20:24이고 오차를 감안해도 겹친다. 목백로가 그 인계 내내 탁두철·배한술을 직접 봤으므로 두 사람은 사건 구간 랜딩의 행위자가 될 수 없다. 다만 열린 게이트·화물 책임과 외투 인계 시각은 별도 문제다.`라고 정리하면 됩니다.\n\n#### State — interrupted\n**P00 | 나여백 [S_H_D28_0042]**\n\n중단했다면 세 시간 띠와 직접 관찰 표시를 그대로 둔 채 이어서 정리합니다.\n\n#### State — complete\n**P00 | 나여백 [S_H_D28_0091]**\n\n두철·한술의 사건 행위 가능성은 배제됐습니다. 이제 외투·피해자 접점·사본 접근을 한 사람에게 함께 연결할 수 있는지 봅니다.\n\n",
+      "reason": "Bind actual authored wrong-claim keys to the existing matching H3 response."
+    },
+    {
+      "file": "script-ch06-r03.ko.md",
+      "anchor": "canonical-hint-bindings-D29",
+      "before": "## C_H_D29 — D29 힌트\n\n### Context\n- Place: L03 / help overlay\n- Cast: P00 guidance\n- Entry: D29 live, interrupted or complete\n- Exit: missing prior task/source or current person-selection draft\n- State keys: K18/K19/K24 missing / K27 or KQ06 missing / K28 missing / E10/E19/E46/E18 missing / all-held / four recent error classes / interrupted / K29-complete\n- Repeat/resume: early-loan statement remains a hypothesis; K28 refutes only P04-as-incident-actor\n\n#### Deterministic selector (normative)\n- Return **one Korean utterance only**. Priority: `K29 complete` → `missing prior conclusion/source` → `recent named error (H3 only)` → `requested all-held level`. In particular, a missing K28 or KQ06 always blocks the H1–H4 person-selection solution.\n- `K29 complete`, any H0–H4 → `S_H_D29_0091`.\n- Any of K18/K19/K24 missing, any H0–H4 → `S_H_D29_0001`; else K27 or KQ06 missing → `S_H_D29_0003`; else K28 missing → `S_H_D29_0002`; else any of E10/E19/E46/E18 missing → `S_H_D29_0004`.\n- With all required material held, recent name-only error and H3 → `S_H_D29_0032`; recent motive-only or copy-only error and H3 → `S_H_D29_0033`; recent unsupported-conspiracy error and H3 → `S_H_D29_0034`.\n- Otherwise all-held: H0 `S_H_D29_0001`; H1 `S_H_D29_0011`; H2 `S_H_D29_0021`; H3 `S_H_D29_0031`; H4 `S_H_D29_0041`.\n\n- All-held H4 is always the authored complete solution/question: S_H_D29_0041. Recent-error and interruption overlays never override H4. Missing prerequisites still take priority and do not acquire knowledge.\n\n### H_D29_0\n**P00 | 나여백 [S_H_D29_0001]**\n\n외투·피해자 접점·복사 접근·사건 구간 배제가 모두 준비됐는지 확인합니다. 빠진 근거가 생긴 앞선 확인으로만 돌아가고, 이미 가진 자료는 다시 수집하지 않습니다.\n\n#### State — K28 missing\n**P00 | 나여백 [S_H_D29_0002]**\n\n두철 씨가 사건 구간에 실제로 자리를 비울 수 있었는지 아직 닫히지 않았습니다. 먼저 인증 원본과 연속 관찰로 그 부분을 해결하세요.\n\n#### State — K27/KQ06 missing\n**P00 | 나여백 [S_H_D29_0003]**\n\n공개본 편집 또는 복사 접근이 아직 비어 있습니다. 시간 필드 변경을 입증한 뒤, 백로 씨의 복사 감독 설명을 추궁하세요.\n\n#### State — evidence view missing\n**P00 | 나여백 [S_H_D29_0004]**\n\n행사 사진, 약속 카드, 외투 인계 진술, 공개 점검 기록 가운데 빠진 실제 자료만 다시 여세요. 같은 자료를 인용한 말은 새 출처로 늘리지 않습니다.\n\n### H_D29_1\n**P00 | 나여백 [S_H_D29_0011]**\n\n네 열을 따로 보세요. `사건 직전 붉은 외투`, `표문식과의 원본 문제 접점`, `두철이 사건 행위자가 될 수 없는 시간`, `거짓 시간표가 생긴 복사 접근`입니다.\n\n### H_D29_2\n**P00 | 나여백 [S_H_D29_0021]**\n\n행사 사진·약속 카드·외투 인계 진술·공개 점검 기록은 서로 다른 역할입니다. 여기에 앞서 증명한 동기/외투 사슬/사본 편집/연속 알리바이/복사 정정을 연결하세요.\n\n### H_D29_3\n**P00 | 나여백 [S_H_D29_0031]**\n\n이름만, 동기만, 복사 편집만으로 고르면 부족하고, 반대로 전원 공모를 새로 만들 필요도 없습니다. `외투를 일찍 줬다`는 말 자체를 불가능하다고 하지 말고, **그 외투를 입은 두철이 사건 행위자였다는 설명**이 연속 알리바이에 막힌다고 말하세요.\n\n#### State — recent name-only error\n**P00 | 나여백 [S_H_D29_0032]**\n\n방금은 이름만 골랐습니다. 네 역할 가운데 최소 하나라도 빠지면 그 이름은 아직 설명이 아닙니다.\n\n#### State — recent motive/copy-only error\n**P00 | 나여백 [S_H_D29_0033]**\n\n방금은 동기나 사후 편집 하나를 밀침 증거로 대신했습니다. 사건 직전 외투와 행위자 대안 배제를 같이 세우세요.\n\n#### State — recent conspiracy error\n**P00 | 나여백 [S_H_D29_0034]**\n\n방금은 확인되지 않은 공모를 추가했습니다. 각 사람에게 이미 입증된 책임 범위만 남기고, 차무록에게 실제로 모이는 네 역할을 비교하세요.\n\n### H_D29_4\n**P00 | 나여백 [S_H_D29_0041]**\n\n`사건 직전 붉은 외투 착용은 차무록에게 연결되고, 표문식은 원본 정산 문제로 그를 만나려 했다. 두철은 인증된 인계 자리에서 사건 구간 내내 연속 관찰돼 밀침 행위자 대안에서 빠지며, 봉만실·소해금도 공개 구간에서 계속 보였다. 공개본의 두 시간 편집과 복사 정정은 차무록의 단독 복사 접근을 잇는다. 따라서 외투·접점·대안 배제·거짓 사본을 함께 설명하는 사람은 차무록이다.`라고 정리합니다. 조기 외투 인계 자체의 불가능까지 주장하지 않습니다.\n\n#### State — interrupted\n**P00 | 나여백 [S_H_D29_0042]**\n\n중단했다면 네 역할 표와 현재 선택을 그대로 둔 채 빠진 연결만 이어 말합니다.\n\n#### State — complete\n**P00 | 나여백 [S_H_D29_0091]**\n\n사람 선택은 이미 끝났습니다. 다음은 결론을 이름 하나로 압축하지 않고 전체 행동과 은폐를 역할별로 재구성하는 단계입니다.\n\n",
+      "after": "## C_H_D29 — D29 힌트\n\n### Context\n- Place: L03 / help overlay\n- Cast: P00 guidance\n- Entry: D29 live, interrupted or complete\n- Exit: missing prior task/source or current person-selection draft\n- State keys: K18/K19/K24 missing / K27 or KQ06 missing / K28 missing / E10/E19/E46/E18 missing / all-held / four recent error classes / interrupted / K29-complete\n- Repeat/resume: early-loan statement remains a hypothesis; K28 refutes only P04-as-incident-actor\n\n#### Deterministic selector (normative)\n- Canonical error binding (all prerequisites held, requested H3 only): `B_D29_err_culprit_name_only` → `S_H_D29_0032`; `B_D29_err_motive_only` → `S_H_D29_0033`; `B_D29_err_copy_edit_only` → `S_H_D29_0033`; `B_D29_err_unsupported_all_witness_conspiracy` → `S_H_D29_0034`. These exact branch IDs take precedence over descriptive aliases below.\n- Return **one Korean utterance only**. Priority: `K29 complete` → `missing prior conclusion/source` → `recent named error (H3 only)` → `requested all-held level`. In particular, a missing K28 or KQ06 always blocks the H1–H4 person-selection solution.\n- `K29 complete`, any H0–H4 → `S_H_D29_0091`.\n- Any of K18/K19/K24 missing, any H0–H4 → `S_H_D29_0001`; else K27 or KQ06 missing → `S_H_D29_0003`; else K28 missing → `S_H_D29_0002`; else any of E10/E19/E46/E18 missing → `S_H_D29_0004`.\n- With all required material held, recent name-only error and H3 → `S_H_D29_0032`; recent motive-only or copy-only error and H3 → `S_H_D29_0033`; recent unsupported-conspiracy error and H3 → `S_H_D29_0034`.\n- Otherwise all-held: H0 `S_H_D29_0001`; H1 `S_H_D29_0011`; H2 `S_H_D29_0021`; H3 `S_H_D29_0031`; H4 `S_H_D29_0041`.\n\n- All-held H4 is always the authored complete solution/question: S_H_D29_0041. Recent-error and interruption overlays never override H4. Missing prerequisites still take priority and do not acquire knowledge.\n\n### H_D29_0\n**P00 | 나여백 [S_H_D29_0001]**\n\n외투·피해자 접점·복사 접근·사건 구간 배제가 모두 준비됐는지 확인합니다. 빠진 근거가 생긴 앞선 확인으로만 돌아가고, 이미 가진 자료는 다시 수집하지 않습니다.\n\n#### State — K28 missing\n**P00 | 나여백 [S_H_D29_0002]**\n\n두철 씨가 사건 구간에 실제로 자리를 비울 수 있었는지 아직 닫히지 않았습니다. 먼저 인증 원본과 연속 관찰로 그 부분을 해결하세요.\n\n#### State — K27/KQ06 missing\n**P00 | 나여백 [S_H_D29_0003]**\n\n공개본 편집 또는 복사 접근이 아직 비어 있습니다. 시간 필드 변경을 입증한 뒤, 백로 씨의 복사 감독 설명을 추궁하세요.\n\n#### State — evidence view missing\n**P00 | 나여백 [S_H_D29_0004]**\n\n행사 사진, 약속 카드, 외투 인계 진술, 공개 점검 기록 가운데 빠진 실제 자료만 다시 여세요. 같은 자료를 인용한 말은 새 출처로 늘리지 않습니다.\n\n### H_D29_1\n**P00 | 나여백 [S_H_D29_0011]**\n\n네 열을 따로 보세요. `사건 직전 붉은 외투`, `표문식과의 원본 문제 접점`, `두철이 사건 행위자가 될 수 없는 시간`, `거짓 시간표가 생긴 복사 접근`입니다.\n\n### H_D29_2\n**P00 | 나여백 [S_H_D29_0021]**\n\n행사 사진·약속 카드·외투 인계 진술·공개 점검 기록은 서로 다른 역할입니다. 여기에 앞서 증명한 동기/외투 사슬/사본 편집/연속 알리바이/복사 정정을 연결하세요.\n\n### H_D29_3\n**P00 | 나여백 [S_H_D29_0031]**\n\n이름만, 동기만, 복사 편집만으로 고르면 부족하고, 반대로 전원 공모를 새로 만들 필요도 없습니다. `외투를 일찍 줬다`는 말 자체를 불가능하다고 하지 말고, **그 외투를 입은 두철이 사건 행위자였다는 설명**이 연속 알리바이에 막힌다고 말하세요.\n\n#### State — recent name-only error\n**P00 | 나여백 [S_H_D29_0032]**\n\n방금은 이름만 골랐습니다. 네 역할 가운데 최소 하나라도 빠지면 그 이름은 아직 설명이 아닙니다.\n\n#### State — recent motive/copy-only error\n**P00 | 나여백 [S_H_D29_0033]**\n\n방금은 동기나 사후 편집 하나를 밀침 증거로 대신했습니다. 사건 직전 외투와 행위자 대안 배제를 같이 세우세요.\n\n#### State — recent conspiracy error\n**P00 | 나여백 [S_H_D29_0034]**\n\n방금은 확인되지 않은 공모를 추가했습니다. 각 사람에게 이미 입증된 책임 범위만 남기고, 차무록에게 실제로 모이는 네 역할을 비교하세요.\n\n### H_D29_4\n**P00 | 나여백 [S_H_D29_0041]**\n\n`사건 직전 붉은 외투 착용은 차무록에게 연결되고, 표문식은 원본 정산 문제로 그를 만나려 했다. 두철은 인증된 인계 자리에서 사건 구간 내내 연속 관찰돼 밀침 행위자 대안에서 빠지며, 봉만실·소해금도 공개 구간에서 계속 보였다. 공개본의 두 시간 편집과 복사 정정은 차무록의 단독 복사 접근을 잇는다. 따라서 외투·접점·대안 배제·거짓 사본을 함께 설명하는 사람은 차무록이다.`라고 정리합니다. 조기 외투 인계 자체의 불가능까지 주장하지 않습니다.\n\n#### State — interrupted\n**P00 | 나여백 [S_H_D29_0042]**\n\n중단했다면 네 역할 표와 현재 선택을 그대로 둔 채 빠진 연결만 이어 말합니다.\n\n#### State — complete\n**P00 | 나여백 [S_H_D29_0091]**\n\n사람 선택은 이미 끝났습니다. 다음은 결론을 이름 하나로 압축하지 않고 전체 행동과 은폐를 역할별로 재구성하는 단계입니다.\n\n",
+      "reason": "Bind actual authored wrong-claim keys to the existing matching H3 response."
+    },
+    {
+      "file": "script-ch06-r03.ko.md",
+      "anchor": "canonical-hint-bindings-D30",
+      "before": "## C_H_D30 — D30 힌트\n\n### Context\n- Place: L03 / help overlay\n- Cast: P00 guidance\n- Entry: D30 live, interrupted or complete\n- Exit: missing prerequisite, failed role or final submission\n- State keys: prerequisite-missing by role / all-held / six recent error classes / chronology-order / concealment-order / interrupted-role / K30-complete\n- Repeat/resume: never resets valid cards; no compulsory presentation order\n\n#### Deterministic selector (normative)\n- Return **one Korean utterance only**. Priority: `K30 complete` → `missing prerequisite by role` → `recent named error (H3 only)` → `requested current level/order`. A recent error or interrupted draft never bypasses a now-missing prerequisite.\n- `K30 complete`, any H0–H4 → `S_H_D30_0091`.\n- Missing act/time support (including K22/K23), any H0–H4 → `S_H_D30_0002`.\n- Missing coat/alibi support (including K24/K28), any H0–H4 → `S_H_D30_0003`.\n- Missing altered-copy support (K27 or KQ06), any H0–H4 → `S_H_D30_0004`.\n- Missing another required earlier conclusion (K05/K10/K15/K20/K29), any H0–H4 → `S_H_D30_0001`.\n- With all prerequisites held, recent wrong-interval and H3 → `S_H_D30_0032`; recent wearer=holder and H3 → `S_H_D30_0033`; recent one-origin-corroboration and H3 → `S_H_D30_0034`; recent unsupported-complicity or erased-collateral error and H3 → `S_H_D30_0035`.\n- Otherwise all-held: H0 `S_H_D30_0001`; H1 `S_H_D30_0011`; H2 `S_H_D30_0021`; H3 `S_H_D30_0031`; H4 uses `S_H_D30_0042` for a stored concealment-first order, otherwise `S_H_D30_0041`.\n\n- All-held H4 is always the authored complete solution/question: S_H_D30_0042 when the stored presentation order is concealment-first; otherwise S_H_D30_0041. Recent-error and interruption overlays never override H4. Missing prerequisites still take priority and do not acquire knowledge.\n\n### H_D30_0\n**P00 | 나여백 [S_H_D30_0001]**\n\n다섯 역할 가운데 근거가 비어 있는 카드만 찾습니다. 빠진 이전 결론이 있으면 그 확인으로 돌아가고, 이미 완성한 카드와 발표 순서는 그대로 둡니다.\n\n#### State — act/time prerequisite missing\n**P00 | 나여백 [S_H_D30_0002]**\n\n밀침 형태나 사건 범위가 비었습니다. 창 목격 진술을 검증하고, 공개 신호와 시계 오차를 대조하는 시간 질문부터 마치세요.\n\n#### State — coat/alibi prerequisite missing\n**P00 | 나여백 [S_H_D30_0003]**\n\n외투 역할에 필요한 사건 전 사진·현장 조각·인계 진술 또는 두철의 연속 알리바이가 빠졌습니다. 빠진 그 항목만 보강하세요.\n\n#### State — copy prerequisite missing\n**P00 | 나여백 [S_H_D30_0004]**\n\n사본 역할이 비었습니다. 원본 인증, 두 시간 필드 편집, 복사 입회 정정 가운데 빠진 결론을 먼저 닫으세요.\n\n### H_D30_1\n**P00 | 나여백 [S_H_D30_0011]**\n\n이름 하나보다 역할이 먼저입니다. `만남 이유`, `밀침과 시간`, `외투와 대안 행위자`, `거짓 사본`, `다른 사람들의 실제 책임`을 각각 다른 근거로 채우세요.\n\n### H_D30_2\n**P00 | 나여백 [S_H_D30_0021]**\n\n행동은 정정된 창 목격·열린 게이트·안전 재현, 시간은 공개 점검·전원 복귀, 외투는 행사 사진·옷깃 조각·인계 진술·연속 알리바이, 변조는 인증 원본·겹침 비교·복사 정정, 동기는 약속 카드와 정산 자료를 씁니다. 앞선 방·음향·화물·금전 추론은 오해와 주변 책임의 경계를 설명합니다.\n\n### H_D30_3\n**P00 | 나여백 [S_H_D30_0031]**\n\n20:19 한 점을 만들지 말고 20:17–20:21을 유지하세요. 나중 외투 보유자를 과거 착용자로 만들지 말고, 같은 공개본을 반복한 진술을 독립 출처로 세지 않습니다. 근거 없는 공모를 추가하지 말고, 실제 대출·담보·무단 재생·열린 게이트·반출·보관 위반은 지우지 않습니다.\n\n#### State — recent wrong interval\n**P00 | 나여백 [S_H_D30_0032]**\n\n방금은 입증되지 않은 20:19를 썼습니다. 사건 시간 카드만 20:17–20:21로 되돌리세요.\n\n#### State — recent wearer=holder\n**P00 | 나여백 [S_H_D30_0033]**\n\n방금은 사건 뒤 외투 보유를 사건 당시 착용으로 바꿨습니다. 사건 직전 사진과 사건 뒤 인계를 분리하세요.\n\n#### State — recent one-origin corroboration\n**P00 | 나여백 [S_H_D30_0034]**\n\n방금은 같은 공개본에서 나온 숫자를 여러 출처처럼 셌습니다. 인증 원본과 직접 연속 관찰을 남기세요.\n\n#### State — recent complicity/collateral error\n**P00 | 나여백 [S_H_D30_0035]**\n\n공모를 새로 만들거나 주변 책임을 지웠습니다. 각 사람에게 이미 증명된 범위만 되돌려 적으세요.\n\n### H_D30_4\n**P00 | 나여백 [S_H_D30_0041]**\n\n시간순으로 설명하려면 `① 약속 카드·정산 자료로 만남과 동기 → ② 창 목격·게이트·안전 재현과 공개 신호로 얼굴 특정 없이 밀침/20:17–20:21 → ③ 행사 사진·옷깃 조각·인계 진술+연속 알리바이로 외투와 두철 씨 행위자 대안 배제 → ④ 인증 원본·겹침 비교·복사 정정으로 차무록의 거짓 사본 접근 → ⑤ 방·음향·화물 오해와 각 사람의 실제 책임`으로 말하면 됩니다.\n\n#### State — concealment-first valid order\n**P00 | 나여백 [S_H_D30_0042]**\n\n은폐부터 설명해도 됩니다. `거짓 사본과 단독 접근 → 그 사본이 만든 잘못된 두철 씨의 기회 → 외투와 두철 씨 행위자 배제 → 제한된 시야의 밀침과 20:17–20:21 → 표문식과의 원본 문제 접점·동기 → 주변 책임` 순으로 읽으세요. 같은 역할을 모두 포함하면 됩니다.\n\n#### State — interrupted\n**P00 | 나여백 [S_H_D30_0043]**\n\n중단했다면 마지막으로 실패하거나 비어 있던 카드에서 재개합니다. 다른 카드와 선택한 발표 순서는 유지합니다.\n\n#### State — complete\n**P00 | 나여백 [S_H_D30_0091]**\n\n최종 재구성은 끝났습니다. 이제 결론 이후 각 사람에게 무엇이 남는지, 그리고 모눈과 어떻게 이 장소를 떠날지 정리합니다.\n\n",
+      "after": "## C_H_D30 — D30 힌트\n\n### Context\n- Place: L03 / help overlay\n- Cast: P00 guidance\n- Entry: D30 live, interrupted or complete\n- Exit: missing prerequisite, failed role or final submission\n- State keys: prerequisite-missing by role / all-held / six recent error classes / chronology-order / concealment-order / interrupted-role / K30-complete\n- Repeat/resume: never resets valid cards; no compulsory presentation order\n\n#### Deterministic selector (normative)\n- Canonical error binding (all prerequisites held, requested H3 only): `B_D30_err_missing_act_support` → `S_H_D30_0021`; `B_D30_err_wrong_interval` → `S_H_D30_0032`; `B_D30_err_wearer_equals_holder` → `S_H_D30_0033`; `B_D30_err_one_origin_corroboration` → `S_H_D30_0034`; `B_D30_err_unsupported_complicity` → `S_H_D30_0035`; `B_D30_err_erased_collateral_responsibility` → `S_H_D30_0035`. These exact branch IDs take precedence over descriptive aliases below.\n- Return **one Korean utterance only**. Priority: `K30 complete` → `missing prerequisite by role` → `recent named error (H3 only)` → `requested current level/order`. A recent error or interrupted draft never bypasses a now-missing prerequisite.\n- `K30 complete`, any H0–H4 → `S_H_D30_0091`.\n- Missing act/time support (including K22/K23), any H0–H4 → `S_H_D30_0002`.\n- Missing coat/alibi support (including K24/K28), any H0–H4 → `S_H_D30_0003`.\n- Missing altered-copy support (K27 or KQ06), any H0–H4 → `S_H_D30_0004`.\n- Missing another required earlier conclusion (K05/K10/K15/K20/K29), any H0–H4 → `S_H_D30_0001`.\n- With all prerequisites held, recent wrong-interval and H3 → `S_H_D30_0032`; recent wearer=holder and H3 → `S_H_D30_0033`; recent one-origin-corroboration and H3 → `S_H_D30_0034`; recent unsupported-complicity or erased-collateral error and H3 → `S_H_D30_0035`.\n- Otherwise all-held: H0 `S_H_D30_0001`; H1 `S_H_D30_0011`; H2 `S_H_D30_0021`; H3 `S_H_D30_0031`; H4 uses `S_H_D30_0042` for a stored concealment-first order, otherwise `S_H_D30_0041`.\n\n- All-held H4 is always the authored complete solution/question: S_H_D30_0042 when the stored presentation order is concealment-first; otherwise S_H_D30_0041. Recent-error and interruption overlays never override H4. Missing prerequisites still take priority and do not acquire knowledge.\n\n### H_D30_0\n**P00 | 나여백 [S_H_D30_0001]**\n\n다섯 역할 가운데 근거가 비어 있는 카드만 찾습니다. 빠진 이전 결론이 있으면 그 확인으로 돌아가고, 이미 완성한 카드와 발표 순서는 그대로 둡니다.\n\n#### State — act/time prerequisite missing\n**P00 | 나여백 [S_H_D30_0002]**\n\n밀침 형태나 사건 범위가 비었습니다. 창 목격 진술을 검증하고, 공개 신호와 시계 오차를 대조하는 시간 질문부터 마치세요.\n\n#### State — coat/alibi prerequisite missing\n**P00 | 나여백 [S_H_D30_0003]**\n\n외투 역할에 필요한 사건 전 사진·현장 조각·인계 진술 또는 두철의 연속 알리바이가 빠졌습니다. 빠진 그 항목만 보강하세요.\n\n#### State — copy prerequisite missing\n**P00 | 나여백 [S_H_D30_0004]**\n\n사본 역할이 비었습니다. 원본 인증, 두 시간 필드 편집, 복사 입회 정정 가운데 빠진 결론을 먼저 닫으세요.\n\n### H_D30_1\n**P00 | 나여백 [S_H_D30_0011]**\n\n이름 하나보다 역할이 먼저입니다. `만남 이유`, `밀침과 시간`, `외투와 대안 행위자`, `거짓 사본`, `다른 사람들의 실제 책임`을 각각 다른 근거로 채우세요.\n\n### H_D30_2\n**P00 | 나여백 [S_H_D30_0021]**\n\n행동은 정정된 창 목격·열린 게이트·안전 재현, 시간은 공개 점검·전원 복귀, 외투는 행사 사진·옷깃 조각·인계 진술·연속 알리바이, 변조는 인증 원본·겹침 비교·복사 정정, 동기는 약속 카드와 정산 자료를 씁니다. 앞선 방·음향·화물·금전 추론은 오해와 주변 책임의 경계를 설명합니다.\n\n### H_D30_3\n**P00 | 나여백 [S_H_D30_0031]**\n\n20:19 한 점을 만들지 말고 20:17–20:21을 유지하세요. 나중 외투 보유자를 과거 착용자로 만들지 말고, 같은 공개본을 반복한 진술을 독립 출처로 세지 않습니다. 근거 없는 공모를 추가하지 말고, 실제 대출·담보·무단 재생·열린 게이트·반출·보관 위반은 지우지 않습니다.\n\n#### State — recent wrong interval\n**P00 | 나여백 [S_H_D30_0032]**\n\n방금은 입증되지 않은 20:19를 썼습니다. 사건 시간 카드만 20:17–20:21로 되돌리세요.\n\n#### State — recent wearer=holder\n**P00 | 나여백 [S_H_D30_0033]**\n\n방금은 사건 뒤 외투 보유를 사건 당시 착용으로 바꿨습니다. 사건 직전 사진과 사건 뒤 인계를 분리하세요.\n\n#### State — recent one-origin corroboration\n**P00 | 나여백 [S_H_D30_0034]**\n\n방금은 같은 공개본에서 나온 숫자를 여러 출처처럼 셌습니다. 인증 원본과 직접 연속 관찰을 남기세요.\n\n#### State — recent complicity/collateral error\n**P00 | 나여백 [S_H_D30_0035]**\n\n공모를 새로 만들거나 주변 책임을 지웠습니다. 각 사람에게 이미 증명된 범위만 되돌려 적으세요.\n\n### H_D30_4\n**P00 | 나여백 [S_H_D30_0041]**\n\n시간순으로 설명하려면 `① 약속 카드·정산 자료로 만남과 동기 → ② 창 목격·게이트·안전 재현과 공개 신호로 얼굴 특정 없이 밀침/20:17–20:21 → ③ 행사 사진·옷깃 조각·인계 진술+연속 알리바이로 외투와 두철 씨 행위자 대안 배제 → ④ 인증 원본·겹침 비교·복사 정정으로 차무록의 거짓 사본 접근 → ⑤ 방·음향·화물 오해와 각 사람의 실제 책임`으로 말하면 됩니다.\n\n#### State — concealment-first valid order\n**P00 | 나여백 [S_H_D30_0042]**\n\n은폐부터 설명해도 됩니다. `거짓 사본과 단독 접근 → 그 사본이 만든 잘못된 두철 씨의 기회 → 외투와 두철 씨 행위자 배제 → 제한된 시야의 밀침과 20:17–20:21 → 표문식과의 원본 문제 접점·동기 → 주변 책임` 순으로 읽으세요. 같은 역할을 모두 포함하면 됩니다.\n\n#### State — interrupted\n**P00 | 나여백 [S_H_D30_0043]**\n\n중단했다면 마지막으로 실패하거나 비어 있던 카드에서 재개합니다. 다른 카드와 선택한 발표 순서는 유지합니다.\n\n#### State — complete\n**P00 | 나여백 [S_H_D30_0091]**\n\n최종 재구성은 끝났습니다. 이제 결론 이후 각 사람에게 무엇이 남는지, 그리고 모눈과 어떻게 이 장소를 떠날지 정리합니다.\n\n",
+      "reason": "Bind actual authored wrong-claim keys to the existing matching H3 response."
+    }
+  ],
+  "files": [
+    {
+      "file": "script-ch01-r03.ko.md",
+      "raw_sha256": "0aacf96ef699c73fd4a1ebfbb2dbe9ff48d266e3e0e4845fd916d3073035b817",
+      "working_sha256": "7175652ff5ab2bc99d3637294e849543dcc99b0f31330af87bdf9381baa92f2c"
+    },
+    {
+      "file": "script-ch02-r03.ko.md",
+      "raw_sha256": "a6130e62e34682160ed0920ffef59a4b05707eb59db2d68518fce2a251141862",
+      "working_sha256": "d7971cf416b22767378e3ee527216f601d7224bfb4143b46022bf1ad3d2b3148"
+    },
+    {
+      "file": "script-ch03-r03.ko.md",
+      "raw_sha256": "2359543ba6ce5f100ebdd49ceeb06abce71401b72a1c3b2a360f2f4c8433e6e2",
+      "working_sha256": "b92a27d3f0936317675e1fc2120b65243102aa21f49eb5993305ee7aae920126"
+    },
+    {
+      "file": "script-ch04-r03.ko.md",
+      "raw_sha256": "32c202fc272cd96997a3446e77688712f506b0e827596fc34f72daf9204b6ed3",
+      "working_sha256": "0ae8671f61648d1f03b45f6f74d1fcc69f97147561dfe45085b4e8ce2e4d79f9"
+    },
+    {
+      "file": "script-ch05-r03.ko.md",
+      "raw_sha256": "fd92460946cf712e539ac889788d535b795d2f123b6d03ab86c399cc6abfc55d",
+      "working_sha256": "d91291322996c59b4cc7408e6598cf7df3151fe9d2b40c6b35e9edf6405f30f8"
+    },
+    {
+      "file": "script-ch06-r03.ko.md",
+      "raw_sha256": "6855b9dac19c0581ee4a77ff4445325eb2d7f104c858ec57ee98138981d5500a",
+      "working_sha256": "9d4d4ce4b3f9ef4e8e98c451048a2858422971ea32601de30ca37f5568a38dae"
+    },
+    {
+      "file": "script-ep-r03.ko.md",
+      "raw_sha256": "a9a73c8ceb97e7ffaa58764feafbdf7c44154e66311739483aae119ceb64ee18",
+      "working_sha256": "a9a73c8ceb97e7ffaa58764feafbdf7c44154e66311739483aae119ceb64ee18"
+    },
+    {
+      "file": "script-pr-rest-r03.ko.md",
+      "raw_sha256": "8f9cd73033ec5b393e7f56069b45a4bf14c92e8e726b6a8bee975585f69031ff",
+      "working_sha256": "1e8cb134a8fd3ad55f1094dfaba35213d3224217dcc28029751f82bacfaa78f1"
+    },
+    {
+      "file": "script-sys-r03.ko.md",
+      "raw_sha256": "e7c8a3cfe0b7e321120449d29f9288945d573248c9744d3a6d4950b07f7f9dc9",
+      "working_sha256": "a5f0d52b6925db2730245d21534940a6cdeb9449d1bb6df5841cdec69460daed"
+    }
+  ]
+}

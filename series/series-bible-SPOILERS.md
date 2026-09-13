@@ -1,6 +1,14 @@
 # New series bible — author-facing template
 
-Status: no registered work or adopted world/character facts. Updated 2026-09-12.
+Status: planned first work now exists; no released or play-verified world/character facts. Updated 2026-09-12.
+
+## Active planned sources
+
+The independently designed first work is [여울관: 남겨 둔 자리](../project_01/game-plan/00-brief.md). Its [concept](../project_01/game-plan/01-concept.md), [truth](../project_01/game-plan/02-truth-SPOILERS.md), [cast](../project_01/game-plan/04-characters.md) and [branch/scene coverage](../project_01/game-plan/05-story-and-scenes.md) are the single sources for current planned facts. The new protagonist/companion are 나여백 and her eleven-year-old niece 나모눈. These are **planned**, not facts established by an implemented ending. Only the first five prologue scenes have editorial acceptance; no complete screenplay or release record exists yet. Preserve the child's non-complicity across future continuity.
+
+The structure below records the empty reset baseline. Do not read it as contradicting the linked planned sources; populate finalized common/branch history from actual accepted and implemented work at the continuity handoff, without duplicating a competing active truth ledger.
+
+## Reset baseline template
 
 This is an intentionally unfilled continuity structure. Common production requirements are not fictional world facts. Do not populate it with discarded content, current writing fixtures, or assumptions inferred from available assets.
 

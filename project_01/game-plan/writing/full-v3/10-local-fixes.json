@@ -1,0 +1,215 @@
+{
+  "edition": "working-r02-c01",
+  "status": "unaccepted editorial working candidate; not a replacement external screenplay",
+  "base_zip_sha256": "c6f9c743d5736942549bea9e61324e3cfd50cc630162047f6a77eb0ff850257b",
+  "changes": [
+    {
+      "file": "script-pr-rest-r02.ko.md",
+      "anchor": "두 분 뒤 백로가 같은 양식의",
+      "reason": "Correct a time-unit typo without changing the demonstrated interval.",
+      "before": "두 분 뒤 백로가 같은 양식의",
+      "after": "2분 뒤 백로가 같은 양식의"
+    },
+    {
+      "file": "script-sys-r02.ko.md",
+      "anchor": "우리가 왜 여기 왔는 건 그대로야.",
+      "reason": "Repair a Korean particle typo in the name setup.",
+      "before": "우리가 왜 여기 왔는 건 그대로야.",
+      "after": "우리가 왜 여기 왔는지는 그대로야."
+    },
+    {
+      "file": "script-ch05-r02.ko.md",
+      "anchor": "10월 21일 L09 회수 기록과 함께 봉인된 붉은 천 조각",
+      "reason": "Restore truth T04 body-linked recovery; do not relocate the body to the upper landing.",
+      "before": "10월 21일 L09 회수 기록과 함께 봉인된 붉은 천 조각",
+      "after": "10월 21일 피해자 시신과 함께 회수되어 봉인된 붉은 천 조각"
+    },
+    {
+      "file": "script-ch05-r02.ko.md",
+      "anchor": "10월 21일 표문식이 발견·회수된 L09 위치 옆에서 P07이 붉은 천 조각을 회수·봉인, 위치와 봉인 번호를 기록.",
+      "reason": "E44 must connect the strip to the body, not merely a nearby landing.",
+      "before": "10월 21일 표문식이 발견·회수된 L09 위치 옆에서 P07이 붉은 천 조각을 회수·봉인, 위치와 봉인 번호를 기록.",
+      "after": "10월 21일 빈 수영장 바닥에서 발견된 표문식의 시신과 함께 붉은 천 조각이 회수됨. 진새벽이 회수·봉인 기록에 시신과 함께 나온 조각이라는 출처와 봉인 번호를 남김."
+    },
+    {
+      "file": "script-ch05-r02.ko.md",
+      "anchor": "P01 contributes only the public sound she actually heard in L02",
+      "reason": "Separate historical event location from current safe conversation.",
+      "before": "P01 contributes only the public sound she actually heard in L02",
+      "after": "P01 recalls only the public sound she actually heard in L03 during PR13; the present conversation is in L02"
+    },
+    {
+      "file": "script-ch05-r02.ko.md",
+      "anchor": "그리고 이모, 어제 어두워졌다가 다시 켜졌을 때 나는 여기서",
+      "reason": "Restore PR13 public observation location.",
+      "before": "그리고 이모, 어제 어두워졌다가 다시 켜졌을 때 나는 여기서",
+      "after": "그리고 이모, 어제 연회장이 어두워졌다가 다시 켜졌을 때 나는 거기서"
+    },
+    {
+      "file": "script-ch05-r02.ko.md",
+      "anchor": "이 공개 자리에서 실제로 들은 복귀 신호지.",
+      "reason": "Restore PR13 public observation location.",
+      "before": "이 공개 자리에서 실제로 들은 복귀 신호지.",
+      "after": "어제 연회장의 공개 탁자에서 실제로 들은 복귀 신호지."
+    },
+    {
+      "file": "script-ch05-r02.ko.md",
+      "anchor": "이 테이블과 부스의 낮은 안전 조명은 남아 있어서",
+      "reason": "Restore the location whose illumination supports the alibi.",
+      "before": "이 테이블과 부스의 낮은 안전 조명은 남아 있어서",
+      "after": "연회장의 공개 탁자와 부스의 낮은 안전 조명은 남아 있어서"
+    },
+    {
+      "file": "script-ch05-r02.ko.md",
+      "anchor": "수영장 통로는 여기서 보이지 않았고요.",
+      "reason": "Keep historical sightline distinct from current L02. This third-person name is adjusted below.",
+      "before": "수영장 통로는 여기서 보이지 않았고요.",
+      "after": "그때 여백 씨가 있던 연회장 탁자에서는 수영장 통로가 보이지 않았고요."
+    },
+    {
+      "file": "script-ch05-r02.ko.md",
+      "anchor": "그때 여백 씨가 있던 연회장 탁자에서는",
+      "reason": "Preserve customizable player address.",
+      "before": "그때 여백 씨가 있던 연회장 탁자에서는",
+      "after": "그때 {playerName} 씨가 있던 연회장 탁자에서는"
+    },
+    {
+      "file": "script-ep-r02.ko.md",
+      "anchor": "S_EP_06_0004",
+      "reason": "Replace internal location/person IDs in the actual utterance only.",
+      "before": "마지막에는 사건 전부터 L12에 제본된 채 보관돼 있던 인계 원본에서 20시 14분부터 20시 24분까지의 실제 시간이 확인됐고, 공개본 두 시각이 각각 7분 앞당겨졌다는 점을 입증했습니다. 목백로 씨의 정정으로 탁두철 씨와 배한술 씨는 사건 구간 인계 자리에서 계속 관찰됐고, 차무록 씨가 20시 40분부터 20시 50분 사이 상단 업무용 부본을 들고 일반 복사기에서 공개본 작업을 혼자 한 구간도 확인됐습니다.",
+      "after": "마지막에는 사건 전부터 호숫가 보관 창고에 제본된 채 보관돼 있던 인계 원본에서 20시 14분부터 20시 24분까지의 실제 시간이 확인됐고, 공개본 두 시각이 각각 7분 앞당겨졌다는 점을 입증했습니다. 목백로 씨의 정정으로 탁두철 씨와 배한술 씨는 사건 구간 인계 자리에서 계속 관찰됐고, 차무록 씨가 20시 40분부터 20시 50분 사이 상단 업무용 부본을 들고 일반 복사기에서 공개본 작업을 혼자 한 구간도 확인됐습니다."
+    },
+    {
+      "file": "script-ep-r02.ko.md",
+      "anchor": "사건 전부터 호숫가 보관 창고에 제본된 채 보관돼 있던 인계 원본",
+      "reason": "Restore T08 cargo chronology; it was sealed before discovery, not before the incident.",
+      "before": "사건 전부터 호숫가 보관 창고에 제본된 채 보관돼 있던 인계 원본",
+      "after": "사건 뒤 화물과 함께 호숫가 보관 창고로 옮겨져 20시 36분 봉인됐던 장부 속 인계 원본"
+    },
+    {
+      "file": "script-ch06-r02.ko.md",
+      "anchor": "S_CH06_01_0001",
+      "reason": "Replace internal location/person IDs in the actual utterance only.",
+      "before": "{playerName} 씨, 어제 L12에서 말려 두던 제본 장부 기억하시죠. 접혀 붙었던 장이 이제 손상 없이 펼칠 수 있는 상태가 됐습니다. 봉인은 그대로고, 저는 어제 인수 기록이랑 봉인 사진을 들고 L12에 있습니다.",
+      "after": "{playerName} 씨, 어제 호숫가 보관 창고에서 말려 두던 제본 장부 기억하시죠. 접혀 붙었던 장이 이제 손상 없이 펼칠 수 있는 상태가 됐습니다. 봉인은 그대로고, 저는 어제 인수 기록이랑 봉인 사진을 들고 호숫가 보관 창고에 있습니다."
+    },
+    {
+      "file": "script-ch06-r02.ko.md",
+      "anchor": "S_H_V06_0002",
+      "reason": "Replace internal location/person IDs in the actual utterance only.",
+      "before": "원본 확인 요청까지 끝났습니다. 다음은 10월 23일 아침, 목백로 씨에게서 `L12에서 같은 장을 펼칠 수 있다`는 연락을 받는 장면입니다.",
+      "after": "원본 확인 요청까지 끝났습니다. 다음은 10월 23일 아침, 목백로 씨에게서 `호숫가 보관 창고에서 같은 장을 펼칠 수 있다`는 연락을 받는 장면입니다."
+    },
+    {
+      "file": "script-ch06-r02.ko.md",
+      "anchor": "S_H_V06_0011",
+      "reason": "Replace internal location/person IDs in the actual utterance only.",
+      "before": "연락을 받았다면 읍내 숙소에서 모눈이와 함께 여울관으로 돌아옵니다. L12로 가기 전에 모눈의 감독을 휴게실의 만실 씨에게 직접 넘깁니다.",
+      "after": "연락을 받았다면 읍내 숙소에서 모눈이와 함께 여울관으로 돌아옵니다. 호숫가 보관 창고로 가기 전에 모눈의 감독을 휴게실의 만실 씨에게 직접 넘깁니다."
+    },
+    {
+      "file": "script-ch06-r02.ko.md",
+      "anchor": "S_H_D26_0002",
+      "reason": "Replace internal location/person IDs in the actual utterance only.",
+      "before": "아직 접혀 붙은 하단 본장을 펼쳐 확인하지 않았다면 L12의 감독하 펼침부터 마치세요. 어제 젖은 상태와 오늘 펼친 상태는 같은 장입니다.",
+      "after": "아직 접혀 붙은 하단 본장을 펼쳐 확인하지 않았다면 호숫가 보관 창고의 감독하 펼침부터 마치세요. 어제 젖은 상태와 오늘 펼친 상태는 같은 장입니다."
+    },
+    {
+      "file": "script-ch06-r02.ko.md",
+      "anchor": "S_CH06_03_0001",
+      "reason": "Replace internal location/person IDs in the actual utterance only.",
+      "before": "먼저 기계를 구분하죠. 여기 장치는 인계 시작·종료를 두 겹 용지에 동시에 눌러 남기는 장치고, 공개용 종이를 복사하는 건 저쪽 L05의 일반 복사기입니다.",
+      "after": "먼저 기계를 구분하죠. 여기 장치는 인계 시작·종료를 두 겹 용지에 동시에 눌러 남기는 장치고, 공개용 종이를 복사하는 건 저쪽 주방의 일반 복사기입니다."
+    },
+    {
+      "file": "script-ch06-r02.ko.md",
+      "anchor": "S_CH06_03_0011",
+      "reason": "Replace internal location/person IDs in the actual utterance only.",
+      "before": "이제 원본 장부는 L12에 둔 채 사진으로만 불러오겠습니다. 공개용 사본도 원본도 같은 작업 번호와 필드 위치로 맞춰 보죠.",
+      "after": "이제 원본 장부는 호숫가 보관 창고에 둔 채 사진으로만 불러오겠습니다. 공개용 사본도 원본도 같은 작업 번호와 필드 위치로 맞춰 보죠."
+    },
+    {
+      "file": "script-ch06-r02.ko.md",
+      "anchor": "S_D28_0021",
+      "reason": "Replace internal location/person IDs in the actual utterance only.",
+      "before": "L06에서 수영장 상부 랜딩까지 걸리는 시간만 계산하면 두철 씨가 못 갔다는 걸 증명할 수 있습니다.",
+      "after": "적재·기록 데스크에서 수영장 상부 랜딩까지 걸리는 시간만 계산하면 두철 씨가 못 갔다는 걸 증명할 수 있습니다."
+    },
+    {
+      "file": "script-ch06-r02.ko.md",
+      "anchor": "봉인은 그대로고, 저는 어제 인수 기록이랑 봉인 사진을 들고",
+      "reason": "The original crate seal was cut at CH03 opening; preserve the custody record rather than invent an intact old seal.",
+      "before": "봉인은 그대로고, 저는 어제 인수 기록이랑 봉인 사진을 들고",
+      "after": "장부는 어제 기록한 보관함에 그대로 있고, 저는 인수 기록이랑 개봉 전 봉인 사진을 들고"
+    },
+    {
+      "file": "script-ch06-r02.ko.md",
+      "anchor": "호숫가 보관 창고 확인이 끝나면 바로 여기로 돌아올게요. 중간에 다른 데로 새지 않을게요.",
+      "reason": "Remove an immediate-return promise contradicted by the authored CH06_03..07 route.",
+      "before": "호숫가 보관 창고 확인이 끝나면 바로 여기로 돌아올게요. 중간에 다른 데로 새지 않을게요.",
+      "after": "오늘 원본과 인계 기록 확인을 마치면 여기로 돌아올게요."
+    },
+    {
+      "file": "script-ch06-r02.ko.md",
+      "anchor": "봉인표와 장부의 제본 실은 그대로다.",
+      "reason": "Distinguish retained cut seal from intact book binding.",
+      "before": "봉인표와 장부의 제본 실은 그대로다.",
+      "after": "개봉 때 보존한 봉인표와 장부의 제본 실을 확인할 수 있다."
+    },
+    {
+      "file": "script-ch06-r02.ko.md",
+      "anchor": "어제 닫을 때 찍은 봉인 사진하고 인수 기록은 여기 있습니다.",
+      "reason": "Use actually authored pre-opening seal and subsequent custody log.",
+      "before": "어제 닫을 때 찍은 봉인 사진하고 인수 기록은 여기 있습니다.",
+      "after": "어제 개봉 전에 확인한 봉인 사진과 인수 기록, 개봉 뒤 보관 기록은 여기 있습니다."
+    }
+  ],
+  "files": [
+    {
+      "file": "script-ch01-r02.ko.md",
+      "source_sha256": "2a73932f508baffbcb12476c142396b94bf6a6bab7d4ef68c3703a520916e233",
+      "working_sha256": "2a73932f508baffbcb12476c142396b94bf6a6bab7d4ef68c3703a520916e233"
+    },
+    {
+      "file": "script-ch02-r02.ko.md",
+      "source_sha256": "0f74f9a66efabe40c97165219d9160e90ad7ac92b49b917e1a5edd4fdd2dfefc",
+      "working_sha256": "0f74f9a66efabe40c97165219d9160e90ad7ac92b49b917e1a5edd4fdd2dfefc"
+    },
+    {
+      "file": "script-ch03-r02.ko.md",
+      "source_sha256": "02cba69a157e6a57bb2ba21b05538e419ab2ff1eca7c370940c2f03724b90f86",
+      "working_sha256": "02cba69a157e6a57bb2ba21b05538e419ab2ff1eca7c370940c2f03724b90f86"
+    },
+    {
+      "file": "script-ch04-r02.ko.md",
+      "source_sha256": "3f13a80795c2cafb50477ad13a9d09936c4ac341ca1b3f73871ee8cd18903ba5",
+      "working_sha256": "3f13a80795c2cafb50477ad13a9d09936c4ac341ca1b3f73871ee8cd18903ba5"
+    },
+    {
+      "file": "script-ch05-r02.ko.md",
+      "source_sha256": "52bc71e9e68904a5ab6be150da5f024692e0c063e68ef610653bf4c816b1b638",
+      "working_sha256": "74012a7c55a29a93be57c455f5b08c44395d3d89777c68688867d6cf9b9056af"
+    },
+    {
+      "file": "script-ch06-r02.ko.md",
+      "source_sha256": "b74ed1f33ef67a374dee4b728b29456c6076dc11e66697df6f3aab7b4b0f8a4a",
+      "working_sha256": "1f288d63dc69e788a1facb3a46d91fccec44420e3783570c40faa7b306fc73ad"
+    },
+    {
+      "file": "script-ep-r02.ko.md",
+      "source_sha256": "a22a10bc47298cd811fa036d133077b5a257aeaec29e4e26f1cafdd34e9e8580",
+      "working_sha256": "5100bc409a46aa788e180fb5b3c4e2d901a3dffa26e320f96da77a01cd04e21f"
+    },
+    {
+      "file": "script-pr-rest-r02.ko.md",
+      "source_sha256": "3e00b17f455bb44e69b647b21a6eb8215c4d5167c600e4187c13de2eaa6d66df",
+      "working_sha256": "76b70689e8bc830752d190cef486637746bdc679d89aacbd0c9753b567a18e01"
+    },
+    {
+      "file": "script-sys-r02.ko.md",
+      "source_sha256": "44a2ed014dfb178773c50bf888814de560c826142748a923c3cdf8a91a3f615b",
+      "working_sha256": "9990806127a995a9947937b8a5eaa405a49303d81a40efcbd61510c063439c4e"
+    }
+  ]
+}

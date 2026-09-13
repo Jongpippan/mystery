@@ -1,0 +1,71 @@
+{
+  "edition": "accepted-full-r03-c01",
+  "date": "2026-09-14",
+  "decision": "G0/G1 script/design ready; runtime and visual gates pending",
+  "raw_zip_sha256": "2e01c789aca1316a0ac028d03fad1c8c12b2e768024162b2595db45c1cbd8519",
+  "files": [
+    {
+      "source": "writing/working-r03-c01/script-ch01-r03.ko.md",
+      "source_sha256": "7175652ff5ab2bc99d3637294e849543dcc99b0f31330af87bdf9381baa92f2c",
+      "accepted": "scripts/ch01.ko.md",
+      "accepted_sha256": "6998f0fc14c85e9a635be62357ef4242bc6362602d299238970e38d08ceefa28",
+      "adaptation": "acceptance metadata only; all scene bodies unchanged from reviewed snapshot"
+    },
+    {
+      "source": "writing/working-r03-c01/script-ch02-r03.ko.md",
+      "source_sha256": "d7971cf416b22767378e3ee527216f601d7224bfb4143b46022bf1ad3d2b3148",
+      "accepted": "scripts/ch02.ko.md",
+      "accepted_sha256": "9376d95adf1a55c415746f6932828c9b78264b077064de871a38a8f5483b5cbc",
+      "adaptation": "acceptance metadata only; all scene bodies unchanged from reviewed snapshot"
+    },
+    {
+      "source": "writing/working-r03-c01/script-ch03-r03.ko.md",
+      "source_sha256": "b92a27d3f0936317675e1fc2120b65243102aa21f49eb5993305ee7aae920126",
+      "accepted": "scripts/ch03.ko.md",
+      "accepted_sha256": "c4b2a726d3a0a3dd7bde20cc9eaa47b81098b963e01f79a6d9d83ca913f9f20d",
+      "adaptation": "acceptance metadata only; all scene bodies unchanged from reviewed snapshot"
+    },
+    {
+      "source": "writing/working-r03-c01/script-ch04-r03.ko.md",
+      "source_sha256": "0ae8671f61648d1f03b45f6f74d1fcc69f97147561dfe45085b4e8ce2e4d79f9",
+      "accepted": "scripts/ch04.ko.md",
+      "accepted_sha256": "b66c0c4bc741d273dfb198216772a5669f3b2220df7dca6852c2a14545aac855",
+      "adaptation": "acceptance metadata only; all scene bodies unchanged from reviewed snapshot"
+    },
+    {
+      "source": "writing/working-r03-c01/script-ch05-r03.ko.md",
+      "source_sha256": "d91291322996c59b4cc7408e6598cf7df3151fe9d2b40c6b35e9edf6405f30f8",
+      "accepted": "scripts/ch05.ko.md",
+      "accepted_sha256": "5ea5228f605e62108c72f3962031dbdbd13b21aa6e90969c31375d7aa82a1741",
+      "adaptation": "acceptance metadata only; all scene bodies unchanged from reviewed snapshot"
+    },
+    {
+      "source": "writing/working-r03-c01/script-ch06-r03.ko.md",
+      "source_sha256": "9d4d4ce4b3f9ef4e8e98c451048a2858422971ea32601de30ca37f5568a38dae",
+      "accepted": "scripts/ch06.ko.md",
+      "accepted_sha256": "7866fcff0e226e95cebdbf7ebdf847da08155a4e753f7ca86a4ec99f9848a7b4",
+      "adaptation": "acceptance metadata only; all scene bodies unchanged from reviewed snapshot"
+    },
+    {
+      "source": "writing/working-r03-c01/script-ep-r03.ko.md",
+      "source_sha256": "a9a73c8ceb97e7ffaa58764feafbdf7c44154e66311739483aae119ceb64ee18",
+      "accepted": "scripts/ep.ko.md",
+      "accepted_sha256": "6f9d69cba618f905cfb024a017f814da98202d5a4e5b47626828bc300cdaa670",
+      "adaptation": "acceptance metadata only; all scene bodies unchanged from reviewed snapshot"
+    },
+    {
+      "source": "writing/working-r03-c01/script-pr-rest-r03.ko.md",
+      "source_sha256": "1e8cb134a8fd3ad55f1094dfaba35213d3224217dcc28029751f82bacfaa78f1",
+      "accepted": "scripts/pr-rest.ko.md",
+      "accepted_sha256": "5153cd1a23a3fd5de31e85127f3851840b489014fb6ccd0eb7309df845d2db6a",
+      "adaptation": "acceptance metadata only; all scene bodies unchanged from reviewed snapshot"
+    },
+    {
+      "source": "writing/working-r03-c01/script-sys-r03.ko.md",
+      "source_sha256": "a5f0d52b6925db2730245d21534940a6cdeb9449d1bb6df5841cdec69460daed",
+      "accepted": "scripts/sys.ko.md",
+      "accepted_sha256": "db4e302d49c5b7ea3b50c4e1ee9607aa5e92e20157ecc0b2bd6edd75e8d2e054",
+      "adaptation": "acceptance metadata only; all scene bodies unchanged from reviewed snapshot"
+    }
+  ]
+}

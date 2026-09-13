@@ -1,7 +1,7 @@
 # Script handoff and Markdown return format
 
-Version: 1.1 / 2026-09-12
-Status: production contract and templates; no actual new-game packet or screenplay has been created.
+Version: 1.2 / 2026-09-12
+Status: production contract and templates. Actual project exports, returned files and acceptance are tracked in each active project's writing index; the existence of an export never establishes a completed screenplay.
 
 ## 1. Place in production
 
@@ -38,13 +38,13 @@ If the actual plan is insufficient, Codex repairs it before exporting. Resolve o
 
 A chapter is a planning unit, not necessarily one model response. Assign a manageable group of complete scenes with explicit boundaries. Introductions, ordinary investigation, confrontation, errors/hints, revisits, and endings can be separate assignments. Do not split mid-utterance or shorten a whole chapter to fit one response.
 
-A new batch includes the chapter map and relevant accepted preceding scenes; a different chat is not assumed to remember earlier work. Review chapter-wide continuity after assembling batches, then cross-chapter continuity after the full script is drafted. Track all main and alternate paths, not only the ideal solution run.
+A new external assignment includes the chapter map and relevant accepted preceding scenes; a different chat is not assumed to remember earlier work. Bounded internal writing units need not be separate file relays: one full-script packet may cover them all, with a progress manifest, complete-scene checkpoints and a final combined return. Within that assignment, newly drafted preceding scenes provide working candidate continuity, explicitly distinct from Codex acceptance. Review chapter-wide continuity after assembling units, then cross-chapter continuity after the full script is drafted. Track all main and alternate paths, not only the ideal solution run. Consolidate substantial revision requests across the return instead of requiring a predetermined number of courier rounds. Do not promise one-response completion or automatic background continuation.
 
 Local pacing targets are editorial guidance, not fixed global quotas. Preserve the strong characterization and natural Korean that the user preferred, stagger introductions, explain immediate situations, and cut repeated exchanges rather than necessary context.
 
 ## 4. Returned files
 
-Return **two actual UTF-8 Markdown files**, with filenames specified in `00-task.md`. Example naming only:
+Return an actual UTF-8 Markdown screenplay and matching notes for each assigned output unit, with exact filenames specified in `00-task.md`. A single unit returns two files; a consolidated assignment returns all listed pairs plus its progress manifest in one archive. Example naming only:
 
 - `script-ch01-b01-r01.ko.md`: Korean screenplay with minimal author metadata and explicit branch structure.
 - `script-ch01-b01-r01.notes.md`: English author notes, coverage, unresolved matters, changes, and proposed factual revisions. Quote exact Korean passages when needed.
@@ -146,7 +146,7 @@ Complete exactly the scene batch assigned by 00-task.md. Use the full author tru
 
 Preserve pronounced 나사 빠진 characterization, clear first encounters, spaced introductions, and natural responsive Korean. Shorten repeated demonstrations and redundant negotiation while retaining situational explanation and the full assigned coverage. Do not add a cast biography or explain the jokes.
 
-Create the two UTF-8 Markdown files named in 00-task.md, following 03-return-format.md: the Korean screenplay and separate English author notes. Use the assigned scene/statement/branch IDs and source condition references. Return the complete batch on revision, preserving stable IDs and reporting new or retired ones. Do not silently change facts, judging rules, access, or event effects; place proposed changes in the notes.
+Create all UTF-8 Markdown screenplay/notes pairs and any progress manifest/archive named in 00-task.md, following 03-return-format.md: the Korean screenplay and separate English author notes. Use the assigned scene/statement/branch IDs and source condition references. Return the complete batch on revision, preserving stable IDs and reporting new or retired ones. Do not silently change facts, judging rules, access, or event effects; place proposed changes in the notes.
 
 Check required scenes, options, speaker IDs, transitions, language, and unfinished content against the task list. Report only checks actually performed. If any assigned content remains unwritten, list the exact missing IDs and mark the batch incomplete rather than replacing them with a summary.
 

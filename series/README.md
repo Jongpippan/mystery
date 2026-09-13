@@ -1,6 +1,6 @@
 # New series registry
 
-Status: no registered works, cases, people, or adopted setting.
+Status: one planned first work; no completed/released or play-verified works. No predecessor case applies.
 
 The discarded project and its residual case record were removed from the working tree on 2026-09-12. The current hotel discussion and writing fixture are new proposals, not registered canon. Do not recover discarded content from residual files or Git history.
 
@@ -13,6 +13,10 @@ The discarded project and its residual case record were removed from the working
 
 ## Work registry
 
-No entries. When a new work is actually developed, record its ID/title/order, source location, design/implementation/verification status, and real case record. Do not register a blank template or experimental cast as a finished game.
+| Order / ID | Title and source | Status / actual evidence | Case record |
+|---|---|---|---|
+| 1 / project_01 | [여울관: 남겨 둔 자리](../project_01/game-plan/00-brief.md) | Planned: new substantive six-chapter design and author structural review; screenplay/implementation/play verification pending. See [validation](../project_01/game-plan/10-validation.md). | Not created; final common/branch continuity awaits actual work |
+
+This entry registers the existence of a real planned project, not a finished game. All concrete facts remain planned in the project sources. No earlier test cast or discarded incident is series history.
 
 Keep planned, implemented, verified, and branch-specific facts distinct. No predecessor knowledge, returning cast, or save linkage applies until this new series has an actual earlier work.

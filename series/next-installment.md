@@ -1,12 +1,12 @@
 # First new work — starting handoff
 
-Status: common-document cleanup completed; concrete new-project planning has not started. No inherited world, case, people, or relationships.
+Status: substantive first-project planning has started in [project_01](../project_01/game-plan/00-brief.md); no inherited predecessor world, case, people or relationships. Continue the current first work, not another new reset. Exact drafting dependency: [packet index](../project_01/game-plan/writing/packet-index.md).
 
 Read [the guide](../design-guide/README.md), [production principles](../design-guide/00-production-principles.md), [current decisions](../design-guide/current-direction.md), [project templates](../design-guide/09-project-templates.md), and [the empty bible](series-bible-SPOILERS.md).
 
 The deleted folder name `project_01` may be reused when substantive planning begins. Start with new instructions and actual game-plan content. Do not create an empty implementation scaffold as part of cleanup or restore the discarded sources.
 
-## Decisions for actual planning
+## Original starting checklist (now tracked in the active project)
 
 - Final concept, title, setting, era, central emotion and surface case. The hotel remains a candidate.
 - Protagonist personality, work, motivation and investigation authority.
