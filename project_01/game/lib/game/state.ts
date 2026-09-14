@@ -1,4 +1,7 @@
 import {presentation} from './presentation';
+import {currentRevisits,revisitNode,revisitSource} from './revisits';
+import {move,validTravel,type TravelState} from './travel';
+import {sitePlaces,type PlaceId} from './site';
 import {sourceMode,validRecordOrigin,validHistoryFilters,type LogEntry,type HistoryFilters} from './record-index';
 import {validEvidenceFilters,type EvidenceFilters} from './evidence-index';
 import {options as epilogueOptions} from './epilogue';
@@ -35,20 +38,27 @@ export type GameState = {
   log:LogEntry[];
   notes:string;
   textScale:number;
+  audioVolume?:number;
   points:number;
   savedAt:string|null;
   investigation?:Investigation;
   views?:View[];
+  revisit?:{id:string;index:number};
+  travel?:TravelState;
+  visitedPlaces?:PlaceId[];
 };
 export type GameAction =
-  | {type:'start';name:string}
+  | {type:'start';name:string;setupLines?:string[]}
   | {type:'advance'}
   | {type:'choose';choice:string;value:string}
   | {type:'acknowledge';id:string}
   | {type:'note';text:string}
   | {type:'textScale';value:number}
+  | {type:'audioVolume';value:number}
   | {type:'restore';state:GameState};
 export type InvestigationAction =
+  | {type:'move';route:string}
+  | {type:'revisit';id:string}
   | {type:'visit';stage:string}
   | {type:'task';id:TaskId}
   | {type:'draft';id:TaskId;draft:Draft}
@@ -65,7 +75,7 @@ export type InvestigationAction =
 export const initialState:GameState = {version:1,edition:script.edition,playerName:'나여백',started:false,sceneId:'C_PR_01',cursor:0,choices:{},evidence:[],met:['P00','P01'],acknowledged:[],log:[],notes:'',textScale:1,points:6,savedAt:null};
 const opening = Array.from({length:16},(_,index)=>`C_PR_${String(index+1).padStart(2,'0')}`);
 
-export type RuntimeNode = ScriptNode | {id:string;kind:'choice';choice:string;options:{value:string;text:string}[];text:string} | {id:string;kind:'investigation';text:string};
+export type RuntimeNode = ScriptNode | {id:string;kind:'choice';choice:string;options:{value:string;text:string}[];text:string} | {id:string;kind:'investigation';text:string} | {id:string;kind:'appointment';text:string;continueLabel?:string};
 export function currentSequence(state:GameState):RuntimeNode[] {
   if(state.investigation) {
     const i=state.investigation;
@@ -103,6 +113,9 @@ export function currentSequence(state:GameState):RuntimeNode[] {
     if (node.kind==='choice-label') continue;
     result.push(node);
   }
+  if(state.sceneId==='C_PR_11')result.push({id:'appointment:public-count',kind:'appointment',text:'공개 수량 확인에 참여할 준비가 되면 봉만실에게 말하세요.'});
+  const pauses:Record<string,[string,string]>={C_PR_06:['허락받은 기록 탁자에서 모눈과 정리하고 있습니다.','모눈 곁에서 기록 정리 계속하기'],C_PR_08:['모눈과 쉬고 있습니다. 준비되면 음향실 약속으로 갑니다.','모눈과 음향실 약속으로 가기'],C_PR_10:['목백로와 같은 직원 동선을 따라 현관으로 돌아왔습니다.','휴게실로 돌아가기']};
+  if(pauses[state.sceneId])result.push({id:`appointment:${state.sceneId}`,kind:'appointment',text:pauses[state.sceneId][0],continueLabel:pauses[state.sceneId][1]});
   return result;
 }
 export const currentNode=(state:GameState)=>currentSequence(state)[state.cursor]??null;
@@ -115,16 +128,17 @@ function enter(state:GameState):GameState {
   let next={...state};
   if (node.kind==='speech' && node.speaker && !next.met.includes(node.speaker)) next={...next,met:[...next.met,node.speaker]};
   if (node.kind==='evidence' && node.evidenceId && !next.evidence.includes(node.evidenceId)) next={...next,evidence:[...next.evidence,node.evidenceId],views:[...(next.views??[]),{...freshView('evidence'),detail:node.evidenceId}]};
-  if (node.kind!=='choice' && node.kind!=='investigation' && !next.log.some(item=>item.nodeId===node.id)) next={...next,log:[...next.log,recordEntry(next,next.sceneId,node)]};
+  if (node.kind!=='choice' && node.kind!=='investigation' && node.kind!=='appointment' && !next.log.some(item=>item.nodeId===node.id)) next={...next,log:[...next.log,recordEntry(next,next.sceneId,node)]};
   return next;
 }
 export function gameReducer(state:GameState,action:GameAction|InvestigationAction):GameState {
-  if(!['start','restore','note','textScale','acknowledge','choose','advance'].includes(action.type))return investigationReducer(state,action as InvestigationAction);
+  if(!['start','restore','note','textScale','audioVolume','acknowledge','choose','advance'].includes(action.type))return investigationReducer(state,action as InvestigationAction);
   switch(action.type) {
-    case 'start':return enter({...initialState,started:true,playerName:action.name.trim()||'나여백'});
+    case 'start':return enter({...initialState,textScale:state.textScale,audioVolume:state.audioVolume??.7,started:true,playerName:action.name.trim()||'나여백',log:[...new Set(action.setupLines??[])].filter(id=>id.startsWith('S_SYS_04_')&&script.utterances[id]).map(nodeId=>({sceneId:'C_SYS_04',nodeId,origin:{place:'여울관 앞',time:'10월 21일 · 오후',mode:'direct' as const}}))});
     case 'restore':return isSave(action.state)?action.state:state;
     case 'note':return {...state,notes:action.text};
     case 'textScale':return Number.isFinite(action.value)?{...state,textScale:Math.max(1,Math.min(2,action.value))}:state;
+    case 'audioVolume':return Number.isFinite(action.value)?{...state,audioVolume:Math.max(0,Math.min(1,action.value))}:state;
     case 'acknowledge':return acquiredPending(state)!==action.id?state:{...state,acknowledged:[...state.acknowledged,action.id]};
     case 'choose': {
       const node=currentNode(state);
@@ -132,6 +146,13 @@ export function gameReducer(state:GameState,action:GameAction|InvestigationActio
       return enter({...state,choices:{...state.choices,[action.choice]:action.value},cursor:state.cursor+1});
     }
     case 'advance': {
+      if(state.revisit){
+        const current=revisitNode(state);if(current?.kind==='evidence'&&current.evidenceId&&!state.acknowledged.includes(current.evidenceId))return state;
+        const next={...state,revisit:{...state.revisit,index:state.revisit.index+1}};
+        if(revisitNode(next))return enterRevisit(next);
+        const {revisit:finished,...rest}=state;void finished;return rest;
+      }
+      if(state.travel)return state;
       if(state.investigation?.task)return state;
       const node=currentNode(state);
       if (node?.kind==='choice') return state;
@@ -163,10 +184,14 @@ export function isSave(value:unknown):value is GameState {
   if(!ids(s.evidence)||!s.evidence.every(id=>!!script.evidence[id])||!ids(s.met)||!s.met.every(id=>/^P0[0-9]$/.test(id))) return false;
   if(!ids(s.acknowledged)||!s.acknowledged.every(id=>s.evidence.includes(id))) return false;
   if(!Number.isFinite(s.textScale)||s.textScale<1||s.textScale>2||!Number.isInteger(s.points)||s.points<0||s.points>6) return false;
+  if(s.audioVolume!==undefined&&(!Number.isFinite(s.audioVolume)||s.audioVolume<0||s.audioVolume>1))return false;
   if(s.savedAt!==null&&(typeof s.savedAt!=='string'||!Number.isFinite(Date.parse(s.savedAt)))) return false;
   if(!Array.isArray(s.log)||!s.log.every(item=>item&&typeof item==='object'&&script.scenes[item.sceneId]?.nodes.some(n=>n.id===item.nodeId)&&(item.origin===undefined||validRecordOrigin(item.origin)))) return false;
   if(s.investigation!==undefined&&!validInvestigation(s))return false;
   if(s.investigation===undefined&&!opening.includes(s.sceneId))return false;
+  if(s.revisit!==undefined&&(!s.revisit||!Number.isInteger(s.revisit.index)||s.revisit.index<0||!revisitNode(s)||!['investigation','appointment'].includes(currentNode(s)?.kind??'')&&s.sceneId!=='C_PR_16'))return false;
+  if(s.visitedPlaces!==undefined&&(!ids(s.visitedPlaces)||!s.visitedPlaces.every(id=>sitePlaces.some(p=>p.id===id))))return false;
+  if(!validTravel(s))return false;
   if(s.views!==undefined&&(!Array.isArray(s.views)||s.views.length>20||!s.views.every(v=>v&&['evidence','people','map','history','notes','settings','deduction','hint','archive'].includes(v.tool)&&(v.detail===null||typeof v.detail==='string'&&(v.tool==='archive'&&['archive:proofs','archive:corrections','archive:recap','archive:credits'].includes(v.detail)||s.evidence.includes(v.detail)||s.met.includes(v.detail)||s.log.some(l=>l.sceneId===v.detail)))&&typeof v.search==='string'&&Number.isFinite(v.scroll)&&v.scroll>=0&&typeof v.focus==='string'&&(v.zoom===undefined||Number.isFinite(v.zoom)&&v.zoom>=1&&v.zoom<=3)&&(v.replayIndex===undefined||Number.isInteger(v.replayIndex)&&v.replayIndex>=0)&&(v.filters===undefined||v.tool==='evidence'&&validEvidenceFilters(v.filters,s))&&(v.historyFilters===undefined||v.tool==='history'&&validHistoryFilters(v.historyFilters,s))&&(v.expanded===undefined||v.tool==='people'&&Array.isArray(v.expanded)&&v.expanded.every(id=>typeof id==='string'&&s.log.some(l=>l.sceneId===id))))))return false;
   return s.cursor<currentSequence(s).length;
 }
@@ -186,6 +211,7 @@ export function cargoProgress(state:GameState):'pending'|'joined'|'route'|'seale
 }
 export type InvestigationOption = {kind:'visit';id:string;label:string}|{kind:'task';id:TaskId;label:string};
 export function investigationOptions(state:GameState):InvestigationOption[] {
+  if(state.travel)return [];
   const i=state.investigation;
   if(!i||currentNode(state)?.kind!=='investigation'||i.task)return [];
   if(i.stage.startsWith('ep-'))return epilogueOptions(i.stage,i.completed,i.knowledge);
@@ -250,7 +276,14 @@ function investigationReducer(state:GameState,action:InvestigationAction):GameSt
     if(action.patch.detail&&!(view.tool==='archive'&&['archive:proofs','archive:corrections','archive:recap','archive:credits'].includes(action.patch.detail))&&!state.evidence.includes(action.patch.detail)&&!state.met.includes(action.patch.detail)&&!state.log.some(l=>l.sceneId===action.patch.detail))return state;
     return {...state,views:[...state.views!.slice(0,-1),{...view,...action.patch}]};
   }
+  if(action.type==='move')return move(state,action.route);
+  if(action.type==='revisit'){
+    if(state.revisit||!['investigation','appointment'].includes(currentNode(state)?.kind??'')&&state.sceneId!=='C_PR_16'||!currentRevisits(state).some(v=>v.id===action.id))return state;
+    return enterRevisit({...state,revisit:{id:action.id,index:0}});
+  }
   if(!i)return state;
+  if(state.revisit&&['visit','task','submit','taskNext','recover'].includes(action.type))return state;
+  if(state.travel&&['visit','task','submit','taskNext','recover'].includes(action.type))return state;
   const update=(patch:Partial<Investigation>):GameState=>({...state,investigation:{...i,...patch}});
   if(action.type==='visit') {
     if(!investigationOptions(state).some(o=>o.kind==='visit'&&o.id===action.stage))return state;
@@ -334,6 +367,14 @@ function investigationReducer(state:GameState,action:InvestigationAction):GameSt
     return {...update({hintId:`S_H_V01_${suffix}`}),views:[...(state.views??[]).filter(v=>v.tool!=='hint'),freshView('hint')]};
   }
   return state;
+}
+
+function enterRevisit(state:GameState):GameState {
+  const node=revisitNode(state);
+  if(!node)return state;let next=state;
+  if(node.kind==='speech'&&node.speaker&&!state.met.includes(node.speaker))next={...next,met:[...next.met,node.speaker]};
+  if(node.kind==='evidence'&&node.evidenceId&&!state.evidence.includes(node.evidenceId))next={...next,evidence:[...next.evidence,node.evidenceId],views:[...(next.views??[]),{...freshView('evidence'),detail:node.evidenceId}]};
+  return next.log.some(l=>l.nodeId===node.id)?next:{...next,log:[...next.log,recordEntry(next,revisitSource(next)!,node)]};
 }
 function validInvestigation(state:GameState):boolean {
   const i=state.investigation!;

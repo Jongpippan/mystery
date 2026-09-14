@@ -1,0 +1,22 @@
+[
+  {
+    "profile": "desktop",
+    "status": "pass",
+    "checks": [
+      "map layout",
+      "live source conversation",
+      "tool/reload return",
+      "exact suspended answer and position"
+    ]
+  },
+  {
+    "profile": "phone-200",
+    "status": "pass",
+    "checks": [
+      "map layout",
+      "live source conversation",
+      "tool/reload return",
+      "exact suspended answer and position"
+    ]
+  }
+]

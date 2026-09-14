@@ -1,4 +1,5 @@
 import {script} from '@/lib/game/script';
+import {AudioClip} from './AudioClip';
 
 export function SoundRoutes({mode}:{mode:'input'|'file'}) {
   return <figure className="sound-routes" aria-label="현재 기능 시연의 입력과 출력">
@@ -18,6 +19,8 @@ export function SoundComparison({compare=false}:{compare?:boolean}) {
       {labels.map(label=><div className="sound-track" key={label}><strong>{label}</strong><div className="sound-segments"><span>의</span><span className="sound-overlap">자<small>끼익 · 겹침</small></span><span>부터 좀…</span><span className="sound-pause">끊김</span><span>다시 하겠습니다.</span></div></div>)}
     </div>
     <blockquote>{script.utterances.S_CH02_02_0007.text}</blockquote>
+    <AudioClip src="/audio/rehearsal.wav" label="18:10 리허설 원본 듣기" transcript="‘의자’의 끝 음절에 의자 삐걱임이 겹칩니다. ‘좀…’ 뒤 말이 끊겼다가 다시 시작합니다."/>
+    {compare&&<AudioClip src="/audio/field-output.wav" label="20:30 현장 출력 기록 듣기" transcript="같은 문장과 삐걱임·중단 위치를 리허설 원본과 비교하세요."/>}
     <p className="source-caption">음성 재생 없이도 겹침과 중단 위치를 비교할 수 있는 자막입니다. 칸 너비는 실제 시간 길이를 나타내지 않습니다.</p>
   </figure>;
 }

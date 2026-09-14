@@ -3,6 +3,7 @@ import {Input} from '@/components/ui/input';
 import {displayText,script} from '@/lib/game/script';
 import type {GameState,Tool,View} from '@/lib/game/state';
 import {personName} from '@/lib/game/evidence-index';
+import {portraitPath} from '@/lib/game/art';
 import {conversations,defaultHistoryFilters,historyFilterOptions,historyGroups,modeNames,personRecord,recordContext,recordNode,type HistoryFilters,type LogEntry} from '@/lib/game/record-index';
 
 type Props={state:GameState;detail:string|null;inspect:(tool:Tool,id:string)=>void};
@@ -35,5 +36,5 @@ export function PeoplePanel({state,detail,inspect,expanded=[],patch}:Props&{expa
   {!!record.related.length&&<section><h4>관련된 보유 자료</h4><div className="task-actions">{record.related.map(e=><Button id={`person-evidence-${e}`} key={e} variant="outline" onClick={()=>inspect('evidence',e)}>{script.evidence[e].title}</Button>)}</div></section>}
   <section className="person-conversations"><h4>실제로 들은 말 · 대화별로 읽기</h4>{entries.map(c=><details key={c.id} open={expanded.includes(c.id)}><summary id={`person-conversation-${c.id}`} onClick={e=>{e.preventDefault();patch({expanded:expanded.includes(c.id)?expanded.filter(id=>id!==c.id):[...expanded,c.id]});}}>{c.title}<span className="record-context">{c.contexts.join(' / ')}</span></summary>{c.entries.filter(l=>recordNode(l).speaker===detail).map((e,index)=><div key={e.nodeId+index} className="person-statement"><Context entry={e}/><p>{recordNode(e).label&&!/^P\d/.test(recordNode(e).label!)&&<strong>{recordNode(e).label}</strong>}{displayText(recordNode(e).text,state.playerName)}</p></div>)}<Button id={`person-conversation-source-${c.id}`} variant="outline" onClick={()=>inspect('history',c.id)}>전체 대화 원문</Button></details>)}</section>
  </article>;}
- return <div className="people-list">{state.met.map(id=><button id={`person-${id}`} key={id} onClick={()=>inspect('people',id)}>{(id==='P00'||id==='P01')?<img src={id==='P00'?'/art/p00.png':'/art/p01.png'} alt=""/>:<span className="person-monogram" aria-hidden="true">{personName(id,state.playerName).slice(0,1)}</span>}<span>{personName(id,state.playerName)}<small>{personRecord(state,id)?.introduction}</small></span></button>)}</div>;
+ return <div className="people-list">{state.met.map(id=><button id={`person-${id}`} key={id} onClick={()=>inspect('people',id)}><img src={portraitPath(id)!} alt="" loading="lazy"/><span>{personName(id,state.playerName)}<small>{personRecord(state,id)?.introduction}</small></span></button>)}</div>;
 }

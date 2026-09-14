@@ -1,0 +1,176 @@
+[
+  {
+    "source": "public/art/l01.png",
+    "destination": "public/art/l01.webp",
+    "sourceBytes": 2058654,
+    "deliveryBytes": 183798
+  },
+  {
+    "source": "public/art/l02.png",
+    "destination": "public/art/l02.webp",
+    "sourceBytes": 2286963,
+    "deliveryBytes": 237754
+  },
+  {
+    "source": "public/art/l03-east.png",
+    "destination": "public/art/l03-east.webp",
+    "sourceBytes": 1770718,
+    "deliveryBytes": 117140
+  },
+  {
+    "source": "public/art/l03-v2.png",
+    "destination": "public/art/l03-v2.webp",
+    "sourceBytes": 1726212,
+    "deliveryBytes": 107426
+  },
+  {
+    "source": "public/art/l03.png",
+    "destination": "public/art/l03.webp",
+    "sourceBytes": 1818400,
+    "deliveryBytes": 119330
+  },
+  {
+    "source": "public/art/l04.png",
+    "destination": "public/art/l04.webp",
+    "sourceBytes": 2510918,
+    "deliveryBytes": 274804
+  },
+  {
+    "source": "public/art/l05-v2.png",
+    "destination": "public/art/l05-v2.webp",
+    "sourceBytes": 2001076,
+    "deliveryBytes": 189778
+  },
+  {
+    "source": "public/art/l05.png",
+    "destination": "public/art/l05.webp",
+    "sourceBytes": 2107979,
+    "deliveryBytes": 202870
+  },
+  {
+    "source": "public/art/l06.png",
+    "destination": "public/art/l06.webp",
+    "sourceBytes": 2265575,
+    "deliveryBytes": 234148
+  },
+  {
+    "source": "public/art/l07.png",
+    "destination": "public/art/l07.webp",
+    "sourceBytes": 1885838,
+    "deliveryBytes": 139142
+  },
+  {
+    "source": "public/art/l08.png",
+    "destination": "public/art/l08.webp",
+    "sourceBytes": 1874278,
+    "deliveryBytes": 131730
+  },
+  {
+    "source": "public/art/l09.png",
+    "destination": "public/art/l09.webp",
+    "sourceBytes": 1930224,
+    "deliveryBytes": 147042
+  },
+  {
+    "source": "public/art/l10.png",
+    "destination": "public/art/l10.webp",
+    "sourceBytes": 2105310,
+    "deliveryBytes": 173498
+  },
+  {
+    "source": "public/art/l11.png",
+    "destination": "public/art/l11.webp",
+    "sourceBytes": 2672138,
+    "deliveryBytes": 339640
+  },
+  {
+    "source": "public/art/l12.png",
+    "destination": "public/art/l12.webp",
+    "sourceBytes": 2310416,
+    "deliveryBytes": 230260
+  },
+  {
+    "source": "public/art/p00-serious.png",
+    "destination": "public/art/p00-serious.webp",
+    "sourceBytes": 1888791,
+    "deliveryBytes": 84826
+  },
+  {
+    "source": "public/art/p00.png",
+    "destination": "public/art/p00.webp",
+    "sourceBytes": 2127568,
+    "deliveryBytes": 193818
+  },
+  {
+    "source": "public/art/p01-reflective.png",
+    "destination": "public/art/p01-reflective.webp",
+    "sourceBytes": 2038182,
+    "deliveryBytes": 122580
+  },
+  {
+    "source": "public/art/p01.png",
+    "destination": "public/art/p01.webp",
+    "sourceBytes": 2371581,
+    "deliveryBytes": 277650
+  },
+  {
+    "source": "public/art/p02-concerned.png",
+    "destination": "public/art/p02-concerned.webp",
+    "sourceBytes": 2072846,
+    "deliveryBytes": 140620
+  },
+  {
+    "source": "public/art/p02.png",
+    "destination": "public/art/p02.webp",
+    "sourceBytes": 2313235,
+    "deliveryBytes": 242866
+  },
+  {
+    "source": "public/art/p03-strained.png",
+    "destination": "public/art/p03-strained.webp",
+    "sourceBytes": 1934640,
+    "deliveryBytes": 111698
+  },
+  {
+    "source": "public/art/p03.png",
+    "destination": "public/art/p03.webp",
+    "sourceBytes": 2080117,
+    "deliveryBytes": 170014
+  },
+  {
+    "source": "public/art/p04.png",
+    "destination": "public/art/p04.webp",
+    "sourceBytes": 2324560,
+    "deliveryBytes": 246946
+  },
+  {
+    "source": "public/art/p05.png",
+    "destination": "public/art/p05.webp",
+    "sourceBytes": 1968038,
+    "deliveryBytes": 159244
+  },
+  {
+    "source": "public/art/p06.png",
+    "destination": "public/art/p06.webp",
+    "sourceBytes": 2313940,
+    "deliveryBytes": 270788
+  },
+  {
+    "source": "public/art/p07.png",
+    "destination": "public/art/p07.webp",
+    "sourceBytes": 2042607,
+    "deliveryBytes": 170086
+  },
+  {
+    "source": "public/art/p08.png",
+    "destination": "public/art/p08.webp",
+    "sourceBytes": 2227074,
+    "deliveryBytes": 213470
+  },
+  {
+    "source": "public/art/p09.png",
+    "destination": "public/art/p09.webp",
+    "sourceBytes": 2424595,
+    "deliveryBytes": 281136
+  }
+]

@@ -111,7 +111,7 @@ export function options(stage:string,done:string[],known:string[],returnStage:st
  if(stage==='ch5-departure'){if(has('K25'))visit('ch6-contact','읍내 숙소에서 다음 날 아침 백로의 원본 보존 연락 확인하기');return out;}
  if(stage.includes('personal')){visit(returnStage,'이야기를 마치고 모눈과 휴게실로 돌아가기');return out;}
  if(stage==='ch6-contact')visit('ch6-unfold','모눈을 봉만실에게 맡긴 뒤 성인 팀과 같은 보관 장부 펼치기');
- else if(!has('K26')){task('D26',stage==='ch6-early-machine'?'호숫가 보관 창고로 돌아가 같은 본장의 연결부 인증하기':undefined);if(!evidence.includes('E48'))visit('ch6-early-machine','원본은 보관 창고에 두고 적재·기록 데스크에서 두 겹 시각 인상 장치 먼저 시험하기');}
+ else if(!has('K26')){task('D26',['ch6-early-machine','ch6-overlay'].includes(stage)?'호숫가 보관 창고로 돌아가 같은 본장의 연결부 인증하기':undefined);if(!evidence.includes('E48'))visit('ch6-early-machine','원본은 보관 창고에 두고 적재·기록 데스크에서 두 겹 시각 인상 장치 먼저 시험하기');if(evidence.includes('E49')&&evidence.includes('E50')&&!seen('ch6-overlay'))visit('ch6-overlay','본장의 연결부 결론에 앞서 공개 사본과 촬영 이미지 먼저 겹쳐 보기');}
  else if(!seen('ch6-overlay'))visit('ch6-overlay','적재·기록 데스크에서 시각 출력과 공개 사본 겹침 비교하기');
  else if(!has('K27'))task('D27');
  else if(!seen('ch6-copier'))visit('ch6-copier','차무록을 부르고 주방의 일반 복사기 앞에서 감독 범위 확인하기');

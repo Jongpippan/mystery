@@ -1,0 +1,174 @@
+[
+  {
+    "profile": "desktop",
+    "group": "introduced people",
+    "status": "pass",
+    "checks": [
+      "met-only list",
+      "role after heard introduction",
+      "no future cousin or guilt labels",
+      "speaker output excluded from last direct contact"
+    ]
+  },
+  {
+    "profile": "desktop",
+    "group": "early history",
+    "status": "pass",
+    "checks": [
+      "heard-only groups/speakers",
+      "public voice attributed without early playback answer",
+      "full actual source transcript"
+    ]
+  },
+  {
+    "profile": "desktop",
+    "group": "history filters and replay",
+    "status": "pass",
+    "checks": [
+      "combined group and speaker",
+      "actual contextual dates/places",
+      "replay cursor saved",
+      "no log effects",
+      "filters restored after detail"
+    ]
+  },
+  {
+    "profile": "desktop",
+    "group": "person correction and source expansion",
+    "status": "pass",
+    "checks": [
+      "both heard Q06 versions",
+      "correction/source links",
+      "phone caller distinguished from listener location",
+      "expanded conversation retained on reload"
+    ]
+  },
+  {
+    "profile": "desktop",
+    "group": "sourced relationships",
+    "status": "pass",
+    "checks": [
+      "only encountered relation excerpts",
+      "bidirectional related-person navigation",
+      "direct actions separated from attributed speech"
+    ]
+  },
+  {
+    "profile": "desktop",
+    "group": "legacy history",
+    "status": "pass",
+    "checks": [
+      "old log without origins loads",
+      "missing position stated explicitly",
+      "no present location invented"
+    ]
+  },
+  {
+    "profile": "desktop",
+    "group": "answer round trip",
+    "status": "pass",
+    "checks": [
+      "D30 actual edited draft",
+      "filtered history → correction → person → map → history → answer",
+      "same task/draft/log/choices/points"
+    ]
+  },
+  {
+    "profile": "desktop",
+    "group": "keyboard and layout",
+    "status": "pass",
+    "checks": [
+      "native keyboard filter selection",
+      "Tab contained",
+      "44px selectors",
+      "desktop or touch200% no horizontal overflow",
+      "no page errors"
+    ]
+  },
+  {
+    "profile": "phone-200",
+    "group": "introduced people",
+    "status": "pass",
+    "checks": [
+      "met-only list",
+      "role after heard introduction",
+      "no future cousin or guilt labels",
+      "speaker output excluded from last direct contact"
+    ]
+  },
+  {
+    "profile": "phone-200",
+    "group": "early history",
+    "status": "pass",
+    "checks": [
+      "heard-only groups/speakers",
+      "public voice attributed without early playback answer",
+      "full actual source transcript"
+    ]
+  },
+  {
+    "profile": "phone-200",
+    "group": "history filters and replay",
+    "status": "pass",
+    "checks": [
+      "combined group and speaker",
+      "actual contextual dates/places",
+      "replay cursor saved",
+      "no log effects",
+      "filters restored after detail"
+    ]
+  },
+  {
+    "profile": "phone-200",
+    "group": "person correction and source expansion",
+    "status": "pass",
+    "checks": [
+      "both heard Q06 versions",
+      "correction/source links",
+      "phone caller distinguished from listener location",
+      "expanded conversation retained on reload"
+    ]
+  },
+  {
+    "profile": "phone-200",
+    "group": "sourced relationships",
+    "status": "pass",
+    "checks": [
+      "only encountered relation excerpts",
+      "bidirectional related-person navigation",
+      "direct actions separated from attributed speech"
+    ]
+  },
+  {
+    "profile": "phone-200",
+    "group": "legacy history",
+    "status": "pass",
+    "checks": [
+      "old log without origins loads",
+      "missing position stated explicitly",
+      "no present location invented"
+    ]
+  },
+  {
+    "profile": "phone-200",
+    "group": "answer round trip",
+    "status": "pass",
+    "checks": [
+      "D30 actual edited draft",
+      "filtered history → correction → person → map → history → answer",
+      "same task/draft/log/choices/points"
+    ]
+  },
+  {
+    "profile": "phone-200",
+    "group": "keyboard and layout",
+    "status": "pass",
+    "checks": [
+      "native keyboard filter selection",
+      "Tab contained",
+      "44px selectors",
+      "desktop or touch200% no horizontal overflow",
+      "no page errors"
+    ]
+  }
+]

@@ -1,0 +1,32 @@
+[
+  {
+    "profile": "desktop",
+    "group": "name",
+    "status": "pass"
+  },
+  {
+    "profile": "desktop",
+    "group": "travel/current conversation",
+    "status": "pass"
+  },
+  {
+    "profile": "desktop",
+    "group": "audio",
+    "status": "pass"
+  },
+  {
+    "profile": "phone-200",
+    "group": "name",
+    "status": "pass"
+  },
+  {
+    "profile": "phone-200",
+    "group": "travel/current conversation",
+    "status": "pass"
+  },
+  {
+    "profile": "phone-200",
+    "group": "audio",
+    "status": "pass"
+  }
+]

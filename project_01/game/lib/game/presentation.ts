@@ -1,7 +1,13 @@
 import { currentSequence, taskNodes, type GameState } from './state';
 import { prologuePresentation } from './prologue';
+import {portName} from './travel';
+import {currentConversationIds} from './revisits';
 
 export function presentation(state:GameState) {
+  return state.travel?{...state.travel.origin,place:portName(state.travel.position),companion:state.travel.origin.companion||state.travel.position==='L02',experiment:false}:scenePresentation(state);
+}
+export function scenePresentation(state:GameState) {
+  const narrativeLog=state.log.filter(l=>!currentConversationIds.has(l.nodeId));
   if(!state.investigation)return {...prologuePresentation(state),caretaker:'봉만실',chapter:'프롤로그 · 도착한 사람들',wall:9 as 6|9,experiment:false};
   const i=state.investigation, seq=currentSequence(state);
   const reached=(id:string)=>{const index=seq.findIndex(n=>n.id===id);return index>=0&&index<=state.cursor;};
@@ -17,7 +23,7 @@ export function presentation(state:GameState) {
     if(i.stage==='ch6-personal2'){companion=reached('C_CH06_O2:n0006');place=companion?'휴게실':'호숫가 보관 창고';}
     if(i.stage==='ch6-personal3'){place='연회장 · 공개 정리 자리';companion=true;}
     if(!i.stage.includes('personal')){
-      const task=i.task?.id??state.log.findLast(l=>!l.sceneId.startsWith('C_SYS'))?.sceneId.replace('C_','');
+      const task=i.task?.id??narrativeLog.findLast(l=>!l.sceneId.startsWith('C_SYS'))?.sceneId.replace('C_','');
       if(task==='D26')place='호숫가 보관 창고';
       if(task==='D27')place='적재·기록 데스크';
       if(task==='Q06')place='주방 · 일반 복사기';
@@ -35,7 +41,7 @@ export function presentation(state:GameState) {
     if(i.stage==='ch5-personal3')place='휴게실';
     if(i.stage==='ch5-coat')place='현관 · 증거 대조 탁자';
     if(!i.stage.includes('personal')){
-      const task=i.task?.id??state.log.at(-1)?.sceneId.replace('C_','');
+      const task=i.task?.id??narrativeLog.at(-1)?.sceneId.replace('C_','');
       if(['D21','Q05','D22','D23'].includes(task??'')){place='음향 부스';companion=false;}
       if(task==='D24'){place='현관 · 증거 대조 탁자';companion=false;}
       if(task==='D25'){place='휴게실 · 조사 탁자';companion=false;}
@@ -46,7 +52,7 @@ export function presentation(state:GameState) {
   if(i.stage.startsWith('ch4-')){
     let place=['ch4-edges','ch4-card'].includes(i.stage)?'연회장 · 자료 대조 탁자':['ch4-transactions','ch4-personal3'].includes(i.stage)?'현관 · 카운터':'휴게실 · 원본 대조 자리';
     if(!i.stage.includes('personal')){
-      const task=i.task?.id??state.log.at(-1)?.sceneId.replace('C_','');
+      const task=i.task?.id??narrativeLog.at(-1)?.sceneId.replace('C_','');
       if(task==='Q04'||task==='D20')place='휴게실 · 원본 대조 자리';
     }
     return {place,companion:i.stage==='ch4-personal1',caretaker:'봉만실',time:'10월 22일 · 저녁',chapter:'4장 · 같은 서명, 다른 문장',wall:9 as const,experiment:false};
@@ -60,7 +66,7 @@ export function presentation(state:GameState) {
     if(i.stage==='ch3-preserve')place=reached('C_CH03_06:n0010')?'주방':'호숫가 보관 창고';
     if(['ch3-reunion','ch3-departure','ch3-personal1','ch3-personal3'].includes(i.stage)){place='휴게실';companion=true;}
     if(!i.stage.includes('personal')){
-      const id=i.task?.id??state.log.at(-1)?.sceneId.replace('C_','');
+      const id=i.task?.id??narrativeLog.at(-1)?.sceneId.replace('C_','');
       if(['D11','D12','Q03'].includes(id??''))place='적재·기록 데스크';
       if(id==='D13')place='호숫가 보관 창고';
       if(id==='D14')place='주방 · 난로 옆';
@@ -80,7 +86,7 @@ export function presentation(state:GameState) {
     if(['ch2-quiet','ch2-personal1','ch2-personal3'].includes(i.stage))place='휴게실';
     if(i.stage==='ch2-personal2'){place='연회장 · 장비 옆';companion=false;caretaker='차무록';}
     if(i.stage==='ch2-departure'){companion=!reached('C_CH02_08:n0006')||reached('C_CH02_08:n0015');place=companion?'휴게실':'현관 · 조사 탁자';}
-    const lastScene=state.log.at(-1)?.sceneId;
+    const lastScene=narrativeLog.at(-1)?.sceneId;
     const task=i.task??(!i.stage.includes('personal')?Object.values(i.suspended).find(t=>lastScene===`C_${t.id}`):undefined);
     if(task&&['D08','D09'].includes(task.id)){place='현관 · 조사 탁자';companion=false;caretaker='차무록';}
     if(task?.id==='D10'){

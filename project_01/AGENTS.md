@@ -4,20 +4,18 @@ Adapted from `../design-guide/templates/AGENTS.md` on 2026-09-12.
 
 ## Project metadata
 
-- ID: `project_01`; working Korean title: **여울관: 남겨 둔 자리**.
-- Stage: complete screenplay accepted as accepted-full-r03-c01; G0/G1 internal script/design readiness passed on2026-09-14. Continue adaptation, implementation and G2/G3/G5 verification; G4 independent play is unverified. No writer return is pending.
-- Authorized scope: six substantial investigation chapters, prologue and epilogue; full Korean script through ChatGPT file relay; autonomous editorial acceptance, adaptation, implementation, verification and playable delivery.
-- New first work, with no inherited case, cast, code, assets or quotas. Project facts are planned, not released series canon.
-- Actual runtime: `game/` (Vinext/React). From that directory run `npm run install:ci`, `node scripts/import-screenplay.mjs`, `node --test tests/opening.test.mjs tests/chapter-one.test.mjs tests/chapter-two.test.mjs tests/chapter-three.test.mjs tests/chapter-four.test.mjs tests/chapter-five.test.mjs tests/chapter-six.test.mjs tests/epilogue.test.mjs tests/evidence-index.test.mjs`, `npx tsc --noEmit`, `npm run lint`, `npm run build`, and `npm run dev`. Browser QA setup/fixtures and `node tests/browser-ch01.mjs` / `node tests/browser-ch02.mjs` are documented in `game-plan/validation/ch01-implementation-2026-09-14.md` and `ch02-implementation-2026-09-14.md`. PR, all36 CH01-CH06 tasks and EP01-06 core are implemented through the playable archive with retained save slots. Latest browser command: `node tests/browser-ep.mjs`; fixture instructions/results: `game-plan/validation/ep-implementation-2026-09-14.md`. Remaining full integration is indexed in `game-plan/validation/integration-next-2026-09-14.md`. Full implementation remains incomplete; command existence does not imply a completed game.
-
-- Latest integration boundary: evidence discovery, combined filters, saved sorting/context links and52 identification thumbnails. Read `game-plan/validation/evidence-implementation-2026-09-14.md`;205 unit tests and24 evidence browser groups pass. Run `node tests/browser-evidence.mjs` using the EP fixture setup. Continue people/history context, current revisits/travel, systems and remaining art/audio; full production is still incomplete.
+- ID: project_01; title: 여울관: 남겨 둔 자리.
+- Status: completed local delivery, accepted-full-r03-c01, 2026-09-14. G0/G1 source readiness and G2/G3 implementation checks passed; G5 local handoff recorded. G4 independent first play remains unverified. No public deployment or sequel is implied.
+- Scope: prologue, six substantial investigation chapters,36 required tasks,52 evidence originals, epilogue, actual branch archive and retained saves. No screenplay relay or intermediate user review is pending.
+- Runtime: game/ (Vinext/React). Windows player launcher: 게임 시작.cmd; built URL http://127.0.0.1:4173/. Developer preview: npm.cmd run dev on5173.
+- Verification from game/: npm.cmd test, npx.cmd tsc --noEmit, npm.cmd run lint, npm.cmd run build. Canonical import: node scripts/import-screenplay.mjs. Current unit total229 pass. Browser commands and exact results are in the final report; do not infer independent play from automation.
 
 ## Read first
 
-1. `../AGENTS.md` and `../design-guide/README.md`.
-2. `../design-guide/00-production-principles.md`, `../design-guide/current-direction.md`, every topic guide 01–09 and `../design-guide/script-handoff-format.md`.
-3. `../series/README.md`, `../series/series-bible-SPOILERS.md`, `../series/next-installment.md`. No predecessor case applies.
-4. `game-plan/00-brief.md`, actual project ledgers, review records, accepted scripts when present, and pending packet inventory. Recheck actual incoming files before assuming a draft arrived.
+1. ../AGENTS.md and shared design-guide/README.md,00-production-principles.md,current-direction.md and relevant topic guides; all00–09 for full production.
+2. game-plan/validation/final-integration-2026-09-14.md and game-plan/14-assets-and-delivery.md for the delivered runtime, source selectors, generated assets, verification and explicit limits.
+3. Actual requested files and game-plan source ledgers/scripts. Earlier chapter/integration checkpoints are historical, not an outstanding-work list.
+4. ../series/README.md, series-bible-SPOILERS.md and cases/project_01-SPOILERS.md for actual common/branch continuity. Start another project only when requested.
 
 ## Working rules
 

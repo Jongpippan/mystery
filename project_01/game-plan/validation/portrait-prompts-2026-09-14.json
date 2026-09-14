@@ -1,0 +1,54 @@
+[
+  {
+    "id": "p03",
+    "prompt": "One production visual novel portrait asset of a new original fictional character. Korean man aged 43, ordinary hotel operations and accounts manager. Slim average build, neat short black hair with a side part, rectangular thin glasses, clean-shaven. Neutral attentive professional expression, charcoal knit vest over pale blue shirt, no tie, hands relaxed. No sinister expression, no red coat, no clues. Waist-up standing portrait 2:3, full hair and shoulders within frame, both hands comfortably visible. Hand-painted contemporary Korean literary mystery illustration, naturalistic face and anatomy with soft painterly fabric detail, washed teal/cream palette, warm gentle lamplight. Restrained everyday realism, no glamour. Genuine transparent background with clean silhouette. No text, no labels, no montage, no props, no extra characters.",
+    "generator": "built-in image_gen",
+    "sourcePlan": "game-plan/04-characters.md",
+    "output": "public/art/p03.png",
+    "generated": true
+  },
+  {
+    "id": "p04",
+    "prompt": "One production visual novel portrait asset of a new original fictional character. Korean man aged 38, practical maintenance contractor. Broad sturdy shoulders, short slightly tousled hair, faint stubble, open sincere face, worn muted grey-blue work jacket over plain cream tee. Neutral slightly tired expression, hands relaxed and empty, no tools or clues. Waist-up standing portrait 2:3, full hair and shoulders within frame, both hands comfortably visible. Hand-painted contemporary Korean literary mystery illustration, naturalistic face and anatomy with soft painterly fabric detail, washed teal/cream palette, warm gentle lamplight. Restrained everyday realism, no glamour. Genuine transparent background with clean silhouette. No text, no labels, no montage, no props, no extra characters.",
+    "generator": "built-in image_gen",
+    "sourcePlan": "game-plan/04-characters.md",
+    "output": "public/art/p04.png",
+    "generated": true
+  },
+  {
+    "id": "p05",
+    "prompt": "One production visual novel portrait asset of a new original fictional character. Korean woman aged 31, event sound technician. Lean build, black hair tied in low ponytail, alert distinct angular face, dark teal practical zip jacket over neutral shirt, no microphone or headphones obscuring face. Calm professionally attentive expression, empty relaxed hands. Waist-up standing portrait 2:3, full hair and shoulders within frame, both hands comfortably visible. Hand-painted contemporary Korean literary mystery illustration, naturalistic face and anatomy with soft painterly fabric detail, washed teal/cream palette, warm gentle lamplight. Restrained everyday realism, no glamour. Genuine transparent background with clean silhouette. No text, no labels, no montage, no props, no extra characters.",
+    "generator": "built-in image_gen",
+    "sourcePlan": "game-plan/04-characters.md",
+    "output": "public/art/p05.png",
+    "generated": true
+  },
+  {
+    "id": "p06",
+    "generator": "built-in image_gen",
+    "sourcePlan": "game-plan/04-characters.md",
+    "output": "public/art/p06.png",
+    "generated": false
+  },
+  {
+    "id": "p07",
+    "generator": "built-in image_gen",
+    "sourcePlan": "game-plan/04-characters.md",
+    "output": "public/art/p07.png",
+    "generated": false
+  },
+  {
+    "id": "p08",
+    "generator": "built-in image_gen",
+    "sourcePlan": "game-plan/04-characters.md",
+    "output": "public/art/p08.png",
+    "generated": false
+  },
+  {
+    "id": "p09",
+    "generator": "built-in image_gen",
+    "sourcePlan": "game-plan/04-characters.md",
+    "output": "public/art/p09.png",
+    "generated": false
+  }
+]

@@ -1,0 +1,152 @@
+[
+  {
+    "profile": "desktop",
+    "scene": "form",
+    "status": "pass"
+  },
+  {
+    "profile": "desktop",
+    "scene": "source-table",
+    "status": "pass"
+  },
+  {
+    "profile": "desktop",
+    "scene": "cargo-sealed",
+    "status": "pass"
+  },
+  {
+    "profile": "desktop",
+    "scene": "cargo-open",
+    "status": "pass"
+  },
+  {
+    "profile": "desktop",
+    "scene": "note",
+    "status": "pass"
+  },
+  {
+    "profile": "desktop",
+    "scene": "landing",
+    "status": "pass"
+  },
+  {
+    "profile": "desktop",
+    "scene": "silhouette",
+    "status": "pass"
+  },
+  {
+    "profile": "desktop",
+    "scene": "unfolded",
+    "status": "pass"
+  },
+  {
+    "profile": "desktop",
+    "scene": "copy",
+    "status": "pass"
+  },
+  {
+    "profile": "desktop",
+    "scene": "handoff-before",
+    "status": "pass"
+  },
+  {
+    "profile": "desktop",
+    "scene": "handoff-after",
+    "status": "pass"
+  },
+  {
+    "profile": "desktop",
+    "scene": "staff",
+    "status": "pass"
+  },
+  {
+    "profile": "desktop",
+    "scene": "departure",
+    "status": "pass"
+  },
+  {
+    "profile": "desktop",
+    "scene": "school-environment_only",
+    "status": "pass"
+  },
+  {
+    "profile": "desktop",
+    "scene": "school-consented_voices",
+    "status": "pass"
+  },
+  {
+    "profile": "phone-200",
+    "scene": "form",
+    "status": "pass"
+  },
+  {
+    "profile": "phone-200",
+    "scene": "source-table",
+    "status": "pass"
+  },
+  {
+    "profile": "phone-200",
+    "scene": "cargo-sealed",
+    "status": "pass"
+  },
+  {
+    "profile": "phone-200",
+    "scene": "cargo-open",
+    "status": "pass"
+  },
+  {
+    "profile": "phone-200",
+    "scene": "note",
+    "status": "pass"
+  },
+  {
+    "profile": "phone-200",
+    "scene": "landing",
+    "status": "pass"
+  },
+  {
+    "profile": "phone-200",
+    "scene": "silhouette",
+    "status": "pass"
+  },
+  {
+    "profile": "phone-200",
+    "scene": "unfolded",
+    "status": "pass"
+  },
+  {
+    "profile": "phone-200",
+    "scene": "copy",
+    "status": "pass"
+  },
+  {
+    "profile": "phone-200",
+    "scene": "handoff-before",
+    "status": "pass"
+  },
+  {
+    "profile": "phone-200",
+    "scene": "handoff-after",
+    "status": "pass"
+  },
+  {
+    "profile": "phone-200",
+    "scene": "staff",
+    "status": "pass"
+  },
+  {
+    "profile": "phone-200",
+    "scene": "departure",
+    "status": "pass"
+  },
+  {
+    "profile": "phone-200",
+    "scene": "school-environment_only",
+    "status": "pass"
+  },
+  {
+    "profile": "phone-200",
+    "scene": "school-consented_voices",
+    "status": "pass"
+  }
+]

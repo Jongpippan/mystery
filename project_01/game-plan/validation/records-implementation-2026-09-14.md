@@ -8,7 +8,7 @@ Read current project instructions,13,Windows continuation, shared05, actual Reco
 
 `record-index.ts` indexes exact heard source-node IDs. Introductions, selected observed actions, attributed relationships and historical limits appear only after every referenced node has been heard and each named participant met. Introduction labels summarize only the actual received introduction. The index contains no author-only age, guilt, secret schedule, unsupported former-spouse label or unplayed optional relationship. Existing full heard dialogue remains available, grouped into conversations.
 
-Player-facing people detail now separates received introduction, last direct conversation, before/after statements, selected direct action excerpts, attributed relationship excerpts, limits stated at that time, related held materials and expandable actual heard conversations. All excerpts link to the original historical scene; relations link to the other known person. Corrected statements retain their original version and unlock only after the exact correction has been heard and its E acquired. The six source definitions come from the same correction index as the ending archive.
+Player-facing people detail now separates received introduction, latest indexed direct conversation/observation, before/after statements, selected direct action excerpts, attributed relationship excerpts, limits stated at that time, related held materials and expandable actual heard conversations. All excerpts link to the original historical scene; relations link to the other known person. Corrected statements retain their original version and unlock only after the exact correction has been heard and its E acquired. The six source definitions come from the same correction index as the ending archive.
 
 History now groups actual encountered scenes as investigation, challenge, companion, NPC interaction, personal, ending or recovery/system. Type and speaker selectors combine with normalized keyword search over actual title, utterances, speaker labels and captured place/time. Options and counts derive only from actual logs. Conversation rows include voices and contextual places/times; the detail includes actual chosen lines, acquired-material links, correction links and the existing line replay. The phrase “voices in the record” does not certify a physically present cast.
 
@@ -33,17 +33,21 @@ People rows retain compact wrapping labels; existing P00/P01 portraits remain. P
 
 No new screenplay or raster art was authored. Korean interface labels, typed indexing, runtime changes and English planning/verification records were authored. Canonical accepted-full-r03-c01 sources remain unchanged. Automated testing, direct rendered inspection and independent testing are reported separately below.
 
-## Verification in progress
+## Executed verification
 
 - `node --test tests/records.test.mjs`:6 new groups passed. They check accepted source kind/gating, actual origin changes and save round trips, old origins, no early playback disclosure, before/after correction gating, filtered history/save/expansion and remote child supervision.
-- Full prior205 plus new6 suite, with regenerated EP browser fixtures: running at record creation.
-- Type checking:passed. Lint:zero errors,three existing raw-image warnings. Production build:running at record creation.
-- `node tests/browser-records.mjs`:pending regenerated fixtures. It exercises early privacy, output attribution, combined history/replay, Q06/phone source links, persisted conversation expansion, relationships, old logs, D30 tool returns and keyboard/layout on desktop and phone200%.
-- `node tests/browser-evidence.mjs`:planned regression of all eight answer types after the record surface change.
-- Direct visual inspection:pending new captures. Independent players:none; G4 remains unverified.
+- Full prior205 plus new6 suite:211 passed; EP browser fixtures were regenerated from actual route traversal with origins. The6 record groups also passed again after the latest-indexed-observation field was added.
+- Type checking:passed. Lint:zero errors,three existing raw-image warnings. Production build:passed; existing deprecation, large-client-chunk and route-classification notices remain.
+- `node tests/browser-records.mjs`:16 groups passed on desktop and phone200% after final source-button/search-height/placeholder repairs. It exercises early privacy, output attribution, combined history/replay, Q06/phone source links, persisted conversation expansion, relationships, old logs, D30 tool returns and keyboard/layout on desktop and phone200%.
+- `node tests/browser-evidence.mjs`:24 groups passed after record integration, including all eight answer types and saved source/person/history/map returns.
+- Direct visual inspection:desktop people/introduction/phone-origin transcript and phone200% people/introduction/observed actions/filtered history, including the final search height and centered initials. Independent players:none; G4 remains unverified.
+
+The first records browser attempt selected a correction link in the Q06 success transcript even though the original v1 is defined in CH06_04; that test now follows the actual acquired E52 source control in Q06. The second attempt found a real mobile overflow: a long related-evidence button exceeded its334px content width by21px. Scoped max-width/min-width/wrapping repaired it; all16 groups then passed. Direct visual inspection also found a fixed-height history search field at200% and initial placeholders with oversized line-height. Search height now grows with the text and placeholder initials stay centered. These are rendered repairs, not waived checks.
+
+`node scripts/import-screenplay.mjs` passed with10 sources/170 scenes/2258 utterances/52 E and no canonical/script-content diff. The final code type check and lint passed; lint still has only the three existing raw-image warnings.
 
 ## Next full integration and rollback
 
 Continue explicit map routes/permissions and actual current revisits using `integration-next-2026-09-14.md`. The record-origin mechanism must receive the true future travel/revisit presentation; it is not authorization to teleport or recycle a historical correction as fresh testimony. Preserve the child supervision and speaker-mode boundaries in every new adapter. Remaining system/early-access, full asset/audio register, performance and final delivery checks remain required. G2/G3 stay partial and G5 pending.
 
-The change is isolated to record indexing/UI and optional historical/View fields. It can be reverted without altering canonical text or challenge judgments; old saves lack the new optional fields by design. No commit, deployment, independent playtest or release registration occurred.
+The change is isolated to record indexing/UI and optional historical/View fields. It can be reverted without altering canonical text or challenge judgments; old saves lack the new optional fields by design. No commit, deployment, independent playtest or release registration occurred. `git diff --check` passed with Windows line-ending notices only.

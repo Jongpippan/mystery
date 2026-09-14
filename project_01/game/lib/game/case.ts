@@ -21,7 +21,7 @@ export const setupNodes=(id:TaskId)=>isSix(id)?six.setupNodes(id):isFive(id)?fiv
 export const responseNodes=(id:TaskId,r:one.Judgment)=>isSix(id)?six.responseNodes(id,r):isFive(id)?five.responseNodes(id,r):isFour(id)?four.responseNodes(id,r):isThree(id)?three.responseNodes(id,r):isTwo(id)?two.responseNodes(id,r):one.responseNodes(id,r);
 export const hintLine=(id:TaskId,level:number,held:string[],draft:one.Draft,error?:string,interrupted=false)=>isSix(id)?six.hintLine(id,level,held,draft,error,interrupted):isFive(id)?five.hintLine(id,level,held,draft,error,interrupted):isFour(id)?four.hintLine(id,level,held,draft,error,interrupted):isThree(id)?three.hintLine(id,level,held,draft,error,interrupted):isTwo(id)?two.hintLine(id,level,held,draft,error,interrupted):one.hintLine(id,level,held,draft,error);
 export const stageNodes=(stage:string,known:string[],choices:Record<string,string>,entry:Record<string,string>={})=>stage.startsWith('ep-')?ep.stageNodes(stage,choices,entry):stage.startsWith('ch6-')?six.stageNodes(stage,known):stage.startsWith('ch5-')?five.stageNodes(stage,known):stage.startsWith('ch4-')?four.stageNodes(stage,known,choices):stage.startsWith('ch3-')?three.stageNodes(stage,known):stage.startsWith('ch2-')?two.stageNodes(stage,known,choices):one.stageNodes(stage,known,choices);
-export const isOptionalStage=(stage:string)=>['photo','personal1','personal2','personal3'].includes(stage)||/^ch[23456]-personal/.test(stage);
+export const isOptionalStage=(stage:string)=>['photo','personal1','personal2','personal3','ch3-props'].includes(stage)||/^ch[23456]-personal/.test(stage);
 export const chapterTwoOptions=two.options;
 export const chapterTwoVisitHint=two.visitHint;
 

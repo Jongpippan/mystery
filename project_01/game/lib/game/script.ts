@@ -1,4 +1,4 @@
-import data from '@/content/screenplay.generated.json';
+import data from '@/content/screenplay.runtime.json';
 
 export type ScriptNode = {
   id: string;
@@ -19,7 +19,7 @@ export type Corpus = {
   utterances:Record<string,ScriptNode & {scene:string}>;
   evidence:Record<string,EvidenceSource>;
 };
-export const script = data as unknown as Corpus;
+export const script = {...data,utterances:Object.fromEntries(Object.values(data.scenes).flatMap(scene=>scene.nodes.filter(node=>node.kind==='speech').map(node=>[node.id,{...node,scene:scene.id}])))} as unknown as Corpus;
 export const line = (id:string) => {
   const node=script.utterances[id];
   if (!node) throw new Error(`Unknown accepted utterance ${id}`);

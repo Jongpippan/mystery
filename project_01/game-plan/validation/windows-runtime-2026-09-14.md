@@ -1,5 +1,7 @@
 # Windows runtime continuation — 2026-09-14
 
+Latest record continuation: [people/history implementation](records-implementation-2026-09-14.md) adds heard-only profile sections, historical place/time origins, direct/output/phone distinctions and saved conversation filters/expansion.211 unit tests,16 records browser groups and24 evidence regressions pass. The next active boundary is explicit map travel/current revisits; full systems/art/audio/delivery remain pending. Earlier checkpoints below retain their historical results.
+
 Latest integration: [evidence discovery and identification](evidence-implementation-2026-09-14.md) records52 sourced descriptors/drawings, combined filters, source links, saved tool returns,205 passing unit tests and24 evidence browser groups. Type checking/lint/build/import pass with the existing warning categories. The main route already reaches the EP archive; people/history enrichment, current revisits/travel, system/early-access adapters and complete art/audio remain unfinished. The original Windows repair below is preserved as history.
 
 The user replaced the checkout with the correct Yeowul project. The accepted r03 scripts, snapshots, art and Vinext starter were present. No discarded project was used as implementation or creative reference.

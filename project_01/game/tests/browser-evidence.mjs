@@ -6,7 +6,7 @@ const out='../game-plan/validation/evidence-browser';mkdirSync(out,{recursive:tr
 const browser=await chromium.launch(),results=[];
 try{for(const profile of [{name:'desktop',width:1440,height:900,scale:1,touch:false},{name:'phone-200',width:390,height:844,scale:2,touch:true}]){
  const context=await browser.newContext({viewport:{width:profile.width,height:profile.height},hasTouch:profile.touch,isMobile:profile.touch}),page=await context.newPage(),errors=[];
- page.on('pageerror',e=>errors.push(e.message));await page.goto('http://localhost:5173/',{waitUntil:'networkidle'});
+ page.on('pageerror',e=>errors.push(e.message));await page.goto(process.env.YEOWUL_BASE_URL??'http://localhost:5173/',{waitUntil:'networkidle'});
  const restore=async f=>{assert.ok(f);await page.evaluate(s=>{localStorage.removeItem('yeowul-saves-v2');localStorage.setItem('yeowul-save-v1',JSON.stringify(s));},{...f,textScale:profile.scale});await page.reload({waitUntil:'networkidle'});await page.getByRole('button',{name:'읽던 자리에서 이어하기',exact:true}).click();};
  const saved=()=>page.evaluate(()=>{const v=JSON.parse(localStorage.getItem('yeowul-saves-v2'));return v.slots.find(s=>s.id===v.active).state;});
  const dialog=page.getByRole('dialog'),nav=dialog.getByRole('navigation',{name:'다른 조사 도구'});
@@ -14,9 +14,11 @@ try{for(const profile of [{name:'desktop',width:1440,height:900,scale:1,touch:fa
  const noOverflow=async()=>assert.equal(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth&&Array.from(document.querySelectorAll('.tool-dialog,.tool-body')).every(el=>el.scrollWidth<=el.clientWidth+2)),true,profile.name);
  const pass=(group,checks)=>results.push({profile:profile.name,group,status:'pass',checks});
  await restore(fixtures['acquire-E03']);await nav.getByRole('button',{name:'증거',exact:true}).click();
+ await dialog.locator('#evidence-type').waitFor();
  assert.equal(await dialog.locator('#evidence-person option[value="P03"]').count(),0);assert.equal(await dialog.locator('#evidence-type option[value="testimony"]').count(),0);assert.equal(await dialog.locator('[data-evidence-thumbnail="E49"]').count(),0);
  assert.equal(await dialog.locator('.evidence-list button').count(),fixtures['acquire-E03'].evidence.length);await noOverflow();pass('early visibility',['only acquired totals and rows','no future person or type options','no future original thumbnail']);
  const end=fixtures['ending-protect_papers-ask_voice_later-need_time-joint_annotations-environment_only-true'];await restore(end);await page.getByRole('button',{name:'사건 보관함 열기',exact:true}).click();await nav.getByRole('button',{name:'증거',exact:true}).click();
+ await dialog.locator('#evidence-type').waitFor();
  assert.equal(await dialog.locator('.evidence-list button').count(),52);assert.equal(new Set(await dialog.locator('.evidence-thumbnail').evaluateAll(es=>es.map(e=>e.innerHTML))).size,52);
  if(profile.name==='desktop'){
   const cards=await dialog.locator('.evidence-list button').evaluateAll(es=>es.map(e=>({id:e.id,svg:e.querySelector('svg').outerHTML,title:e.querySelector('span>span').textContent})));

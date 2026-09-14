@@ -79,6 +79,8 @@ export const stages:Record<string,Stage>={
 export type ChoiceNode={kind:'choice';id:string;choice:string;text:string;options:{value:string;text:string}[]};
 export function stageNodes(stage:string,known:string[],choices:Record<string,string>):(ScriptNode|ChoiceNode)[] {
  const cfg=stages[stage],result:(ScriptNode|ChoiceNode)[]=[];
+ if(stage==='ch2-booth'&&known.includes('E14'))return [...script.scenes.C_CH02_01.nodes.slice(0,6),script.utterances.S_CH02_01_0081];
+ if(stage==='ch2-compare'&&known.includes('E14'))return ['S_CH02_02_0091','S_CH02_02_0092'].map(id=>script.utterances[id]);
  let prompted=false;
  for(const n of script.scenes[cfg.scene].nodes){
   if(!cfg.parts.some(p=>n.section[0].startsWith(p)))continue;

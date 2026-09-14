@@ -1,0 +1,263 @@
+[
+  {
+    "id": "p00",
+    "prompt": null,
+    "generationOutput": null,
+    "sourceFile": "game/public/art/p00.png",
+    "deliveryFile": "game/public/art/p00.webp",
+    "activationSource": "game/lib/game/art.ts; game-plan/14-assets-and-delivery.md",
+    "note": "Earlier source/provenance is in the opening record or generation conversation; no reconstructed prompt claimed."
+  },
+  {
+    "id": "p01",
+    "prompt": null,
+    "generationOutput": null,
+    "sourceFile": "game/public/art/p01.png",
+    "deliveryFile": "game/public/art/p01.webp",
+    "activationSource": "game/lib/game/art.ts; game-plan/14-assets-and-delivery.md",
+    "note": "Earlier source/provenance is in the opening record or generation conversation; no reconstructed prompt claimed."
+  },
+  {
+    "id": "p02",
+    "prompt": null,
+    "generationOutput": "Generated images are saved to C:\\Users\\SDS\\.codex\\generated_images\\01a09dc7-0a03-7c13-b882-fc7ba0ade1f1 as C:\\Users\\SDS\\.codex\\generated_images\\01a09dc7-0a03-7c13-b882-fc7ba0ade1f1\\exec-468873f1-7d20-4d5c-b50f-095a83366ade.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link.",
+    "sourceFile": "game/public/art/p02.png",
+    "deliveryFile": "game/public/art/p02.webp",
+    "activationSource": "game/lib/game/art.ts; game-plan/14-assets-and-delivery.md",
+    "note": "Earlier source/provenance is in the opening record or generation conversation; no reconstructed prompt claimed."
+  },
+  {
+    "id": "p03",
+    "prompt": "One production visual novel portrait asset of a new original fictional character. Korean man aged 43, ordinary hotel operations and accounts manager. Slim average build, neat short black hair with a side part, rectangular thin glasses, clean-shaven. Neutral attentive professional expression, charcoal knit vest over pale blue shirt, no tie, hands relaxed. No sinister expression, no red coat, no clues. Waist-up standing portrait 2:3, full hair and shoulders within frame, both hands comfortably visible. Hand-painted contemporary Korean literary mystery illustration, naturalistic face and anatomy with soft painterly fabric detail, washed teal/cream palette, warm gentle lamplight. Restrained everyday realism, no glamour. Genuine transparent background with clean silhouette. No text, no labels, no montage, no props, no extra characters.",
+    "generationOutput": "Generated images are saved to C:\\Users\\SDS\\.codex\\generated_images\\01a09dc7-0a03-7c13-b882-fc7ba0ade1f1 as C:\\Users\\SDS\\.codex\\generated_images\\01a09dc7-0a03-7c13-b882-fc7ba0ade1f1\\exec-e57156ac-a3b6-4944-866c-7eea373328f6.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link.",
+    "sourceFile": "game/public/art/p03.png",
+    "deliveryFile": "game/public/art/p03.webp",
+    "activationSource": "game/lib/game/art.ts; game-plan/14-assets-and-delivery.md",
+    "note": "Exact retained prompt"
+  },
+  {
+    "id": "p04",
+    "prompt": "One production visual novel portrait asset of a new original fictional character. Korean man aged 38, practical maintenance contractor. Broad sturdy shoulders, short slightly tousled hair, faint stubble, open sincere face, worn muted grey-blue work jacket over plain cream tee. Neutral slightly tired expression, hands relaxed and empty, no tools or clues. Waist-up standing portrait 2:3, full hair and shoulders within frame, both hands comfortably visible. Hand-painted contemporary Korean literary mystery illustration, naturalistic face and anatomy with soft painterly fabric detail, washed teal/cream palette, warm gentle lamplight. Restrained everyday realism, no glamour. Genuine transparent background with clean silhouette. No text, no labels, no montage, no props, no extra characters.",
+    "generationOutput": "Generated images are saved to C:\\Users\\SDS\\.codex\\generated_images\\01a09dc7-0a03-7c13-b882-fc7ba0ade1f1 as C:\\Users\\SDS\\.codex\\generated_images\\01a09dc7-0a03-7c13-b882-fc7ba0ade1f1\\exec-31853cf4-2bb8-416f-a07b-6687f2151d0e.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link.",
+    "sourceFile": "game/public/art/p04.png",
+    "deliveryFile": "game/public/art/p04.webp",
+    "activationSource": "game/lib/game/art.ts; game-plan/14-assets-and-delivery.md",
+    "note": "Exact retained prompt"
+  },
+  {
+    "id": "p05",
+    "prompt": "One production visual novel portrait asset of a new original fictional character. Korean woman aged 31, event sound technician. Lean build, black hair tied in low ponytail, alert distinct angular face, dark teal practical zip jacket over neutral shirt, no microphone or headphones obscuring face. Calm professionally attentive expression, empty relaxed hands. Waist-up standing portrait 2:3, full hair and shoulders within frame, both hands comfortably visible. Hand-painted contemporary Korean literary mystery illustration, naturalistic face and anatomy with soft painterly fabric detail, washed teal/cream palette, warm gentle lamplight. Restrained everyday realism, no glamour. Genuine transparent background with clean silhouette. No text, no labels, no montage, no props, no extra characters.",
+    "generationOutput": "Generated images are saved to C:\\Users\\SDS\\.codex\\generated_images\\01a09dc7-0a03-7c13-b882-fc7ba0ade1f1 as C:\\Users\\SDS\\.codex\\generated_images\\01a09dc7-0a03-7c13-b882-fc7ba0ade1f1\\exec-456bc37f-bac8-497f-b1b4-14368729ddd4.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link.",
+    "sourceFile": "game/public/art/p05.png",
+    "deliveryFile": "game/public/art/p05.webp",
+    "activationSource": "game/lib/game/art.ts; game-plan/14-assets-and-delivery.md",
+    "note": "Exact retained prompt"
+  },
+  {
+    "id": "p06",
+    "prompt": "One production visual novel portrait asset of a new original fictional character. Korean woman aged 27, kitchen worker and staff representative. Stocky compact build, round face, short straight black bob tucked behind ears, cream cotton shirt with rolled sleeves and faded terracotta apron. Practical serious attentive expression, no food, no labels, no documents. Waist-up standing portrait 2:3, full hair and shoulders within frame, both hands comfortably visible. Hand-painted contemporary Korean literary mystery illustration, naturalistic face and anatomy with soft painterly fabric detail, washed teal/cream palette, warm gentle lamplight. Restrained everyday realism, no glamour. Genuine transparent background with clean silhouette. No text, no labels, no montage, no props, no extra characters.",
+    "generationOutput": "Generated images are saved to C:\\Users\\SDS\\.codex\\generated_images\\01a09dc7-0a03-7c13-b882-fc7ba0ade1f1 as C:\\Users\\SDS\\.codex\\generated_images\\01a09dc7-0a03-7c13-b882-fc7ba0ade1f1\\exec-378b24ea-4668-438f-8fbc-580c0e49f18e.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link.",
+    "sourceFile": "game/public/art/p06.png",
+    "deliveryFile": "game/public/art/p06.webp",
+    "activationSource": "game/lib/game/art.ts; game-plan/14-assets-and-delivery.md",
+    "note": "Exact retained prompt"
+  },
+  {
+    "id": "p07",
+    "prompt": "One production visual novel portrait asset of a new original fictional character. Korean woman aged 46, responding plainclothes police investigator. Tall balanced build, mature long face, short neat black hair, navy plain blazer over pale grey blouse, discreet ordinary belt, no weapon, no badge text, no investigator costume. Calm measured expression, empty hands. Waist-up standing portrait 2:3, full hair and shoulders within frame, both hands comfortably visible. Hand-painted contemporary Korean literary mystery illustration, naturalistic face and anatomy with soft painterly fabric detail, washed teal/cream palette, warm gentle lamplight. Restrained everyday realism, no glamour. Genuine transparent background with clean silhouette. No text, no labels, no montage, no props, no extra characters.",
+    "generationOutput": "Generated images are saved to C:\\Users\\SDS\\.codex\\generated_images\\01a09dc7-0a03-7c13-b882-fc7ba0ade1f1 as C:\\Users\\SDS\\.codex\\generated_images\\01a09dc7-0a03-7c13-b882-fc7ba0ade1f1\\exec-02179eac-f66d-4cdc-8409-f09792edac43.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link.",
+    "sourceFile": "game/public/art/p07.png",
+    "deliveryFile": "game/public/art/p07.webp",
+    "activationSource": "game/lib/game/art.ts; game-plan/14-assets-and-delivery.md",
+    "note": "Exact retained prompt"
+  },
+  {
+    "id": "p08",
+    "prompt": "One production visual novel portrait asset of a new original fictional character. Korean man aged 51, independent accountant visiting a closing hotel. Slightly heavyset, receding neatly combed black hair with grey temples, round thin glasses, beige tailored jacket and dark neutral shirt. Serious mildly impatient ordinary expression, no menace, no wound, no hint of his future fate. Waist-up standing portrait 2:3, full hair and shoulders within frame, both hands comfortably visible. Hand-painted contemporary Korean literary mystery illustration, naturalistic face and anatomy with soft painterly fabric detail, washed teal/cream palette, warm gentle lamplight. Restrained everyday realism, no glamour. Genuine transparent background with clean silhouette. No text, no labels, no montage, no props, no extra characters.",
+    "generationOutput": "Generated images are saved to C:\\Users\\SDS\\.codex\\generated_images\\01a09dc7-0a03-7c13-b882-fc7ba0ade1f1 as C:\\Users\\SDS\\.codex\\generated_images\\01a09dc7-0a03-7c13-b882-fc7ba0ade1f1\\exec-2b411833-0654-47db-b303-4b684e40e66e.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link.",
+    "sourceFile": "game/public/art/p08.png",
+    "deliveryFile": "game/public/art/p08.webp",
+    "activationSource": "game/lib/game/art.ts; game-plan/14-assets-and-delivery.md",
+    "note": "Exact retained prompt"
+  },
+  {
+    "id": "p09",
+    "prompt": "One production visual novel portrait asset of a new original fictional character. Korean man aged 56, regular cargo-boat operator and temporary record custodian. Wiry weathered build, tanned mature face, close salt-and-pepper beard, short grey hair, faded olive work overshirt with cream undershirt. Patient exacting attentive expression, no hat, empty hands, no maritime costume clichés. Waist-up standing portrait 2:3, full hair and shoulders within frame, both hands comfortably visible. Hand-painted contemporary Korean literary mystery illustration, naturalistic face and anatomy with soft painterly fabric detail, washed teal/cream palette, warm gentle lamplight. Restrained everyday realism, no glamour. Genuine transparent background with clean silhouette. No text, no labels, no montage, no props, no extra characters.",
+    "generationOutput": "Generated images are saved to C:\\Users\\SDS\\.codex\\generated_images\\01a09dc7-0a03-7c13-b882-fc7ba0ade1f1 as C:\\Users\\SDS\\.codex\\generated_images\\01a09dc7-0a03-7c13-b882-fc7ba0ade1f1\\exec-c6f651dd-339e-47a6-879d-992422824ba0.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link.",
+    "sourceFile": "game/public/art/p09.png",
+    "deliveryFile": "game/public/art/p09.webp",
+    "activationSource": "game/lib/game/art.ts; game-plan/14-assets-and-delivery.md",
+    "note": "Exact retained prompt"
+  },
+  {
+    "id": "l01",
+    "prompt": null,
+    "generationOutput": null,
+    "sourceFile": "game/public/art/l01.png",
+    "deliveryFile": "game/public/art/l01.webp",
+    "activationSource": "game/lib/game/art.ts; game-plan/14-assets-and-delivery.md",
+    "note": "Earlier source/provenance is in the opening record or generation conversation; no reconstructed prompt claimed."
+  },
+  {
+    "id": "l02",
+    "prompt": "Production background for an original Korean visual novel set in a modest contemporary lakeside hotel called Yeowulgwan. The safe public lounge west of reception. Modest cream plaster walls, washed teal wainscoting, worn wood side tables and ordinary upholstered chairs, kettle and plain cups, a small umbrella stand, warm table lamps, rain-muted daylight. A single ordinary doorway at the right connects toward reception. No people, no document writing, no mysterious props, no equipment or crime objects. Wide landscape composition 16:9, eye-level human perspective. Hand-painted literary mystery illustration, naturalistic proportions, soft brush texture, washed teal/cream surfaces and practical warm lamplight, restrained lived-in detail. Keep the central lower third visually quiet for character compositing. No text, no signage, no UI, no collage, no people. This is atmosphere art, not an evidence photograph or map.",
+    "generationOutput": "Generated images are saved to C:\\Users\\SDS\\.codex\\generated_images\\01a09dc7-0a03-7c13-b882-fc7ba0ade1f1 as C:\\Users\\SDS\\.codex\\generated_images\\01a09dc7-0a03-7c13-b882-fc7ba0ade1f1\\exec-8c57d7c3-28e4-4064-891a-22f1dfafc4d3.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link.",
+    "sourceFile": "game/public/art/l02.png",
+    "deliveryFile": "game/public/art/l02.webp",
+    "activationSource": "game/lib/game/art.ts; game-plan/14-assets-and-delivery.md",
+    "note": "Exact retained prompt"
+  },
+  {
+    "id": "l03",
+    "prompt": "Production atmosphere background for an original Korean visual novel set in a modest contemporary lakeside hotel. Inside the public side of the hotel's rectangular ballroom, looking north from the south-west corner. Cream walls, washed teal lower walls, worn wood floor, a FULL HEIGHT opaque wheeled partition at the far right running toward the north wall, dividing off a narrow eastern work strip. There is NO door or gap through this partition. A single tall north window is just LEFT of the partition, lower half frosted; a modest desk with a desk lamp and empty ordinary chair sits beneath it on the public side. Few stacked public chairs along left wall. The two south entry doors are BEHIND THE CAMERA and must not appear. No red garment, no human silhouette, no text or measurements. Wide landscape 16:9, eye-level perspective from a real standing position, coherent architecture. Hand-painted literary mystery illustration, soft brush texture and naturalistic proportions, washed teal/cream surfaces, practical warm lamplight. Keep lower foreground quiet for compositing. No collage, no UI, no lettering. This is an illustrated current location, not a historical evidence photograph.",
+    "generationOutput": "Generated images are saved to C:\\Users\\SDS\\.codex\\generated_images\\01a09dc7-0a03-7c13-b882-fc7ba0ade1f1 as C:\\Users\\SDS\\.codex\\generated_images\\01a09dc7-0a03-7c13-b882-fc7ba0ade1f1\\exec-f5c6e64c-bbb5-46c8-9873-a8acef6b5a41.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link.",
+    "sourceFile": "game/public/art/l03.png",
+    "deliveryFile": "game/public/art/l03.webp",
+    "activationSource": "game/lib/game/art.ts; game-plan/14-assets-and-delivery.md",
+    "note": "Exact retained prompt"
+  },
+  {
+    "id": "l04",
+    "prompt": "Production atmosphere background for an original Korean visual novel set in a modest contemporary lakeside hotel. The hotel's north outdoor viewing walkway, paved and dry under an eave, beside the north wall of a ballroom. One tall fixed window in the wall has frosted LOWER glass and clear upper glass; only the upper part of an empty ordinary chair and a small desk lamp can be glimpsed, no seated face or body. No doorway through the window or wall. A safe ordinary path turns away around the building. Rainy overcast lakeside grounds, no figures, no jacket, no markings or measurements. Wide landscape 16:9, eye-level perspective from a real safe standing position, coherent architecture. Hand-painted literary mystery illustration, soft brush texture and naturalistic proportions, washed teal/cream surfaces, practical warm lamplight. Keep lower foreground quiet for compositing. No collage, no UI, no lettering. This is an illustration, not a historical evidence photograph.",
+    "generationOutput": "Generated images are saved to C:\\Users\\SDS\\.codex\\generated_images\\01a09dc7-0a03-7c13-b882-fc7ba0ade1f1 as C:\\Users\\SDS\\.codex\\generated_images\\01a09dc7-0a03-7c13-b882-fc7ba0ade1f1\\exec-db74a65a-0d8a-4b98-b784-939751c4b1a0.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link.",
+    "sourceFile": "game/public/art/l04.png",
+    "deliveryFile": "game/public/art/l04.webp",
+    "activationSource": "game/lib/game/art.ts; game-plan/14-assets-and-delivery.md",
+    "note": "Exact retained prompt"
+  },
+  {
+    "id": "l05",
+    "prompt": "Production background for an original Korean visual novel set in a modest contemporary lakeside hotel called Yeowulgwan. The working hotel kitchen on the lower floor. Clean used stainless prep counters, plain dishes, a closed small stove along a wall, modest shelves, a normal desktop photocopier on a dry side table separate from food. Eastward doorway on right toward loading-record desk, employee stair entrance in rear left. Muted utilitarian cream tiles, soft warm work lighting. No people, no flames, no readable papers, no clues or body. Wide landscape composition 16:9, eye-level human perspective. Hand-painted literary mystery illustration, naturalistic proportions, soft brush texture, washed teal/cream surfaces and practical warm lamplight, restrained lived-in detail. Keep the central lower third visually quiet for character compositing. No text, no signage, no UI, no collage, no people. This is atmosphere art, not an evidence photograph or map.",
+    "generationOutput": "Generated images are saved to C:\\Users\\SDS\\.codex\\generated_images\\01a09dc7-0a03-7c13-b882-fc7ba0ade1f1 as C:\\Users\\SDS\\.codex\\generated_images\\01a09dc7-0a03-7c13-b882-fc7ba0ade1f1\\exec-3a30644e-4c9f-4f14-8856-e3679c4ce21b.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link.",
+    "sourceFile": "game/public/art/l05.png",
+    "deliveryFile": "game/public/art/l05.webp",
+    "activationSource": "game/lib/game/art.ts; game-plan/14-assets-and-delivery.md",
+    "note": "Exact retained prompt"
+  },
+  {
+    "id": "l06",
+    "prompt": "Production background for an original Korean visual novel set in a modest contemporary lakeside hotel called Yeowulgwan. Lower-floor loading and record receiving desk, a practical narrow hotel service room. Wooden work counter with a simple manual paper-imprint press and closed bound ledger, cord and unused plain envelopes. Ordinary west door at left toward kitchen, east door at right toward covered ramp. No modern printer or photocopier in this room, no numbers or text, no open ledger contents, no people, no crime clues. Practical warm overhead lighting. Wide landscape composition 16:9, eye-level human perspective. Hand-painted literary mystery illustration, naturalistic proportions, soft brush texture, washed teal/cream surfaces and practical warm lamplight, restrained lived-in detail. Keep the central lower third visually quiet for character compositing. No text, no signage, no UI, no collage, no people. This is atmosphere art, not an evidence photograph or map.",
+    "generationOutput": "Generated images are saved to C:\\Users\\SDS\\.codex\\generated_images\\01a09dc7-0a03-7c13-b882-fc7ba0ade1f1 as C:\\Users\\SDS\\.codex\\generated_images\\01a09dc7-0a03-7c13-b882-fc7ba0ade1f1\\exec-351e229d-ec1d-4f24-a5ba-c46d9c33721e.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link.",
+    "sourceFile": "game/public/art/l06.png",
+    "deliveryFile": "game/public/art/l06.webp",
+    "activationSource": "game/lib/game/art.ts; game-plan/14-assets-and-delivery.md",
+    "note": "Exact retained prompt"
+  },
+  {
+    "id": "l07",
+    "prompt": "Production atmosphere background for an original Korean visual novel set in a modest contemporary lakeside hotel. Inside a compact hotel sound booth. A practical mixing console and muted microphone, a large CLEAR window on the LEFT wall looking into a warm ordinary ballroom, and a SEPARATE smaller HIGH frosted pane on the RIGHT wall facing an indistinct maintenance landing. The raised frosted pane is translucent and shows no identifiable person or color through it. These are two different walls and two different windows. A normal doorway at the back-left connects to the ballroom, no doorway into the landing. No people, no readable screen text, no clues, no crime. Wide landscape 16:9, eye-level perspective from a real standing position, coherent architecture. Hand-painted literary mystery illustration, soft brush texture and naturalistic proportions, washed teal/cream surfaces, practical warm lamplight. Keep lower foreground quiet for compositing. No collage, no UI, no lettering. This is an illustrated current location, not a historical evidence photograph.",
+    "generationOutput": "Generated images are saved to C:\\Users\\SDS\\.codex\\generated_images\\01a09dc7-0a03-7c13-b882-fc7ba0ade1f1 as C:\\Users\\SDS\\.codex\\generated_images\\01a09dc7-0a03-7c13-b882-fc7ba0ade1f1\\exec-b58a9c46-8ec0-4147-bb58-ae593ba70feb.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link.",
+    "sourceFile": "game/public/art/l07.png",
+    "deliveryFile": "game/public/art/l07.webp",
+    "activationSource": "game/lib/game/art.ts; game-plan/14-assets-and-delivery.md",
+    "note": "Exact retained prompt"
+  },
+  {
+    "id": "l08",
+    "prompt": "Production atmosphere background for an original Korean visual novel set in a modest contemporary lakeside hotel. A hotel service junction directly south of the ballroom. View looking north at TWO DISTINCT closed ordinary doors separated along a wall: a public guest doorway on the LEFT and a workroom service door on the RIGHT, with no passage between them inside the wall. A side corridor continues east at the far right toward a clearly closed maintenance boundary. Cream utilitarian walls, washed teal door frames, warm safe wall lamps, worn plain floor. The southward staircase is behind the camera and must not appear. No text, no clues, no people. Wide landscape 16:9, eye-level perspective from a real safe standing position, coherent architecture. Hand-painted literary mystery illustration, soft brush texture and naturalistic proportions, washed teal/cream surfaces, practical warm lamplight. Keep lower foreground quiet for compositing. No collage, no UI, no lettering. This is an illustration, not a historical evidence photograph.",
+    "generationOutput": "Generated images are saved to C:\\Users\\SDS\\.codex\\generated_images\\01a09dc7-0a03-7c13-b882-fc7ba0ade1f1 as C:\\Users\\SDS\\.codex\\generated_images\\01a09dc7-0a03-7c13-b882-fc7ba0ade1f1\\exec-d0eff9e2-f771-40ff-8010-1faf04aeab74.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link.",
+    "sourceFile": "game/public/art/l08.png",
+    "deliveryFile": "game/public/art/l08.webp",
+    "activationSource": "game/lib/game/art.ts; game-plan/14-assets-and-delivery.md",
+    "note": "Exact retained prompt"
+  },
+  {
+    "id": "l09",
+    "prompt": "Production atmosphere background for an original Korean visual novel set in a modest contemporary lakeside hotel. A hotel empty-pool upper landing viewed from the safe adult inspection side, after an added temporary waist-high solid barrier has been installed. The barrier spans the accessible foreground edge; beyond is an EMPTY deep pool lower down, clean worn cream tiles and utilitarian wall lights. A locked maintenance safety gate is visible to one side, closed. A small high frosted sound-booth pane appears in an adjacent upper wall, not an entrance. No people, no body, no blood, no fall, no text or measurements. Solid safe foreground floor. Wide landscape 16:9, eye-level perspective from a real standing position, coherent architecture. Hand-painted literary mystery illustration, soft brush texture and naturalistic proportions, washed teal/cream surfaces, practical warm lamplight. Keep lower foreground quiet for compositing. No collage, no UI, no lettering. This is an illustrated current location, not a historical evidence photograph.",
+    "generationOutput": "Generated images are saved to C:\\Users\\SDS\\.codex\\generated_images\\01a09dc7-0a03-7c13-b882-fc7ba0ade1f1 as C:\\Users\\SDS\\.codex\\generated_images\\01a09dc7-0a03-7c13-b882-fc7ba0ade1f1\\exec-a664759c-2b52-4a5f-b1f4-2c6bb3338128.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link.",
+    "sourceFile": "game/public/art/l09.png",
+    "deliveryFile": "game/public/art/l09.webp",
+    "activationSource": "game/lib/game/art.ts; game-plan/14-assets-and-delivery.md",
+    "note": "Exact retained prompt"
+  },
+  {
+    "id": "l10",
+    "prompt": "Production atmosphere background for an original Korean visual novel set in a modest contemporary lakeside hotel. An empty indoor hotel swimming pool shown from a safe upper overlook as a calm explanatory environment illustration. The deep empty basin has worn pale cream and muted teal tiles, a closed maintenance access gate and plain safe overhead lights. The entire basin contains no body, person, blood, garment, water, or clue. No dangerous action. Avoid extra ladders or secret passages. No text, numbers, or depth marks. Quiet serious atmosphere. Wide landscape 16:9, eye-level perspective from a real safe standing position, coherent architecture. Hand-painted literary mystery illustration, soft brush texture and naturalistic proportions, washed teal/cream surfaces, practical warm lamplight. Keep lower foreground quiet for compositing. No collage, no UI, no lettering. This is an illustration, not a historical evidence photograph.",
+    "generationOutput": "Generated images are saved to C:\\Users\\SDS\\.codex\\generated_images\\01a09dc7-0a03-7c13-b882-fc7ba0ade1f1 as C:\\Users\\SDS\\.codex\\generated_images\\01a09dc7-0a03-7c13-b882-fc7ba0ade1f1\\exec-3b3efba8-730f-46d5-b35e-47377f499904.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link.",
+    "sourceFile": "game/public/art/l10.png",
+    "deliveryFile": "game/public/art/l10.webp",
+    "activationSource": "game/lib/game/art.ts; game-plan/14-assets-and-delivery.md",
+    "note": "Exact retained prompt"
+  },
+  {
+    "id": "l11",
+    "prompt": "Production atmosphere background for an original Korean visual novel set in a modest contemporary lakeside hotel. A long roofed gently descending wooden-and-concrete ramp on dry hotel grounds leading east to a small shore boathouse. Sturdy timber roof supports, solid non-slip walking surface, continuous practical side rails, modest width suitable for one small cargo cart. The lake is beside the land, never beneath the route. Hotel service doorway behind the camera, boathouse doorway far ahead. Rain outside the roof, warm practical lamps, no boats, no cart, no people, no numbers or text. Wide landscape 16:9, eye-level perspective from a real safe standing position, coherent architecture. Hand-painted literary mystery illustration, soft brush texture and naturalistic proportions, washed teal/cream surfaces, practical warm lamplight. Keep lower foreground quiet for compositing. No collage, no UI, no lettering. This is an illustration, not a historical evidence photograph.",
+    "generationOutput": "Generated images are saved to C:\\Users\\SDS\\.codex\\generated_images\\01a09dc7-0a03-7c13-b882-fc7ba0ade1f1 as C:\\Users\\SDS\\.codex\\generated_images\\01a09dc7-0a03-7c13-b882-fc7ba0ade1f1\\exec-c3c0266c-be16-45a2-b732-b8c0bf85a221.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link.",
+    "sourceFile": "game/public/art/l11.png",
+    "deliveryFile": "game/public/art/l11.webp",
+    "activationSource": "game/lib/game/art.ts; game-plan/14-assets-and-delivery.md",
+    "note": "Exact retained prompt"
+  },
+  {
+    "id": "l12",
+    "prompt": "Production background for an original Korean visual novel set in a modest contemporary lakeside hotel called Yeowulgwan. A small shore boathouse used as a cargo shelter at the end of a covered ramp, firmly on dry ground beside a quiet lake. View from inside toward open doorway and the roofed approach, solid weathered timber, rain outside, sturdy bare storage table, dry raised shelves. No floating building, no water crossing, no boats blocking the walking route, no actors, no exposed contents, no papers with writing. Peaceful overcast light, safe solid floor. Wide landscape composition 16:9, eye-level human perspective. Hand-painted literary mystery illustration, naturalistic proportions, soft brush texture, washed teal/cream surfaces and practical warm lamplight, restrained lived-in detail. Keep the central lower third visually quiet for character compositing. No text, no signage, no UI, no collage, no people. This is atmosphere art, not an evidence photograph or map.",
+    "generationOutput": "Generated images are saved to C:\\Users\\SDS\\.codex\\generated_images\\01a09dc7-0a03-7c13-b882-fc7ba0ade1f1 as C:\\Users\\SDS\\.codex\\generated_images\\01a09dc7-0a03-7c13-b882-fc7ba0ade1f1\\exec-84ebe185-11c0-426b-b56f-9ef3e6c9c62f.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link.",
+    "sourceFile": "game/public/art/l12.png",
+    "deliveryFile": "game/public/art/l12.webp",
+    "activationSource": "game/lib/game/art.ts; game-plan/14-assets-and-delivery.md",
+    "note": "Exact retained prompt"
+  },
+  {
+    "id": "l03-v2",
+    "prompt": "Correct one architectural error in this background. The right-side movable partition MUST extend all the way from floor to ceiling along its whole length, completely sealing the eastern work strip. Fill the currently visible triangular gap above the panels up to the ceiling with matching opaque wall panels; no opening above, below, or through the wall. It should read as one continuous full-height movable wall on fixed horizontal floor tracks, not a set of low folding screens. Keep the north window, desk, lamp, chair, left-side chairs, dimensions, lighting, camera and painterly style unchanged. No text or people.",
+    "generationOutput": "Generated images are saved to C:\\Users\\SDS\\.codex\\generated_images\\01a09dc7-0a03-7c13-b882-fc7ba0ade1f1 as C:\\Users\\SDS\\.codex\\generated_images\\01a09dc7-0a03-7c13-b882-fc7ba0ade1f1\\exec-e45109e1-c45c-4f92-9722-ecc6e50227cd.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link.",
+    "sourceFile": "game/public/art/l03-v2.png",
+    "deliveryFile": "game/public/art/l03-v2.webp",
+    "activationSource": "game/lib/game/art.ts; game-plan/14-assets-and-delivery.md",
+    "note": "Exact retained prompt"
+  },
+  {
+    "id": "l05-v2",
+    "prompt": "Preserve the entire kitchen, east doorway, rear-left stairs, photocopier position, lighting and painting style. Add the required small CLOSED cast-iron wood-burning stove at a safe clear back-wall position, with a simple flue, distinct from the cooking gas range. It must be cold/closed with no flame, smoke, ash, paper, or clue visible. Do not obstruct either doorway or the stairs. No people or text.",
+    "generationOutput": "Generated images are saved to C:\\Users\\SDS\\.codex\\generated_images\\01a09dc7-0a03-7c13-b882-fc7ba0ade1f1 as C:\\Users\\SDS\\.codex\\generated_images\\01a09dc7-0a03-7c13-b882-fc7ba0ade1f1\\exec-70d62b66-3516-4b01-8259-855f759c60f0.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link.",
+    "sourceFile": "game/public/art/l05-v2.png",
+    "deliveryFile": "game/public/art/l05-v2.webp",
+    "activationSource": "game/lib/game/art.ts; game-plan/14-assets-and-delivery.md",
+    "note": "Exact retained prompt"
+  },
+  {
+    "id": "l03-east",
+    "prompt": "Edit this hand-painted Korean lakeside hotel ballroom illustration for its earlier x=6 partition configuration. Preserve the visual identity, floor, furniture, fixed north wall window and desk/lamp/chair positions. Camera now looks into the eastern records work area. The full-height opaque movable partition is to the LEFT of the fixed window and desk (not to their right), continuous solid floor-to-ceiling panels, no gap, window or passage through it. Window and desk are entirely on the same visible eastern workroom side. Show a modest records table in the foreground with CLOSED plain unlettered folders; no revealed contents, no clock, no digits, no readable signs, no people. Contemporary worn teal/cream practical hotel not palace. Keep painterly warm lamplight and lake outside the fixed window, horizontal 16:9 composition. It is atmospheric illustration not a scale evidence plan.",
+    "generationOutput": "Generated images are saved to C:\\Users\\SDS\\.codex\\generated_images\\01a09dc7-0a03-7c13-b882-fc7ba0ade1f1 as C:\\Users\\SDS\\.codex\\generated_images\\01a09dc7-0a03-7c13-b882-fc7ba0ade1f1\\exec-37872a25-9a98-4625-ba21-9196bff43d5f.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link.",
+    "sourceFile": "game/public/art/l03-east.png",
+    "deliveryFile": "game/public/art/l03-east.webp",
+    "activationSource": "game/lib/game/art.ts; game-plan/14-assets-and-delivery.md",
+    "note": "Exact retained prompt"
+  },
+  {
+    "id": "p00-serious",
+    "prompt": "Create a scene expression variant of this exact visual novel portrait. Change only facial expression to attentive, serious, careful concentration: relaxed closed lips with no smile, subtly knit brows, steady listening eyes. This is the records conservator explaining a difficult conclusion, never theatrical anger. Keep camera, body pose, framing, lighting, painterly style and background/alpha exactly consistent. Do not add props or text. Only the specified facial expression changes.",
+    "generationOutput": "Generated images are saved to C:\\Users\\SDS\\.codex\\generated_images\\01a09dc7-0a03-7c13-b882-fc7ba0ade1f1 as C:\\Users\\SDS\\.codex\\generated_images\\01a09dc7-0a03-7c13-b882-fc7ba0ade1f1\\exec-4287e024-add9-4ee5-ae03-640c07af5928.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link.",
+    "sourceFile": "game/public/art/p00-serious.png",
+    "deliveryFile": "game/public/art/p00-serious.webp",
+    "activationSource": "game/lib/game/art.ts; game-plan/14-assets-and-delivery.md",
+    "note": "Exact retained prompt"
+  },
+  {
+    "id": "p01-reflective",
+    "prompt": "Create a scene expression variant of this exact visual novel portrait. Change only facial expression to an eleven-year-old child's thoughtful, slightly hurt but composed look: small closed mouth, eyes attentive and a little downcast, no adult makeup or aging. Preserve the child age, anatomy, haircut, clothing and every identity detail. Keep camera, body pose, framing, lighting, painterly style and background/alpha exactly consistent. Do not add props or text. Only the specified facial expression changes.",
+    "generationOutput": "Generated images are saved to C:\\Users\\SDS\\.codex\\generated_images\\01a09dc7-0a03-7c13-b882-fc7ba0ade1f1 as C:\\Users\\SDS\\.codex\\generated_images\\01a09dc7-0a03-7c13-b882-fc7ba0ade1f1\\exec-b22d9432-7eac-4b66-a6b7-e6ffd9a89ac5.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link.",
+    "sourceFile": "game/public/art/p01-reflective.png",
+    "deliveryFile": "game/public/art/p01-reflective.webp",
+    "activationSource": "game/lib/game/art.ts; game-plan/14-assets-and-delivery.md",
+    "note": "Exact retained prompt"
+  },
+  {
+    "id": "p02-concerned",
+    "prompt": "Create a scene expression variant of this exact visual novel portrait. Change only facial expression to worried and chastened concern: smile gone, lips gently pressed, brows raised inward, eyes thoughtful. Preserve this 62-year-old woman's wrinkles, build, hair, apron and cardigan exactly; not sinister, not crying theatrically. Keep camera, body pose, framing, lighting, painterly style and background/alpha exactly consistent. Do not add props or text. Only the specified facial expression changes.",
+    "generationOutput": "Generated images are saved to C:\\Users\\SDS\\.codex\\generated_images\\01a09dc7-0a03-7c13-b882-fc7ba0ade1f1 as C:\\Users\\SDS\\.codex\\generated_images\\01a09dc7-0a03-7c13-b882-fc7ba0ade1f1\\exec-453883c7-69c8-430f-9c0c-7ac197398187.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link.",
+    "sourceFile": "game/public/art/p02-concerned.png",
+    "deliveryFile": "game/public/art/p02-concerned.webp",
+    "activationSource": "game/lib/game/art.ts; game-plan/14-assets-and-delivery.md",
+    "note": "Exact retained prompt"
+  },
+  {
+    "id": "p03-strained",
+    "prompt": "Create a scene expression variant of this exact visual novel portrait. Change only facial expression to a guarded, strained professional expression after being confronted: slight brow tension, closed pressed lips, eyes maintaining contact. No evil grin, no exaggerated villain expression. Preserve age 43, face, glasses, hairstyle, vest and shirt. Keep camera, body pose, framing, lighting, painterly style and background/alpha exactly consistent. Do not add props or text. Only the specified facial expression changes.",
+    "generationOutput": "Generated images are saved to C:\\Users\\SDS\\.codex\\generated_images\\01a09dc7-0a03-7c13-b882-fc7ba0ade1f1 as C:\\Users\\SDS\\.codex\\generated_images\\01a09dc7-0a03-7c13-b882-fc7ba0ade1f1\\exec-30ede552-4c13-4992-a88a-656bd08c944b.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link.",
+    "sourceFile": "game/public/art/p03-strained.png",
+    "deliveryFile": "game/public/art/p03-strained.webp",
+    "activationSource": "game/lib/game/art.ts; game-plan/14-assets-and-delivery.md",
+    "note": "Exact retained prompt"
+  }
+]

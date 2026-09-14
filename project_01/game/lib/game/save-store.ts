@@ -1,9 +1,16 @@
 import {isSave,type GameState} from './state';
+import {initialNameSetup,validNameSetup,type NameSetup} from './name-setup';
 export const SAVE_STORE_KEY='yeowul-saves-v2';
 const LEGACY_KEY='yeowul-save-v1';
 export type SaveSlot={id:string;state:GameState|null};
 export type SaveStore={version:2;active:string;slots:SaveSlot[]};
 type StoragePort=Pick<Storage,'getItem'|'setItem'>;
+const NAME_SETUP_KEY='yeowul-name-setup-v1';
+const SETTINGS_KEY='yeowul-settings-v1';
+export function readSettings(storage:StoragePort){const raw=storage.getItem(SETTINGS_KEY);if(!raw)return null;const s=JSON.parse(raw);return s&&Number.isFinite(s.textScale)&&s.textScale>=1&&s.textScale<=2&&Number.isFinite(s.audioVolume)&&s.audioVolume>=0&&s.audioVolume<=1?s as {textScale:number;audioVolume:number}:null;}
+export function saveSettings(storage:StoragePort,state:Pick<GameState,'textScale'|'audioVolume'>){storage.setItem(SETTINGS_KEY,JSON.stringify({textScale:state.textScale,audioVolume:state.audioVolume??.7}));}
+export function readNameSetup(storage:StoragePort):NameSetup {const raw=storage.getItem(NAME_SETUP_KEY);if(!raw)return initialNameSetup;const value=JSON.parse(raw);return validNameSetup(value)?value:initialNameSetup;}
+export function saveNameSetup(storage:StoragePort,value:NameSetup){if(!validNameSetup(value))throw Error('이름 입력 상태를 저장할 수 없습니다.');storage.setItem(NAME_SETUP_KEY,JSON.stringify(value));}
 export function readSaveStore(storage:StoragePort):SaveStore{
  const raw=storage.getItem(SAVE_STORE_KEY);
  if(raw){

@@ -86,4 +86,9 @@ const counts = { files: files.length, scenes: Object.keys(corpus.scenes).length,
 if (JSON.stringify(counts) !== JSON.stringify({ files:10, scenes:170, utterances:2258, evidence:52 })) throw new Error(`Import coverage failed ${JSON.stringify(counts)}`);
 for (const e of Object.values(corpus.evidence)) if (!e.text) throw new Error(`Empty evidence ${e.id}`);
 writeFileSync(resolve(root, 'content/screenplay.generated.json'), JSON.stringify(corpus, null, 2)+'\n');
+// Runtime looks up utterances from scene nodes. Keep the complete audit corpus
+// above; omit duplicate spoken text and unused author contexts from the client.
+const runtime={edition:corpus.edition,sources:corpus.sources,scenes:corpus.scenes,evidence:corpus.evidence};
+runtime.scenes=Object.fromEntries(Object.entries(corpus.scenes).map(([id,scene])=>[id,{...scene,context:''}]));
+writeFileSync(resolve(root,'content/screenplay.runtime.json'),JSON.stringify(runtime)+'\n');
 console.log('Imported accepted source:', counts);

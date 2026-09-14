@@ -1,12 +1,12 @@
-# Yeowul runtime — incomplete production
+# Yeowul — completed local game
 
-The accepted Korean screenplay is `accepted-full-r03-c01`. Current implementation covers the prologue and CH01-CH06 and EP01-06 core through the playable ending/archive with retained save slots; full integration, current revisits, travel and art/audio remain pending. See [implementation and verification](../game-plan/validation/ep-implementation-2026-09-14.md) before interpreting any successful command as full-game completion.
+Edition accepted-full-r03-c01. Prologue, six investigation chapters,36 required tasks,52 evidence originals, epilogue, branch archive and retained save slots are delivered. See [final verification](../game-plan/validation/final-integration-2026-09-14.md) and [asset/source register](../game-plan/14-assets-and-delivery.md). Independent first play remains unverified.
 
-From this directory, run `npm run dev` for the local preview on port 5173. Run `node scripts/import-screenplay.mjs`, `node --test tests/opening.test.mjs tests/chapter-one.test.mjs tests/chapter-two.test.mjs tests/chapter-three.test.mjs tests/chapter-four.test.mjs tests/chapter-five.test.mjs tests/chapter-six.test.mjs tests/epilogue.test.mjs tests/evidence-index.test.mjs`, `npx tsc --noEmit`, `npm run lint`, and `npm run build` for the current source and runtime checks. Browser QA uses `node tests/browser-ch01.mjs` , `node tests/browser-ch02.mjs` , `node tests/browser-ch03.mjs` , `node tests/browser-ch04.mjs`  , `node tests/browser-ch05.mjs`  , `node tests/browser-ch06.mjs` and `node tests/browser-ep.mjs` after the fixture/browser setup documented in their validation records. On Windows PowerShell, use `npm.cmd`/`npx.cmd` if script execution policy requires them.
+Player entry: double-click [게임 시작.cmd](../게임%20시작.cmd) or open http://127.0.0.1:4173/ while the built local server is running. Korean instructions: [플레이 안내](../플레이%20안내.md). The launcher starts the built Worker locally; gameplay needs no account or database. Browser saves belong to that consistent local origin.
 
-Latest integration: [evidence discovery verification](../game-plan/validation/evidence-implementation-2026-09-14.md) records combined filters, source/person links,52 identification drawings,205 passing unit tests and24 evidence browser groups. Run `node tests/browser-evidence.mjs` with the EP fixtures. Full production remains incomplete.
+From this directory: npm.cmd test (229 tests), npx.cmd tsc --noEmit, npm.cmd run lint, npm.cmd run build. Run node scripts/import-screenplay.mjs for the canonical/compact data; node scripts/encode-art.mjs for WebP delivery derivatives. Stop the built preview before rebuilding on Windows if it locks dist/. Developer preview remains npm.cmd run dev on5173.
 
-The technical starter reference below remains applicable to the portable Vinext tooling. The game itself uses local browser saves and requires no gameplay account or database.
+Browser tests: browser-integration.mjs, browser-art.mjs, browser-site.mjs, browser-evidence.mjs and browser-records.mjs under tests/. Set YEOWUL_BASE_URL=http://127.0.0.1:4173/ for the built server. Fixture generation and exact executed results are documented in the final report and earlier chapter reports. Automated play does not establish enjoyment or first-reader comprehension.
 
 ## Vinext starter reference
 

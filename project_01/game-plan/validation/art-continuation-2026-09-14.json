@@ -1,0 +1,62 @@
+[
+  {
+    "id": "l03-v2",
+    "prompt": "Correct one architectural error in this background. The right-side movable partition MUST extend all the way from floor to ceiling along its whole length, completely sealing the eastern work strip. Fill the currently visible triangular gap above the panels up to the ceiling with matching opaque wall panels; no opening above, below, or through the wall. It should read as one continuous full-height movable wall on fixed horizontal floor tracks, not a set of low folding screens. Keep the north window, desk, lamp, chair, left-side chairs, dimensions, lighting, camera and painterly style unchanged. No text or people.",
+    "source": "C:\\Users\\SDS\\.codex\\generated_images\\01a09dc7-0a03-7c13-b882-fc7ba0ade1f1\\exec-e45109e1-c45c-4f92-9722-ecc6e50227cd.png",
+    "review": "Visually inspected 2026-09-14; atmospheric illustration, not an evidence original."
+  },
+  {
+    "id": "l05-v2",
+    "prompt": "Preserve the entire kitchen, east doorway, rear-left stairs, photocopier position, lighting and painting style. Add the required small CLOSED cast-iron wood-burning stove at a safe clear back-wall position, with a simple flue, distinct from the cooking gas range. It must be cold/closed with no flame, smoke, ash, paper, or clue visible. Do not obstruct either doorway or the stairs. No people or text.",
+    "source": "C:\\Users\\SDS\\.codex\\generated_images\\01a09dc7-0a03-7c13-b882-fc7ba0ade1f1\\exec-70d62b66-3516-4b01-8259-855f759c60f0.png",
+    "review": "Visually inspected 2026-09-14; atmospheric illustration, not an evidence original."
+  },
+  {
+    "id": "l04",
+    "prompt": "Production atmosphere background for an original Korean visual novel set in a modest contemporary lakeside hotel. The hotel's north outdoor viewing walkway, paved and dry under an eave, beside the north wall of a ballroom. One tall fixed window in the wall has frosted LOWER glass and clear upper glass; only the upper part of an empty ordinary chair and a small desk lamp can be glimpsed, no seated face or body. No doorway through the window or wall. A safe ordinary path turns away around the building. Rainy overcast lakeside grounds, no figures, no jacket, no markings or measurements. Wide landscape 16:9, eye-level perspective from a real safe standing position, coherent architecture. Hand-painted literary mystery illustration, soft brush texture and naturalistic proportions, washed teal/cream surfaces, practical warm lamplight. Keep lower foreground quiet for compositing. No collage, no UI, no lettering. This is an illustration, not a historical evidence photograph.",
+    "source": "C:\\Users\\SDS\\.codex\\generated_images\\01a09dc7-0a03-7c13-b882-fc7ba0ade1f1\\exec-db74a65a-0d8a-4b98-b784-939751c4b1a0.png",
+    "review": "Visually inspected 2026-09-14; atmospheric illustration, not an evidence original."
+  },
+  {
+    "id": "l08",
+    "prompt": "Production atmosphere background for an original Korean visual novel set in a modest contemporary lakeside hotel. A hotel service junction directly south of the ballroom. View looking north at TWO DISTINCT closed ordinary doors separated along a wall: a public guest doorway on the LEFT and a workroom service door on the RIGHT, with no passage between them inside the wall. A side corridor continues east at the far right toward a clearly closed maintenance boundary. Cream utilitarian walls, washed teal door frames, warm safe wall lamps, worn plain floor. The southward staircase is behind the camera and must not appear. No text, no clues, no people. Wide landscape 16:9, eye-level perspective from a real safe standing position, coherent architecture. Hand-painted literary mystery illustration, soft brush texture and naturalistic proportions, washed teal/cream surfaces, practical warm lamplight. Keep lower foreground quiet for compositing. No collage, no UI, no lettering. This is an illustration, not a historical evidence photograph.",
+    "source": "C:\\Users\\SDS\\.codex\\generated_images\\01a09dc7-0a03-7c13-b882-fc7ba0ade1f1\\exec-d0eff9e2-f771-40ff-8010-1faf04aeab74.png",
+    "review": "Visually inspected 2026-09-14; atmospheric illustration, not an evidence original."
+  },
+  {
+    "id": "l10",
+    "prompt": "Production atmosphere background for an original Korean visual novel set in a modest contemporary lakeside hotel. An empty indoor hotel swimming pool shown from a safe upper overlook as a calm explanatory environment illustration. The deep empty basin has worn pale cream and muted teal tiles, a closed maintenance access gate and plain safe overhead lights. The entire basin contains no body, person, blood, garment, water, or clue. No dangerous action. Avoid extra ladders or secret passages. No text, numbers, or depth marks. Quiet serious atmosphere. Wide landscape 16:9, eye-level perspective from a real safe standing position, coherent architecture. Hand-painted literary mystery illustration, soft brush texture and naturalistic proportions, washed teal/cream surfaces, practical warm lamplight. Keep lower foreground quiet for compositing. No collage, no UI, no lettering. This is an illustration, not a historical evidence photograph.",
+    "source": "C:\\Users\\SDS\\.codex\\generated_images\\01a09dc7-0a03-7c13-b882-fc7ba0ade1f1\\exec-3b3efba8-730f-46d5-b35e-47377f499904.png",
+    "review": "Visually inspected 2026-09-14; atmospheric illustration, not an evidence original."
+  },
+  {
+    "id": "l11",
+    "prompt": "Production atmosphere background for an original Korean visual novel set in a modest contemporary lakeside hotel. A long roofed gently descending wooden-and-concrete ramp on dry hotel grounds leading east to a small shore boathouse. Sturdy timber roof supports, solid non-slip walking surface, continuous practical side rails, modest width suitable for one small cargo cart. The lake is beside the land, never beneath the route. Hotel service doorway behind the camera, boathouse doorway far ahead. Rain outside the roof, warm practical lamps, no boats, no cart, no people, no numbers or text. Wide landscape 16:9, eye-level perspective from a real safe standing position, coherent architecture. Hand-painted literary mystery illustration, soft brush texture and naturalistic proportions, washed teal/cream surfaces, practical warm lamplight. Keep lower foreground quiet for compositing. No collage, no UI, no lettering. This is an illustration, not a historical evidence photograph.",
+    "source": "C:\\Users\\SDS\\.codex\\generated_images\\01a09dc7-0a03-7c13-b882-fc7ba0ade1f1\\exec-c3c0266c-be16-45a2-b732-b8c0bf85a221.png",
+    "review": "Visually inspected 2026-09-14; atmospheric illustration, not an evidence original."
+  },
+  {
+    "id": "p00-serious",
+    "prompt": "Create a scene expression variant of this exact visual novel portrait. Change only facial expression to attentive, serious, careful concentration: relaxed closed lips with no smile, subtly knit brows, steady listening eyes. This is the records conservator explaining a difficult conclusion, never theatrical anger. Keep camera, body pose, framing, lighting, painterly style and background/alpha exactly consistent. Do not add props or text. Only the specified facial expression changes.",
+    "source": "C:\\Users\\SDS\\.codex\\generated_images\\01a09dc7-0a03-7c13-b882-fc7ba0ade1f1\\exec-4287e024-add9-4ee5-ae03-640c07af5928.png",
+    "review": "Visually inspected 2026-09-14; atmospheric illustration, not an evidence original."
+  },
+  {
+    "id": "p01-reflective",
+    "prompt": "Create a scene expression variant of this exact visual novel portrait. Change only facial expression to an eleven-year-old child's thoughtful, slightly hurt but composed look: small closed mouth, eyes attentive and a little downcast, no adult makeup or aging. Preserve the child age, anatomy, haircut, clothing and every identity detail. Keep camera, body pose, framing, lighting, painterly style and background/alpha exactly consistent. Do not add props or text. Only the specified facial expression changes.",
+    "source": "C:\\Users\\SDS\\.codex\\generated_images\\01a09dc7-0a03-7c13-b882-fc7ba0ade1f1\\exec-b22d9432-7eac-4b66-a6b7-e6ffd9a89ac5.png",
+    "review": "Visually inspected 2026-09-14; atmospheric illustration, not an evidence original."
+  },
+  {
+    "id": "p02-concerned",
+    "prompt": "Create a scene expression variant of this exact visual novel portrait. Change only facial expression to worried and chastened concern: smile gone, lips gently pressed, brows raised inward, eyes thoughtful. Preserve this 62-year-old woman's wrinkles, build, hair, apron and cardigan exactly; not sinister, not crying theatrically. Keep camera, body pose, framing, lighting, painterly style and background/alpha exactly consistent. Do not add props or text. Only the specified facial expression changes.",
+    "source": "C:\\Users\\SDS\\.codex\\generated_images\\01a09dc7-0a03-7c13-b882-fc7ba0ade1f1\\exec-453883c7-69c8-430f-9c0c-7ac197398187.png",
+    "review": "Visually inspected 2026-09-14; atmospheric illustration, not an evidence original."
+  },
+  {
+    "id": "p03-strained",
+    "prompt": "Create a scene expression variant of this exact visual novel portrait. Change only facial expression to a guarded, strained professional expression after being confronted: slight brow tension, closed pressed lips, eyes maintaining contact. No evil grin, no exaggerated villain expression. Preserve age 43, face, glasses, hairstyle, vest and shirt. Keep camera, body pose, framing, lighting, painterly style and background/alpha exactly consistent. Do not add props or text. Only the specified facial expression changes.",
+    "source": "C:\\Users\\SDS\\.codex\\generated_images\\01a09dc7-0a03-7c13-b882-fc7ba0ade1f1\\exec-30ede552-4c13-4992-a88a-656bd08c944b.png",
+    "review": "Visually inspected 2026-09-14; atmospheric illustration, not an evidence original."
+  }
+]

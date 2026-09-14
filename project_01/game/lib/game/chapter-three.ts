@@ -72,6 +72,7 @@ export function visitHint(level:number,held:string[],progress:VisitProgress,inte
 }
 export const stages:Record<string,Stage>={
  'ch3-kitchen':{scene:'C_CH03_01',parts:['Script']},'ch3-photo':{scene:'C_CH03_02',parts:['Script']},
+ 'ch3-props':{scene:'C_CH03_03',parts:['Script']},
  'ch3-cart':{scene:'C_CH03_03',parts:['Script']},'ch3-ash':{scene:'C_CH03_04',parts:['Script']},
  'ch3-ash-follow':{scene:'C_CH03_04',parts:['Script']},'ch3-opening':{scene:'C_CH03_05',parts:['Script']},
  'ch3-preserve':{scene:'C_CH03_06',parts:['Script']},'ch3-reunion':{scene:'C_CH03_07',parts:['Script']},
@@ -80,7 +81,9 @@ export const stages:Record<string,Stage>={
 };
 export function stageNodes(stage:string,known:string[]):ScriptNode[]{
  const cfg=stages[stage],has=(k:string)=>known.includes(k);
+ if(stage==='ch3-props'){const nodes=script.scenes.C_CH03_03.nodes.filter(n=>n.section[0]==='Script');return nodes.slice(nodes.findIndex(n=>n.id==='S_CH03_03_0013'));}
  return script.scenes[cfg.scene].nodes.filter(n=>cfg.parts.some(p=>n.section[0].startsWith(p))).filter(n=>{
+  if(stage==='ch3-cart'&&has('E22')){const nodes=script.scenes.C_CH03_03.nodes;if(nodes.findIndex(x=>x.id===n.id)>=nodes.findIndex(x=>x.id==='C_CH03_03:n0012'))return false;}
   if(n.kind==='direction'&&/^필수 (단서|E\/K)/.test(n.text))return false;
   if(stage==='ch3-ash-follow'&&!n.condition.startsWith('If Q03 solved'))return false;
   if(n.condition==='If Q03 unsolved')return !has('KQ03');
@@ -95,8 +98,11 @@ export function options(stage:string,done:string[],known:string[],returnStage:st
  const task=(id:TaskId,label=script.scenes[`C_${id}`].title)=>out.push({kind:'task',id,label});
  if(stage==='ch2-departure'){if(has('K10'))visit('ch3-kitchen','모눈을 봉만실에게 맡기고 서비스 계단을 따라 주방으로');return out;}
  if(stage.includes('personal')){visit(returnStage,'이야기를 마치고 원래 조사 자리로 돌아가기');return out;}
+ if(stage==='ch3-props'){visit(returnStage,'소품 목록을 확인하고 조사하던 자리로');return out;}
  if(stage==='ch3-kitchen'){visit('ch3-photo','배한술과 적재·기록 데스크로 가서 사진과 인계 사본 보기');return out;}
  if(!has('KQ03'))task('Q03','적재·기록 데스크에서 배한술에게 사진과 참여 기록 제시하기');
+ if(seen('ch3-photo')&&!seen('ch3-cart')&&!seen('ch3-props'))visit('ch3-props','수레 이동 시험 전에 소해금이 보낸 공연용 다리 목록 먼저 확인하기');
+ if(seen('ch3-props')&&!seen('ch3-cart')&&!has('K11'))task('D11','소품 목록과 사진의 윤곽 먼저 정리하기');
  if(!seen('ch3-cart'))visit('ch3-cart','적재 데스크에서 탁두철·목백로와 수레 경로·소품 확인하기');
  else {
   if(!has('K11'))task('D11','적재 데스크에서 탁두철·목백로와 사진의 윤곽 정리하기');

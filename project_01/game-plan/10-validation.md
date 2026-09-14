@@ -1,21 +1,19 @@
 # Production validation and continuation record
 
-Version: `plan-v1`, 2026-09-12. Environment: local repository `/Users/0422l/coding/mystery/mystery`; initial clean worktree contained only shared guides/series structure and optional generic icon. No old project or Git-history story was inspected. Scope here: planning, structural source review, PR-B01 acceptance, full r01 intake/revision review and consolidated r02 handoff. Current status updated2026-09-14. **A partial runtime now exists; the complete game is unfinished. See the current gate state below.**
+Final state2026-09-14: completed local delivery, accepted-full-r03-c01. [Final integration](validation/final-integration-2026-09-14.md) owns the final command results, repaired failures and limits. [Asset/adaptation register](14-assets-and-delivery.md) owns current rendering and source-selector decisions. Earlier records below are historical and do not re-open completed work.
 
-## Status by evidence class — updated2026-09-14
+## Status by evidence class
 
-| Class | Actual state |
+| Class | Actual final state |
 |---|---|
-| Planning authored | Six-chapter case, full truth/cast/space/state/evidence/deduction/UI plans. D15 convergence now explicitly requires K11; no chapter or task removed |
-| Korean screenplay authored/accepted | All170 C and2,258 S: unchanged97-S opening plus accepted full-r03-c01;52 first E definitions,36 D/Q,42 hint bundles/210 H,71 scored error branches |
-| Editorial reading | Complete assembled source review and alternate-state checks accepted internally at G0/G1; `validation/full-r03-review.md` records findings,157 local operations, retests and limits |
-| Implementation | PR, CH01-CH06 and EP01-06 core implemented, including36 tasks,52 acquired records, actual ending archive and retained save slots; full integration remains unfinished |
-| Automated source checks | `validation/full-r03-intake-checks.md` and `full-r03-check-results.json`; immutable19-file raw return, exact repair replay, coverage/ID/error-reference checks and36-task final transitive closure passed |
-| Functional/visual checks | G2/G3 partial; current runtime records below distinguish automated checks and direct image inspection. G5 pending |
-| Independent first read/play | G4 unverified; no independent readers/players or interim user test |
-| External drafting dependency | None currently; full r03 received and accepted, no further courier round required |
-
-Run source checks with `python3 project_01/game-plan/validation/tools/check_r03.py`. The accepted import metadata/hashes are in `validation/full-r03-acceptance.json`; selected sources are indexed in `scripts/README.md`. Earlier reports below are historical, with their original limits preserved. The old plan-only closure is superseded by the r03 source audit for readiness; runtime behavior still needs its own tests.
+| Planning authored | Full case and six chapters, plus final source/asset/delivery reconciliation |
+| Screenplay authored/reviewed | Accepted170 scenes,2258 spoken originals,52 evidence originals,36 tasks and210 hint levels; canonical scripts unchanged during final integration |
+| Implementation | Complete PR/CH01-06/EP01-06 with current rechecks, lawful travel/early access, systems, art/audio, retained archive and Windows launcher |
+| Automated checks | Final229 unit tests pass; compact/full source parity, typed build and zero-error lint; details in final report |
+| Functional/browser | Evidence24, records16, built integration6, built art/audio30 and final built site2 groups pass; earlier chapter checks retained |
+| Direct visual inspection | Source paintings, event/evidence frames and desktop/phone200% screenshots inspected; caption/fold/slider/preference fixes documented |
+| Independent first play | G4 unverified; no claimed fun, recall, comprehension, difficulty or measured playtime |
+| Delivery and continuity | Built local Worker on127.0.0.1:4173, player launcher/guide, actual common/branch case record. No remote publication or automatic sequel |
 
 ## Non-code structural walkthroughs actually performed
 
@@ -49,7 +47,7 @@ Method: read the truth, evidence acquisition actions and every D/Q row together,
 
 ## Requirement map — planned coverage and missing completion evidence
 
-All rows remain unimplemented/unverified unless an explicitly narrower evidence class is stated. No requirement is waived. Topic-guide matrix is normative; this table maps project decisions to later evidence rather than copying the full rules.
+The following table preserves the original planned evidence targets. Final implemented evidence and G4 limits are mapped requirement-by-requirement in the final integration report; no requirement is waived.
 
 | REQ | Concrete current design source | Required later evidence |
 |---|---|---|
@@ -101,17 +99,15 @@ All rows remain unimplemented/unverified unless an explicitly narrower evidence 
 | N07 |writing packet/r01 return contract | actual returns, review/revision/acceptance provenance |
 | N08 |initial worktree and new project sources | no old creative source read/restored; no premature runtime |
 
-## Current gate state — 2026-09-14
+## Current gate state - 2026-09-14
 
-- **G0/G1 internal readiness passed:** complete canonical screenplay `accepted-full-r03-c01`; see `validation/full-r03-review.md` and its acceptance records. No writer return is pending.
-- **G2 partial:** PR, all36 CH01-CH06 tasks and EP01-06 core reach the playable ending/archive.205 tests pass across prior101, EP99 and5 evidence-index groups, including96 ending branch/order routes with actual prior traversal. Physical access, corrections, proof roles, saved cursors, costs/recovery, hints, selected ending callbacks, replay isolation and retained save slots are checked. Full current revisits, free travel and system/early-access coverage remain incomplete.
-- **G3 partial:** type checking, lint (zero errors, three image warnings) and production build pass. Prior CH01 browser checks cover all six tasks, desktop/phone/200%, Q01 acquisition, recovery and V01. CH02 adds20 passing groups across its six tasks on desktop and touch phone200%, all-tool/draft restore, six acquisitions, apology branches, correction provenance and saved sound-event states. Direct screenshot inspection found and verified a phone caption-cell sizing repair; author visual inspection remains distinct from automatic assertions. The latest evidence continuation adds combined filters/source links,52 identification drawings and24 passing desktop/phone200% browser groups. Remaining art/audio, free travel, current revisits and full integration prevent whole-game acceptance. The large client chunk remains to be split.
-- **G4 unverified:** no independent first players.
-- **G5 pending:** remaining full integration, complete imagery/audio, delivery verification and release registration remain unfinished. A playable core ending does not constitute the completed game.
+- G0/G1: accepted full-r03-c01 source/design readiness; detailed earlier review and source provenance remain authoritative.
+- G2: passed for implemented full-game mechanics, all36 tasks, alternatives, corrections, costs/recovery, source-based hints, current rechecks/travel, early orders, save state and branch archive. Final229 tests pass.
+- G3: passed for the documented functional/rendered scope, all answer/tool types, desktop/phone200%, keyboard/touch, exact originals, scene art/audio and built launcher. Advisory image/size warnings and inspected scope remain explicit in the final report.
+- G4: unverified; no independent first players. This does not become a request for an intermediate user review.
+- G5: completed local handoff with current instructions, player guide, build/launcher, asset register and common/branch continuity. No public deployment is claimed.
 
-Earlier chapter browser checks and direct cargo/paper/window inspection are preserved in their historical records. See [EP continuation](validation/ep-implementation-2026-09-14.md) for14 passing ending/archive/save browser groups,26 rerun CH06 groups after migration, direct visual inspection and limits. [Remaining integration](validation/integration-next-2026-09-14.md) preserves the full outstanding scope. G3 remains partial for the whole game. The following sections preserve earlier review history and are superseded by the current gate state above.
-
-The [evidence-discovery checkpoint](validation/evidence-implementation-2026-09-14.md) records R01 list density/readability, R02 distinct52-item contact-sheet inspection, R06 filter/tool/draft preservation and bounded R03 source/person links, acquired-only metadata and separate final mobile/long-label inspection. These are bounded implementation results, not independent item-finding or comprehension evidence. U09 still requires the remaining full-size detail assets and complete asset register.
+See [final integration](validation/final-integration-2026-09-14.md) for execution evidence, source-adapter decisions and remaining reception limits. The sections below retain historical review/production states only.
 
 ## Historical gate state before full r03 acceptance
 
