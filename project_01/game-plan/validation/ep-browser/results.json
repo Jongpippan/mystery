@@ -1,0 +1,154 @@
+[
+  {
+    "profile": "desktop",
+    "group": "consented_voices",
+    "status": "pass",
+    "checks": [
+      "actual choice played",
+      "recorder off during permissions/refusal",
+      "only selected recording interval",
+      "forgiveness unchanged"
+    ]
+  },
+  {
+    "profile": "desktop",
+    "group": "environment_only",
+    "status": "pass",
+    "checks": [
+      "actual choice played",
+      "recorder off during permissions/refusal",
+      "only selected recording interval",
+      "forgiveness unchanged"
+    ]
+  },
+  {
+    "profile": "desktop",
+    "group": "late exhibit",
+    "status": "pass",
+    "checks": [
+      "stable choice cursor after reload",
+      "late branch stays distinct from earlier-choice callback"
+    ]
+  },
+  {
+    "profile": "desktop",
+    "group": "archive controls",
+    "status": "pass",
+    "checks": [
+      "52 actual evidence and acquisition scene",
+      "36 submitted deductions and five final roles",
+      "six correction pairs",
+      "five actual branch recaps only",
+      "credits"
+    ]
+  },
+  {
+    "profile": "desktop",
+    "group": "history replay",
+    "status": "pass",
+    "checks": [
+      "only encountered lines",
+      "replay cursor restored",
+      "no knowledge, choices or log mutations"
+    ]
+  },
+  {
+    "profile": "desktop",
+    "group": "persistent slots",
+    "status": "pass",
+    "checks": [
+      "legacy migration",
+      "manual ending save",
+      "restart in separate slot",
+      "ending and final proof retained",
+      "ending selected after reload"
+    ]
+  },
+  {
+    "profile": "desktop",
+    "group": "accessibility",
+    "status": "pass",
+    "checks": [
+      "desktop or touch200%",
+      "no horizontal overflow",
+      "keyboard contained in modal",
+      "no page errors"
+    ]
+  },
+  {
+    "profile": "phone-200",
+    "group": "consented_voices",
+    "status": "pass",
+    "checks": [
+      "actual choice played",
+      "recorder off during permissions/refusal",
+      "only selected recording interval",
+      "forgiveness unchanged"
+    ]
+  },
+  {
+    "profile": "phone-200",
+    "group": "environment_only",
+    "status": "pass",
+    "checks": [
+      "actual choice played",
+      "recorder off during permissions/refusal",
+      "only selected recording interval",
+      "forgiveness unchanged"
+    ]
+  },
+  {
+    "profile": "phone-200",
+    "group": "late exhibit",
+    "status": "pass",
+    "checks": [
+      "stable choice cursor after reload",
+      "late branch stays distinct from earlier-choice callback"
+    ]
+  },
+  {
+    "profile": "phone-200",
+    "group": "archive controls",
+    "status": "pass",
+    "checks": [
+      "52 actual evidence and acquisition scene",
+      "36 submitted deductions and five final roles",
+      "six correction pairs",
+      "five actual branch recaps only",
+      "credits"
+    ]
+  },
+  {
+    "profile": "phone-200",
+    "group": "history replay",
+    "status": "pass",
+    "checks": [
+      "only encountered lines",
+      "replay cursor restored",
+      "no knowledge, choices or log mutations"
+    ]
+  },
+  {
+    "profile": "phone-200",
+    "group": "persistent slots",
+    "status": "pass",
+    "checks": [
+      "legacy migration",
+      "manual ending save",
+      "restart in separate slot",
+      "ending and final proof retained",
+      "ending selected after reload"
+    ]
+  },
+  {
+    "profile": "phone-200",
+    "group": "accessibility",
+    "status": "pass",
+    "checks": [
+      "desktop or touch200%",
+      "no horizontal overflow",
+      "keyboard contained in modal",
+      "no page errors"
+    ]
+  }
+]

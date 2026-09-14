@@ -1,0 +1,286 @@
+[
+  {
+    "profile": "desktop",
+    "group": "D26",
+    "status": "pass",
+    "checks": [
+      "six tools and H4",
+      "exact draft restore",
+      "keyboard containment",
+      "no point loss or overflow"
+    ]
+  },
+  {
+    "profile": "desktop",
+    "group": "D27",
+    "status": "pass",
+    "checks": [
+      "six tools and H4",
+      "exact draft restore",
+      "keyboard containment",
+      "no point loss or overflow"
+    ]
+  },
+  {
+    "profile": "desktop",
+    "group": "Q06",
+    "status": "pass",
+    "checks": [
+      "six tools and H4",
+      "exact draft restore",
+      "keyboard containment",
+      "no point loss or overflow"
+    ]
+  },
+  {
+    "profile": "desktop",
+    "group": "D28",
+    "status": "pass",
+    "checks": [
+      "six tools and H4",
+      "exact draft restore",
+      "keyboard containment",
+      "no point loss or overflow"
+    ]
+  },
+  {
+    "profile": "desktop",
+    "group": "D29",
+    "status": "pass",
+    "checks": [
+      "six tools and H4",
+      "exact draft restore",
+      "keyboard containment",
+      "no point loss or overflow"
+    ]
+  },
+  {
+    "profile": "desktop",
+    "group": "D30",
+    "status": "pass",
+    "checks": [
+      "six tools and H4",
+      "exact draft restore",
+      "keyboard containment",
+      "no point loss or overflow"
+    ]
+  },
+  {
+    "profile": "desktop",
+    "group": "evidence",
+    "status": "pass",
+    "checks": [
+      "five immediate acquisition details",
+      "E49 before E50",
+      "E48 before E51",
+      "E52 only in Q06 before K",
+      "both time fields and privacy mask"
+    ]
+  },
+  {
+    "profile": "desktop",
+    "group": "same original",
+    "status": "pass",
+    "checks": [
+      "E30 unreadable before actual opening",
+      "E30 readable afterward with historical record retained"
+    ]
+  },
+  {
+    "profile": "desktop",
+    "group": "physical progression",
+    "status": "pass",
+    "checks": [
+      "remote then present P09",
+      "travel hint without readable values",
+      "explicit child handoff",
+      "D26 returns from early machine to original",
+      "scaled interval bands"
+    ]
+  },
+  {
+    "profile": "desktop",
+    "group": "chronology_first",
+    "status": "pass",
+    "checks": [
+      "stored order selects exact H4",
+      "actual selected spoken sequence only",
+      "K30 after objections and conclusion"
+    ]
+  },
+  {
+    "profile": "desktop",
+    "group": "concealment_first",
+    "status": "pass",
+    "checks": [
+      "stored order selects exact H4",
+      "actual selected spoken sequence only",
+      "K30 after objections and conclusion"
+    ]
+  },
+  {
+    "profile": "desktop",
+    "group": "five role correction",
+    "status": "pass",
+    "checks": [
+      "role-specific error focus",
+      "other cards and order preserved",
+      "source list scroll survives detail and reload",
+      "once-only costs to zero",
+      "free editing at zero and recovery"
+    ]
+  },
+  {
+    "profile": "desktop",
+    "group": "aftermath",
+    "status": "pass",
+    "checks": [
+      "36 core tasks and 52 evidence",
+      "three optional scenes and child reunion",
+      "Q06 correction link",
+      "no page errors"
+    ]
+  },
+  {
+    "profile": "phone-200",
+    "group": "D26",
+    "status": "pass",
+    "checks": [
+      "six tools and H4",
+      "exact draft restore",
+      "keyboard containment",
+      "no point loss or overflow"
+    ]
+  },
+  {
+    "profile": "phone-200",
+    "group": "D27",
+    "status": "pass",
+    "checks": [
+      "six tools and H4",
+      "exact draft restore",
+      "keyboard containment",
+      "no point loss or overflow"
+    ]
+  },
+  {
+    "profile": "phone-200",
+    "group": "Q06",
+    "status": "pass",
+    "checks": [
+      "six tools and H4",
+      "exact draft restore",
+      "keyboard containment",
+      "no point loss or overflow"
+    ]
+  },
+  {
+    "profile": "phone-200",
+    "group": "D28",
+    "status": "pass",
+    "checks": [
+      "six tools and H4",
+      "exact draft restore",
+      "keyboard containment",
+      "no point loss or overflow"
+    ]
+  },
+  {
+    "profile": "phone-200",
+    "group": "D29",
+    "status": "pass",
+    "checks": [
+      "six tools and H4",
+      "exact draft restore",
+      "keyboard containment",
+      "no point loss or overflow"
+    ]
+  },
+  {
+    "profile": "phone-200",
+    "group": "D30",
+    "status": "pass",
+    "checks": [
+      "six tools and H4",
+      "exact draft restore",
+      "keyboard containment",
+      "no point loss or overflow"
+    ]
+  },
+  {
+    "profile": "phone-200",
+    "group": "evidence",
+    "status": "pass",
+    "checks": [
+      "five immediate acquisition details",
+      "E49 before E50",
+      "E48 before E51",
+      "E52 only in Q06 before K",
+      "both time fields and privacy mask"
+    ]
+  },
+  {
+    "profile": "phone-200",
+    "group": "same original",
+    "status": "pass",
+    "checks": [
+      "E30 unreadable before actual opening",
+      "E30 readable afterward with historical record retained"
+    ]
+  },
+  {
+    "profile": "phone-200",
+    "group": "physical progression",
+    "status": "pass",
+    "checks": [
+      "remote then present P09",
+      "travel hint without readable values",
+      "explicit child handoff",
+      "D26 returns from early machine to original",
+      "scaled interval bands"
+    ]
+  },
+  {
+    "profile": "phone-200",
+    "group": "chronology_first",
+    "status": "pass",
+    "checks": [
+      "stored order selects exact H4",
+      "actual selected spoken sequence only",
+      "K30 after objections and conclusion"
+    ]
+  },
+  {
+    "profile": "phone-200",
+    "group": "concealment_first",
+    "status": "pass",
+    "checks": [
+      "stored order selects exact H4",
+      "actual selected spoken sequence only",
+      "K30 after objections and conclusion"
+    ]
+  },
+  {
+    "profile": "phone-200",
+    "group": "five role correction",
+    "status": "pass",
+    "checks": [
+      "role-specific error focus",
+      "other cards and order preserved",
+      "source list scroll survives detail and reload",
+      "once-only costs to zero",
+      "free editing at zero and recovery"
+    ]
+  },
+  {
+    "profile": "phone-200",
+    "group": "aftermath",
+    "status": "pass",
+    "checks": [
+      "36 core tasks and 52 evidence",
+      "three optional scenes and child reunion",
+      "Q06 correction link",
+      "no page errors"
+    ]
+  }
+]

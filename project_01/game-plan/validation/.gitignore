@@ -1,0 +1,12 @@
+# Reproducible machine-play saves used only by local browser QA.
+runtime-ch01-fixtures.json
+
+runtime-ch02-fixtures.json
+
+runtime-ch03-fixtures.json
+runtime-ch04-fixtures.json
+runtime-ch05-fixtures.json
+
+runtime-ch06-fixtures.json
+
+runtime-ep-fixtures.json

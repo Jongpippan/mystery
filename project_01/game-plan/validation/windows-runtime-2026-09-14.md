@@ -1,5 +1,7 @@
 # Windows runtime continuation — 2026-09-14
 
+Latest integration: [evidence discovery and identification](evidence-implementation-2026-09-14.md) records52 sourced descriptors/drawings, combined filters, source links, saved tool returns,205 passing unit tests and24 evidence browser groups. Type checking/lint/build/import pass with the existing warning categories. The main route already reaches the EP archive; people/history enrichment, current revisits/travel, system/early-access adapters and complete art/audio remain unfinished. The original Windows repair below is preserved as history.
+
 The user replaced the checkout with the correct Yeowul project. The accepted r03 scripts, snapshots, art and Vinext starter were present. No discarded project was used as implementation or creative reference.
 
 ## Changes
@@ -28,5 +30,7 @@ From `project_01/game`:
 Source inventory does not establish runtime coverage. Tests restore every traversed node, preserve notes and six points, verify selected callbacks and count wording, verify exclusive history and exact acquired/met sets, and prevent skipping choices or unacknowledged acquisitions. Temporary bundle cleanup checks its resolved OS temporary parent and task prefix before recursive removal.
 
 ## Remaining work
+
+Historical boundary: the paragraph below describes the initial Windows repair. The subsequent CH01-CH06 records and latest [EP continuation](ep-implementation-2026-09-14.md) supersede its PR16 stopping point and record the playable core ending/archive,36 tasks,200 passing automated tests,14 EP browser groups and26 rerun CH06 groups. [Remaining integration](integration-next-2026-09-14.md) is the next work boundary. Full-game production remains incomplete.
 
 Main prologue playback is integrated, but optional revisit access and name-setup screenplay are not yet wired. It currently stops at PR16, not at the game ending. The six investigation chapters, all 36 required tasks, hints, recovery, full tool-return state, evidence illustrations and event art remain to implement. The current local tool state does not yet satisfy complete save/return requirements. No rendered UI inspection, independent playtest or deployment is claimed. Continue the full scope in `../13-implementation.md`.

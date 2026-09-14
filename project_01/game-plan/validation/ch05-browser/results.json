@@ -1,0 +1,198 @@
+[
+  {
+    "profile": "desktop D21",
+    "status": "pass",
+    "checks": [
+      "six tools and H4",
+      "exact draft restore",
+      "keyboard containment",
+      "no point loss or overflow"
+    ]
+  },
+  {
+    "profile": "desktop Q05",
+    "status": "pass",
+    "checks": [
+      "six tools and H4",
+      "exact draft restore",
+      "keyboard containment",
+      "no point loss or overflow"
+    ]
+  },
+  {
+    "profile": "desktop D22",
+    "status": "pass",
+    "checks": [
+      "six tools and H4",
+      "exact draft restore",
+      "keyboard containment",
+      "no point loss or overflow"
+    ]
+  },
+  {
+    "profile": "desktop D23",
+    "status": "pass",
+    "checks": [
+      "six tools and H4",
+      "exact draft restore",
+      "keyboard containment",
+      "no point loss or overflow"
+    ]
+  },
+  {
+    "profile": "desktop D24",
+    "status": "pass",
+    "checks": [
+      "six tools and H4",
+      "exact draft restore",
+      "keyboard containment",
+      "no point loss or overflow"
+    ]
+  },
+  {
+    "profile": "desktop D25",
+    "status": "pass",
+    "checks": [
+      "six tools and H4",
+      "exact draft restore",
+      "keyboard containment",
+      "no point loss or overflow"
+    ]
+  },
+  {
+    "profile": "desktop evidence boundaries",
+    "status": "pass",
+    "checks": [
+      "eight immediate details",
+      "distinct clear and frosted windows",
+      "old warning versus later barrier",
+      "one witness origin",
+      "Q05 correction before K",
+      "all three labeled safe alternatives",
+      "conflicting coat statements retained",
+      "no readable E49"
+    ]
+  },
+  {
+    "profile": "desktop supervised comparison",
+    "status": "pass",
+    "checks": [
+      "supervision H4 before handoff",
+      "interrupted adult-route hint",
+      "child stays in lounge",
+      "gate view disappears at booth interview",
+      "actual A B C then E45 sequence",
+      "no overflowing diagrams"
+    ]
+  },
+  {
+    "profile": "desktop order and overnight",
+    "status": "pass",
+    "checks": [
+      "either deduction order retains remaining task",
+      "30 tasks complete",
+      "late E10 actually acquired",
+      "guesthouse ending retains both hypotheses and no E49",
+      "Q05 correction linked",
+      "no page errors"
+    ]
+  },
+  {
+    "profile": "phone-200 D21",
+    "status": "pass",
+    "checks": [
+      "six tools and H4",
+      "exact draft restore",
+      "keyboard containment",
+      "no point loss or overflow"
+    ]
+  },
+  {
+    "profile": "phone-200 Q05",
+    "status": "pass",
+    "checks": [
+      "six tools and H4",
+      "exact draft restore",
+      "keyboard containment",
+      "no point loss or overflow"
+    ]
+  },
+  {
+    "profile": "phone-200 D22",
+    "status": "pass",
+    "checks": [
+      "six tools and H4",
+      "exact draft restore",
+      "keyboard containment",
+      "no point loss or overflow"
+    ]
+  },
+  {
+    "profile": "phone-200 D23",
+    "status": "pass",
+    "checks": [
+      "six tools and H4",
+      "exact draft restore",
+      "keyboard containment",
+      "no point loss or overflow"
+    ]
+  },
+  {
+    "profile": "phone-200 D24",
+    "status": "pass",
+    "checks": [
+      "six tools and H4",
+      "exact draft restore",
+      "keyboard containment",
+      "no point loss or overflow"
+    ]
+  },
+  {
+    "profile": "phone-200 D25",
+    "status": "pass",
+    "checks": [
+      "six tools and H4",
+      "exact draft restore",
+      "keyboard containment",
+      "no point loss or overflow"
+    ]
+  },
+  {
+    "profile": "phone-200 evidence boundaries",
+    "status": "pass",
+    "checks": [
+      "eight immediate details",
+      "distinct clear and frosted windows",
+      "old warning versus later barrier",
+      "one witness origin",
+      "Q05 correction before K",
+      "all three labeled safe alternatives",
+      "conflicting coat statements retained",
+      "no readable E49"
+    ]
+  },
+  {
+    "profile": "phone-200 supervised comparison",
+    "status": "pass",
+    "checks": [
+      "supervision H4 before handoff",
+      "interrupted adult-route hint",
+      "child stays in lounge",
+      "gate view disappears at booth interview",
+      "actual A B C then E45 sequence",
+      "no overflowing diagrams"
+    ]
+  },
+  {
+    "profile": "phone-200 order and overnight",
+    "status": "pass",
+    "checks": [
+      "either deduction order retains remaining task",
+      "30 tasks complete",
+      "late E10 actually acquired",
+      "guesthouse ending retains both hypotheses and no E49",
+      "Q05 correction linked",
+      "no page errors"
+    ]
+  }
+]

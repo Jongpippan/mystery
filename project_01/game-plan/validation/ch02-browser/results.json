@@ -1,0 +1,218 @@
+[
+  {
+    "profile": "desktop D06",
+    "status": "pass",
+    "checks": [
+      "six tool round trips",
+      "H4 return",
+      "reload selected fields and note",
+      "keyboard containment",
+      "no horizontal overflow",
+      "no point loss"
+    ]
+  },
+  {
+    "profile": "desktop Q02",
+    "status": "pass",
+    "checks": [
+      "six tool round trips",
+      "H4 return",
+      "reload selected fields and note",
+      "keyboard containment",
+      "no horizontal overflow",
+      "no point loss"
+    ]
+  },
+  {
+    "profile": "desktop D07",
+    "status": "pass",
+    "checks": [
+      "six tool round trips",
+      "H4 return",
+      "reload selected fields and note",
+      "keyboard containment",
+      "no horizontal overflow",
+      "no point loss"
+    ]
+  },
+  {
+    "profile": "desktop D08",
+    "status": "pass",
+    "checks": [
+      "six tool round trips",
+      "H4 return",
+      "reload selected fields and note",
+      "keyboard containment",
+      "no horizontal overflow",
+      "no point loss"
+    ]
+  },
+  {
+    "profile": "desktop D09",
+    "status": "pass",
+    "checks": [
+      "six tool round trips",
+      "H4 return",
+      "reload selected fields and note",
+      "keyboard containment",
+      "no horizontal overflow",
+      "no point loss"
+    ]
+  },
+  {
+    "profile": "desktop D10",
+    "status": "pass",
+    "checks": [
+      "six tool round trips",
+      "H4 return",
+      "reload selected fields and note",
+      "keyboard containment",
+      "no horizontal overflow",
+      "no point loss"
+    ]
+  },
+  {
+    "profile": "desktop acquisitions",
+    "status": "pass",
+    "checks": [
+      "six actual details survive reload",
+      "E11 single source then E14 aligned pair",
+      "ordered E16 E13 E17",
+      "E15 returns to Q02 response",
+      "one acknowledgment"
+    ]
+  },
+  {
+    "profile": "desktop correction provenance",
+    "status": "pass",
+    "checks": [
+      "no future correction link before Q02",
+      "original statement links to separate acquired E15 after Q02"
+    ]
+  },
+  {
+    "profile": "desktop apology",
+    "status": "pass",
+    "checks": [
+      "both responses selectable",
+      "choice saved without penalty"
+    ]
+  },
+  {
+    "profile": "desktop sound event",
+    "status": "pass",
+    "checks": [
+      "saved input/file/comparison states",
+      "recorded speaker provenance visible",
+      "no browser errors"
+    ]
+  },
+  {
+    "profile": "phone-200 D06",
+    "status": "pass",
+    "checks": [
+      "six tool round trips",
+      "H4 return",
+      "reload selected fields and note",
+      "keyboard containment",
+      "no horizontal overflow",
+      "no point loss"
+    ]
+  },
+  {
+    "profile": "phone-200 Q02",
+    "status": "pass",
+    "checks": [
+      "six tool round trips",
+      "H4 return",
+      "reload selected fields and note",
+      "keyboard containment",
+      "no horizontal overflow",
+      "no point loss"
+    ]
+  },
+  {
+    "profile": "phone-200 D07",
+    "status": "pass",
+    "checks": [
+      "six tool round trips",
+      "H4 return",
+      "reload selected fields and note",
+      "keyboard containment",
+      "no horizontal overflow",
+      "no point loss"
+    ]
+  },
+  {
+    "profile": "phone-200 D08",
+    "status": "pass",
+    "checks": [
+      "six tool round trips",
+      "H4 return",
+      "reload selected fields and note",
+      "keyboard containment",
+      "no horizontal overflow",
+      "no point loss"
+    ]
+  },
+  {
+    "profile": "phone-200 D09",
+    "status": "pass",
+    "checks": [
+      "six tool round trips",
+      "H4 return",
+      "reload selected fields and note",
+      "keyboard containment",
+      "no horizontal overflow",
+      "no point loss"
+    ]
+  },
+  {
+    "profile": "phone-200 D10",
+    "status": "pass",
+    "checks": [
+      "six tool round trips",
+      "H4 return",
+      "reload selected fields and note",
+      "keyboard containment",
+      "no horizontal overflow",
+      "no point loss"
+    ]
+  },
+  {
+    "profile": "phone-200 acquisitions",
+    "status": "pass",
+    "checks": [
+      "six actual details survive reload",
+      "E11 single source then E14 aligned pair",
+      "ordered E16 E13 E17",
+      "E15 returns to Q02 response",
+      "one acknowledgment"
+    ]
+  },
+  {
+    "profile": "phone-200 correction provenance",
+    "status": "pass",
+    "checks": [
+      "no future correction link before Q02",
+      "original statement links to separate acquired E15 after Q02"
+    ]
+  },
+  {
+    "profile": "phone-200 apology",
+    "status": "pass",
+    "checks": [
+      "both responses selectable",
+      "choice saved without penalty"
+    ]
+  },
+  {
+    "profile": "phone-200 sound event",
+    "status": "pass",
+    "checks": [
+      "saved input/file/comparison states",
+      "recorded speaker provenance visible",
+      "no browser errors"
+    ]
+  }
+]

@@ -1,0 +1,182 @@
+[
+  {
+    "profile": "desktop D11",
+    "status": "pass",
+    "checks": [
+      "six tools and H4",
+      "exact draft restore",
+      "keyboard containment",
+      "no point loss or overflow"
+    ]
+  },
+  {
+    "profile": "desktop D12",
+    "status": "pass",
+    "checks": [
+      "six tools and H4",
+      "exact draft restore",
+      "keyboard containment",
+      "no point loss or overflow"
+    ]
+  },
+  {
+    "profile": "desktop Q03",
+    "status": "pass",
+    "checks": [
+      "six tools and H4",
+      "exact draft restore",
+      "keyboard containment",
+      "no point loss or overflow"
+    ]
+  },
+  {
+    "profile": "desktop D13",
+    "status": "pass",
+    "checks": [
+      "six tools and H4",
+      "exact draft restore",
+      "keyboard containment",
+      "no point loss or overflow"
+    ]
+  },
+  {
+    "profile": "desktop D14",
+    "status": "pass",
+    "checks": [
+      "six tools and H4",
+      "exact draft restore",
+      "keyboard containment",
+      "no point loss or overflow"
+    ]
+  },
+  {
+    "profile": "desktop D15",
+    "status": "pass",
+    "checks": [
+      "six tools and H4",
+      "exact draft restore",
+      "keyboard containment",
+      "no point loss or overflow"
+    ]
+  },
+  {
+    "profile": "desktop acquired diagrams",
+    "status": "pass",
+    "checks": [
+      "five immediate details",
+      "Q03 correction",
+      "wet bound original stays unreadable",
+      "single acknowledgment",
+      "no overflow"
+    ]
+  },
+  {
+    "profile": "desktop opening sequence",
+    "status": "pass",
+    "checks": [
+      "opaque sealed view",
+      "sealed H4 exterior only",
+      "actual E23 E26 E29 E30 acquisition queue",
+      "future original not exposed"
+    ]
+  },
+  {
+    "profile": "desktop supervision and provenance",
+    "status": "pass",
+    "checks": [
+      "remote child stays in supervised lounge",
+      "corrected statement linked to E24",
+      "no page errors"
+    ]
+  },
+  {
+    "profile": "phone-200 D11",
+    "status": "pass",
+    "checks": [
+      "six tools and H4",
+      "exact draft restore",
+      "keyboard containment",
+      "no point loss or overflow"
+    ]
+  },
+  {
+    "profile": "phone-200 D12",
+    "status": "pass",
+    "checks": [
+      "six tools and H4",
+      "exact draft restore",
+      "keyboard containment",
+      "no point loss or overflow"
+    ]
+  },
+  {
+    "profile": "phone-200 Q03",
+    "status": "pass",
+    "checks": [
+      "six tools and H4",
+      "exact draft restore",
+      "keyboard containment",
+      "no point loss or overflow"
+    ]
+  },
+  {
+    "profile": "phone-200 D13",
+    "status": "pass",
+    "checks": [
+      "six tools and H4",
+      "exact draft restore",
+      "keyboard containment",
+      "no point loss or overflow"
+    ]
+  },
+  {
+    "profile": "phone-200 D14",
+    "status": "pass",
+    "checks": [
+      "six tools and H4",
+      "exact draft restore",
+      "keyboard containment",
+      "no point loss or overflow"
+    ]
+  },
+  {
+    "profile": "phone-200 D15",
+    "status": "pass",
+    "checks": [
+      "six tools and H4",
+      "exact draft restore",
+      "keyboard containment",
+      "no point loss or overflow"
+    ]
+  },
+  {
+    "profile": "phone-200 acquired diagrams",
+    "status": "pass",
+    "checks": [
+      "five immediate details",
+      "Q03 correction",
+      "wet bound original stays unreadable",
+      "single acknowledgment",
+      "no overflow"
+    ]
+  },
+  {
+    "profile": "phone-200 opening sequence",
+    "status": "pass",
+    "checks": [
+      "opaque sealed view",
+      "sealed H4 exterior only",
+      "actual E23 E26 E29 E30 acquisition queue",
+      "future original not exposed"
+    ]
+  },
+  {
+    "profile": "phone-200 supervision and provenance",
+    "status": "pass",
+    "checks": [
+      "remote child stays in supervised lounge",
+      "corrected statement linked to E24",
+      "no page errors"
+    ]
+  }
+]

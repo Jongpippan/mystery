@@ -43,6 +43,7 @@ for(const bag of ['help_queue','protect_papers']) for(const sound of ['environme
           state=gameReducer(state,{type:'acknowledge',id:node.evidenceId});
           assert.deepEqual(gameReducer(state,{type:'acknowledge',id:node.evidenceId}),state);
         }
+        if(state.sceneId==='C_PR_16'&&state.cursor===currentSequence(state).length-1)break;
         const next=gameReducer(state,{type:'advance'});
         if(next===state) break;
         state=next;

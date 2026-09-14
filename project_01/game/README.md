@@ -1,4 +1,14 @@
-# vinext-starter
+# Yeowul runtime — incomplete production
+
+The accepted Korean screenplay is `accepted-full-r03-c01`. Current implementation covers the prologue and CH01-CH06 and EP01-06 core through the playable ending/archive with retained save slots; full integration, current revisits, travel and art/audio remain pending. See [implementation and verification](../game-plan/validation/ep-implementation-2026-09-14.md) before interpreting any successful command as full-game completion.
+
+From this directory, run `npm run dev` for the local preview on port 5173. Run `node scripts/import-screenplay.mjs`, `node --test tests/opening.test.mjs tests/chapter-one.test.mjs tests/chapter-two.test.mjs tests/chapter-three.test.mjs tests/chapter-four.test.mjs tests/chapter-five.test.mjs tests/chapter-six.test.mjs tests/epilogue.test.mjs tests/evidence-index.test.mjs`, `npx tsc --noEmit`, `npm run lint`, and `npm run build` for the current source and runtime checks. Browser QA uses `node tests/browser-ch01.mjs` , `node tests/browser-ch02.mjs` , `node tests/browser-ch03.mjs` , `node tests/browser-ch04.mjs`  , `node tests/browser-ch05.mjs`  , `node tests/browser-ch06.mjs` and `node tests/browser-ep.mjs` after the fixture/browser setup documented in their validation records. On Windows PowerShell, use `npm.cmd`/`npx.cmd` if script execution policy requires them.
+
+Latest integration: [evidence discovery verification](../game-plan/validation/evidence-implementation-2026-09-14.md) records combined filters, source/person links,52 identification drawings,205 passing unit tests and24 evidence browser groups. Run `node tests/browser-evidence.mjs` with the EP fixtures. Full production remains incomplete.
+
+The technical starter reference below remains applicable to the portable Vinext tooling. The game itself uses local browser saves and requires no gameplay account or database.
+
+## Vinext starter reference
 
 A clean full-stack starter running on [vinext](https://github.com/cloudflare/vinext), with optional Cloudflare D1 and Drizzle support.
 

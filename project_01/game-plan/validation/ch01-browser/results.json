@@ -1,0 +1,111 @@
+[
+  {
+    "profile": "desktop",
+    "checks": [
+      "draft editing",
+      "evidence filter/detail/Esc/focus",
+      "person/correction/history/map/notes round trip",
+      "reload exact draft",
+      "hint return",
+      "no horizontal overflow",
+      "points unchanged",
+      "no browser errors"
+    ],
+    "status": "pass"
+  },
+  {
+    "profile": "phone",
+    "checks": [
+      "draft editing",
+      "evidence filter/detail/Esc/focus",
+      "person/correction/history/map/notes round trip",
+      "reload exact draft",
+      "hint return",
+      "no horizontal overflow",
+      "points unchanged",
+      "no browser errors"
+    ],
+    "status": "pass"
+  },
+  {
+    "profile": "phone-200",
+    "checks": [
+      "draft editing",
+      "evidence filter/detail/Esc/focus",
+      "person/correction/history/map/notes round trip",
+      "reload exact draft",
+      "hint return",
+      "no horizontal overflow",
+      "points unchanged",
+      "no browser errors"
+    ],
+    "status": "pass"
+  },
+  {
+    "profile": "correction acquisition",
+    "status": "pass",
+    "checks": [
+      "immediate actual detail inside Q01",
+      "reload unacknowledged E08",
+      "one acknowledgment",
+      "same Q01 response return"
+    ]
+  },
+  {
+    "profile": "zero recovery",
+    "status": "pass",
+    "checks": [
+      "submit blocked at zero",
+      "draft editable",
+      "recovery restores four without clearing draft"
+    ]
+  },
+  {
+    "profile": "D02 tools",
+    "status": "pass",
+    "checks": [
+      "six tools accessible",
+      "Esc returns to same draft"
+    ]
+  },
+  {
+    "profile": "Q01 tools",
+    "status": "pass",
+    "checks": [
+      "six tools accessible",
+      "Esc returns to same draft"
+    ]
+  },
+  {
+    "profile": "D03 tools",
+    "status": "pass",
+    "checks": [
+      "six tools accessible",
+      "Esc returns to same draft"
+    ]
+  },
+  {
+    "profile": "D04 tools",
+    "status": "pass",
+    "checks": [
+      "six tools accessible",
+      "Esc returns to same draft"
+    ]
+  },
+  {
+    "profile": "D05 tools",
+    "status": "pass",
+    "checks": [
+      "six tools accessible",
+      "Esc returns to same draft"
+    ]
+  },
+  {
+    "profile": "wall event",
+    "status": "pass",
+    "checks": [
+      "saved before/during/after positions render x9/x6/x9",
+      "experiment label remains visible"
+    ]
+  }
+]

@@ -1,0 +1,270 @@
+[
+  {
+    "profile": "desktop",
+    "group": "early visibility",
+    "status": "pass",
+    "checks": [
+      "only acquired totals and rows",
+      "no future person or type options",
+      "no future original thumbnail"
+    ]
+  },
+  {
+    "profile": "desktop",
+    "group": "index controls",
+    "status": "pass",
+    "checks": [
+      "52 different SVG compositions",
+      "combined type/person/place AND",
+      "attributed time sort",
+      "reverse acquisition",
+      "normalized full-width search",
+      "clear controls",
+      "no overflow"
+    ]
+  },
+  {
+    "profile": "desktop",
+    "group": "source round trip",
+    "status": "pass",
+    "checks": [
+      "filtered list → original → related original → person → correction → history → map",
+      "back restores filters, row focus and scroll",
+      "reload restores same view"
+    ]
+  },
+  {
+    "profile": "desktop",
+    "group": "D01",
+    "status": "pass",
+    "checks": [
+      "actual answer edit",
+      "all six tools with filtered source/history roundtrip",
+      "reload",
+      "exact draft/task/knowledge/log/choices/points retained"
+    ]
+  },
+  {
+    "profile": "desktop",
+    "group": "D04",
+    "status": "pass",
+    "checks": [
+      "actual answer edit",
+      "all six tools with filtered source/history roundtrip",
+      "reload",
+      "exact draft/task/knowledge/log/choices/points retained"
+    ]
+  },
+  {
+    "profile": "desktop",
+    "group": "D17",
+    "status": "pass",
+    "checks": [
+      "actual answer edit",
+      "all six tools with filtered source/history roundtrip",
+      "reload",
+      "exact draft/task/knowledge/log/choices/points retained"
+    ]
+  },
+  {
+    "profile": "desktop",
+    "group": "D20",
+    "status": "pass",
+    "checks": [
+      "actual answer edit",
+      "all six tools with filtered source/history roundtrip",
+      "reload",
+      "exact draft/task/knowledge/log/choices/points retained"
+    ]
+  },
+  {
+    "profile": "desktop",
+    "group": "D23",
+    "status": "pass",
+    "checks": [
+      "actual answer edit",
+      "all six tools with filtered source/history roundtrip",
+      "reload",
+      "exact draft/task/knowledge/log/choices/points retained"
+    ]
+  },
+  {
+    "profile": "desktop",
+    "group": "Q06",
+    "status": "pass",
+    "checks": [
+      "actual answer edit",
+      "all six tools with filtered source/history roundtrip",
+      "reload",
+      "exact draft/task/knowledge/log/choices/points retained"
+    ]
+  },
+  {
+    "profile": "desktop",
+    "group": "D29",
+    "status": "pass",
+    "checks": [
+      "actual answer edit",
+      "all six tools with filtered source/history roundtrip",
+      "reload",
+      "exact draft/task/knowledge/log/choices/points retained"
+    ]
+  },
+  {
+    "profile": "desktop",
+    "group": "D30",
+    "status": "pass",
+    "checks": [
+      "actual answer edit",
+      "all six tools with filtered source/history roundtrip",
+      "reload",
+      "exact draft/task/knowledge/log/choices/points retained"
+    ]
+  },
+  {
+    "profile": "desktop",
+    "group": "keyboard and long labels",
+    "status": "pass",
+    "checks": [
+      "long chosen name and place wrap outside native selector",
+      "keyboard changes sorting",
+      "tab focus contained",
+      "44px selects",
+      "200% text retained"
+    ]
+  },
+  {
+    "profile": "phone-200",
+    "group": "early visibility",
+    "status": "pass",
+    "checks": [
+      "only acquired totals and rows",
+      "no future person or type options",
+      "no future original thumbnail"
+    ]
+  },
+  {
+    "profile": "phone-200",
+    "group": "index controls",
+    "status": "pass",
+    "checks": [
+      "52 different SVG compositions",
+      "combined type/person/place AND",
+      "attributed time sort",
+      "reverse acquisition",
+      "normalized full-width search",
+      "clear controls",
+      "no overflow"
+    ]
+  },
+  {
+    "profile": "phone-200",
+    "group": "source round trip",
+    "status": "pass",
+    "checks": [
+      "filtered list → original → related original → person → correction → history → map",
+      "back restores filters, row focus and scroll",
+      "reload restores same view"
+    ]
+  },
+  {
+    "profile": "phone-200",
+    "group": "D01",
+    "status": "pass",
+    "checks": [
+      "actual answer edit",
+      "all six tools with filtered source/history roundtrip",
+      "reload",
+      "exact draft/task/knowledge/log/choices/points retained"
+    ]
+  },
+  {
+    "profile": "phone-200",
+    "group": "D04",
+    "status": "pass",
+    "checks": [
+      "actual answer edit",
+      "all six tools with filtered source/history roundtrip",
+      "reload",
+      "exact draft/task/knowledge/log/choices/points retained"
+    ]
+  },
+  {
+    "profile": "phone-200",
+    "group": "D17",
+    "status": "pass",
+    "checks": [
+      "actual answer edit",
+      "all six tools with filtered source/history roundtrip",
+      "reload",
+      "exact draft/task/knowledge/log/choices/points retained"
+    ]
+  },
+  {
+    "profile": "phone-200",
+    "group": "D20",
+    "status": "pass",
+    "checks": [
+      "actual answer edit",
+      "all six tools with filtered source/history roundtrip",
+      "reload",
+      "exact draft/task/knowledge/log/choices/points retained"
+    ]
+  },
+  {
+    "profile": "phone-200",
+    "group": "D23",
+    "status": "pass",
+    "checks": [
+      "actual answer edit",
+      "all six tools with filtered source/history roundtrip",
+      "reload",
+      "exact draft/task/knowledge/log/choices/points retained"
+    ]
+  },
+  {
+    "profile": "phone-200",
+    "group": "Q06",
+    "status": "pass",
+    "checks": [
+      "actual answer edit",
+      "all six tools with filtered source/history roundtrip",
+      "reload",
+      "exact draft/task/knowledge/log/choices/points retained"
+    ]
+  },
+  {
+    "profile": "phone-200",
+    "group": "D29",
+    "status": "pass",
+    "checks": [
+      "actual answer edit",
+      "all six tools with filtered source/history roundtrip",
+      "reload",
+      "exact draft/task/knowledge/log/choices/points retained"
+    ]
+  },
+  {
+    "profile": "phone-200",
+    "group": "D30",
+    "status": "pass",
+    "checks": [
+      "actual answer edit",
+      "all six tools with filtered source/history roundtrip",
+      "reload",
+      "exact draft/task/knowledge/log/choices/points retained"
+    ]
+  },
+  {
+    "profile": "phone-200",
+    "group": "keyboard and long labels",
+    "status": "pass",
+    "checks": [
+      "long chosen name and place wrap outside native selector",
+      "keyboard changes sorting",
+      "tab focus contained",
+      "44px selects",
+      "200% text retained"
+    ]
+  }
+]

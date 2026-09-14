@@ -1,0 +1,196 @@
+[
+  {
+    "profile": "desktop D16",
+    "status": "pass",
+    "checks": [
+      "six tools and H4",
+      "exact draft restore",
+      "keyboard containment",
+      "no point loss or overflow"
+    ]
+  },
+  {
+    "profile": "desktop D17",
+    "status": "pass",
+    "checks": [
+      "six tools and H4",
+      "exact draft restore",
+      "keyboard containment",
+      "no point loss or overflow"
+    ]
+  },
+  {
+    "profile": "desktop Q04",
+    "status": "pass",
+    "checks": [
+      "six tools and H4",
+      "exact draft restore",
+      "keyboard containment",
+      "no point loss or overflow"
+    ]
+  },
+  {
+    "profile": "desktop D18",
+    "status": "pass",
+    "checks": [
+      "six tools and H4",
+      "exact draft restore",
+      "keyboard containment",
+      "no point loss or overflow"
+    ]
+  },
+  {
+    "profile": "desktop D19",
+    "status": "pass",
+    "checks": [
+      "six tools and H4",
+      "exact draft restore",
+      "keyboard containment",
+      "no point loss or overflow"
+    ]
+  },
+  {
+    "profile": "desktop D20",
+    "status": "pass",
+    "checks": [
+      "six tools and H4",
+      "exact draft restore",
+      "keyboard containment",
+      "no point loss or overflow"
+    ]
+  },
+  {
+    "profile": "desktop acquisition",
+    "status": "pass",
+    "checks": [
+      "nine immediate evidence details",
+      "three transaction origins",
+      "no early E37 recipient assertion",
+      "one notice packet",
+      "Q04 correction before knowledge award",
+      "single acknowledgments"
+    ]
+  },
+  {
+    "profile": "desktop physical originals",
+    "status": "pass",
+    "checks": [
+      "four initially closed envelopes",
+      "actual E31 E32 E33 E34 queue",
+      "V04 missing-material H4",
+      "page connection comparison",
+      "wet book remains at L12",
+      "Q04 return to lounge",
+      "corrected envelope labels",
+      "child absent from formal inquiry"
+    ]
+  },
+  {
+    "profile": "desktop choices and records",
+    "status": "pass",
+    "checks": [
+      "both exhibition choices and exact reload",
+      "optional skip retained",
+      "24 completed required tasks",
+      "Q04 original-to-correction link",
+      "no page errors"
+    ]
+  },
+  {
+    "profile": "phone-200 D16",
+    "status": "pass",
+    "checks": [
+      "six tools and H4",
+      "exact draft restore",
+      "keyboard containment",
+      "no point loss or overflow"
+    ]
+  },
+  {
+    "profile": "phone-200 D17",
+    "status": "pass",
+    "checks": [
+      "six tools and H4",
+      "exact draft restore",
+      "keyboard containment",
+      "no point loss or overflow"
+    ]
+  },
+  {
+    "profile": "phone-200 Q04",
+    "status": "pass",
+    "checks": [
+      "six tools and H4",
+      "exact draft restore",
+      "keyboard containment",
+      "no point loss or overflow"
+    ]
+  },
+  {
+    "profile": "phone-200 D18",
+    "status": "pass",
+    "checks": [
+      "six tools and H4",
+      "exact draft restore",
+      "keyboard containment",
+      "no point loss or overflow"
+    ]
+  },
+  {
+    "profile": "phone-200 D19",
+    "status": "pass",
+    "checks": [
+      "six tools and H4",
+      "exact draft restore",
+      "keyboard containment",
+      "no point loss or overflow"
+    ]
+  },
+  {
+    "profile": "phone-200 D20",
+    "status": "pass",
+    "checks": [
+      "six tools and H4",
+      "exact draft restore",
+      "keyboard containment",
+      "no point loss or overflow"
+    ]
+  },
+  {
+    "profile": "phone-200 acquisition",
+    "status": "pass",
+    "checks": [
+      "nine immediate evidence details",
+      "three transaction origins",
+      "no early E37 recipient assertion",
+      "one notice packet",
+      "Q04 correction before knowledge award",
+      "single acknowledgments"
+    ]
+  },
+  {
+    "profile": "phone-200 physical originals",
+    "status": "pass",
+    "checks": [
+      "four initially closed envelopes",
+      "actual E31 E32 E33 E34 queue",
+      "V04 missing-material H4",
+      "page connection comparison",
+      "wet book remains at L12",
+      "Q04 return to lounge",
+      "corrected envelope labels",
+      "child absent from formal inquiry"
+    ]
+  },
+  {
+    "profile": "phone-200 choices and records",
+    "status": "pass",
+    "checks": [
+      "both exhibition choices and exact reload",
+      "optional skip retained",
+      "24 completed required tasks",
+      "Q04 original-to-correction link",
+      "no page errors"
+    ]
+  }
+]
