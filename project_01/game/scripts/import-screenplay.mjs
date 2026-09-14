@@ -15,7 +15,7 @@ for (const file of files) {
   const text = readFileSync(resolve(sourceDir, file), 'utf8');
   if (sourceDir !== snapshots) writeFileSync(resolve(snapshots, file), text);
   corpus.sources.push({ file, sha256: digest(text) });
-  const chunks = [...text.matchAll(/^## (C_\w+) — ([^\n]+)\n([\s\S]*?)(?=^## |$(?![\s\S]))/gm)];
+  const chunks = [...text.replace(/\r\n/g,'\n').matchAll(/^## (C_\w+) — ([^\n]+)\n([\s\S]*?)(?=^## |$(?![\s\S]))/gm)];
   for (const match of chunks) {
     const [, id, title, body] = match;
     if (corpus.scenes[id]) throw new Error(`Duplicate scene ${id}`);

@@ -10,6 +10,7 @@ import { Dialog, DialogContent, DialogTitle, DialogDescription } from '@/compone
 import { Slider } from '@/components/ui/slider';
 import { currentNode, gameReducer, initialState, isSave, type GameState } from '@/lib/game/state';
 import { displayText, script } from '@/lib/game/script';
+import { prologuePresentation } from '@/lib/game/prologue';
 
 const SAVE_KEY='yeowul-save-v1';
 const names:Record<string,string>={P00:'나여백',P01:'나모눈',P02:'봉만실',P03:'차무록',P04:'탁두철',P05:'소해금',P06:'배한술',P07:'진새벽',P08:'표문식',P09:'목백로'};
@@ -40,6 +41,7 @@ export function Game() {
   },[state,ready]);
   const node=currentNode(state);
   const scene=script.scenes[state.sceneId];
+  const presentation=prologuePresentation(state);
   const show=(text:string)=>displayText(text,state.playerName);
   const speaker=node?.kind==='speech' ? node.speaker : null;
   const activeEvidence=node?.kind==='evidence' ? node.evidenceId ?? null : null;
@@ -66,12 +68,12 @@ export function Game() {
     </section> : <div className="play-layout">
       <section className="scene-column" aria-label="현재 장면">
         <div className="scene-stage" style={state.sceneId==='C_PR_01'||state.sceneId==='C_PR_02'?{backgroundImage:'url(/art/l01.png)'}:undefined}>
-          <div className="place-strip"><span>{state.sceneId==='C_PR_01'||state.sceneId==='C_PR_02'?'현관 · 접수대':'휴게실'}</span><span>10월 21일 · 오후</span></div>
+          <div className="place-strip"><span>{presentation.place}</span><span>{presentation.time}</span></div>
           {portrait&&<img className="dialogue-portrait" src={portrait} alt={speaker==='P00'?state.playerName:'나모눈'}/>}
           <div className="scene-vignette"/>
         </div>
         <div className="dialogue-box">
-          <div className="dialogue-label">{speaker ? speaker==='P00'?state.playerName:names[speaker] : scene.title}</div>
+          <div className="dialogue-label">{speaker ? speaker==='P00'?state.playerName:names[speaker] : node?.kind==='speech'?node.label:scene.title}</div>
           {node?.kind==='choice' ? <><p className="dialogue-text">{node.text}</p><div className="choice-list">{node.options.map(o=><Button key={o.value} variant="outline" onClick={()=>dispatch({type:'choose',choice:node.choice,value:o.value})}>{show(o.text)}</Button>)}</div></>
           : node?.kind==='evidence' && evidence ? <><p className="dialogue-text">{evidence.title}</p><Button onClick={()=>{setTool('evidence');setDetail(evidence.id);}}>자료 확인하기 <ChevronRight/></Button>{state.acknowledged.includes(evidence.id)&&<Button onClick={()=>dispatch({type:'advance'})}>계속 <ChevronRight/></Button>}</>
           : <><p className={`dialogue-text ${node?.kind==='direction'?'stage-direction':''}`} aria-live="polite">{node?show(node.text):''}</p><div className="dialogue-footer"><span className="save-caption">이 브라우저에 자동 저장</span><Button onClick={()=>dispatch({type:'advance'})}>계속 <ChevronRight aria-hidden/></Button></div></>}
@@ -79,9 +81,9 @@ export function Game() {
         <nav className="tool-bar" aria-label="조사 도구">{tools.map(([id,label,Icon])=><Button key={id} variant="ghost" onClick={()=>openTool(id)}><Icon aria-hidden className="size-5"/><span>{label}</span></Button>)}</nav>
       </section>
       <aside className="companion-panel">
-        <div className="companion-heading"><span>함께 있는 사람</span><span className="thin-rule"/></div>
-        <img src="/art/p01.png" alt="나모눈" className="companion-portrait"/>
-        <h2>나모눈</h2><p className="companion-relation">조카 · 열한 살</p>
+        <div className="companion-heading"><span>{presentation.companion?'함께 있는 사람':'모눈이 있는 곳'}</span><span className="thin-rule"/></div>
+        {presentation.companion&&<img src="/art/p01.png" alt="나모눈" className="companion-portrait"/>}
+        <h2>나모눈</h2><p className="companion-relation">{presentation.companion?'조카 · 열한 살':'휴게실에서 봉만실과 함께 있어요.'}</p>
         <div className="companion-note"><NotebookPen aria-hidden className="size-5"/><h3>내 메모</h3><Textarea aria-label="내 메모" value={state.notes} onChange={e=>dispatch({type:'note',text:e.target.value})} placeholder="생각난 것을 적어 두세요."/></div>
         {saveError&&<p role="alert" className="text-sm">{saveError}</p>}
       </aside>

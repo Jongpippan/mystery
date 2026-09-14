@@ -27,7 +27,7 @@ export type GameAction =
   | {type:'restore';state:GameState};
 
 export const initialState:GameState = {version:1,edition:script.edition,playerName:'나여백',started:false,sceneId:'C_PR_01',cursor:0,choices:{},evidence:[],met:['P00','P01'],acknowledged:[],log:[],notes:'',textScale:1,points:6,savedAt:null};
-const opening = ['C_PR_01','C_PR_02','C_PR_03','C_PR_04','C_PR_05'];
+const opening = Array.from({length:16},(_,index)=>`C_PR_${String(index+1).padStart(2,'0')}`);
 
 export type RuntimeNode = ScriptNode | {id:string;kind:'choice';choice:string;options:{value:string;text:string}[];text:string};
 export function currentSequence(state:GameState):RuntimeNode[] {
@@ -36,7 +36,17 @@ export function currentSequence(state:GameState):RuntimeNode[] {
   const result:RuntimeNode[]=[];
   let prompted='';
   for (const node of scene.nodes) {
-    if (node.section.some(h=>/revisit|replay|resume|Chapter exit/i.test(h))) continue;
+    if (node.section.some(h=>/revisit|replay|resume|Chapter exit|Suspended tool inspection/i.test(h))) continue;
+    if (/^State boundary:/.test(node.text)) continue;
+    if (node.section[0]==='Local response — public count wording') {
+      const choice='B_PR_COUNT';
+      if(prompted!==choice) {
+        prompted=choice;
+        const headings=[...new Set(scene.nodes.filter(n=>n.section[0]===node.section[0]).map(n=>n.section[1]))];
+        result.push({id:choice,kind:'choice',choice,text:'어떻게 말할까?',options:headings.map(h=>({value:h.match(/^Option ([AB])/)![1],text:h.match(/`(.+)`/)![1]}))});
+      }
+      if(state.choices[choice]!==node.section[1]?.match(/^Option ([AB])/)?.[1]) continue;
+    }
     const choice=node.section[0]?.match(/^Choice (B_\w+)/)?.[1];
     if (choice) {
       if (prompted!==choice) {
@@ -67,10 +77,10 @@ function enter(state:GameState):GameState {
 export function gameReducer(state:GameState,action:GameAction):GameState {
   switch(action.type) {
     case 'start':return enter({...initialState,started:true,playerName:action.name.trim()||'나여백'});
-    case 'restore':return action.state;
+    case 'restore':return isSave(action.state)?action.state:state;
     case 'note':return {...state,notes:action.text};
-    case 'textScale':return {...state,textScale:Math.max(1,Math.min(2,action.value))};
-    case 'acknowledge':return {...state,acknowledged:[...new Set([...state.acknowledged,action.id])]};
+    case 'textScale':return Number.isFinite(action.value)?{...state,textScale:Math.max(1,Math.min(2,action.value))}:state;
+    case 'acknowledge':return !state.evidence.includes(action.id)||state.acknowledged.includes(action.id)?state:{...state,acknowledged:[...state.acknowledged,action.id]};
     case 'choose': {
       const node=currentNode(state);
       if (node?.kind!=='choice'||node.choice!==action.choice||!node.options.some(o=>o.value===action.value)) return state;
@@ -90,5 +100,15 @@ export function gameReducer(state:GameState,action:GameAction):GameState {
 export function isSave(value:unknown):value is GameState {
   if (!value || typeof value!=='object') return false;
   const s=value as GameState;
-  return s.version===1 && s.edition===script.edition && typeof s.playerName==='string' && typeof s.cursor==='number' && s.cursor>=0 && !!script.scenes[s.sceneId] && Array.isArray(s.evidence) && Array.isArray(s.log) && typeof s.choices==='object' && typeof s.notes==='string';
+  const ids=(v:unknown):v is string[]=>Array.isArray(v)&&v.every(id=>typeof id==='string')&&new Set(v).size===v.length;
+  if(s.version!==1||s.edition!==script.edition||typeof s.playerName!=='string'||typeof s.started!=='boolean'||!Number.isInteger(s.cursor)||s.cursor<0||!opening.includes(s.sceneId)) return false;
+  if(!s.choices||typeof s.choices!=='object'||Array.isArray(s.choices)||typeof s.notes!=='string') return false;
+  const choices:Record<string,string[]>={B_PR_01:['help_queue','protect_papers'],B_PR_02:['environment_first','ask_voice_later'],B_PR_COUNT:['A','B']};
+  if(!Object.entries(s.choices).every(([key,v])=>choices[key]?.includes(v))) return false;
+  if(!ids(s.evidence)||!s.evidence.every(id=>!!script.evidence[id])||!ids(s.met)||!s.met.every(id=>/^P0[0-9]$/.test(id))) return false;
+  if(!ids(s.acknowledged)||!s.acknowledged.every(id=>s.evidence.includes(id))) return false;
+  if(!Number.isFinite(s.textScale)||s.textScale<1||s.textScale>2||!Number.isInteger(s.points)||s.points<0||s.points>6) return false;
+  if(s.savedAt!==null&&(typeof s.savedAt!=='string'||!Number.isFinite(Date.parse(s.savedAt)))) return false;
+  if(!Array.isArray(s.log)||!s.log.every(item=>item&&typeof item==='object'&&opening.includes(item.sceneId)&&script.scenes[item.sceneId].nodes.some(n=>n.id===item.nodeId))) return false;
+  return s.cursor<currentSequence(s).length;
 }

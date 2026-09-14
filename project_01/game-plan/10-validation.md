@@ -101,7 +101,17 @@ All rows remain unimplemented/unverified unless an explicitly narrower evidence 
 | N07 |writing packet/r01 return contract | actual returns, review/revision/acceptance provenance |
 | N08 |initial worktree and new project sources | no old creative source read/restored; no premature runtime |
 
-## Gate state and exact next work
+## Current gate state — 2026-09-14
+
+- **G0/G1 internal readiness passed:** complete canonical screenplay `accepted-full-r03-c01`; see `validation/full-r03-review.md` and its acceptance records. No writer return is pending.
+- **G2 partial:** Windows dependency installation and accepted-source import pass. Prologue C_PR_01..16 now runs through the main scene sequence with all eight combinations of its three choices. Nine reducer tests pass, including per-node restore, exclusive branch history, evidence acknowledgments, child absence during the cargo demonstration and invalid-save rejection. This does not cover chapter challenge behavior.
+- **G3 incomplete:** type checking and a production build pass; lint reports zero errors and three image optimization warnings. No rendered desktop/mobile, keyboard/touch or 200% text inspection has been performed on this checkout. Build output warns about a large client chunk; later chapter splitting remains necessary.
+- **G4 unverified:** no independent first players.
+- **G5 pending:** the six investigation chapters, task/hint/recovery integration, complete imagery, delivery verification and release registration remain unfinished. The prologue implementation is not a complete playable game.
+
+See `validation/windows-runtime-2026-09-14.md` for actual commands, portability repairs and implementation limits. The following sections preserve earlier review history and are superseded by the current gate state above.
+
+## Historical gate state before full r03 acceptance
 
 - **G0 unready:** first five scenes accepted; all later scenes remain unaccepted r01 candidates requiring substantial revision. Draft/review the remaining full assignment, branches, errors, hints, rest/revisits and endings, then continuous and alternate-order editorial review.
 - **G1 design reviewed, completion unproven:** W01–W10 support plan structure. Actual Korean task choices/hint expansions, assembled script knowledge review and later playable shortest-path checks remain. This is sufficient to start the bounded first draft, not to implement.

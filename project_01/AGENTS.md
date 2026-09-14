@@ -8,7 +8,7 @@ Adapted from `../design-guide/templates/AGENTS.md` on 2026-09-12.
 - Stage: complete screenplay accepted as accepted-full-r03-c01; G0/G1 internal script/design readiness passed on2026-09-14. Continue adaptation, implementation and G2/G3/G5 verification; G4 independent play is unverified. No writer return is pending.
 - Authorized scope: six substantial investigation chapters, prologue and epilogue; full Korean script through ChatGPT file relay; autonomous editorial acceptance, adaptation, implementation, verification and playable delivery.
 - New first work, with no inherited case, cast, code, assets or quotas. Project facts are planned, not released series canon.
-- Actual commands: documentation checks recorded in `game-plan/10-validation.md`. No runtime, package manager, build or game test command exists yet.
+- Actual runtime: `game/` (Vinext/React). From that directory run `npm run install:ci`, `node scripts/import-screenplay.mjs`, `node --test tests/opening.test.mjs`, `npx tsc --noEmit`, `npm run lint`, `npm run build`, and `npm run dev`. Implementation remains incomplete; command existence does not imply a completed game.
 
 ## Read first
 

@@ -27,8 +27,8 @@ export const line = (id:string) => {
 };
 
 export function displayText(text:string, playerName:string) {
-  return text.replaceAll('{playerName}',playerName)
-    .replace(/나여백|여백/g,playerName)
+  return text
     .replace(/\*\*([^*]+)\*\*/g,'$1')
-    .replace(/`([^`]+)`/g,'$1');
+    .replace(/`([^`]+)`/g,'$1')
+    .replaceAll('{playerName}',()=>playerName);
 }
